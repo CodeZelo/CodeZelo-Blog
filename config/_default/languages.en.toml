@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "CodeZelo"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/CodeZelo.png"
+  description = "Discover the world of coding with CodeZelo — smart, simple articles and tutorials to help you start and grow your skills."
+
+#[params.author]
+#  name = ""
+#  email = "nuno@n9o.xyz"
+#  image = "img/CodeZelo.png"
+#  headline = "Where creativity meets code."
+# bio = "A powerful, lightweight theme for Hugo."
+#  links = [
+#    { x-twitter = "https://twitter.com/burufugu" },
+#    { github = "https://github.com/nunocoracao/blowfish" },
+#  ]

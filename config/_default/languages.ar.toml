@@ -1,0 +1,22 @@
+languageCode = "ar"
+languageName = "Arabic"
+weight = 1
+title = "CodeZelo"
+
+[params]
+  displayName = "العربية"
+  isoCode = "ar"
+  rtl = true
+  dateFormat = "2 January 2006"
+  logo = "img/CodeZelo.png"
+  description = "اكتشف عالم البرمجة ببساطة وذكاء مع CodeZelo — مقالات وشروحات تساعدك تبدأ وتطور مهاراتك."
+
+#[params.author]
+#  name = ""
+#  image = "img/CodeZelo.png"
+#  headline = "حيث تلتقي البرمجة بالإبداع."
+# bio = "Un potente, leggero tema per Hugo."
+#  links = [
+#    { x-twitter = "https://twitter.com/burufugu" },
+#    { github = "https://github.com/nunocoracao/blowfish" },
+#  ]
