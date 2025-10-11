@@ -3,7 +3,8 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://mahmoud-000.github.io/CodeZelo/"
+# baseURL = "https://mahmoud-000.github.io/CodeZelo/"
+baseURL = "http://localhost:1313"
 defaultContentLanguage = "ar"
 disableLanguages = [] #to allow translation work requiring shipping to production
 

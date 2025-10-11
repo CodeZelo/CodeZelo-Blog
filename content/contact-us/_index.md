@@ -2,6 +2,7 @@
 title: "تواصل معنا"
 description: "هل لديك سؤال أو اقتراح؟ تواصل معنا عبر البريد الإلكتروني أو من خلال صفحات CodeZelo على مواقع التواصل الاجتماعي."
 layout: simple
+sharingLinks: false
 ---
 
 {{< contactAr >}}
@@ -23,11 +24,15 @@ layout: simple
 ---
 
 ## 🌍 حسابات التواصل الاجتماعي
-- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@dev.mahmoud.adel)
-- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/DevMahmoudAdel/)
-- {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
 - {{< icon "linkedin" >}} [LinkedIn](https://www.linkedin.com/in/devmahmoudadel/)
+- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/DevMahmoudAdel/)
+- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@dev.mahmoud.adel)
 - {{< icon "x-twitter" >}} [X (تويتر)](https://x.com/DevMahmoudAdel)
+- {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
+- {{< icon "pinterest" >}} [Pinterest](https://www.pinterest.com/CodeZeloo/)
+- {{< icon "dev" >}} [Dev.to](https://dev.to/devmahmoudadel)
+- {{< icon "medium" >}} [Medium](https://medium.com/@DevMahmoudAdel)
+
 
 ---
 

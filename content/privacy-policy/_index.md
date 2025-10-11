@@ -2,6 +2,7 @@
 title: "سياسة الخصوصية"
 description: "تعرف على كيفية جمع واستخدام وحماية معلوماتك في CodeZelo."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

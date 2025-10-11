@@ -2,6 +2,7 @@
 title: "Terms of Use"
 description: "Read the terms and conditions for using CodeZelo."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

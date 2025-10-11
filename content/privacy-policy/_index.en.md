@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 description: "Learn how CodeZelo collects, uses, and protects your information."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

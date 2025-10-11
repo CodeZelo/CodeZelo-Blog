@@ -2,6 +2,7 @@
 title: "Subscribe to the Newsletter"
 description: "Join the CodeZelo community to receive the latest tutorials and articles directly in your inbox."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

@@ -2,6 +2,7 @@
 title: "About CodeZelo"
 description: "Hi, I'm Mahmoud — the creator of CodeZelo. I share simple, practical content about web development to help others learn and grow."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

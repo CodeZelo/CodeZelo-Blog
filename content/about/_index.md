@@ -2,6 +2,7 @@
 title: "عن CodeZelo"
 description: "أنا محمود، مؤسس CodeZelo — أشارك شروحات وأفكار عملية لتبسيط تعلم البرمجة ومساعدة غيري يبدأ الطريق بثقة."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

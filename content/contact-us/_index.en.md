@@ -2,6 +2,7 @@
 title: "Contact Us"
 description: "Have a question or suggestion? Reach out via email or connect with us on social media."
 layout: simple
+sharingLinks: false
 ---
 
 {{< contactEn >}}
@@ -23,11 +24,13 @@ Whether you have a question, idea, or collaboration request — we’re just one
 ---
 
 ## 🌍 Social Media
-- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@codezelo)
-- {{< icon "pinterest" >}} [Pinterest](https://www.pinterest.com/CodeZeloo/)
 - {{< icon "facebook" >}} [Facebook](https://www.facebook.com/CodeZelo/)
 - {{< icon "linkedin" >}} [LinkedIn](https://www.linkedin.com/in/devmahmoudadel/)
+- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@codezelo)
+- {{< icon "pinterest" >}} [Pinterest](https://www.pinterest.com/CodeZeloo/)
 - {{< icon "x-twitter" >}} [X (Twitter)](https://x.com/DevMahmoudAdel)
+- {{< icon "dev" >}} [Dev.to](https://dev.to/devmahmoudadel)
+- {{< icon "medium" >}} [Medium](https://medium.com/@DevMahmoudAdel)
 
 ---
 

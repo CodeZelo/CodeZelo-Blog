@@ -2,6 +2,7 @@
 title: "شروط الاستخدام"
 description: "تعرف على القواعد والشروط الخاصة باستخدام موقع CodeZelo."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}

@@ -10,38 +10,46 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+# القسم الرئيسي
 [[main]]
-  name = "Frontend"
-  pageRef = "frontend"
+  name = "Projects"
+  identifier = "projects"
   weight = 10
 
+# المشاريع المبتدئين
 [[main]]
-  name = "Backend"
-  pageRef = "backend"
+  name = "Beginner Projects"
+  pageRef = "beginner-projects"
+  parent = "projects"
+  weight = 11
+
+# المشاريع المتوسطة
+[[main]]
+  name = "Intermediate Projects"
+  pageRef = "intermediate-projects"
+  parent = "projects"
+  weight = 12
+
+# المشاريع المتقدمة
+[[main]]
+  name = "Advanced Projects"
+  pageRef = "advanced-projects"
+  parent = "projects"
+  weight = 13
+
+[[main]]
+  name = "Articles & Tips"
+  pageRef = "articles-and-tips"
   weight = 20
 
 [[main]]
-  name = "Fullstack"
-  pageRef = "fullstack"
+  name = "Resources"
+  pageRef = "resources"
   weight = 30
-
-# --- روابط خارجية (اختياري) ---
-[[main]]
-  identifier = "github"
-  pre = "github"
-  url = "https://github.com/codezelo"
-  weight = 100
-
-[[main]]
-  identifier = "twitter"
-  pre = "x-twitter"
-  url = "https://twitter.com/codezelo"
-  weight = 110
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
-
 
 [[footer]]
   name = "Categories"

@@ -2,6 +2,7 @@
 title: "اشترك في النشرة البريدية"
 description: "انضم إلى مجتمع CodeZelo لتصلك أحدث المقالات والشروحات مباشرة إلى بريدك الإلكتروني."
 layout: simple
+sharingLinks: false
 ---
 
 {{< lead >}}
