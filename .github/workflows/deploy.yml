@@ -33,6 +33,10 @@ jobs:
       - name: Build site
         run: hugo --minify
 
+      # ✅ إضافة ملف CNAME يدوياً في مجلد public
+      - name: Add CNAME file
+        run: echo 'www.codezelo.com' > ./public/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
