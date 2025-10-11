@@ -72,17 +72,17 @@
   weight = 40
 
 [[footer]]
-  name = "Privacy Policy"
+  name = "سياسة الخصوصية"
   pageRef = "Privacy Policy"
   weight = 50
 
 [[footer]]
-  name = "Terms of Use"
+  name = "شروط الاستخدام"
   pageRef = "terms-of-use"
   weight = 60
 
 [[footer]]
-  name = "Contact Us"
+  name = "تواصل معنا"
   pageRef = "contact-us"
   weight = 70
 
