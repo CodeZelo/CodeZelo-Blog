@@ -9,7 +9,7 @@ title = "CodeZelo"
   rtl = true
   dateFormat = "2 January 2006"
   logo = "img/CodeZelo.png"
-  description = "اكتشف عالم البرمجة ببساطة وذكاء مع CodeZelo — مقالات وشروحات تساعدك تبدأ وتطور مهاراتك."
+  description = "اكتشف عالم البرمجة ببساطة وذكاء مع CodeZelo — مقالات وشروحات عملية تساعدك تبدأ وتطور مهاراتك."
 
 #[params.author]
 #  name = ""
