@@ -282,7 +282,7 @@ body {
   background-color: #fafafa;
 }
 
-/* ====== الهيدر ====== */
+/* ====== Header ====== */
 header {
   background-color: #333;
   color: white;
@@ -319,7 +319,7 @@ nav a:hover {
   color: #00bfff;
 }
 
-/* زر القائمة للجوال */
+/* Menu Button */
 .menu-toggle {
   display: none;
   background: none;
@@ -329,7 +329,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ====== البطل ====== */
+/* ====== Hero ====== */
 .hero {
   background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
   padding: 80px 20px;
@@ -359,7 +359,7 @@ nav a:hover {
   background-color: #0056b3;
 }
 
-/* ====== المنتجات ====== */
+/* ====== Products ====== */
 .featured,
 .brands,
 .contact {
@@ -401,7 +401,7 @@ nav a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ====== البراندات ====== */
+/* ====== Brands ====== */
 .brand-list {
   display: flex;
   justify-content: space-around;
@@ -419,7 +419,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/* ====== الفوتر ====== */
+/* ====== Footer ====== */
 footer {
   background: #222;
   color: #fff;
@@ -428,7 +428,7 @@ footer {
 }
 
 
-/* ====== تجاوب الشاشات ====== */
+/* ====== Responsive====== */
 @media (max-width: 768px) {
   nav {
     display: none;
