@@ -32,7 +32,6 @@ googleAnalytics = "G-PQK8ERSHYP"
   author = "authors"
   series = "series"
 
-
 [sitemap]
   changefreq = 'always'
   filename = 'sitemap.xml'
