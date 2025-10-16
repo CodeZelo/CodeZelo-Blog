@@ -8,7 +8,7 @@ A platform dedicated to learning programming through **hands-on projects** 💻
 Here, you’ll learn how to write code, build apps, and publish your own projects — with a practical and clear approach.
 {{< /lead >}}
 
-[Start with Projects →](/en/categories) 🚀
+[Start with Projects →](categories) 🚀
 
 ## 💡 Why CodeZelo?
 In an age of fast information, theory alone isn’t enough.  
@@ -18,9 +18,9 @@ Every project and article is designed to bring you one step closer to mastery �
 ## 🚀 Practical Projects
 Choose the section that matches your current level:
 
-- 🧱 [Beginner Projects](/en/categories/beginner-projects/) — Practice the basics with simple, guided examples.  
-- ⚙️ [Intermediate Projects](/en/categories/intermediate-projects/) — Connect front-end and back-end logic.  
-- 🧩 [Advanced Projects](/en/categories/advanced-projects/) — Build complete, production-ready applications.
+- 🧱 [Beginner Projects](categories/beginner-projects/) — Practice the basics with simple, guided examples.  
+- ⚙️ [Intermediate Projects](categories/intermediate-projects/) — Connect front-end and back-end logic.  
+- 🧩 [Advanced Projects](categories/advanced-projects/) — Build complete, production-ready applications.
 
 > Because learning by doing is the real path to becoming a professional developer. 💪
 
@@ -28,8 +28,8 @@ Choose the section that matches your current level:
 
 | Section | Description |
 |:--------|:-------------|
-| ✍️ [Articles & Tips](/en/categories/articles-and-tips/) | Practical insights, productivity tips, and developer mindset guides. |
-| 📚 [Resources & References](/en/categories/resources/) | Tools, libraries, and sources to support your journey as a developer. |
+| ✍️ [Articles & Tips](categories/articles-and-tips/) | Practical insights, productivity tips, and developer mindset guides. |
+| 📚 [Resources & References](categories/resources/) | Tools, libraries, and sources to support your journey as a developer. |
 
 ## 🏷️ Browse by Tags
 
