@@ -1,18 +1,18 @@
 ---
 title: "Laravel"
-description: "Learn Laravel — the most elegant PHP framework for building powerful web applications."
+description: "تعلم إطار Laravel لبناء تطبيقات ويب احترافية بسهولة ووضوح باستخدام لغة PHP."
 
 ---
 
 {{< lead >}}
-**Laravel** is the go-to framework for PHP developers who value speed, clarity, and elegance 💎  
-Whether it’s an API or a full dashboard — Laravel makes it smooth and fun.
+إطار **Laravel** هو الخيار الأول لكل مطور PHP يبحث عن السرعة، التنظيم، والأناقة 💎  
+سواء كنت تبني API أو لوحة تحكم كاملة — Laravel عنده كل الأدوات الجاهزة.
 {{< /lead >}}
 
-Under this tag you'll find:
-- Getting started with Laravel and building your first project  
-- Working with databases using **Eloquent ORM**  
-- Building secure **RESTful APIs**  
-- Using packages, handling emails, and file storage  
+في هذا الوسم ستجد:
+- أساسيات Laravel من التثبيت إلى بناء أول مشروع  
+- التعامل مع قواعد البيانات باستخدام **Eloquent ORM**  
+- بناء **RESTful APIs** وواجهات آمنة  
+- استخدام الحزم (Packages) وإدارة الملفات والإيميلات  
 
-> Laravel isn’t just a framework — it’s a developer experience you’ll love ❤️
+> Laravel مش بس إطار... ده تجربة تطوير كاملة تعشقها من أول مشروع ❤️

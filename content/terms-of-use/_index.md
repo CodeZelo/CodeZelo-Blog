@@ -1,45 +1,46 @@
 ---
-title: "Terms of Use"
-description: "Read the terms and conditions for using CodeZelo."
+title: "شروط الاستخدام"
+description: "تعرف على القواعد والشروط الخاصة باستخدام موقع CodeZelo."
 layout: simple
 sharingLinks: false
 ---
 
 {{< lead >}}
-Welcome to **CodeZelo** 👋  
-By accessing this website, you agree to follow the terms and conditions below.
+مرحبًا بك في **CodeZelo** 👋  
+باستخدامك لهذا الموقع، فإنك توافق على الشروط الموضحة في هذه الصفحة.
 {{< /lead >}}
 
-## 1. Acceptance of Terms
-By using this website, you agree to comply with and be bound by these terms.  
-If you do not agree, please stop using the site.
+## 1. قبول الشروط
+بمجرد دخولك واستخدامك للموقع، فإنك توافق على الالتزام بهذه الشروط.  
+إذا لم تكن موافقًا، يُرجى التوقف عن استخدام الموقع.
 
 ---
 
-## 2. Use of Content
-All content on **CodeZelo** (articles, tutorials, and visuals) is for educational purposes.  
-You may share excerpts or links with proper credit.  
-Reposting full articles without permission is not allowed.
+## 2. استخدام المحتوى
+جميع المقالات والدروس في **CodeZelo** مخصصة لأغراض تعليمية فقط.  
+يسمح بمشاركة مقتطفات أو روابط بشرط ذكر المصدر.  
+ولا يُسمح بنسخ أو إعادة نشر المحتوى كاملًا دون إذن مسبق.
 
 ---
 
-## 3. User Conduct
-You agree not to:
-- Use this site for unlawful or harmful purposes  
-- Attempt to hack, spam, or disrupt services  
+## 3. سلوك المستخدم
+توافق على عدم:
+- استخدام الموقع في أي نشاط غير قانوني أو ضار  
+- محاولة اختراق أو تعطيل الخدمات  
+- إرسال محتوى مزعج أو غير لائق  
 
 ---
 
-## 4. Disclaimer
-The content provided on CodeZelo is for educational purposes only.  
-We are not responsible for any damage or loss resulting from the use of information shared here.
+## 4. إخلاء المسؤولية
+جميع المحتويات في **CodeZelo** لأغراض تعليمية فقط.  
+لا نتحمل أي مسؤولية عن أضرار أو خسائر قد تنتج عن تطبيق المعلومات المنشورة.
 
 ---
 
-## 5. Updates
-We may update these terms from time to time.  
-The latest version will always be available on this page.
+## 5. التعديلات
+قد نقوم بتحديث هذه الشروط من وقت لآخر.  
+سيتم نشر أحدث نسخة دائمًا في هذه الصفحة.
 
 ---
 
-> **CodeZelo** — built for learning, shared with respect.
+> **CodeZelo** — المعرفة للجميع، مع احترام الحقوق.

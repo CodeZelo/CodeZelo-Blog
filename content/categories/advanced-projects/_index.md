@@ -1,19 +1,19 @@
 ---
-title: "Advanced Projects"
-description: "Take your development skills to the next level by building full-featured applications with authentication, databases, and real-world deployment using modern web technologies."
+title: "المشاريع المتقدمة"
+description: "انطلق إلى مستوى الاحتراف ببناء تطبيقات متكاملة تشمل المصادقة، قواعد البيانات، وعمليات النشر الفعلية باستخدام أحدث تقنيات الويب."
 ---
 
 {{< lead >}}
-This is where you build projects that look and feel like real-world products. 🧩  
-You’ll start thinking like a professional developer — handling performance, security, and scalability challenges.
+في هذه المرحلة، ستبدأ ببناء مشاريع حقيقية تُشبه ما يُنفَّذ في الشركات والمنتجات الفعلية. 🧩  
+هنا تتعلّم كيف تُفكّر كمطوّر محترف، وتتعامل مع التحديات الواقعية في الأداء، الأمان، وتكامل الأنظمة.
 {{< /lead >}}
 
-In this section of **CodeZelo**, you’ll find:
-- Complete **Fullstack** projects built with **React, Next.js, and Node.js**  
-- Tutorials on **Authentication** and **Authorization** systems  
-- Guides for working with **databases** like MongoDB and PostgreSQL  
-- Advanced apps featuring **APIs, Cloud Storage, and WebSockets**  
-- Step-by-step deployment guides using **Vercel, Render, and Railway**  
-- Best practices for writing **clean, scalable, and maintainable code** 🧠  
+في هذا القسم من **CodeZelo** ستجد:
+- مشاريع **Fullstack** متكاملة باستخدام تقنيات مثل **React، Next.js، وNode.js**  
+- شروحات حول **المصادقة (Authentication)** و**التحكم في الصلاحيات (Authorization)**  
+- دروس في **قواعد البيانات** (MongoDB، PostgreSQL، وغيرها)  
+- تطبيقات متقدمة تتعامل مع **الـ APIs، التخزين السحابي، والـ WebSockets**  
+- خطوات عملية لنشر المشاريع على منصات مثل **Vercel، Render، وRailway**  
+- نصائح لتصميم الكود بشكل نظيف وقابل للتوسع 🧠  
 
-> Because advanced projects are the bridge between learning and professional development. 🚀
+> لأن المشاريع المتقدمة هي جسر الانتقال من مطوّر هاوٍ إلى محترف جاهز لسوق العمل. 🚀

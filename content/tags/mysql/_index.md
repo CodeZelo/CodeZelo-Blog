@@ -1,18 +1,18 @@
 ---
 title: "MySQL"
-description: "Learn how to manage databases efficiently with MySQL — the world’s most popular open-source database."
+description: "تعلّم أساسيات إدارة قواعد البيانات باستخدام MySQL — النظام الأشهر لتخزين وتنظيم البيانات بكفاءة."
 
 ---
 
 {{< lead >}}
-Every successful app needs a strong database 💾  
-That’s where **MySQL** comes in — reliable, fast, and built for scalability.
+كل تطبيق ناجح محتاج قاعدة بيانات قوية 💾  
+وهنا ييجي دور **MySQL** — النظام اللي بيوازن بين السرعة، الأمان، والمرونة.
 {{< /lead >}}
 
-Under this tag you'll find:
-- Creating and managing databases and tables  
-- Core SQL commands like **SELECT**, **JOIN**, and **UPDATE**  
-- Integrating MySQL with **PHP** and **Node.js** projects  
-- Performance optimization and data security  
+في هذا الوسم ستتعلم:
+- إنشاء وإدارة قواعد البيانات والجداول  
+- أوامر SQL الأساسية مثل **SELECT** و**JOIN**  
+- التعامل مع البيانات في مشاريع **PHP** و**Node.js**  
+- تحسين الأداء وحماية البيانات  
 
-> Data is the heart of any project — and MySQL keeps it beating 👑
+> لأن البيانات هي قلب المشروع، وMySQL هو القلب النابض 👑

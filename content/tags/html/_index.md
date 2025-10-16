@@ -1,22 +1,21 @@
 ---
 title: "HTML"
-description: "Articles and tutorials about HTML fundamentals, document structure, and accessibility."
-
+description: "مقالات ودروس حول أساسيات HTML، عناصر الصفحة، بنية المستند، والوصولية."
 ---
 
 {{< lead >}}
-Everything you need to start building web page structure with **HTML** — from core tags to accessibility best practices.
+كل ما تحتاجه لبدء بناء هيكل صفحات الويب باستخدام **HTML** — من الوسوم الأساسية إلى أفضل ممارسات الوصولية.
 {{< /lead >}}
 
-Under this tag you'll find:
-- Clear explanations of core tags (`<div>`, `<header>`, `<section>`, `<article>`, ...).  
-- Guides on building mobile-friendly and accessible pages.  
-- Practical examples: forms, tables, media embedding.  
-- Tips on integrating HTML with CSS and JavaScript for clean interfaces.
+في هذا الوسم ستجد:
+- شروحات مبسطة للوسوم الأساسية (`<div>`, `<header>`, `<section>`, `<article>`, ...).  
+- دليل لبناء صفحات متوافقة مع الموبايل والوصولية (Accessibility).  
+- أمثلة عملية لبناء نماذج (forms)، جداول، وروابط وسائط.  
+- نصائح للتكامل مع CSS وJavaScript لبناء واجهات تعمل بشكل نظيف.
 
-**Suggested reads:**
-- Quick start with HTML  
-- Building a working contact form  
-- Accessibility fundamentals for HTML
+**مواضيع مقترحة للقراءة:**
+- بداية سريعة مع HTML  
+- كيفية بناء نموذج تواصل يعمل فعليًا  
+- مبادئ الوصولية في HTML
 
 ---

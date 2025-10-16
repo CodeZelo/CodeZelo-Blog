@@ -1,37 +1,39 @@
 ---
-title: "Contact Us"
-description: "Have a question or suggestion? Reach out via email or connect with us on social media."
+title: "تواصل معنا"
+description: "هل لديك سؤال أو اقتراح؟ تواصل معنا عبر البريد الإلكتروني أو من خلال صفحات CodeZelo على مواقع التواصل الاجتماعي."
 layout: simple
 sharingLinks: false
 ---
 
-{{< contactEn >}}
+{{< contactAr >}}
 
 {{< lead >}}
-We’d love to hear from you 💬  
-Whether you have a question, idea, or collaboration request — we’re just one message away!
+يسعدنا تواصلك معنا 💬  
+سواء كان لديك استفسار، اقتراح، أو ترغب في التعاون — تواصل معنا بكل سهولة.
 {{< /lead >}}
 
-## 📧 Email
+## 📧 البريد الإلكتروني
 **zwebcourses@gmail.com**
 
 ---
 
-## 🎥 YouTube Channels
-- {{< icon "youtube" >}} [CodeZelo (English)](https://www.youtube.com/@CodeZelo)
-- {{< icon "youtube" >}} [Mutawir Web (Arabic)](https://www.youtube.com/@MutawirWeb)
+## 🎥 تابعنا على يوتيوب
+- {{< icon "youtube" >}} [قناة Mutawir Web (بالعربية)](https://www.youtube.com/@MutawirWeb)
+- {{< icon "youtube" >}} [قناة CodeZelo (بالإنجليزية)](https://www.youtube.com/@CodeZelo)
 
 ---
 
-## 🌍 Social Media
-- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/CodeZelo/)
+## 🌍 حسابات التواصل الاجتماعي
 - {{< icon "linkedin" >}} [LinkedIn](https://www.linkedin.com/in/devmahmoudadel/)
-- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@codezelo)
+- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/DevMahmoudAdel/)
+- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@dev.mahmoud.adel)
+- {{< icon "x-twitter" >}} [X (تويتر)](https://x.com/DevMahmoudAdel)
+- {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
 - {{< icon "pinterest" >}} [Pinterest](https://www.pinterest.com/CodeZeloo/)
-- {{< icon "x-twitter" >}} [X (Twitter)](https://x.com/DevMahmoudAdel)
 - {{< icon "dev" >}} [Dev.to](https://dev.to/devmahmoudadel)
 - {{< icon "medium" >}} [Medium](https://medium.com/@DevMahmoudAdel)
 
+
 ---
 
-> Coming soon: our **Telegram** channel for quick access to the latest tutorials and articles 🚀
+> قريبًا: قناة **CodeZelo** على Telegram لتصلك أحدث المقالات والدروس أولًا بأول 🚀

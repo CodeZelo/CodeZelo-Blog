@@ -1,31 +1,32 @@
 ---
-title: "About CodeZelo"
-description: "Hi, I'm Mahmoud — the creator of CodeZelo. I share simple, practical content about web development to help others learn and grow."
+title: "عن CodeZelo"
+description: "أنا محمود، مؤسس CodeZelo — أشارك شروحات وأفكار عملية لتبسيط تعلم البرمجة ومساعدة غيري يبدأ الطريق بثقة."
 layout: simple
 sharingLinks: false
 ---
 
 {{< lead >}}
-Hey there 👋 I'm **Mahmoud**, a developer who believes learning to code shouldn’t be complicated.  
-That’s why I created **CodeZelo** — a space to make programming easier, clearer, and more human.
+أهلاً 👋 أنا **محمود**، مبرمج مؤمن إن تعلم البرمجة مش لازم يكون معقد.  
+وعلشان كده أنشأت **CodeZelo** — مساحة لتبسيط الكود، وشرحه بطريقة قريبة وسهلة.
 {{< /lead >}}
 
-When I first started learning web development, I spent countless hours trying to make sense of scattered tutorials and confusing documentation.  
-I realized that what most developers need isn’t *more content* — it’s **better explanations**.
+لما بدأت أتعلم تطوير الويب، كنت بقضي ساعات طويلة بين شروحات كتير ومصادر متفرقة،  
+بس كنت دايمًا حاسس إن اللي ناقص هو **الشرح البسيط والتطبيق العملي**.
 
-Here at **CodeZelo**, I share:
-- Practical tutorials in **Frontend**, **Backend**, and **Fullstack** development.  
-- Insights about **AI tools** and how they can improve your workflow.  
-- Real experiences, lessons learned, and honest advice for new developers.  
-
----
-
-## 🎯 My Goal
-To make coding feel approachable and enjoyable —  
-to simplify complex ideas and help developers grow confidently.  
-Because programming isn’t just about writing code;  
-it’s about **thinking, building, and creating**. 💡
+ومن هنا جات فكرة **CodeZelo** —  
+مكان أشارك فيه:
+- شروحات عملية في **الفرونت إند**، **الباك إند**، و**الفل ستاك**.  
+- أفكار وتجارب من الواقع تساعدك تتعلم أسرع.  
+- أدوات وتقنيات جديدة، خصوصًا في مجال **الذكاء الاصطناعي** ودورها في البرمجة.  
 
 ---
 
-> **CodeZelo** — where learning to code feels natural, not stressful. 🚀
+## 🎯 هدفي
+إني أقدّم محتوى عربي حقيقي عن البرمجة —  
+يوصل المعلومة ببساطة، ويخلّي التعلم ممتع ومفهوم.  
+لأن البرمجة مش مجرد كود،  
+هي **طريقة تفكير وصناعة**. 💻✨
+
+---
+
+> **CodeZelo** — لأن الكود لما تفهمه… بيبقى ممتع. 🚀

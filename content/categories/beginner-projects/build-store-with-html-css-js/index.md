@@ -1,6 +1,6 @@
 ---
-title: "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript"
-description: "Discover how I started my journey creating my first online store from scratch using only HTML, CSS, and JavaScript. Learn step by step how to build a simple yet professional store without any complex tools — in an easy, beginner-friendly way."
+title: "مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط"
+description: "اكتشف كيف بدأت رحلتي في إنشاء أول متجر إلكتروني من الصفر باستخدام HTML وCSS وJavaScript فقط. تعلم خطوة بخطوة كيفية بناء متجر بسيط واحترافي بدون أي أدوات معقدة وبأسلوب سهل يناسب المبتدئين."
 categories: ['beginner-projects']
 tags: ['html', 'css', 'js']
 draft: false
@@ -8,55 +8,54 @@ authors:
   - mahmoudadel
 ---
 
-In this course, we’ll learn together how to design and build a simple yet professional online store using only HTML, CSS, and JavaScript—relying on the basic tools every beginner web developer needs to get started in web development.
+سنتعلّم معًا في هذه الدورة كيف تصمّم وتبني متجرًا إلكترونيًا بسيطًا واحترافيًا باستخدام **HTML وCSS وJavaScript** فقط، وبالاعتماد على الأدوات البسيطة التي يحتاجها أي مطوّر ويب مبتدئ في مجال برمجة الويب.
 
-We’ll build the store step by step so that by the end, you’ll have a fully functional project you can run and customize. You’ll learn how to connect different pages together and style each one beautifully using CSS.
+سنقوم ببناء المتجر خطوةً بخطوة ليصبح لديك مشروع عملي يمكنك تشغيله وتعديله. ستتعلّم كيف تربط الصفحات ببعضها البعض، وكيف تنسّق كل صفحة بطريقة جمالية باستخدام **CSS**.
 
-By the end of this article, you’ll know how to use HTML, CSS, and JavaScript in a practical way through a real project—not just theoretical lessons. After writing the code yourself, you’ll be able to build a simple online store that includes essential features such as displaying products, adding them to a shopping cart, and moving to a checkout page.
+بعد قراءة هذا المقال، ستتعلّم **استخدام HTML وCSS وJavaScript** بطريقة عملية من خلال مشروع حقيقي، وليس مجرّد دروس نظرية. وبعد تنفيذ الأكواد بنفسك، ستكون قادرًا على بناء متجر إلكتروني بسيط يحتوي على المميزات الأساسية لأي متجر إلكتروني، مثل عرض المنتجات، والسماح للمستخدم بإضافتها إلى سلة التسوّق، والانتقال إلى صفحة الدفع.
 
-Whether you’ve already started learning programming or you’re just taking your first steps into web development, this course will be your first milestone toward understanding the fundamentals that will prepare you to build professional websites in the future.
+سواء أكنت قد بدأت بالفعل في مجال البرمجة أم ما زلت في بداية طريقك نحو تعلّم تطوير الويب، فهذه الدورة ستكون خطوتك الأولى لفهم الأساسيات التي ستمهّد لك الطريق نحو تطوير مواقع احترافية في المستقبل.
 
-![Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript](featured.png "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript")
+![مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط](featured.png "مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط")
 
-## Understanding the Basics of Building an Online Store
+## التعرف على أساسيات بناء المتجر الإلكتروني
 
-To begin, let’s talk about the **main components of an online store** before we start writing any code, and why it’s important to divide the store into multiple pages.
+في البداية سوف نتكلم عن مكونات المتحر الالكتروني، قبل البدا في كتابة الأكواد ولماذا نحتاج تقسيم المتحر الي عدة صفحات.
 
-The core idea behind designing an online store is **simplicity, organization, and clean design**.
+الفكرة الأساسية في تصميم المتجر الاكلتروني هو البساطة والتنظيم وبساطة التصميم
 
-__What Is an Online Store?__
+__ما هو المتجر الإلكتروني؟__
 
-An online store is a website designed to **sell products**, whether they’re your own or those of other sellers.
+المتجر الإلكتروني هو موقع ويب يهدف إلى **بيع المنتجات** سواء كانت منتجاتك الخاصة أو منتجات لجهات أخرى.  
 
-The store we’ll build in this course will be simple, because the main goal is to **learn the fundamentals of HTML, CSS, and JavaScript** in a practical, easy-to-understand way.
+المتجر الذي سنبنيه في هذه الدورة سيكون بسيطًا، لأن الهدف الأساسي هو **تعلّم أساسيات HTML وCSS وJavaScript** بشكل عملي وسهل الفهم.
 
-We’ll do this **without relying on any databases or back-end languages** such as **PHP** or **Node.js**.
+من دون الاعتماد على أي قواعد بيانات أو لغات الباك إند  مثل **PHP** أو **Node.js**.
 
-__The Main Pages of a Simple Online Store__
+__الصفحات الأساسية في أي متجر إلكتروني بسيط__
 
-Our online store will consist of **five main pages**:
+سيتكون المتجر  الالكتروني من خمس صفحات رئيسية:
 
-1. **Home Page (`index.html`):**
-   This is the first page users see. It displays an introduction to the store, a few featured or random products, and some brand sections.
+1. **الصفحة الرئيسية (index.html):**  
+   هذه الصفحة هي أول ما يراه المستخدم تعرض مقدمة عن المتجر، وبعض المنتجات العشوائية المميزة، وأقسام البراندات.  
 
-2. **Products Page (`products.html`):**
-   Displays a list of all available products in the store, including images, prices, and buttons to view more details.
+2. **صفحة المنتجات (products.html):**  
+    تعرض قائمة بمنتجاتك المتوفرة في المتجر، مع صور وأسعار وأزرار لعرض التفاصيل.
 
-3. **Single Product Page (`product.html`):**
-   Contains detailed information about a specific product — the image, name, description, price, and an “Add to Cart” button.
+3. **صفحة المنتج الواحد (product.html):**  
+    تحتوي على تفاصيل منتج معين: الصورة، الاسم، الوصف، السعر، وزر “أضف إلى السلة”.
 
-4. **Cart Page (`cart.html`):**
-   Shows the products added to the shopping cart, with the option to proceed to checkout.
+4. **صفحة السلة (cart.html):**  
+    تُظهر المنتجات التي تمت إضافها للسلة، مع إمكانية إتمام عملية الشراء.
 
-5. **Checkout Page (`checkout.html`):**
-   Includes a simple form for entering purchase details and completing the order, followed by a success message.
+5. **صفحة الدفع (checkout.html):**  
+    تحتوي على نموذج بسيط لملء بيانات الشراء وإتمام العملية بالكامل مع ظهور رسالة النجاح.
 
+__هيكل المتجر الالكتروني (Project Structure)__
 
-__Project Structure__
+من الأفضل أن نقوم **بتنظيم ملفات المشروع من البداية**، حتى يسهل علينا التعامل معه لاحقًا، خصوصًا في حال تم **توسيع المشروع** أو إضافة مزيد من الصفحات والوظائف.
 
-It’s best to **organize your project files from the very beginning**, so it’s easier to manage later — especially if you decide to **expand the project** or add more pages and features.
-
-So, start by creating a **new folder named** `store`, and inside it, add the following folders and files:
+لذلك، قم بإنشاء **مجلد جديد باسم** `store`، وضع بداخله المجلدات والملفات التالية:
 
 ```
 store/
@@ -82,96 +81,96 @@ store/
 │ 	     └── brand-1.png
 │ 	     ....
 ```
+__الأدوات اللي هنستخدمها عشان نبني المتجر الإلكتروني__
 
-__Tools You’ll Need to Build the Online Store__
+مش محتاج برامج صعبة ولا حاجة، كل اللي هنحتاجه بسيط جدًا:
+- **محرر أكواد خفيف زي VS Code أو Sublime Text**
+- **متصفح زي Google Chrome أو Edge**
+- **وشوية حماس كده 😄**
 
-You don’t need any complicated software for this project — everything we’ll use is simple and beginner-friendly:
-
-* **A lightweight code editor** such as *VS Code* or *Sublime Text*
-* **A web browser** like *Google Chrome* or *Microsoft Edge*
-* **And, of course, a bit of enthusiasm 😄**
-
-We’ll rely on just a few core technologies:
-
-* **HTML** – The structure of our website. It defines the layout and content of each page.
-* **CSS** – The styling language that gives our store its colors, spacing, and overall visual appeal.
-* **JavaScript (JS)** – The scripting language that makes the website interactive and dynamic.
-* **JSON** – A lightweight data format we’ll use as a simple “database” to store product information.
-  It will look something like this:
+هنعتمد بس على شوية حاجات أساسية:
+- لغة البناء: **HTML** — دي اللي هنعمل بيها شكل وصفحات المتجر.
+- لغة التنسيق: **CSS** — علشان نزبط الألوان والشكل ويطلع الموقع شكله حلو.
+- اللغة: **JavaScript (JS)** — دي اللي هتخلي الموقع متفاعل ومليان حركة.
+- قاعدة البيانات: **JSON** — هنستخدمها كملف بسيط نخزن فيه بيانات المنتجات، وهتكون بالشكل ده:
 
 ```json
 [
   {
     "id": 1,
-    "name": "Product 1",
+    "name": "منتج 1",
     "price": 120,
     "image": "images/products/product-1.webp",
-    "description": "A high-quality product featuring an elegant design and excellent performance."
+    "description": "منتج عالي الجودة يتميز بتصميم أنيق وأداء ممتاز."
   },
   {
     "id": 2,
-    "name": "Product 2",
+    "name": "منتج 2",
     "price": 150,
     "image": "images/products/product-2.webp",
-    "description": "A great product suitable for daily use with premium materials."
+    "description": "منتج رائع يناسب الاستخدام اليومي بخامات ممتازة."
   },
   {
     "id": 3,
-    "name": "Product 3",
+    "name": "منتج 3",
     "price": 200,
     "image": "images/products/product-3.webp",
-    "description": "A practical and durable product that offers you the best user experience."
+    "description": "منتج عملي ومتين يوفر لك أفضل تجربة استخدام."
   },
   {
     "id": 4,
-    "name": "Product 4",
+    "name": "منتج 4",
     "price": 250,
     "image": "images/products/product-4.webp",
-    "description": "A distinctive product with the latest technology and a reasonable price."
+    "description": "منتج مميز بأحدث التقنيات وسعر مناسب."
   },
   {
     "id": 5,
-    "name": "Product 5",
+    "name": "منتج 5",
     "price": 180,
     "image": "images/products/product-5.webp",
-    "description": "A modern design product with high quality that lasts long."
+    "description": "منتج بتصميم عصري وجودة عالية يدوم طويلاً."
   },
   {
     "id": 6,
-    "name": "Product 6",
+    "name": "منتج 6",
     "price": 300,
     "image": "images/products/product-6.webp",
-    "description": "A luxurious product made with the finest materials and precise details."
+    "description": "منتج فاخر بأفضل الخامات والتفاصيل الدقيقة."
   }
 ]
 ```
 
-## Designing the Home Page
+## تصميم الصفحة الرئيسية (Home Page)
 
-![Designing the Home Page](en/homepage.png "Designing the Home Page")
 
-The **home page** is the **first thing visitors see** when they enter your online store, so it needs to be **simple, well-organized, and visually appealing**.
+![تصميم الصفحة الرئيسية](ar/homepage.png "تصميم الصفحة الرئيسية")
 
-In this section, we’ll learn **step by step** how to design the home page of an online store using **HTML, CSS, and JavaScript** — in a way that’s beginner-friendly and also optimized for search engines (**SEO**).
+الصفحة الرئيسية هي **أول حاجة** الزائر هيشوفها لما يدخل المتجر، علشان كده لازم تكون **بسيطة، منظمة، وشكلها حلو**.
 
-We’ll divide the page into **four main sections** to keep it clear and easy to navigate:
+في الجزء ده هنتعلم خطوة بخطوة إزاي نصمّم الصفحة الرئيسية لمتجر إلكتروني باستخدام **HTML وCSS وJavaScript**، وبالطريقة دي تناسب المبتدئين وكمان تبقى جاهزة لمحركات البحث (SEO).
 
-1. **Hero Section** — The top section that welcomes visitors and gives them a quick idea about the store.
-2. **Featured Products Section** — Displays highlighted or promotional products you want to showcase.
-3. **Brands Section** — If you have brand partnerships, this is where you can display their logos.
-4. **Extra Section (Contact or Testimonials)** — A space where users can get in touch or see customer reviews to help build trust.
+هنقسم الصفحة لأربع أجزاء رئيسية علشان تكون واضحة وسهلة:
 
-__Basic Structure of the Page (HTML)__
+1. **القسم الأساسي (Hero Section)** — الجزء اللي بيستقبل الزائر وبيديه فكرة سريعة عن المتجر.
+    
+2. **قسم المنتجات المميزة (Featured Products)** — هنا نعرض منتجات مميزة أو العروض اللي عايزين نروجها.
+    
+3. **قسم البراندات (Brands Section)** — لو عندك ماركات أو شراكات، نعرض لوجوهاتهم هنا.
+    
+4. **قسم إضافي (تواصل معنا أو آراء العملاء)** — مكان نخلي الناس تتواصل معانا أو نعرض رأي العملاء عشان نزود الثقة.
 
-Now, open your `index.html` file and write the following code 👇
+__الهيكل الأساسي للصفحة (HTML)__
+
+الآن، افتح ملف `index.html` واكتب الكود التالي 👇:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Store</title>
+    <title>المتجر الإلكتروني</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
@@ -179,58 +178,58 @@ Now, open your `index.html` file and write the following code 👇
     />
   </head>
   <body>
-    <!-- ====== Header ====== -->
+    <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
-        <h1>Online Store</h1>
+        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <h1>المتجر الإلكتروني</h1>
       </div>
 
       <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="checkout.html">الدفع</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
 
-    <!-- ====== Main Section ====== -->
+    <!-- ====== القسم الرئيسي ====== -->
     <section class="hero">
-      <h2>Discover the best products at the best prices</h2>
-      <p>Start shopping now and enjoy a unique experience</p>
-      <a href="products.html" class="btn">Shop Now</a>
+      <h2>اكتشف أفضل المنتجات بأفضل الأسعار</h2>
+      <p>ابدأ التسوق الآن واستمتع بتجربة فريدة من نوعها</p>
+      <a href="products.html" class="btn">تسوق الآن</a>
     </section>
 
-    <!-- ====== Featured Products Section ====== -->
+    <!-- ====== قسم المنتجات المميزة ====== -->
     <section class="featured">
-      <h2>Featured Products</h2>
+      <h2>المنتجات المميزة</h2>
       <div id="featuredProducts" class="product-list"></div>
     </section>
 
-    <!-- ====== Brands Section ====== -->
+    <!-- ====== قسم البراندات ====== -->
     <section class="brands">
-      <h2>Brands</h2>
+      <h2>البراندات</h2>
       <div class="brand-list">
-        <img width="80px" src="images/brands/brand-1.png" alt="Brand 1" />
-        <img width="80px" src="images/brands/brand-2.png" alt="Brand 2" />
-        <img width="80px" src="images/brands/brand-3.png" alt="Brand 3" />
-        <img width="80px" src="images/brands/brand-4.png" alt="Brand 4" />
+        <img width="80px" src="images/brands/brand-1.png" alt="براند 1" />
+        <img width="80px" src="images/brands/brand-2.png" alt="براند 2" />
+        <img width="80px" src="images/brands/brand-3.png" alt="براند 3" />
+        <img width="80px" src="images/brands/brand-4.png" alt="براند 4" />
       </div>
     </section>
 
-    <!-- ====== Contact Section ====== -->
+    <!-- ====== قسم التواصل ====== -->
     <section class="contact">
-      <h2>Contact Us</h2>
-      <p>Do you have a question or inquiry? Contact us now!</p>
-      <a href="mailto:info@store.com" class="btn">Email Us</a>
+      <h2>تواصل معنا</h2>
+      <p>هل لديك سؤال أو استفسار؟ تواصل معنا الآن!</p>
+      <a href="mailto:info@store.com" class="btn">راسلنا عبر البريد</a>
     </section>
 
-    <!-- ====== Footer ====== -->
+    <!-- ====== الفوتر ====== -->
     <footer>
       <p>
-        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and JS
+        © 2025 جميع الحقوق محفوظة - تصميم متجر إلكتروني باستخدام HTML وCSS وJS
       </p>
     </footer>
 
@@ -239,40 +238,41 @@ Now, open your `index.html` file and write the following code 👇
 </html>
 ```
 
-__Step-by-Step Code Explanation (Simple & Clear)__
 
-1. **Header:**
-   This is the top part of the page — it contains the store name and the main navigation links.
-   It usually has a dark background with white text so the title stands out. There’s also a small **logo** for a more professional look.
+__شرح الكود خطوة بخطوة (بسيط ومفهوم)__
 
-2. **Hero Section:**
-   The large top area that welcomes visitors — it gives a short, attractive introduction to the store.
-   It includes a catchy headline and a clear call-to-action button labeled **“Shop Now”**. When the visitor clicks this button, they are taken directly to the products page.
+1. **الهيدر (Header):**  
+    ده الجزء اللي فوق الصفحة — فيه اسم المتجر وروابط التنقل الأساسية.  
+    معمول بلون خلفية غامق والنص أبيض علشان العنوان يبان كويس. وكمان فيه **لوجو** صغير لمظهر احترافي.
+    
+2. **القسم الأساسي (Hero Section):**  
+    الجزء الكبير اللي بيستقبل الزائر — بيقدم مقدمة جذابة عن المتجر.  
+    فيه نص لافت وزر واضح مكتوب عليه **"تسوق الآن"**. لما الزائر يضغط الزر ده، بيروح على صفحة المنتجات علطول.
+    
+3. **قسم المنتجات المميزة:**  
+    هنا بنعرض شوية منتجات كمثال — في الشرح استخدمنا 3 منتجات عشوائية من ملف `products.json`.  
+    لكل منتج بنعرض صورة، اسم، وسعر بسيط. الفكرة إن الزائر يشوف المنتجات المشهورة بسرعة.
+    
+4. **قسم البراندات:**  
+    بنعرض لوجوهات أو أسماء الشركات والعلامات التجارية اللي المتجر بيتعامل معاها.  
+    ده مهم لأنه **بيعطي ثقة للزائر**—لما يشوف ماركات معروفة يحس إن المتجر موثوق.
+    
+5. **قسم التواصل:**  
+    جزء بسيط فيه طريقة تواصل معاك — غالبًا بنستخدم نموذج صغير أو رابط للإيميل.  
+    الهدف إن الزائر يقدر يراسلك بسرعة لو عنده سؤال أو طلب.
+    
+6. **الفوتر (Footer):**  
+    الجزء اللي تحت الصفحة — فيه حقوق النشر وسطر تعريف بسيط بالموقع أو رسالة صغيرة.  
+    مهم تحطه في كل صفحة عشان يبقى شكل الموقع كامل ومرتب.
 
-3. **Featured Products Section:**
-   Here we display a few example products — in the tutorial we use 3 random items from the `products.json` file.
-   For each product we show an image, a name, and a simple price. The idea is to let visitors quickly see popular or highlighted items.
+__🎨 تنسيق الصفحة (CSS)__
 
-4. **Brands Section:**
-   We show logos or names of the brands the store works with.
-   This is important because it **adds trust** — when users see known brands they tend to perceive the store as more reliable.
+بعد ما خلّصنا كتابة الهيكل الأساسي، محتاجين نبدأ نجهّز **شكل وتصميم الصفحة** عشان تطلع جذابة وواضحة.
 
-5. **Contact Section:**
-   A simple area with a way to contact you — usually a small form or a mailto link.
-   The goal is to let visitors reach out quickly if they have questions or requests.
-
-6. **Footer:**
-   The bottom part of the page — contains copyright text and a short site description or message.
-   It’s good practice to include the footer on every page to make the site feel complete and consistent.
-
-__Styling the Page (CSS)__
-
-After we finish the basic structure, we need to style the page so it looks attractive and readable.
-
-Open the stylesheet file:
+افتح ملف التنسيق اللي اسمه:  
 `css/style.css`
 
-Then add the following CSS code (we’ll provide the actual CSS next) to style the header, hero, featured products, brands, contact area, and footer.
+وبعدين ضيف فيه الكود اللي جاي دلوقتي 👇
 
 ```css
 body {
@@ -284,7 +284,7 @@ body {
   background-color: #fafafa;
 }
 
-/* ====== Header ====== */
+/* ====== الهيدر ====== */
 header {
   background-color: #333;
   color: white;
@@ -321,7 +321,7 @@ nav a:hover {
   color: #00bfff;
 }
 
-/* Menu Button */
+/* زر القائمة للجوال */
 .menu-toggle {
   display: none;
   background: none;
@@ -331,7 +331,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ====== Hero ====== */
+/* ====== البطل ====== */
 .hero {
   background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
   padding: 80px 20px;
@@ -361,7 +361,7 @@ nav a:hover {
   background-color: #0056b3;
 }
 
-/* ====== Products ====== */
+/* ====== المنتجات ====== */
 .featured,
 .brands,
 .contact {
@@ -403,7 +403,7 @@ nav a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ====== Brands ====== */
+/* ====== البراندات ====== */
 .brand-list {
   display: flex;
   justify-content: space-around;
@@ -421,7 +421,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/* ====== Footer ====== */
+/* ====== الفوتر ====== */
 footer {
   background: #222;
   color: #fff;
@@ -430,7 +430,7 @@ footer {
 }
 
 
-/* ====== Responsive====== */
+/* ====== تجاوب الشاشات ====== */
 @media (max-width: 768px) {
   nav {
     display: none;
@@ -455,128 +455,128 @@ footer {
 }
 ```
 
-__JavaScript Code for the Navigation Bar__
+ __أكواد JavaScript الخاصة بشريط التنقّل__
 
-After finishing the page structure and styling it nicely,
-it’s time to add a bit of **JavaScript** to make the website **interactive and dynamic**.
+بعد ما خلّصنا كتابة هيكل الصفحة ونسّقناها بشكل جميل،  
+دلوقتي جه وقت نضيف شوية أكواد JavaScript علشان نخلي الموقع **يتحرّك ويتفاعل**.
 
-Open the following file:
-`js/main.js`
-
-Then, add the following code 👇
+افتح ملف:  
+`js/main.js`  
+وضيف الكود اللي جاي دلوقتي 👇
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("menu-toggle");
   const navbar = document.getElementById("navbar");
-
-  // Toggle navbar visibility on small screens
   toggle.addEventListener("click", () => {
     navbar.classList.toggle("active");
   });
 
-  // Get the featured products container
+  // جلب عنصر القائمة
   const featuredContainer = document.getElementById("featuredProducts");
 
   if (featuredContainer) {
-    // Fetch product data from JSON file
+    // جلب بيانات المنتجات من ملف JSON
     fetch("js/products.json")
       .then((response) => response.json())
       .then((products) => {
-        // Select 3 random products
+        // اختيار 3 منتجات عشوائية
         const randomProducts = products
           .sort(() => 0.5 - Math.random())
           .slice(0, 3);
 
-        // Generate HTML for each product
+        // إنشاء كود HTML لكل منتج
         const html = randomProducts
           .map(
             (p) => `
         <div class="product">
           <img src="${p.image}" alt="${p.name}" />
           <h3>${p.name}</h3>
-          <p>${p.price} USD</p>
-          <a href="product.html?id=${p.id}" class="btn">View Details</a>
+          <p>${p.price} جنيه مصري</p>
+          <a href="product.html?id=${p.id}" class="btn">عرض التفاصيل</a>
         </div>
       `
           )
           .join("");
 
-        // Display them on the page
+        // عرضها داخل الصفحة
         featuredContainer.innerHTML = html;
       })
       .catch(() => {
-        featuredContainer.innerHTML = "<p>An error occurred while loading products.</p>";
+        featuredContainer.innerHTML = "<p>حدث خطأ أثناء تحميل المنتجات.</p>";
       });
   }
 });
 ```
 
-* This JavaScript code handles **opening and closing the navigation menu** when the website is viewed on **mobile devices or small screens**.
-  In other words, when a visitor taps the menu icon, the navigation links will appear or disappear.
+- الكود ده مسؤول عن **فتح وقفل القائمة** لما الموقع يشتغل على **شاشات الموبايل أو الشاشات الصغيرة**،  
+    يعني لما الزائر يضغط على أيقونة القائمة، تظهر أو تختفي.
+    
+- وكمان بيقوم **بجلب 3 منتجات عشوائية** من ملف المنتجات (`products.json`)  
+    ويعرضهم في القسم اللي اسمه **المنتجات المميزة**، عشان الصفحة تبان دايمًا متجددة وجذابة.
 
-* It also **fetches three random products** from the `products.json` file
-  and displays them inside the **Featured Products** section — making the home page look fresh and engaging each time it’s loaded.
+## تصميم صفحة المنتجات (Products Page)
 
-## Designing the Products Page
+![تصميم صفحة المنتجات](ar/products-page.png "تصميم صفحة المنتجات")
 
-![Designing the Products Page](en/products-page.png "Designing the Products Page")
+في الجزء ده هنتعلم **إزاي نصمّم صفحة المنتجات باستخدام HTML وCSS وJavaScript**،  
+بطريقة سهلة وبسيطة علشان تناسب أي حد لسه بيتعلم.
 
-In this section, we’ll learn **how to design the products page using HTML, CSS, and JavaScript** —
-in a simple, beginner-friendly way.
+صفحة المنتجات دي مهمة لأنها بتساعد الزائر **يتصفح كل العناصر الموجودة في المتجر بسهولة**،  
+ويشوف الأسعار والصور، وكمان يدخل على تفاصيل المنتج بضغطة زر واحدة.
 
-The products page is important because it allows visitors to **easily browse all the items available in the store**,
-view their prices and images, and open the product details with just one click.
+الصفحة هتتكوّن من:
 
-This page will include:
+- عنوان واضح في أولها.
+    
+- شبكة من الكروت (Cards) لعرض المنتجات.
+    
+- زر بيعرض تفاصيل كل منتج.
+    
+- تصميم متجاوب يشتغل على كل الأجهزة (كمبيوتر – موبايل – تابلت).
 
-* A clear title at the top
-* A grid of product **cards** for displaying items
-* A button to view each product’s details
-* A **responsive design** that works smoothly on all devices (desktop, mobile, and tablet)
+__كود صفحة المنتجات (HTML)__
 
-__Products Page Code (HTML)__
-
-Open the `products.html` file inside your project folder,
-and write the following code 👇
+افتح الملف `products.html` داخل مجلد المشروع،  
+واكتب الكود اللي هنشرحه دلوقتي 👇
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products - Online Store</title>
+    <title>المنتجات - المتجر الإلكتروني</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ====== Header ====== -->
+    <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
-        <h1>Online Store</h1>
+        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <h1>المتجر الإلكتروني</h1>
       </div>
 
       <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="checkout.html">الدفع</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
 
-    <!-- ====== Products Display Section ====== -->
+    <!-- ====== قسم عرض المنتجات ====== -->
     <section class="products-page">
-      <h2>Browse All Products</h2>
+      <h2>تصفح جميع المنتجات</h2>
 
       <div id="productsContainer" class="product-grid"></div>
     </section>
 
     <footer>
       <p>
-        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and JS
+        © 2025 جميع الحقوق محفوظة - تصميم متجر إلكتروني باستخدام HTML وCSS وJS
       </p>
     </footer>
 
@@ -585,36 +585,38 @@ and write the following code 👇
 </html>
 ```
 
-__Step-by-step Explanation of the Code__
+__شرح الكود خطوة بخطوة__
 
-1. **Header:**
-   The same header we used on the home page, to keep a consistent look across all pages.
+1. **الهيدر (Header):**  
+    نفس الهيدر اللي استخدمناه في الصفحة الرئيسية،  
+    علشان نحافظ على الشكل العام والتناسق بين كل الصفحات.
+    
+2. **العنوان الرئيسي:**  
+    استخدمنا العنصر `<h2>` لكتابة جملة “تصفح جميع المنتجات”.  
+    العنوان ده كمان بيساعد في **تحسين السيو (SEO)** لأنه بيقول لجوجل إن دي صفحة منتجات.
+    
+3. **شبكة المنتجات (Product Grid):**  
+    استخدمنا **CSS Grid** علشان نوزّع المنتجات في صفوف وأعمدة بشكل متجاوب.  
+    كده الموقع هيعرض منتجين أو تلاتة في الصف الواحد حسب حجم الشاشة.
+    
+4. **تصميم المنتج (Product Card):**  
+    كل منتج عبارة عن كارت فيه **صورة، اسم، سعر، وزر مكتوب عليه "عرض التفاصيل"**.  
+    لما تمرر الماوس فوق الكارت، بيظهر تأثير بسيط زي ظل خفيف أو حركة ناعمة.
+    
+5. **زر عرض التفاصيل:**  
+    الزر ده بيعتمد على **id** الخاص بكل منتج،  
+    علشان لما المستخدم يضغط عليه، يروح على صفحة تفاصيل المنتج اللي تخصه.
+    
+6. **التصميم المتجاوب (Responsive Design):**  
+    بفضل السطر ده:  
+    `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));`  
+    الصفحة هتتأقلم تلقائيًا مع أي شاشة — سواء كمبيوتر أو موبايل أو تابلت.
 
-2. **Main Title:**
-   We use an `<h2>` element for the phrase “Browse All Products.”
-   This heading also helps with **SEO** because it signals to search engines that this is the products page.
+__🎨 تنسيق صفحة المنتجات (CSS)__
 
-3. **Product Grid:**
-   We use **CSS Grid** to arrange products into responsive rows and columns.
-   This allows the site to display two or three products per row depending on the screen size.
-
-4. **Product Card Design:**
-   Each product is a card containing an **image, name, price, and a “View Details” button**.
-   Hovering over the card shows a subtle effect such as a light shadow or smooth lift.
-
-5. **View Details Button:**
-   The button relies on the product’s **id**, so when a user clicks it they are taken to the details page for that specific product.
-
-6. **Responsive Design:**
-   Thanks to this CSS rule:
-   `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));`
-   the layout adapts automatically to any screen — desktop, tablet, or mobile.
-
-__Styling the Products Page (CSS)__
-
-Now open the file:
-`css/style.css`
-and add the new CSS rules at the end of the file to style the products page and make it visually appealing and well-structured.
+دلوقتي افتح ملف:  
+`css/style.css`  
+وضيف الأكواد الجديدة في آخر الملف علشان تضبط تصميم صفحة المنتجات وتخلي شكلها منسّق وجذاب.
 
 ```css
 .products-page {
@@ -662,95 +664,92 @@ and add the new CSS rules at the end of the file to style the products page and 
 }
 ```
 
-__JavaScript Code__
+ __أكواد JavaScript__
 
-Finally, open the file:
-`js/main.js`
-
-and add the code that will **fetch all products from the `products.json` file**
-and automatically display them inside the Products Page.
+أخيرًا، افتح ملف:  
+`js/main.js`  
+وضيف الكود اللي هيقوم **بجلب المنتجات من ملف `products.json`**  
+وعرضها جوه صفحة المنتجات بشكل تلقائي.
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
-  // The previous code remains the same
-
-  // Get the products container element
+  // الكود السابق مثل ما هو
+  // جلب عنصر القائمة
   const productsContainer = document.getElementById("productsContainer");
 
   if (productsContainer) {
-    // Fetch product data from the JSON file
+    // جلب بيانات المنتجات من ملف JSON
     fetch("js/products.json")
       .then((response) => response.json())
       .then((products) => {
-        // Generate HTML for each product
+        // إنشاء كود HTML لكل منتج
         const html = products
           .map(
             (p) => `
         <div class="product">
           <img src="${p.image}" alt="${p.name}" />
           <h3>${p.name}</h3>
-          <p>${p.price} USD</p>
-          <a href="product.html?id=${p.id}" class="btn">View Details</a>
+          <p>${p.price} جنيه مصري</p>
+          <a href="product.html?id=${p.id}" class="btn">عرض التفاصيل</a>
         </div>
       `
           )
           .join("");
 
-        // Display the products on the page
+        // عرضها داخل الصفحة
         productsContainer.innerHTML = html;
       })
       .catch(() => {
-        productsContainer.innerHTML = "<p>An error occurred while loading products.</p>";
+        productsContainer.innerHTML = "<p>حدث خطأ أثناء تحميل المنتجات.</p>";
       });
   }
 });
 ```
 
-## Product Details Page
+## صفحة تفاصيل المنتج (Product Page)
 
-![Product Details Page](en/product-page.png "Product Details Page")
+![صفحة تفاصيل المنتج](ar/product-page.png "صفحة تفاصيل المنتج")
 
-On this page, we’ll display all the important information about a single product, such as:
+في الصفحة دي، هنعرِض كل المعلومات المهمة عن المنتج، زي:
 
-* Product image
-* Product name
-* Price
-* A short description
-* A button labeled **“Add to Cart”**
+- صورة المنتج
+- اسم المنتج
+- السعر
+- وصف بسيط
+- وزر مكتوب عليه **"أضف إلى السلة"**
 
-This page helps users learn more about a product before deciding to buy it.
+الصفحة دي بتساعد المستخدم يعرف تفاصيل أكتر عن المنتج قبل ما يشتريه.
 
-__Page Structure (HTML)__
+هيكل الصفحة باستخدام HTML__
 
-Let’s start by creating a new file called:
-`product.html`
+هنبدأ نعمل ملف جديد اسمه:  
+`product.html`  
+جواه هنكتب الكود اللي هيكوّن شكل صفحة تفاصيل المنتج.
 
-Inside this file, we’ll write the code that builds the layout of the product details page.
-
-The code will include sections for the product image, name, price, description, and the **Add to Cart** button.
+الكود هيحتوي على مكان لصورة المنتج، الاسم، السعر، الوصف، وزر الإضافة للسلة.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details | Online Store</title>
+    <title>تفاصيل المنتج | المتجر الإلكتروني</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ====== Header ====== -->
+    <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
-        <h1>Online Store</h1>
+        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <h1>المتجر الإلكتروني</h1>
       </div>
 
       <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="checkout.html">الدفع</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle">☰</button>
@@ -758,12 +757,12 @@ The code will include sections for the product image, name, price, description, 
 
     <main class="product-page">
       <div id="productContainer" class="product-container">
-        <p>Loading product details...</p>
+        <p>جاري تحميل تفاصيل المنتج...</p>
       </div>
     </main>
 
     <footer>
-      <p>© 2025 All Rights Reserved</p>
+      <p>© 2025 جميع الحقوق محفوظة</p>
     </footer>
 
     <script src="js/main.js"></script>
@@ -771,12 +770,12 @@ The code will include sections for the product image, name, price, description, 
 </html>
 ```
 
-🎨 **Page Styling with CSS**
+🎨 __تنسيق الصفحة باستخدام CSS__
 
-After writing the structure, open the styling file:
-`css/style.css`
-Then, add some new code at the end to style the product details page.
-These styles will make the page look organized, with the product clear and well-focused.
+بعد ما نكتب الهيكل، نروح نفتح ملف التنسيق:  
+`css/style.css`  
+ونضيف في آخره شوية أكواد جديدة لتنسيق صفحة تفاصيل المنتج.  
+الأكواد دي هتخلي الصفحة شكلها منظم، والمنتج واضح ومركّز عليه.
 
 ```css
 .product-page {
@@ -836,26 +835,25 @@ button#addToCartBtn:hover {
 }
 ```
 
-**Adding JavaScript Code**
+__إضافة كود JavaScript__
 
-Now we’ll add the JavaScript part in the file:
+دلوقتي هنضيف جزء الجافاسكريبت في الملف:  
 `js/main.js`
 
-This code does two main things:
+الأكواد دي وظيفتها حاجتين رئيسيين:
 
-1. **Reads the product ID** from the page URL so we can get the details of the product the user clicked on.
-
-2. **Activates the “Add to Cart” button** — when the user clicks it, a confirmation message appears saying the product was added successfully.
+1. **قراءة الـID الخاص بالمنتج** من رابط الصفحة علشان نقدر نجيب تفاصيل المنتج اللي المستخدم ضغط عليه.
+    
+2. **تفعيل زر “أضف إلى السلة”** — لما المستخدم يضغط عليه، بتظهر رسالة تأكيد إن المنتج اتضاف بنجاح.
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
-  // Same previous code
-
-  // Read the product ID from the URL
+  //  نفس الكود السابق
+  // قراءة ID المنتج من الرابط
   const params = new URLSearchParams(window.location.search);
   const productId = parseInt(params.get("id"));
 
-  // Get the product container element
+  // عنصر الصفحة (تأكد من أن id في HTML هو "product-container")
   const productContainer = document.getElementById("productContainer");
 
   if (productContainer) {
@@ -871,13 +869,13 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="product-details">
             <h2>${product.name}</h2>
-            <p class="price">Price: ${product.price} USD</p>
+            <p class="price">السعر: ${product.price} جنيه مصري</p>
             <p class="description">${product.description}</p>
-            <button id="addToCartBtn" class="btn">Add to Cart</button>
+            <button id="addToCartBtn" class="btn">أضف إلى السلة</button>
           </div>
         `;
 
-          // When clicking the "Add to Cart" button
+          // عند الضغط على زر "أضف إلى السلة"
           const addToCartBtn = document.getElementById("addToCartBtn");
 
           if (addToCartBtn) {
@@ -888,99 +886,98 @@ document.addEventListener("DOMContentLoaded", function () {
                 image: product.image,
               };
 
-              // Get the current cart from localStorage
+              // نحصل على السلة الحالية من localStorage
               let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-              // Add the new product
+              // نضيف المنتج الجديد
               cart.push(productObj);
 
-              // Save the updated cart back to localStorage
+              // نحفظها مرة تانية
               localStorage.setItem("cart", JSON.stringify(cart));
 
-              alert("The product has been added to your cart!");
+              alert("تمت إضافة المنتج إلى السلة!");
             });
           }
         } else {
-          productContainer.innerHTML = `<p>Product with ID ${productId} not found.</p>`;
+          productContainer.innerHTML = `<p>المنتج رقم ${productId} غير موجود.</p>`;
         }
       })
       .catch(() => {
-        productContainer.innerHTML = "<p>An error occurred while loading the data.</p>";
+        productContainer.innerHTML = "<p>حدث خطأ أثناء تحميل البيانات.</p>";
       });
   }
 });
 ```
 
-💡 The idea is very simple:
-When the visitor clicks the "Add to Cart" button, a message appears confirming that the product has been recorded.
-In the next steps (when we get to the cart page), we’ll make this button actually add the product to `localStorage`,
-so the product will really appear inside the shopping cart.
+💡 الفكرة بسيطة جدًا:  
+لما الزائر يضغط على زر "أضف إلى السلة"، بيظهر له تنبيه إن المنتج اتسجّل.  
+وفي الخطوات الجاية (لما نوصل لصفحة السلة)، هنخلي الزر ده يضيف المنتج فعليًا جوه `localStorage`،  
+علشان المنتج يظهر جوه سلة المشتريات فعلاً.
 
-## Cart Page
+## صفحة السلة (Cart Page)
 
-![Cart Page](en/cart-page.png "Cart Page")
+![صفحة السلة](ar/cart-page.png "صفحة السلة")
 
-The **Cart Page** is where the user can see all the products they’ve added to buy.
-It shows details like the **price**, **quantity**, and buttons to delete a product or continue to checkout.
+صفحة **السلة** هي المكان اللي المستخدم بيشوف فيه كل المنتجات اللي أضافها علشان يشتريها،  
+وبيظهر فيها تفاصيل زي **السعر**، **الكمية**، وزر لحذف أي منتج أو متابعة عملية الشراء.
 
-In this part, we’ll create a **very simple and easy version** of the cart page,
-so it’s clear for beginners and easy to improve later when you want to add more features.
+في الجزء ده، هنعمل **نسخة بسيطة وسهلة جدًا** من صفحة السلة،  
+علشان تكون واضحة للمبتدئين وسهلة في التطوير بعدين لما تحب تضيف مميزات أكتر.
 
-**Basic Structure of the Page (HTML)**
+الهيكل الأساسي للصفحة (HTML)__
 
-Open a file called:
-`cart.html`
-Inside it, add the code for the cart page, which includes the main elements:
-
-* Page title
-* A table or product cards for the added items
-* Total price
-* Control buttons (like delete product or continue to checkout)
-
+افتح ملف اسمه:  
+`cart.html`  
+وجواه هنضيف كود صفحة السلة اللي فيه العناصر الأساسية:
+- عنوان الصفحة.
+- جدول أو كروت المنتجات اللي اتضافت.
+- السعر الإجمالي.
+- وأزرار التحكم (زي حذف المنتج أو متابعة الشراء).
+    
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart | Simple Store</title>
+    <title>سلة المشتريات | متجر بسيط</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ====== Header ====== -->
+    <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
-        <h1>Online Store</h1>
+        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <h1>المتجر الإلكتروني</h1>
       </div>
 
       <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="checkout.html">الدفع</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
 
-    <!-- Page Content -->
+    <!-- محتوى الصفحة -->
     <main class="cart-page">
-      <h2>Your Cart Items</h2>
+      <h2>منتجاتك في السلة</h2>
 
       <div id="cart-items">
-        <!-- Products will be added here via JavaScript -->
+        <!-- سيتم إضافة المنتجات هنا عبر JavaScript -->
       </div>
 
       <div class="cart-summary">
-        <p id="total-price">Total: 0 USD</p>
-        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        <p id="total-price">الإجمالي: 0 جنيه مصري</p>
+        <a href="checkout.html" class="checkout-btn">إتمام الشراء</a>
       </div>
     </main>
 
-    <!-- ====== Footer ====== -->
+    <!-- ذيل الصفحة -->
     <footer>
-      <p>© 2025 Simple Store - All Rights Reserved</p>
+      <p>© 2025 متجر بسيط - جميع الحقوق محفوظة</p>
     </footer>
 
     <script src="js/main.js"></script>
@@ -988,14 +985,14 @@ Inside it, add the code for the cart page, which includes the main elements:
 </html>
 ```
 
-**🎨 Styling the Cart Page (CSS)**
+__🎨 تنسيق صفحة السلة (CSS)__
 
-After finishing the structure, open the styling file:
-`css/style.css`
-Scroll to the bottom of the file and add the CSS code for styling the cart page.
+بعد ما نخلص الهيكل، افتح ملف التنسيق:  
+`css/style.css`  
+وانزل لآخر الملف وضيف الأكواد الخاصة بتنسيق صفحة السلة.
 
-This code will make the page look neat and organized,
-so the visitor can easily see the prices, quantities, and total amount.
+الأكواد دي هتظبط شكل الصفحة،  
+تخليها مرتبة وواضحة — بحيث الزائر يعرف الأسعار، الكمية، والإجمالي بسهولة.
 
 ```css
 .cart-page {
@@ -1077,25 +1074,25 @@ so the visitor can easily see the prices, quantities, and total amount.
 }
 ```
 
-**Activating the Cart using JavaScript and localStorage**
+__تفعيل السلة باستخدام JavaScript و localStorage__
 
-This step is what makes the cart **actually work**.
+الخطوة دي هي اللي هتخلي السلة **تشتغل فعلاً**.
 
-Open the JavaScript file:
+هنفتح ملف الجافاسكريبت:  
 `js/main.js`
-and add a simple piece of code that performs some important functions:
+ونضيف كود بسيط بيقوم بوظايف مهمة:
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
-  // Same previous code
-  // Display products on the cart page
+  // الكود مثل ما سبق
+  // عرض المنتجات في صفحة السلة
   const cartItemsContainer = document.getElementById("cart-items");
 
   if (cartItemsContainer) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     if (cart.length === 0) {
-      cartItemsContainer.innerHTML = "<p>Your cart is currently empty.</p>";
+      cartItemsContainer.innerHTML = "<p>السلة فارغة حاليًا.</p>";
     } else {
       let total = 0;
 
@@ -1108,19 +1105,19 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="${item.image}" alt="${item.name}">
         <div class="cart-item-info">
           <h3>${item.name}</h3>
-          <p>Price: ${item.price} USD</p>
+          <p>السعر: ${item.price} جنيه مصري</p>
         </div>
-        <button class="remove-btn" data-index="${index}">Remove</button>
+        <button class="remove-btn" data-index="${index}">حذف</button>
       `;
         cartItemsContainer.appendChild(cartItem);
       });
 
-      // Update total price
+      // تحديث الإجمالي
       document.getElementById(
         "total-price"
-      ).textContent = `Total: ${total} USD`;
+      ).textContent = `الإجمالي: ${total} جنيه مصري`;
 
-      // Remove item from cart functionality
+      // وظيفة حذف منتج من السلة
       const removeButtons = document.querySelectorAll(".remove-btn");
       removeButtons.forEach((btn) => {
         btn.addEventListener("click", (e) => {
@@ -1135,137 +1132,139 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 
-* When the user clicks **“Add to Cart”** on the product page,
-  the product is saved in `localStorage`.
+- لما المستخدم يضغط على **"أضف إلى السلة"** في صفحة المنتج،  
+    المنتج بيتسجّل جوه `localStorage`.
+    
+- في صفحة السلة (`cart.html`)، بنقرأ البيانات دي من `localStorage`  
+    ونعرِض المنتجات اللي المستخدم اختارها.
+    
+- لو السلة فاضية، بتظهر رسالة لطيفة تقول **"السلة فاضية"**.
+    
+- الكود كمان بيحسب **الإجمالي (Total Price)** بشكل تلقائي.
+    
+- ولو المستخدم ضغط على زر “حذف”، المنتج بيتشال فورًا من السلة والصفحة بتتحدّث تلقائيًا.
 
-* On the cart page (`cart.html`), we read this data from `localStorage`
-  and display the products the user selected.
+🧩 **الخطوة الجاية:**  
+بعد ما تظبط صفحة السلة، آخر حاجة هنعملها هي **صفحة الدفع (Checkout Page)**  
+علشان نكمّل المتجر الإلكتروني بالكامل من الألف للياء
 
-* If the cart is empty, a friendly message appears saying **“Your cart is empty.”**
+## صفحة الدفع (Checkout Page)
 
-* The code also automatically calculates the **total price**.
+![صفحة الدفع](ar/checkout-page.png "صفحة الدفع")
 
-* And if the user clicks the “Delete” button, the product is immediately removed from the cart, and the page updates automatically.
+صفحة **الدفع** هي الصفحة اللي المستخدم بيكمّل فيها عملية الشراء.  
+هنا هيكتب بياناته زي:
 
-🧩 **Next Step:**
-After setting up the cart page, the final step is to create the **Checkout Page**
-so we can complete the full online store from start to finish.
+- الاسم
+- العنوان
+- رقم الموبايل
+- واختيار طريقة الدفع
 
-## Checkout Page
+حتى لو المشروع بتاعنا بسيط ومش متوصل بقاعدة بيانات حقيقية،  
+الخطوة دي مهمة جدًا علشان نتعلم إزاي نعمل **نموذج (Form)** كامل من البداية للنهاية.
 
-![Checkout Page](en/checkout-page.png "Checkout Page")
 
-The **Checkout Page** is where the user completes the purchase process.
-Here, they’ll enter their information, such as:
+__هيكل صفحة الدفع (HTML)__
 
-* Name
-* Address
-* Phone number
-* And select a payment method
+افتح ملف جديد في مجلد المشروع باسم:  
+`checkout.html`  
+وجواه هتكتب الكود اللي بيعمل هيكل الصفحة،  
+واللي بيحتوي على:
 
-Even if our project is simple and not connected to a real database,
-this step is very important to learn how to create a complete **form** from start to finish.
-
-**Checkout Page Structure (HTML)**
-
-Create a new file in your project folder called:
-`checkout.html`
-Inside it, write the code that builds the page structure,
-which includes:
-
-* A form with input fields (name, address, phone number, payment method)
-* And a “Confirm Order” button
+- نموذج فيه حقول البيانات (الاسم – العنوان – رقم الموبايل – طريقة الدفع)
+    
+- وزر “تأكيد الطلب”
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout | Simple Store</title>
+    <title>إتمام الشراء | متجر بسيط</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ====== Header ====== -->
+    <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
-        <h1>Online Store</h1>
+        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <h1>المتجر الإلكتروني</h1>
       </div>
 
       <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="cart.html">السلة</a>
+        <a href="checkout.html">الدفع</a>
       </nav>
 
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
 
-    <!-- ====== Page Content ====== -->
+    <!-- محتوى الصفحة -->
     <main class="checkout-page">
       <div id="confirmation-message"></div>
-      <h2>Enter your details to complete the order</h2>
+      <h2>أدخل بياناتك لإتمام الطلب</h2>
 
       <div id="cart-items">
-        <!-- Products will be added here dynamically via JavaScript -->
+        <!-- سيتم إضافة المنتجات هنا عبر JavaScript -->
       </div>
 
       <div id="cart-summary" class="cart-summary">
-        <p id="total-price">Total: 0 USD</p>
+        <p id="total-price">الإجمالي: 0 جنيه مصري</p>
       </div>
 
       <form id="checkoutForm">
         <div class="form-group">
-          <label for="name">Full Name:</label>
+          <label for="name">الاسم الكامل:</label>
           <input
             type="text"
             id="name"
             name="name"
             required
-            placeholder="Enter your full name"
+            placeholder="أدخل اسمك الكامل"
           />
         </div>
 
         <div class="form-group">
-          <label for="address">Address:</label>
+          <label for="address">العنوان:</label>
           <input
             type="text"
             id="address"
             name="address"
             required
-            placeholder="e.g., Cairo - Tahrir Street"
+            placeholder="مثال: القاهرة - شارع التحرير"
           />
         </div>
 
         <div class="form-group">
-          <label for="phone">Phone Number:</label>
+          <label for="phone">رقم الهاتف:</label>
           <input
             type="tel"
             id="phone"
             name="phone"
             required
-            placeholder="e.g., 01012345678"
+            placeholder="مثال: 01012345678"
           />
         </div>
 
         <div class="form-group">
-          <label for="payment">Payment Method:</label>
+          <label for="payment">طريقة الدفع:</label>
           <select id="payment" name="payment" required>
-            <option value="">Select a payment method</option>
-            <option value="cash">Cash on Delivery</option>
-            <option value="card">Credit/Debit Card</option>
+            <option value="">اختر طريقة الدفع</option>
+            <option value="cash">الدفع عند الاستلام</option>
+            <option value="card">بطاقة بنكية</option>
           </select>
         </div>
 
-        <button type="submit" class="submit-btn">Confirm Order</button>
+        <button type="submit" class="submit-btn">تأكيد الطلب</button>
       </form>
     </main>
 
-    <!-- ====== Footer ====== -->
+    <!-- ذيل الصفحة -->
     <footer>
-      <p>© 2025 Simple Store - All Rights Reserved</p>
+      <p>© 2025 متجر بسيط - جميع الحقوق محفوظة</p>
     </footer>
 
     <script src="js/main.js"></script>
@@ -1273,14 +1272,14 @@ which includes:
 </html>
 ```
 
-**🎨 Styling the Checkout Page (CSS)**
+__🎨 تنسيق صفحة الدفع (CSS)__
 
-Now open the stylesheet:
-`css/style.css`
-and at the end, add the CSS code for the checkout page design.
+دلوقتي نفتح ملف التنسيقات:  
+`css/style.css`  
+وفي آخره نضيف الأكواد الخاصة بتصميم صفحة الدفع.
 
-These styles will make the form look neat and elegant,
-so the user can easily fill in their details on any device — whether it’s a computer or a mobile phone.
+الأكواد دي هتخلي النموذج شكله أنيق ومنظم،  
+بحيث المستخدم يقدر يملأ بياناته بسهولة على أي جهاز — سواء كمبيوتر أو موبايل.
 
 ```css
 .checkout-page {
@@ -1355,73 +1354,72 @@ select {
 }
 ```
 
-**JavaScript Code for Order Confirmation**
+__كود JavaScript لتأكيد الطلب__
 
-The final step is to add a simple piece of code in the file:
+الخطوة الأخيرة هي إضافة كود بسيط في ملف:  
 `js/main.js`
 
 ```js
 document.addEventListener("DOMContentLoaded", function () {
-  // Handle the checkout form
+// معالجة نموذج الدفع
   const checkoutForm = document.getElementById("checkoutForm");
 
   if (checkoutForm) {
     checkoutForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      // Get form data
+      // الحصول على البيانات من النموذج
       const name = document.getElementById("name").value;
       const address = document.getElementById("address").value;
       const phone = document.getElementById("phone").value;
       const payment = document.getElementById("payment").value;
 
-      // Validate input fields
+      // التحقق من إدخال البيانات
       if (!name || !address || !phone || !payment) {
-        alert("Please fill in all fields before confirming your order.");
+        alert("من فضلك أكمل جميع الحقول قبل تأكيد الطلب.");
         return;
       }
 
-      // Clear the cart after checkout
+      // مسح السلة بعد الإتمام
       localStorage.removeItem("cart");
-      cartItemsContainer.innerHTML = "<p>Your cart is currently empty.</p>";
+      cartItemsContainer.innerHTML = "<p>السلة فارغة حاليًا.</p>";
       document.getElementById(
         "total-price"
-      ).textContent = `Total: 0 USD`;
-
-      // Show confirmation message
+      ).textContent = `الإجمالي: 0 جنيه مصري`;
+      // عرض رسالة تأكيد
       const messageBox = document.getElementById("confirmation-message");
       messageBox.style.display = "block";
 
       messageBox.innerHTML = `
-        <p>🎉 Thank you, <strong>${name}</strong>!</p>
-        <p>Your order has been received successfully and will be delivered to: <strong>${address}</strong>.</p>
-        <p>Payment Method: <strong>${
-          payment === "cash" ? "Cash on Delivery" : "Credit/Debit Card"
-        }</strong></p>
-      `;
+      <p>🎉 شكرًا لك يا <strong>${name}</strong>!</p>
+      <p>تم استلام طلبك بنجاح، وسنقوم بتوصيله إلى: <strong>${address}</strong>.</p>
+      <p>طريقة الدفع: <strong>${
+        payment === "cash" ? "الدفع عند الاستلام" : "بطاقة بنكية"
+      }</strong></p>
+    `;
 
-      // Reset the form
+      // إعادة تعيين النموذج
       checkoutForm.reset();
     });
   }
 });
 ```
 
-**Its Function:**
+__الوظيفة بتاعته:__
 
-* When the user clicks the **“Confirm Order”** button,
-  the code prevents the page from refreshing (`event.preventDefault()`).
+- لما المستخدم يضغط على زر **“تأكيد الطلب”**،  
+    الكود بيمنع الصفحة من إنها تتحدث (`event.preventDefault()`).
+    
+- بعد كده بيقرأ البيانات اللي المستخدم كتبها.
+    
+- بيحذف المنتجات من `localStorage` لأن الطلب اتأكد.
+    
+- وأخيرًا، بيظهر رسالة شكر لطيفة تقول مثلًا:  
+    **“تم تأكيد طلبك بنجاح 🎉 شكرًا لاستخدامك متجرنا!”**
 
-* Then, it reads the data the user entered.
+وكده تكون خلصت كل صفحات المتجر الإلكتروني بنجاح —  
+من الصفحة الرئيسية، لحد صفحة الدفع
+مشروع بسيط، منظم، وقابل للتطوير في أي وقت.
 
-* It clears the products from `localStorage` because the order has been confirmed.
-
-* Finally, it shows a friendly message such as:
-  **“Your order has been confirmed 🎉 Thank you for shopping with us!”**
-
-And that’s it — you’ve completed all the pages of your online store successfully —
-from the home page all the way to the checkout page.
-A simple, organized, and easy-to-upgrade project.
-
-**The code on GitHub:**
-{{< github repo="mahmoud-000/Store-En" showThumbnail=true >}}
+__الأكواد علي Github:__
+{{< github repo="mahmoud-000/Store-Ar" showThumbnail=true >}}

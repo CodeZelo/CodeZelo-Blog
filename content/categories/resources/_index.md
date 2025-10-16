@@ -1,60 +1,61 @@
 ---
-title: "Resources & References"
-description: "Discover a curated collection of tools, libraries, and learning materials to help you build your coding projects faster and more efficiently."
+title: "الموارد والمراجع"
+description: "اكتشف مجموعة من الأدوات، والمكتبات، والمراجع المفيدة التي تساعدك في تنفيذ مشاريعك البرمجية وتطوير مهاراتك بشكل أسرع وأكثر احترافية."
 ---
 
 {{< lead >}}
-Every developer needs their own toolbox 🧰  
-In this section, you'll find the best resources to make your learning and building journey smoother — from interactive tools to frameworks and professional references.
+كل مطوّر يحتاج إلى أدواته الخاصة 🧰  
+في هذا القسم ستجد أفضل الموارد التي ستسهّل عليك رحلتك في التعلم والبناء، من الأدوات التفاعلية إلى المكتبات الجاهزة والمراجع المتخصصة.
 {{< /lead >}}
 
-In the **CodeZelo** resources section, you’ll find:
+في هذا القسم من **CodeZelo** ستجد:
 
-<!-- ### 🧰 Interactive Tools
-Experiment and learn by doing:
-- 🧩 [**Flexbox Playground**](/flexbox-playground) — Play and visualize Flexbox properties in real time.  
-- 🧱 [**Grid Playground**](/grid-playground) — Understand CSS Grid through live visual examples.  
-- ⚙️ [**Animation Lab**](/animation-lab) — Explore and test CSS animations step by step.  
-- 🔍 [**SEO Tools**](/seo-tools) — Analyze and improve your website’s technical performance.
+<!-- ### 🧰 أدوات تفاعلية (Interactive Tools)
+جرّب بنفسك وطبّق المفاهيم بطريقة عملية:
+- 🧩 [**Flexbox Playground**](/flexbox-playground) — لتجربة خصائص Flexbox مباشرة والتفاعل مع النتائج.
+- 🧱 [**Grid Playground**](/grid-playground) — لفهم شبكة CSS Grid بطريقة مرئية وسهلة.
+- ⚙️ [**Animation Lab**](/animation-lab) — لتجربة حركات CSS Animations خطوة بخطوة.
+- 🔍 [**SEO Tools**](/seo-tools) — لتحليل وتحسين أداء موقعك من الناحية التقنية. -->
 
---- -->
+<!-- --- -->
 
-### 📦 Libraries & Frameworks
-Explore the most popular tools and frameworks for building modern web projects:
-- **React**, **Vue**, **Svelte**, **Tailwind CSS**, **Bootstrap**  
+### 📦 مكتبات وأُطر العمل
+اكتشف أشهر الأدوات والمكتبات التي يستخدمها المطورون في بناء المشاريع الحديثة:
+- **React**, **Vue**, **Svelte**, **Tailwind CSS**, **Bootstrap**
 - **Node.js**, **Express**, **Next.js**, **Django**
 
 ---
 
-### 🎨 Design & User Experience Tools
-Resources to help you create beautiful and usable interfaces:
-- Color palettes, font generators, and icon libraries  
-- UI inspiration platforms and UX testing tools  
+### 🎨 أدوات التصميم وتجربة المستخدم
+موارد تساعدك على تصميم واجهات أنيقة وسلسة:
+- مولدات ألوان، خطوط، وأيقونات
+- مواقع لتصميم الواجهات (UI Inspiration)
+- أدوات لتحسين تجربة المستخدم (UX Testing)
 
 ---
 
-### 💻 Learning Resources & Best Practices
-Carefully selected materials to boost your programming skills:
-- Free coding courses and interactive tutorials  
-- Articles and guides on modern web development practices  
-- Smart learning tips for **HTML**, **CSS**, and **JavaScript**
+### 💻 مصادر لتعلّم البرمجة وأفضل الممارسات
+دروس ومراجع مختارة بعناية لتطوير مهاراتك:
+- دورات تعليمية مجانية ومنصات تدريب تفاعلية  
+- مقالات وأدلة لأفضل الممارسات في كتابة الكود  
+- نصائح لتعلّم JavaScript، CSS، وHTML بذكاء
 
 ---
 
-### 🧱 Templates & Starter Projects
-Kickstart your next idea with ready-to-use templates:
-- Simple eCommerce store templates  
-- Landing pages and portfolio starters  
-- Educational project bases for quick customization  
+### 🧱 قوالب ومشاريع جاهزة
+ابدأ مشروعك بسرعة باستخدام قوالب جاهزة:
+- قوالب لمتاجر إلكترونية بسيطة  
+- صفحات هبوط (Landing Pages)  
+- مشاريع تعليمية يمكن التعديل عليها
 
 ---
 
-### 🧾 Cheat Sheets & Quick Guides
-Keep the essentials at your fingertips:
-- HTML & CSS cheat sheets  
-- Git & GitHub command reference  
-- Common Linux / CLI shortcuts  
+### 🧾 أدلة وأوراق غش (Cheat Sheets)
+احفظ المفاهيم المهمة بسرعة:
+- HTML وCSS Cheat Sheets  
+- Git & GitHub Commands  
+- أوامر Linux وCLI المختصرة  
 
 ---
 
-> A smart developer knows where to find the right tool before writing the first line of code. 🚀
+> لأن المطوّر الذكي يعرف أين يجد المعلومة قبل أن يكتب السطر الأول من الكود. 🚀

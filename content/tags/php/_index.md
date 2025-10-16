@@ -1,18 +1,18 @@
 ---
 title: "PHP"
-description: "Explore PHP fundamentals and modern practices to build dynamic, powerful web applications."
+description: "اكتشف أساسيات لغة PHP وأحدث تقنياتها لبناء مواقع وتطبيقات ويب ديناميكية."
 
 ---
 
 {{< lead >}}
-**PHP** has been powering the web for decades 🔥  
-Still evolving fast — and still behind many of the world’s biggest platforms.
+لغة **PHP** من أقدم لغات الويب وأكثرها تطورًا 🔥  
+لسه بتتطور بسرعة، ولسه بتدعم أقوى المشاريع على الإنترنت.
 {{< /lead >}}
 
-Under this tag you'll find:
-- PHP basics: variables, functions, arrays, and objects  
-- Working with databases such as **MySQL**  
-- Building **APIs** and server-side logic  
-- Moving from traditional PHP to modern frameworks like **Laravel**
+في هذا الوسم ستجد:
+- الأساسيات: المتغيرات، الدوال، المصفوفات، والكائنات  
+- العمل مع قواعد البيانات مثل **MySQL**  
+- بناء واجهات **API**  
+- الانتقال من PHP التقليدي إلى أُطر العمل الحديثة مثل **Laravel**  
 
-> PHP remains one of the strongest foundations of the modern web.
+> لأن PHP رغم بساطتها، ما زالت من أعمدة الويب القوية.

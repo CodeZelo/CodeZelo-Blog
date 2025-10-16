@@ -1,44 +1,44 @@
 ---
-title: "Categories"
-description: "Explore CodeZelo’s main categories — practical projects, articles, and resources to help you grow as a developer."
+title: "الأقسام"
+description: "استكشف الأقسام الأساسية في CodeZelo — مشاريع عملية، مقالات، وموارد تساعدك تتطور كمطور."
 ---
 
 {{< lead >}}
-Each section in **CodeZelo** is designed to help you learn programming in a practical and structured way.  
-Choose the category that matches your level and start your journey step by step. 🧭
+كل قسم في **CodeZelo** مصمم ليساعدك تتعلّم البرمجة بأسلوب عملي ومنظّم.  
+اختر المجال اللي يناسب مستواك وابدأ رحلتك خطوة بخطوة. 🧭
 {{< /lead >}}
 
 ---
 
-## 💻 Programming Projects
-Learn by doing — build real-world projects at every level.  
-Start from:
-- 🧱 [Beginner Projects](beginner-projects/)  
-- ⚙️ [Intermediate Projects](intermediate-projects/)  
-- 🧩 [Advanced Projects](advanced-projects/)  
+## 💻 المشاريع البرمجية
+تعلم بالعمل — من خلال بناء مشاريع عملية في كل مستوى.  
+ابدأ من:
+- 🧱 [مشاريع المبتدئين](/categories/beginner-projects/)  
+- ⚙️ [مشاريع متوسطة](/categories/intermediate-projects/)  
+- 🧩 [مشاريع متقدمة](/categories/advanced-projects/)  
 
-> Each project is a step-by-step article series that takes you from idea to execution.
-
----
-
-## ✍️ Articles & Tips
-Read articles that help you improve your developer mindset:  
-- Productivity and time-management tips  
-- Best coding practices  
-- Light reads and insights from real developers  
-
-[Browse Articles →](articles-and-tips/)
+> كل مشروع سلسلة مقالات توضح الفكرة من الصفر إلى التنفيذ.
 
 ---
 
-## 📚 Resources & References
-A curated collection of tools and materials to support your learning:
-- Links to popular libraries and frameworks  
-- Useful tools for design and development  
-- Cheat sheets and ready-to-use templates  
+## ✍️ المقالات والنصائح
+اقرأ مقالات تساعدك تطور طريقة تفكيرك كمطور:  
+- نصائح للإنتاجية وتنظيم الوقت  
+- أفضل الممارسات في كتابة الكود  
+- مقالات خفيفة من تجارب مطورين حقيقيين  
 
-[Explore Resources →](resources/)
+[تصفح المقالات →](/categories/articles-and-tips/)
 
-> 🧭 This page serves as your map to quickly reach the content that matches your level and interests.
+---
+
+## 📚 الموارد والمراجع
+مجموعة أدوات ومصادر مختارة بعناية لدعمك أثناء التعلم:
+- روابط لأشهر المكتبات وأُطر العمل  
+- أدوات مساعدة في التصميم والبرمجة  
+- ملخصات (Cheat Sheets) وقوالب جاهزة  
+
+[استكشف الموارد →](/categories/resources/)
+
+> 🧭 الصفحة دي بمثابة خريطة تساعدك توصل بسرعة للمحتوى اللي يناسب مستواك واهتماماتك.
 
 ---

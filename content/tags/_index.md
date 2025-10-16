@@ -1,13 +1,13 @@
 ---
-title: "Tags"
-description: "Explore CodeZelo topics through tags — a quick way to find articles by technology or category."
+title: "الوسوم (Tags)"
+description: "استكشف مواضيع CodeZelo من خلال الوسوم — طريقة سريعة للعثور على المقالات حسب التقنية أو المجال."
 ---
 
 {{< lead >}}
-Discover articles by the technologies you love 🔍  
-Whether it’s **HTML**, **PHP**, or **Laravel**, everything is organized and easy to explore.
+هنا تقدر تكتشف المقالات حسب التقنيات اللي تهمك 🔍  
+سواء بتدور على **HTML**، **Python**، أو **AI** — كل حاجة مرتبة وسهلة الوصول.
 {{< /lead >}}
 
-> Use tags to dive deeper into what matters most to you, one topic at a time.
+> استخدم الوسوم لتتعمق في المواضيع اللي تهمك أكتر، خطوة بخطوة.
 
 ---

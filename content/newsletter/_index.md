@@ -1,15 +1,15 @@
 ---
-title: "Subscribe to the Newsletter"
-description: "Join the CodeZelo community to receive the latest tutorials and articles directly in your inbox."
+title: "اشترك في النشرة البريدية"
+description: "انضم إلى مجتمع CodeZelo لتصلك أحدث المقالات والشروحات مباشرة إلى بريدك الإلكتروني."
 layout: simple
 sharingLinks: false
 ---
 
 {{< lead >}}
-📩 Don’t miss any updates from **CodeZelo**  
-Subscribe to get the latest posts on programming and AI delivered straight to your inbox.
+📩 لا تفوّت جديد **CodeZelo**  
+اشترك ليصلك كل مقال جديد عن البرمجة والذكاء الاصطناعي أول بأول.
 {{< /lead >}}
 
-{{< newsletterEn >}}
+{{< newsletterAr >}}
 
-> ✨ Subscribe for free — no spam, just valuable content.
+> ✨ اشترك مجانًا — لا سبام، فقط محتوى مفيد.
