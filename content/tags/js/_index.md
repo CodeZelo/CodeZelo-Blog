@@ -1,19 +1,19 @@
 ---
 title: "JavaScript"
-description: "تعلّم لغة JavaScript بعمق — الأساس في تطوير الواجهات التفاعلية والتطبيقات الحديثة."
+description: "Learn JavaScript in depth — the foundation of interactive frontends and modern web applications."
 
 ---
 
 {{< lead >}}
-لغة **JavaScript** هي القلب النابض لكل موقع وتطبيق ويب حديث ⚡  
-هنا تتعلم كيف تجعل صفحاتك تتفاعل وتتحرك وتستجيب للمستخدم.
+**JavaScript** is the heartbeat of every modern website and app ⚡  
+Here, you’ll learn how to bring your pages to life with interactivity and motion.
 {{< /lead >}}
 
-في هذا الوسم ستجد:
-- شرح للأساسيات: المتغيرات، الدوال، الكائنات، والمصفوفات  
-- التعامل مع الـ **DOM** وأحداث المستخدم  
-- مفاهيم متقدّمة مثل **Promises** و**Async/Await**  
-- أطر العمل الحديثة مثل **Vue.js** و**React** و**Nuxt.js**  
-- نصائح لتحسين الأداء وكتابة كود منظم وسهل الصيانة  
+Under this tag you'll find:
+- Core concepts: variables, functions, objects, and arrays  
+- Working with the **DOM** and handling user events  
+- Advanced topics like **Promises** and **Async/Await**  
+- Modern frameworks such as **Vue.js**, **React**, and **Nuxt.js**  
+- Performance tips and best practices for clean, maintainable code  
 
-> لأن JavaScript مش مجرد لغة... دي الطريقة اللي بتخلي الويب حيّ ومتفاعل ✨
+> JavaScript isn’t just a language — it’s what makes the web alive ✨

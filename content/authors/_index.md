@@ -1,6 +1,4 @@
 ---
-title: "تصنيفات الكُتّاب"
+title: "Authors"
 ---
-
-
-تعرّف على كُتّاب ___CodeZelo___ وتصفح مقالاتهم.
+Meet the ___CodeZelo___ authors and explore their articles.

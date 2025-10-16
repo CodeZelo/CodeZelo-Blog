@@ -1,19 +1,19 @@
 ---
-title: "مقالات ونصائح"
-description: "اقرأ مقالات عملية حول تطوير الويب، وتحسين مهاراتك، وتنظيم وقتك كمطور، مع نصائح من تجارب واقعية تساعدك على التقدم بثقة."
+title: "Articles & Tips"
+description: "Read practical articles about web development, productivity, and developer mindset — with real-world tips to help you grow confidently."
 ---
 
 {{< lead >}}
-البرمجة ليست كودًا فقط 💡  
-هي أيضًا تفكير، تنظيم، وتجربة.  
-في هذا القسم نشاركك مقالات ونصائح تساعدك على بناء عقلية المطور الحقيقي.
+Programming isn’t just about code 💡  
+It’s also about mindset, focus, and continuous learning.  
+Here, you’ll find insights and tips that help you think — not just code — like a real developer.
 {{< /lead >}}
 
-في هذا القسم من **CodeZelo** ستجد:
-- مقالات عن **أفضل الممارسات البرمجية** وكيفية كتابة كود نظيف  
-- نصائح لتحسين **الإنتاجية وإدارة الوقت** للمطورين  
-- موضوعات عن **تطوير الذات** والتعامل مع التحديات اليومية في البرمجة  
-- ملخصات لأفكار من **كتب ومصادر** تقنية ملهمة  
-- مقالات عن **مسار التعلم** واختيار التقنيات المناسبة لكل مرحلة  
+In this section of **CodeZelo**, you’ll find:
+- Articles on **best coding practices** and writing clean code  
+- Productivity and **time management tips** for developers  
+- Topics about **personal growth** and handling challenges in tech  
+- Summaries and ideas from **inspiring books and resources**  
+- Guidance for choosing the right **learning path and technologies**  
 
-> لأن المطور الناجح لا يتقن الكود فقط، بل يعرف كيف يتطور كل يوم. 🚀
+> Because a great developer grows in skill — and in mindset. 🚀

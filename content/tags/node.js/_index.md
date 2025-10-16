@@ -1,19 +1,19 @@
 ---
 title: "Node.js"
-description: "اكتشف كيف تبني تطبيقات سريعة وقوية باستخدام JavaScript من جانب الخادم مع Node.js."
+description: "Learn how to build fast and powerful applications using JavaScript on the server with Node.js."
 
 ---
 
 {{< lead >}}
-لغة واحدة لكل شيء! ⚡  
-مع **Node.js** هتقدر تستخدم JavaScript لبناء الواجهة الخلفية، وتتعامل مع السيرفر وقواعد البيانات بسهولة.
+One language for everything! ⚡  
+With **Node.js**, you can use JavaScript to build backend systems and manage databases with ease.
 {{< /lead >}}
 
-في هذا الوسم من **CodeZelo** ستتعلم:
-- إعداد بيئة Node.js وبدء أول مشروع  
-- التعامل مع **Express.js** لبناء RESTful APIs  
-- إدارة قواعد البيانات وربطها بالتطبيق  
-- استخدام **npm** و**modules** لتنظيم الكود  
-- مشاريع عملية وأفكار تساعدك تبدأ رحلتك في السيرفر سايد  
+Under this tag you'll find:
+- How to set up Node.js and start your first project  
+- Building RESTful APIs with **Express.js**  
+- Working with databases and environment variables  
+- Managing packages with **npm** and organizing code  
+- Practical projects to kickstart your backend journey  
 
-> لأن Node.js مش مجرد أداة، دي بداية لفهم الخوادم بعين المطور.
+> Node.js isn’t just a tool — it’s how JavaScript learned to talk to servers.

@@ -1,20 +1,20 @@
 ---
 title: "CSS"
-description: "مقالات ودروس حول CSS: التنسيق، التخطيط، والتصميم المتجاوب، وأطر العمل الحديثة مثل Tailwind وBootstrap."
+description: "Articles and tutorials about CSS: styling, layout, responsive design, and modern tools like Tailwind and Bootstrap."
 
 ---
 
 {{< lead >}}
-كل ما تحتاجه لتصميم واجهات جميلة وسريعة باستخدام **CSS** — من الأساسيات إلى تقنيات التخطيط المتقدمة.
+Everything you need to style beautiful, fast interfaces with **CSS** — from basics to advanced layout techniques.
 {{< /lead >}}
 
-في هذا الوسم ستجد:
-- شرح للمفاهيم الأساسية (Selectors، Box Model، Specificity).  
-- أدوات التخطيط المتقدّمة: **Flexbox** و**Grid**.  
-- أفضل ممارسات التصميم المتجاوب (Responsive).  
-- استخدام أطر العمل مثل **Tailwind CSS** و**Bootstrap** وطرق تكاملها مع JavaScript.
+Under this tag you'll find:
+- Core concepts (Selectors, Box Model, Specificity).  
+- Advanced layout tools: **Flexbox** and **Grid**.  
+- Responsive design best practices.  
+- How to work with frameworks like **Tailwind CSS** and **Bootstrap**, and integrate them with JS.
 
-**مواضيع مقترحة للقراءة:**
-- بداية سريعة مع CSS  
-- دليل عملي لـ Flexbox  
-- تصميم تخطيطات متقدمة باستخدام Grid
+**Suggested reads:**
+- Quick start with CSS  
+- Flexbox: a practical guide  
+- Advanced Grid layouts

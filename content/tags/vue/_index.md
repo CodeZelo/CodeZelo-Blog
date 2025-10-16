@@ -1,18 +1,18 @@
 ---
 title: "Vue.js"
-description: "اكتشف قوة إطار Vue.js في بناء واجهات تفاعلية وسريعة بسهولة ومرونة عالية."
+description: "Discover the power of Vue.js for building fast, interactive, and elegant web interfaces."
 
 ---
 
 {{< lead >}}
-إطار **Vue.js** من أقوى أُطر العمل في عالم الواجهة الأمامية 🌿  
-بأسلوبه السهل وهيكله المنظم، هيساعدك تبني تطبيقات حديثة بخطوات بسيطة وواضحة.
+**Vue.js** is one of the most elegant and powerful frontend frameworks 🌿  
+With its simplicity and reactivity system, you can build dynamic apps effortlessly.
 {{< /lead >}}
 
-في هذا الوسم ستجد:
-- شرح لأساسيات Vue.js والمفاهيم الأساسية مثل **Components** و**Reactivity**  
-- التعامل مع البيانات عبر **Props** و**Emit**  
-- بناء تطبيقات متكاملة باستخدام **Vue Router** و**Pinia**  
-- تطبيقات متقدمة باستخدام **Nuxt.js**  
+Under this tag you'll find:
+- Vue.js fundamentals: **Components**, **Reactivity**, and **Data Binding**  
+- Managing state and communication with **Props** and **Emit**  
+- Building complete apps using **Vue Router** and **Pinia**  
+- Advanced topics with **Nuxt.js**
 
-> لأن Vue مش بس إطار، دي فلسفة في البساطة والقوة معًا ⚡
+> Vue isn’t just a framework — it’s a philosophy of simplicity and flexibility ⚡

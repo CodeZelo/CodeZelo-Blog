@@ -1,18 +1,18 @@
 ---
-title: "مشاريع المبتدئين"
-description: "ابدأ رحلتك في عالم البرمجة ببناء مشاريع بسيطة تُرسّخ المفاهيم الأساسية بطريقة عملية وممتعة باستخدام HTML، CSS، وJavaScript."
+title: "Beginner Projects"
+description: "Start your programming journey by building simple, hands-on projects that reinforce core web development concepts using HTML, CSS, and JavaScript."
 ---
 
 {{< lead >}}
-كل بداية قوية تحتاج إلى خطوات صغيرة وواضحة 👣  
-في هذا القسم ستتعلّم كيف تُحوّل الدروس النظرية إلى مشاريع حقيقية تُنمّي مهاراتك خطوة بخطوة.
+Every great developer starts with small, clear steps 👣  
+Here, you’ll learn how to turn theory into real, working projects that help you grow your skills one line of code at a time.
 {{< /lead >}}
 
-في هذا القسم من **CodeZelo** ستجد:
-- مشاريع بسيطة لتطبيق أساسيات **HTML، CSS، وJavaScript**  
-- تطبيقات صغيرة مثل **عداد الكلمات**، **آلة حاسبة بسيطة**، أو **لعبة تخمين الأرقام**  
-- شروحات سهلة ومُرتّبة للمبتدئين بدون تعقيد  
-- نصائح عملية لتعلّم التفكير البرمجي 🧠  
-- تمارين تساعدك على بناء **ثقة الكود الأولى**
+In this section of **CodeZelo**, you’ll find:
+- Simple projects using **HTML, CSS, and JavaScript**  
+- Fun examples like a **Word Counter**, **Basic Calculator**, or **Guess the Number Game**  
+- Step-by-step explanations designed for absolute beginners  
+- Practical tips to improve your **coding mindset** 🧠  
+- Exercises to help you build confidence through creation
 
-> لأن البداية الصحيحة هي الطريق إلى الاحتراف. 🚀
+> Because every master coder was once a beginner. 🚀

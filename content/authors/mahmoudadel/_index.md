@@ -2,19 +2,20 @@
 title: "Mahmoud Adel"
 ---
 
-مبرمج يكتب عن الكود ببساطة وشغف.
+Developer who loves sharing knowledge about code.
 
-## 🎥 تابعنا على يوتيوب
-- {{< icon "youtube" >}} [قناة Mutawir Web (بالعربية)](https://www.youtube.com/@MutawirWeb)
-- {{< icon "youtube" >}} [قناة CodeZelo (بالإنجليزية)](https://www.youtube.com/@CodeZelo)
+
+## 🎥 YouTube Channels
+- {{< icon "youtube" >}} [CodeZelo (English)](https://www.youtube.com/@CodeZelo)
+- {{< icon "youtube" >}} [Mutawir Web (Arabic)](https://www.youtube.com/@MutawirWeb)
 
 ---
 
-## 🌍 حسابات التواصل الاجتماعي
+## 🌍 Social Media
 - {{< icon "linkedin" >}} [LinkedIn](https://www.linkedin.com/in/devmahmoudadel/)
-- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@dev.mahmoud.adel)
-- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/DevMahmoudAdel/)
-- {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
-- {{< icon "x-twitter" >}} [X (تويتر)](https://x.com/DevMahmoudAdel)
+- {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@codezelo)
+- {{< icon "pinterest" >}} [Pinterest](https://www.pinterest.com/CodeZeloo/)
+- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/CodeZelo/)
+- {{< icon "x-twitter" >}} [X (Twitter)](https://x.com/DevMahmoudAdel)
 
 ---

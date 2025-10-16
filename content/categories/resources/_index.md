@@ -1,18 +1,18 @@
 ---
-title: "الموارد والمراجع"
-description: "اكتشف مجموعة من الأدوات، والمكتبات، والمراجع المفيدة التي تساعدك في تنفيذ مشاريعك البرمجية وتطوير مهاراتك بشكل أسرع وأكثر احترافية."
+title: "Resources"
+description: "Explore a curated collection of tools, libraries, and references that help you build better projects and level up your development skills faster."
 ---
 
 {{< lead >}}
-كل مطوّر يحتاج إلى أدواته الخاصة 🧰  
-في هذا القسم ستجد أفضل الموارد التي ستسهّل عليك رحلتك في التعلم والبناء.
+Every developer needs the right tools to grow 🧰  
+Here, you’ll find high-quality resources that make learning and building much easier.
 {{< /lead >}}
 
-في هذا القسم من **CodeZelo** ستجد:
-- روابط لأهم **المكتبات وأُطر العمل** في تطوير الويب  
-- أدوات مجانية لمساعدتك في **تصميم الواجهات وتجربة المستخدم**  
-- مصادر لتعلّم **البرمجة الحديثة** وأفضل الممارسات  
-- **قوالب مشاريع جاهزة** يمكنك التعديل عليها والبناء فوقها  
-- أدلة وأوراق غش (**Cheat Sheets**) للمفاهيم السريعة والمفيدة 📘  
+In this section of **CodeZelo**, you’ll find:
+- Links to essential **libraries and frameworks** for web development  
+- Free tools for **UI design and user experience** improvement  
+- Learning materials focused on **modern coding practices**  
+- **Ready-to-use project templates** to build upon  
+- Helpful **Cheat Sheets** and quick-reference guides 📘  
 
-> لأن المطوّر الذكي يعرف أين يجد المعلومة قبل أن يكتب السطر الأول من الكود. 🚀
+> Because a smart developer knows where to find the right resource before writing the first line of code. 🚀

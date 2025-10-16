@@ -1,18 +1,18 @@
 ---
-title: "المشاريع المتوسطة"
-description: "ارتقِ بمهاراتك من الأساسيات إلى المستوى التالي عبر مشاريع متوسطة تُدمج بين الواجهة الأمامية والخلفية وتستخدم تقنيات حديثة مثل React وNode.js."
+title: "Intermediate Projects"
+description: "Level up from the basics by building real-world projects that connect the frontend and backend using modern tools like React and Node.js."
 ---
 
 {{< lead >}}
-المرحلة المتوسطة هي المكان الذي تبدأ فيه ببناء تطبيقات حقيقية تفهمك كيف تعمل التقنيات معًا. ⚙️  
-هنا ستتعلّم كيف تربط بين المفاهيم التي تعلمتها وتحوّلها إلى مشاريع متكاملة.
+The intermediate stage is where things get exciting. ⚙️  
+Here, you’ll learn how different technologies work together to create full, functional applications.
 {{< /lead >}}
 
-في هذا القسم من **CodeZelo** ستجد:
-- مشاريع تجمع بين **Frontend** و**Backend**  
-- تطبيقات عملية باستخدام **React، Node.js، وExpress**  
-- شروحات حول **التعامل مع APIs** وجلب البيانات من مصادر خارجية  
-- دروس في **إدارة الحالة** و**هيكلة الكود** باحترافية  
-- خطوات لنشر المشاريع على الإنترنت وتجربتها فعليًا 🌍  
+In this section of **CodeZelo**, you’ll find:
+- Projects that combine **frontend** and **backend** development  
+- Hands-on tutorials using **React, Node.js, and Express**  
+- Lessons on **working with APIs** and fetching real data  
+- Guides for **state management** and clean code structure  
+- Step-by-step deployment tutorials to bring your apps online 🌍  
 
-> لأنك في هذه المرحلة تبدأ بالتحوّل من متعلّم إلى مطوّر حقيقي. 🚀
+> This is where you start transforming from a learner into a real developer. 🚀

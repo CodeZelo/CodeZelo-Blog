@@ -1,16 +1,16 @@
 ---
 title: "Docker"
-description: "تعلم كيفية استخدام Docker لتشغيل تطبيقاتك في بيئات معزولة وسهلة النشر — خطوة أساسية لأي مطور حديث."
+description: "Learn how to use Docker to run your applications in isolated, easy-to-deploy environments — a must-have skill for modern developers."
 ---
 
 {{< lead >}}
-هل فكرت إزاي تشغّل مشروعك على أي جهاز بدون مشاكل إعداد؟ 🐳  
-مع **Docker** هتقدر توحّد بيئة العمل وتبني تطبيقات جاهزة للنشر في أي مكان.
+Ever wondered how to run your project anywhere without setup headaches? 🐳  
+With **Docker**, you can create consistent environments and deploy apps effortlessly.
 {{< /lead >}}
 
-في هذا التاج من **CodeZelo** ستجد:
-- شروحات مبسطة حول **Docker Images** و **Containers**
-- كيفية استخدام **Docker Compose** لإدارة المشاريع
-- نصائح لتحسين الأداء وحماية الحاويات
+In this tag on **CodeZelo**, you’ll find:
+- Simple tutorials on **Docker Images** and **Containers**
+- Guides on using **Docker Compose** for multi-service apps
+- Best practices for performance and security
 
-> لأن Docker مش بس أداة... دي طريقة تفكير جديدة في تطوير ونشر البرمجيات. 🚀
+> Docker isn’t just a tool — it’s a new way of thinking about development and deployment. 🚀
