@@ -1,0 +1,129 @@
+<style>
+  /* نفس التنسيقات السابقة التي لديك */
+  .q-container {
+    margin: 0 auto;
+    background: var(--color-surface);
+    color: var(--color-text);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px var(--color-shadow);
+  }
+
+  .q-container .quiz-question {
+    padding: 12px;
+    border: 1px solid var(--color-text);
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  .q-container .options label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+  }
+  .q-container .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .q-container .buttons,
+  .q-container .questions-controls {
+    display: flex;
+    gap: 8px;
+  }
+
+  .q-container .questions-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .q-container input[type="text"],
+  .q-container input[type="file"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--color-surface);
+    width: 100%;
+    max-width: 300px;
+  }
+  .q-container button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 0;
+    background: #0b69ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .q-container button.secondary {
+    background: #6b7280;
+  }
+  .q-container .result {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 6px;
+    color: #fff;
+  }
+  .q-container .result strong {
+    color: #fff;
+  }
+  .q-container .pass {
+    background-color: #0c8965;
+  }
+  .q-container .fail {
+    background-color: #a94b11;
+  }
+  .q-container .small {
+    font-size: 0.9rem;
+  }
+</style>
+
+<div class="q-container">
+  <h2 class="quiz-title"></h2>
+  <p class="small quiz-desc"></p>
+
+  <div class="controls">
+    <input
+      class="p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+      id="user-name"
+      type="text"
+      placeholder=""
+    />
+    <input id="user-photo" type="file" accept="image/*" />
+    <div class="buttons">
+      <button id="start-quiz"></button>
+      <button id="reset-quiz" class="secondary"></button>
+    </div>
+  </div>
+
+  <div id="quiz-area"></div>
+  <div id="result-area"></div>
+
+  <div style="margin-top: 12px">
+    <button id="download-cert" style="display: none"></button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/fonts/Tajawal-Regular.js"></script>
+<script>
+  window.quizLang = {
+    title: "{{ i18n `quiz_title` }}",
+    desc: "{{ i18n `quiz_desc` }}",
+    start: "{{ i18n `quiz_start` }}",
+    reset: "{{ i18n `quiz_reset` }}",
+    prev: "{{ i18n `quiz_prev` }}",
+    next: "{{ i18n `quiz_next` }}",
+    finish: "{{ i18n `quiz_finish` }}",
+    download: "{{ i18n `quiz_download` }}",
+    enterName: "{{ i18n `quiz_enter_name` }}",
+    errorLoadFile: "{{ i18n `quiz_error_load_file` }}",
+    Q: "{{ i18n `quiz_q` }}",
+    certTitle: "{{ i18n `cert_title` }}",
+    certPresented: "{{ i18n `cert_presented` }}",
+    certScore: "{{ i18n `cert_score` }}",
+    certDate: "{{ i18n `cert_date` }}",
+  };
+</script>
+
+<script src="/quizzes/js/quiz-app.js"></script>

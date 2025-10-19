@@ -1,0 +1,42 @@
+{
+  "title": "HTML Cheat Sheet Quiz",
+  "timeLimitSec": 0,
+  "passingPercent": 60,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "ما الوسم المستخدم لإنشاء رابط تشعبي؟",
+      "options": ["<link>", "<a>", "<href>", "<url>"],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "type": "multi",
+      "question": "اختر العناصر الصحيحة من HTML5",
+      "options": ["<section>", "<article>", "<page>", "<nav>"],
+      "answer": [0, 1, 3]
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "أي سمة تُستخدم لعرض صورة بديلة؟",
+      "options": ["src", "alt", "title", "data"],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "question": "ما الوسم المناسب لإنشاء جدول؟",
+      "options": ["<table>", "<tab>", "<grid>", "<tbody>"],
+      "answer": 0
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "question": "أي من هذه الوسوم لاحتواء عناوين الصفحة؟",
+      "options": ["<header>", "<head>", "<h1>", "<title>"],
+      "answer": 0
+    }
+  ]
+}
