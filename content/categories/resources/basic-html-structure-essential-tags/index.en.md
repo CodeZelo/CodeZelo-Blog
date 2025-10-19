@@ -10,7 +10,6 @@ series: ['HTML Tutorial']
 series_order: 1
 ---
 
-
 Any **web page** is, at its core, an **HTML document**.
 That’s why it’s important to understand the essential tags that every page must include.
 

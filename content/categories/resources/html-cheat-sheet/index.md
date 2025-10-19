@@ -1,7 +1,7 @@
 ---
 title: "HTML Cheat Sheet"
 categories: ['resources']
-draft: false
+draft: true
 authors:
     - mahmoudadel
 ---
