@@ -97,6 +97,8 @@ Then, you use CSS to control the **positioning, colors, and size** of each part.
 
 As we’ve seen examples of semantic elements in HTML, now it’s time to explore how each of these elements is used.
 
+![Semantic Tags in HTML](/semantic-tags-in-html.webp "Semantic Tags in HTML]")
+
 ### 1. The `<header>` Tag – Page or Section Header
 
 The `<header>` tag is used to create **the top section or introduction of a page**, which usually contains elements that introduce the website or make navigation easier.
