@@ -25,7 +25,7 @@ sharingLinks: false
 
 ## 🌍 حسابات التواصل الاجتماعي
 - {{< icon "linkedin" >}} [LinkedIn](https://www.linkedin.com/in/devmahmoudadel/)
-- {{< icon "facebook" >}} [Facebook](https://www.facebook.com/DevMahmoudAdel/)
+- {{< icon "facebook" >}} [Facebook Group](https://www.facebook.com/groups/4319294648301723)
 - {{< icon "tiktok" >}} [TikTok](https://www.tiktok.com/@dev.mahmoud.adel)
 - {{< icon "x-twitter" >}} [X (تويتر)](https://x.com/DevMahmoudAdel)
 - {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
