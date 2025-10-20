@@ -4,7 +4,7 @@ description: "Discover the importance of Meta Tags in HTML and how they help sea
 categories: ['resources']
 tags: ['html']
 series: ['HTML Tutorial']
-series_order: 1
+series_order: 2
 draft: false
 authors:
   - mahmoudadel

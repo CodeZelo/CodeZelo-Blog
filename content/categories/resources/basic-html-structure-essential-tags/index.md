@@ -136,7 +136,7 @@ weight: 2
 ## الخلاصة
 
 دلوقتي عرفنا الهيكل الأساسي لأي صفحة ويب، والوسوم اللي لازم تبدأ بيها كل صفحة HTML بشكل صحيح.  
-في الدرس الجاي هنتعمق شوية في [عناصر الميتا (Metadata)](https://codezelo.com/categories/resources/meta-tags-in-html-and-technical-seo) اللي بنكتبها داخل وسم `<head>`،  
+في الدرس الجاي هنتعمق شوية في [عناصر الميتا (Metadata)](/categories/resources/meta-tags-in-html-and-technical-seo) اللي بنكتبها داخل وسم `<head>`،  
 وهنتكلم كمان بشكل بسيط عن **السيو التقني (Technical SEO)**  
 علشان تفهم إزاي محركات البحث بتقرأ صفحتك وتتعامل معاها.
 

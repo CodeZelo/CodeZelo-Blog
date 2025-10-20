@@ -141,7 +141,7 @@ Example:
 
 Now you’ve learned the **basic structure of any web page** and the essential tags every HTML document should start with.
 
-In the **next lesson**, we’ll dive a bit deeper into [metadata elements](https://codezelo.com/en/categories/resources/meta-tags-in-html-and-technical-seo) written inside the `<head>` tag,
+In the **next lesson**, we’ll dive a bit deeper into [metadata elements](/en/categories/resources/meta-tags-in-html-and-technical-seo) written inside the `<head>` tag,
 and we’ll also cover a brief introduction to **Technical SEO** —
 so you can understand how search engines **read and interpret your web pages**.
 

@@ -4,7 +4,7 @@ description: "اكتشف أهمية وسوم الميتا (Meta Tags) في HTML 
 categories: ['resources']
 tags: ['html']
 series: ['HTML Tutorial']
-series_order: 1
+series_order: 2
 draft: false
 authors:
     - mahmoudadel
