@@ -37,15 +37,21 @@
   parent = "projects"
   weight = 13
 
+
+[[main]]
+  name = "series"
+  pageRef = "series"
+  weight = 20
+
 [[main]]
   name = "Articles & Tips"
   pageRef = "articles-and-tips"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Resources"
   pageRef = "resources"
-  weight = 30
+  weight = 40
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

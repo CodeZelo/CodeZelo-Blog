@@ -6,8 +6,9 @@ categories: ['resources']
 tags: ['html']
 authors:
   - mahmoudadel
-series: ['HTML Tutorial']
+series: ['html-tutorial']
 series_order: 1
+
 weight: 2
 ---
 
@@ -66,6 +67,20 @@ Inside the `<html>` element, you’ll usually find two main sections:
 
 Without the `<html>` tag, the page wouldn’t even qualify as an HTML document.
 
+
+There are also two main attributes in the `<html>` tag that are used to define the page language and the text direction:
+
+* `lang`: Used to specify the language of the page.
+* `dir`: Used to set the direction of the text inside the page. You can choose between two values:
+
+  * `ltr`: Text direction from left to right (like English).
+  * `rtl`: Text direction from right to left (like Arabic).
+
+Example:
+
+```html
+<html lang="en" dir="ltr"></html>
+```
 
 ## The `<head>` Tag – Contains Page Information
 

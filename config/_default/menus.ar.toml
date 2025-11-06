@@ -38,14 +38,19 @@
   weight = 13
 
 [[main]]
+  name = "دورات"
+  pageRef = "series"
+  weight = 20
+
+[[main]]
   name = "مقالات ونصائح"
   pageRef = "articles-and-tips"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "الموارد والمراجع"
   pageRef = "resources"
-  weight = 30
+  weight = 40
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

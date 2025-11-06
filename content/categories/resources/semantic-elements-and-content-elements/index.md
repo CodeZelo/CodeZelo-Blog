@@ -6,7 +6,7 @@ categories: ['resources']
 tags: ['html']
 authors:
     - mahmoudadel
-series: ['HTML Tutorial']
+series: ['html-tutorial']
 series_order: 3
 weight: 4
 ---
