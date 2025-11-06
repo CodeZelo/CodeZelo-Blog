@@ -12,9 +12,9 @@ description: "تعلّم خطوة بخطوة من خلال دورات عملية
 
 ## 🧱 دورات المبتدئين
 ابدأ رحلتك بأساس قوي من خلال دروس مبسّطة وواضحة:  
-- [دورة HTML](/series/html-tutorial/)  
-<!-- - [دورة CSS](/series/css/)  
-- [دورة JavaScript للمبتدئين](/series/javascript/) -->
+- [دورة HTML من الصفر](/series/html-tutorial/)  
+- [دورة CSS من الصفر](/series/css-tutorial/)  
+<!-- - [دورة JavaScript للمبتدئين](/series/javascript/)  -->
 
 ---
 

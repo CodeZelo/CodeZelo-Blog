@@ -17,6 +17,8 @@ weight: 4
 - وسوم دلالية (Semantic Elements).
 - وسوم غير دلالية (Non Semantic Elements).
 
+{{< youtubeLite id="PdW9ZUunqtk" label="العناصر الدلالية في HTML" >}}
+
 ## الفرق بين الوسوم الدلالية وغير الدلالية
 
 ![الفرق بين الوسوم الدلالية وغير الدلالية](/semantic-elements-and-content-elements.webp "الفرق بين الوسوم الدلالية وغير الدلالية")

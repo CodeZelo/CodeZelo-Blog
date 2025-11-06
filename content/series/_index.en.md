@@ -13,8 +13,8 @@ Start from the basics and grow into a confident developer. 🚀
 ## 🧱 Beginner series
 Start your journey with simple, clear lessons that build strong fundamentals.  
 - [HTML Basics](/en/series/html-tutorial/)  
-<!-- - [CSS Essentials](/en/series/css/)  
-- [JavaScript for Beginners](/en/series/javascript/) -->
+- [CSS Basics](/en/series/css-tutorial/)  
+<!-- - [JavaScript for Beginners](/en/series/javascript/)  -->
 
 ---
 

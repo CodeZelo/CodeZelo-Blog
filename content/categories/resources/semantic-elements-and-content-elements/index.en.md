@@ -23,6 +23,8 @@ HTML tags are divided into two main types:
 
 ## The Difference Between Semantic and Non-Semantic Tags
 
+{{< youtubeLite id="GXYty3-lYUI" label="Semantic Elements in HTML" >}}
+
 ![Difference between semantic and non-semantic tags](/semantic-elements-and-content-elements.webp "Difference between semantic and non-semantic tags")
 
 Semantic elements in HTML are simply **elements that have a clear meaning**, describing their role or the type of content inside them — both for the browser and for the developer reading the code.

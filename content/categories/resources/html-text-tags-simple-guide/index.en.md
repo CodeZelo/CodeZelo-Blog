@@ -57,6 +57,8 @@ and there’s usually **some spacing before and after it** to keep the layout cl
 
 ## Text Formatting Tags in HTML
 
+{{< youtubeLite id="c0QI7b7IoAo" label="Text Formatting Tags in HTML" >}}
+
 HTML provides several tags that help you **format text**.
 Let’s go through each one step by step with examples.
 

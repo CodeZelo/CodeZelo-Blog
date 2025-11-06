@@ -107,6 +107,8 @@ They help browsers and search engines **understand what your page is about** and
 
 ## The Most Important Meta Tags in HTML (With Examples)
 
+{{< youtubeLite id="trMNEQ5iRmc" label="The Most Important Meta Tags in HTML (With Examples)" >}}
+
 ![Meta Tags and Their Importance in Technical SEO](/meta-tags-in-html-and-technical-seo.png "Meta Tags and Their Importance in Technical SEO")
 
 Meta tags are among the most important elements in any web page.
