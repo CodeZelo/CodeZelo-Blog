@@ -308,3 +308,7 @@ When you start working on real-world coding projects, you’ll find yourself usi
 With practice and by following proper HTML coding standards, you’ll learn **when to use semantic tags and when to use standard ones**.
 
 In the next lesson, we’ll talk about **Content & Text Elements** — and how to control the appearance of text using HTML tags.
+
+**To learn more**
+- [W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)

@@ -186,3 +186,8 @@ weight: -3
 
 في الدرس القادم:
 هنتعرف على [**الوسوم الدلالية (Semantic Elements)**](/categories/resources/semantic-elements-and-content-elements/) ودورها في تحسين هيكلة صفحات الويب.
+
+
+**لمزيد من المعلومات**
+- [W3Schools](https://www.w3schools.com/tags/tag_meta.asp)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta)
