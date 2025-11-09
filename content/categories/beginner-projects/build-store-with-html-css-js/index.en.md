@@ -6,8 +6,7 @@ tags: ['html', 'css', 'js']
 draft: false
 authors:
   - mahmoudadel
-
-weight: 1
+weight: -1
 ---
 
 In this course, we’ll learn together how to design and build a simple yet professional online store using only HTML, CSS, and JavaScript—relying on the basic tools every beginner web developer needs to get started in web development.

@@ -8,7 +8,7 @@ authors:
     - mahmoudadel
 series: ['html-tutorial']
 series_order: 3
-weight: 4
+weight: -4
 ---
 
 بعد أن رأينا في الجزء السابق [كيف يمكن إستخدام الميتا (Metadata) في HTML](/categories/resources/meta-tags-in-html-and-technical-seo). دلوقتي جه الوقت عشان نتكلم عن الوسوم الدلالية والفرق بينها وبين الوسوم غير الدلالية.

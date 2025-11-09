@@ -8,8 +8,7 @@ series_order: 2
 draft: false
 authors:
   - mahmoudadel
-
-weight: 3
+weight: -3
 ---
 
 After learning about the essential HTML tags that every webpage needs, it’s time to move on to another equally important — yet often overlooked — part: **Meta Tags (Metadata)**.

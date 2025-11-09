@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 series: ['html-tutorial']
 series_order: 4
-weight: 5
+weight: -5
 ---
 
 في المقال اللي فات إتكلمنا عن [الوسوم الدلالية](/categories/resources/semantic-elements-and-content-elements) بس عشان نستخدم وسوم النصوص في HTML ونتعلم تنسيقها بطريقة صحيحة،  

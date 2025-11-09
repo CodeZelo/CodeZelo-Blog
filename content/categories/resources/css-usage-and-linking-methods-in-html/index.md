@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 series: ['css-tutorial']
 series_order: 1
-weight: 6
+weight: -6
 ---
 
 الـ **CSS** هي لغة التنسيق الخاصة بأكواد **HTML**،  

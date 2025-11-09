@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 series: ['css-tutorial']
 series_order: 1
-weight: 6
+weight: -6
 ---
 
 The **CSS** is the **styling language** used to design and format **HTML** code,

@@ -8,8 +8,7 @@ series_order: 2
 draft: false
 authors:
     - mahmoudadel
-
-weight: 3
+weight: -3
 ---
 
 بعد أن تعرّفنا على الوسوم الأساسية في HTML، حان الوقت للانتقال إلى جزء لا يقل أهمية — لكنه غالبًا ما يتم تجاهله — وهو **وسوم الميتا (Metadata)**.

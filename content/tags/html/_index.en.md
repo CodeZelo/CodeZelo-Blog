@@ -1,7 +1,6 @@
 ---
 title: "HTML"
 description: "Articles and tutorials about HTML fundamentals, document structure, and accessibility."
-
 ---
 
 {{< lead >}}

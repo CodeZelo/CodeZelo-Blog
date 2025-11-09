@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 series: ['html-tutorial']
 series_order: 4
-weight: 5
+weight: -5
 ---
 
 In the previous article, we talked about [semantic elements](/en/categories/resources/semantic-elements-and-content-elements).
