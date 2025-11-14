@@ -2,13 +2,14 @@
 title: "طرق استخدام وربط CSS بصفحات HTML (شرح مبسط بالأمثلة)"
 description: "اتعلّم إزاي تستخدم وتربط CSS بصفحات HTML بثلاث طرق مختلفة — داخل الوسوم، داخل الصفحة، أو من ملف خارجي. شرح عملي خطوة بخطوة وبالعربي للمبتدئين في تنسيق الويب."
 draft: false
-categories: ['resources']
-tags: ['css']
+categories: ["resources"]
+tags: ["css"]
 authors:
   - mahmoudadel
-series: ['css-tutorial']
+series: ["css-tutorial"]
 series_order: 1
-weight: -6
+slug: "css-usage-and-linking-methods-in-html"
+weight: -11
 ---
 
 الـ **CSS** هي لغة التنسيق الخاصة بأكواد **HTML**،  
@@ -24,7 +25,6 @@ weight: -6
 ومعندكش خلفية عن برمجة الويب،  
 ابدأ الأول [بدورة **HTML من الصفر**](/series/html-tutorial)،  
 علشان تبني الأساس الصح قبل ما تدخل على CSS.
-
 
 دلوقتي بقى نبدأ بتعريف بسيط للـ **CSS**،  
 وبعد كده هنعرف **إزاي نستخدمها مع HTML**،  
@@ -42,7 +42,7 @@ weight: -6
 
 تقدر تقول إن:
 
-- لغة **HTML** = هيكل الصفحة    
+- لغة **HTML** = هيكل الصفحة
 - لغة **CSS** = شكل وتصميم الصفحة
 
 **عشان نفهم ببساطة:**  
@@ -54,6 +54,7 @@ weight: -6
 ![طرق استخدام وربط CSS بصفحة HTML](featured.png "طرق استخدام وربط CSS بصفحة HTML")
 
 علشان نستخدم الـ **CSS** في تنسيق أكواد الـ HTML عندنا 3 طرق أساسية: **Inline، Internal، External**. كل طريقة ليها استخداماتها ومميزات وعيوب. نبدأ واحدة واحدة.
+
 ### 1. Inline Style — استخدام التنسيقات داخل الوسم (مش الأفضل عادةً)
 
 دي أبسط طريقة: بتحط خصائص الـ CSS جوه سمة `style` عند أي وسم HTML. مناسبة لتجارب سريعة أو تعديل طارئ، لكن مش مناسبة لمشروعات حقيقية.
@@ -63,14 +64,14 @@ weight: -6
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>مثال Inline</title>
-</head>
-<body>
-  <h1>الطريقة الأولى: استخدام style داخل الوسم</h1>
-  <p style="color: blue;">الفقرة باللون الأزرق</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>مثال Inline</title>
+  </head>
+  <body>
+    <h1>الطريقة الأولى: استخدام style داخل الوسم</h1>
+    <p style="color: blue;">الفقرة باللون الأزرق</p>
+  </body>
 </html>
 ```
 
@@ -81,25 +82,33 @@ weight: -6
 - بيخلّي الـ HTML ملخبط وصعب القراءة.
 
 ### 2. Internal CSS — تسيب التنسيقات في نفس ملف الـ HTML داخل `<style>`
+
 بتحط قواعد الـ CSS داخل وسم `<style>` في رأس الصفحة (`<head>`). مفيدة لو الصفحة وحيدة والستايل بسيط.
 
 **مثال:**
+
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>مثال Internal</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    h1 { color: #2c3e50; }
-    p { color: blue; }
-  </style>
-</head>
-<body>
-  <h1>الطريقة الثانية: Internal CSS</h1>
-  <p>الفقرة باللون الأزرق من ملف الـ &lt;style&gt; داخل الـ head.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>مثال Internal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>الطريقة الثانية: Internal CSS</h1>
+    <p>الفقرة باللون الأزرق من ملف الـ &lt;style&gt; داخل الـ head.</p>
+  </body>
 </html>
 ```
 
@@ -113,11 +122,18 @@ weight: -6
 أفضل طريقة للمشروعات الحقيقية: بتكتب كل قواعد الـ CSS في ملف منفصل (`styles.css`) مثلاً وتربطه في `<head>` عن طريق إننا هنستخدم وسم `<link>`. والطريقة دي بتدينا سهولة في الصيانة وإعادة الاستخدام وتحسين الأداء (الكاش) من أهم مزاياها.
 
 **ملف `styles.css`:**
+
 ```css
 /* styles.css */
-body { font-family: Arial, sans-serif; }
-h1 { color: #2c3e50; }
-p { color: blue; }
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #2c3e50;
+}
+p {
+  color: blue;
+}
 ```
 
 **ربطه في ملف HTML:**
@@ -125,15 +141,15 @@ p { color: blue; }
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>مثال External</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>الطريقة الثالثة: External CSS</h1>
-  <p>الفقرة لونها من ملف CSS منفصل.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>مثال External</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>الطريقة الثالثة: External CSS</h1>
+    <p>الفقرة لونها من ملف CSS منفصل.</p>
+  </body>
 </html>
 ```
 

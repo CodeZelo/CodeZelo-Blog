@@ -2,14 +2,14 @@
 title: "Understanding the Basic Structure of a Web Page – Essential HTML Tags You Can’t Do Without"
 description: "Learn the fundamental structure of a web page and discover the most essential HTML tags you need to build a professional website from scratch — explained simply with beginner-friendly examples."
 draft: false
-categories: ['resources']
-tags: ['html']
+categories: ["resources"]
+tags: ["html"]
 authors:
   - mahmoudadel
-series: ['html-tutorial']
+series: ["html-tutorial"]
 series_order: 1
-
-weight: 2
+slug: "basic-html-structure-essential-tags"
+weight: -1
 ---
 
 Any **web page** is, at its core, an **HTML document**.
@@ -21,11 +21,11 @@ Let’s start with a simple example of the most basic HTML page you can create:
 
 From this example, we can see that there are **five essential tags** every web page should contain:
 
-* The document type declaration `DOCTYPE`
-* The `<html>` tag – the root element of the page
-* The `<head>` tag – contains metadata and page information
-* The `<title>` tag – defines the page title shown in the browser
-* The `<body>` tag – holds all the visible content for visitors
+- The document type declaration `DOCTYPE`
+- The `<html>` tag – the root element of the page
+- The `<head>` tag – contains metadata and page information
+- The `<title>` tag – defines the page title shown in the browser
+- The `<body>` tag – holds all the visible content for visitors
 
 ## Declaring the Document Type – `<!DOCTYPE html>`
 
@@ -47,7 +47,6 @@ That line tells the browser that the page is written in **HTML5**, and that’s 
 
 > In short: `<!DOCTYPE>` is an **instruction for the browser** — it doesn’t appear to the user, but it’s essential for the page to work correctly.
 
-
 ## The `<html>` Tag – The Root Element of the Page
 
 The `<html>` tag marks the true beginning of any web page.
@@ -55,26 +54,25 @@ You can think of it as the **foundation** on which all other elements are built.
 
 This tag consists of two parts:
 
-* `<html>` – the opening tag
-* `</html>` – the closing tag
+- `<html>` – the opening tag
+- `</html>` – the closing tag
 
 Everything on the page — text, images, headings, and all other elements — must be placed between these two tags.
 
 Inside the `<html>` element, you’ll usually find two main sections:
 
-* `<head>` – contains information *about* the page (like the title or linked CSS files).
-* `<body>` – contains the content that is *visible* to users.
+- `<head>` – contains information _about_ the page (like the title or linked CSS files).
+- `<body>` – contains the content that is _visible_ to users.
 
 Without the `<html>` tag, the page wouldn’t even qualify as an HTML document.
 
-
 There are also two main attributes in the `<html>` tag that are used to define the page language and the text direction:
 
-* `lang`: Used to specify the language of the page.
-* `dir`: Used to set the direction of the text inside the page. You can choose between two values:
+- `lang`: Used to specify the language of the page.
+- `dir`: Used to set the direction of the text inside the page. You can choose between two values:
 
-  * `ltr`: Text direction from left to right (like English).
-  * `rtl`: Text direction from right to left (like Arabic).
+  - `ltr`: Text direction from left to right (like English).
+  - `rtl`: Text direction from right to left (like Arabic).
 
 Example:
 
@@ -89,24 +87,23 @@ It’s the section that provides data for the browser and search engines — thi
 
 Common elements inside the `<head>` include:
 
-* `<title>` – defines the title shown in the browser tab or search results.
-* `<meta>` – specifies details like the page description, keywords, or character encoding.
-* `<link>` – connects the page to external files such as CSS stylesheets.
-* `<style>` – allows you to include CSS rules directly within the page.
-* `<script>` – adds JavaScript functionality to the page.
+- `<title>` – defines the title shown in the browser tab or search results.
+- `<meta>` – specifies details like the page description, keywords, or character encoding.
+- `<link>` – connects the page to external files such as CSS stylesheets.
+- `<style>` – allows you to include CSS rules directly within the page.
+- `<script>` – adds JavaScript functionality to the page.
 
 Here’s a simple example:
 
 ```html
-<head>  
-  <title>Simple Page</title>  
-  <meta charset="UTF-8">  
-  <link rel="stylesheet" href="style.css">
+<head>
+  <title>Simple Page</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 ```
 
 > In short: the `<head>` tag is responsible for all the **settings and information** that help the page function and display correctly — **but it’s not visible to users**.
-
 
 ## The `<title>` Tag – The Page Title in the Browser
 
@@ -126,12 +123,11 @@ A well-written title helps your page appear more prominently in search results.
 
 **Tips for writing a strong title:**
 
-* Make it **descriptive and clear**.
-* Keep it around **50–60 characters** long.
-* Use connected words that accurately describe your page’s content.
+- Make it **descriptive and clear**.
+- Keep it around **50–60 characters** long.
+- Use connected words that accurately describe your page’s content.
 
 > In short: the `<title>` tag gives your page its **identity** — both for users and for search engines.
-
 
 ## The `<body>` Tag – The Visible Content for Users
 
@@ -145,7 +141,7 @@ Example:
 <body>
   <h1>Welcome to My Website</h1>
   <p>This is a simple sample paragraph.</p>
-  <img src="photo.jpg" alt="Illustrative image">
+  <img src="photo.jpg" alt="Illustrative image" />
 </body>
 ```
 

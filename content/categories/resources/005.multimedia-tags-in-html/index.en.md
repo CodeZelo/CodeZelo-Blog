@@ -2,13 +2,14 @@
 title: "HTML Multimedia Tags Explained — Learn How to Use img, video, and audio Easily"
 description: "In this article, you'll learn how to add images, videos, and audio files to your web page using HTML multimedia tags. We'll explain step by step how to use img, video, and audio with practical examples and key attributes to make your website look professional and load faster."
 draft: false
-categories: ['resources']
-tags: ['html']
+categories: ["resources"]
+tags: ["html"]
 authors:
   - mahmoudadel
-series: ['html-tutorial']
+series: ["html-tutorial"]
 series_order: 5
-weight: -7
+slug: "multimedia-tags-in-html"
+weight: -5
 ---
 
 HTML provides many tags, and among the most important are the **multimedia tags**, which include three main elements:
@@ -26,7 +27,6 @@ The `<img>` tag is a **self-closing tag**,
 which makes sense because it **doesn’t contain any inner content**.
 It is used solely to **display an image** on the page.
 
-
 ### The Most Important Attributes of the `<img>` Tag
 
 #### 1. The `src` Attribute
@@ -35,20 +35,20 @@ The **`src`** attribute — short for **source** — is used to specify the **pa
 
 The path can be **relative** or **absolute**:
 
-* **Relative Path:**
+- **Relative Path:**
   When the image exists within your project files.
 
 ```html
-<img src="images/logo.png" alt="Website logo">
+<img src="images/logo.png" alt="Website logo" />
 ```
 
 In this example, the image is stored in a folder named `images` inside the project.
 
-* **Absolute Path:**
+- **Absolute Path:**
   When the image is hosted on the internet.
 
 ```html
-<img src="https://example.com/logo.png" alt="Website logo from the Internet">
+<img src="https://example.com/logo.png" alt="Website logo from the Internet" />
 ```
 
 #### 2. The `alt` Attribute
@@ -61,7 +61,7 @@ It also helps search engines and accessibility tools **understand the image cont
 Example:
 
 ```html
-<img src="profile.jpg" alt="Profile picture">
+<img src="profile.jpg" alt="Profile picture" />
 ```
 
 > **Tip:**
@@ -74,14 +74,14 @@ The **`width`** and **`height`** attributes define the **dimensions** of the ima
 Example:
 
 ```html
-<img src="banner.jpg" alt="Banner image" width="600" height="300">
+<img src="banner.jpg" alt="Banner image" width="600" height="300" />
 ```
 
 > **Note:**
 > It’s better to control image size using **CSS**, rather than setting it directly in the tag:
 
 ```html
-<img src="banner.jpg" alt="Banner image" class="banner">
+<img src="banner.jpg" alt="Banner image" class="banner" />
 ```
 
 ```css
@@ -102,7 +102,7 @@ This greatly improves page speed — especially on image-heavy pages.
 Example:
 
 ```html
-<img src="gallery/photo1.jpg" alt="Gallery photo" loading="lazy">
+<img src="gallery/photo1.jpg" alt="Gallery photo" loading="lazy" />
 ```
 
 > **Pro Tip:**
@@ -111,13 +111,13 @@ Example:
 ### Complete Example
 
 ```html
-<img 
-  src="images/nature.jpg" 
+<img
+  src="images/nature.jpg"
   alt="Beautiful nature scenery"
-  width="500" 
-  height="300" 
+  width="500"
+  height="300"
   loading="lazy"
->
+/>
 ```
 
 ## The `<video>` Tag in HTML
@@ -143,8 +143,8 @@ because it’s better to include a `<source>` element inside it to specify the v
 Here’s the correct and most common way to use it:
 
 ```html
-<video controls>   
-  <source src="video.mp4" type="video/mp4"> 
+<video controls>
+  <source src="video.mp4" type="video/mp4" />
 </video>
 ```
 
@@ -154,8 +154,8 @@ Here’s the correct and most common way to use it:
 
 Just like with images, this attribute defines the **path of the video**:
 
-* It can be **relative** if the video is inside your project files.
-* Or **absolute** if it’s hosted online.
+- It can be **relative** if the video is inside your project files.
+- Or **absolute** if it’s hosted online.
 
 Example:
 
@@ -210,17 +210,17 @@ This is a very nice feature — it allows you to **set a preview image** (like a
 ### Complete Example of the `<video>` Tag
 
 ```html
-<video 
-  width="640" 
-  height="360" 
-  controls 
-  autoplay 
-  muted 
-  loop 
+<video
+  width="640"
+  height="360"
+  controls
+  autoplay
+  muted
+  loop
   poster="images/video-cover.jpg"
 >
-  <source src="videos/promo.mp4" type="video/mp4">
-  <source src="videos/promo.webm" type="video/webm">
+  <source src="videos/promo.mp4" type="video/mp4" />
+  <source src="videos/promo.webm" type="video/webm" />
   Your browser does not support the video tag.
 </video>
 ```
@@ -239,7 +239,6 @@ the tag you’ll use is `<audio>`.
 This tag allows you to **play sounds directly from the website**,
 so the user doesn’t have to download them manually.
 
-
 ### Structure of the `<audio>` Tag
 
 The `<audio>` tag has **an opening and a closing tag**,
@@ -253,7 +252,7 @@ However, just like with videos, it’s better to use a `<source>` element inside
 
 ```html
 <audio controls>
-  <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.mp3" type="audio/mpeg" />
 </audio>
 ```
 
@@ -311,9 +310,9 @@ This is an important attribute for **page performance**.
 It controls **when the browser should start loading the audio file**.
 It accepts three main values:
 
-* `none`: The audio won’t load until the user plays it.
-* `metadata`: Only basic information (like duration) will be loaded.
-* `auto`: The entire audio file will be loaded as soon as the page opens.
+- `none`: The audio won’t load until the user plays it.
+- `metadata`: Only basic information (like duration) will be loaded.
+- `auto`: The entire audio file will be loaded as soon as the page opens.
 
 Example:
 
@@ -324,15 +323,9 @@ Example:
 ### Complete Example of the `<audio>` Tag
 
 ```html
-<audio 
-  controls 
-  autoplay 
-  muted 
-  loop 
-  preload="metadata"
->
-  <source src="sounds/music.mp3" type="audio/mpeg">
-  <source src="sounds/music.ogg" type="audio/ogg">
+<audio controls autoplay muted loop preload="metadata">
+  <source src="sounds/music.mp3" type="audio/mpeg" />
+  <source src="sounds/music.ogg" type="audio/ogg" />
   Your browser does not support the audio tag.
 </audio>
 ```
@@ -352,8 +345,8 @@ it’s now time to learn how to organize page elements using **lists** and **tab
 That’s exactly what we’ll be exploring in the **next lesson**, God willing.
 **Stay tuned!**
 
-
 **To learn more**
+
 - [W3Schools](https://www.w3schools.com/html/html_media.asp)
 - MDN Web Docs
   - [Img Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img)

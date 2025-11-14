@@ -1,19 +1,20 @@
 ---
 title: "Meta Tags and Their Importance in Technical SEO"
 description: "Discover the importance of Meta Tags in HTML and how they help search engines understand your web pages and improve their visibility in search results. A simple guide to understanding Technical SEO and the most important Meta Tags with examples."
-categories: ['resources']
-tags: ['html']
-series: ['html-tutorial']
+categories: ["resources"]
+tags: ["html"]
+series: ["html-tutorial"]
 series_order: 2
 draft: false
 authors:
   - mahmoudadel
-weight: -3
+slug: "meta-tags-in-html-and-technical-seo"
+weight: -2
 ---
 
 After learning about the essential HTML tags that every webpage needs, it’s time to move on to another equally important — yet often overlooked — part: **Meta Tags (Metadata)**.
 
-When you build a webpage, it’s not enough for it to *look* good to users; it also needs to be **understood by search engines** like Google and Bing.
+When you build a webpage, it’s not enough for it to _look_ good to users; it also needs to be **understood by search engines** like Google and Bing.
 That’s where **meta tags** come in — they act as an **ID card for your webpage**, helping search engines and various tools understand your content and process it correctly.
 
 These tags are a fundamental part of **Technical SEO**, one of the main branches of Search Engine Optimization.
@@ -44,10 +45,10 @@ There are four main types of SEO, and each focuses on a different aspect of your
 This focuses on the **technical structure of your website** to make it easy for search engines to crawl and understand.
 Examples include:
 
-* Improving page load speed
-* Making the site mobile-friendly
-* Using meta tags correctly
-* Setting up a sitemap and clean URL structure
+- Improving page load speed
+- Making the site mobile-friendly
+- Using meta tags correctly
+- Setting up a sitemap and clean URL structure
 
 > In short: Technical SEO is your website’s **defense line**, ensuring it’s optimized and ready to rank.
 
@@ -56,10 +57,10 @@ Examples include:
 This type deals with **optimizing the content inside your website pages**.
 For example:
 
-* Choosing relevant keywords
-* Writing strong titles and meta descriptions
-* Structuring content for readability
-* Using internal links between pages
+- Choosing relevant keywords
+- Writing strong titles and meta descriptions
+- Structuring content for readability
+- Using internal links between pages
 
 > In short: On-page SEO is the **offense**, creating content that attracts both users and search engines.
 
@@ -68,9 +69,9 @@ For example:
 This focuses on everything that happens **outside your website** but still affects its reputation.
 For example:
 
-* Earning backlinks from other websites
-* Engaging on social media
-* Building brand authority and trust
+- Earning backlinks from other websites
+- Engaging on social media
+- Building brand authority and trust
 
 > In short: Off-page SEO represents your **fans** — the people and signals that strengthen your reputation online.
 
@@ -79,9 +80,9 @@ For example:
 Local SEO focuses on **appearing in search results for a specific area** (like “coffee shop near me” or “lawyer in Cairo”).
 Examples include:
 
-* Setting up your **Google Business Profile**
-* Adding accurate address and phone details
-* Collecting customer reviews
+- Setting up your **Google Business Profile**
+- Adding accurate address and phone details
+- Collecting customer reviews
 
 > In short: Local SEO helps local businesses attract visitors from their geographic area.
 
@@ -93,9 +94,9 @@ In other words, it’s about making your site **fast, organized, and mobile-frie
 
 Among the key elements of technical SEO are **Meta Tags**, because they:
 
-* Tell search engines the **title and description** of each page.
-* Define the **language and type of content**.
-* Control how your page **appears in search results and on social media**.
+- Tell search engines the **title and description** of each page.
+- Define the **language and type of content**.
+- Control how your page **appears in search results and on social media**.
 
 > In short: Meta tags are the **ID card** of your webpage — they help search engines understand and present your site professionally to users.
 
@@ -151,18 +152,18 @@ Specifies **who wrote or owns the page**, which helps establish credibility — 
 Tells search engines **whether they can index and follow links on the page**.
 Common values include:
 
-* `index, follow` → Allow indexing and link crawling (default).
-* `noindex, nofollow` → Prevent indexing and link following (useful for private or temporary pages).
+- `index, follow` → Allow indexing and link crawling (default).
+- `noindex, nofollow` → Prevent indexing and link following (useful for private or temporary pages).
 
 **A powerful tool:** Lets you control how your pages appear in search results.
 
 ### 7. Open Graph Tags – For Social Media Sharing
 
 ```html
-<meta property="og:title" content="Page Title">
-<meta property="og:description" content="Short description">
-<meta property="og:image" content="image.jpg">
-<meta property="og:url" content="https://example.com">
+<meta property="og:title" content="Page Title" />
+<meta property="og:description" content="Short description" />
+<meta property="og:image" content="image.jpg" />
+<meta property="og:url" content="https://example.com" />
 ```
 
 These tags control **how your page looks when shared on social media** platforms like Facebook or Twitter.
@@ -191,5 +192,6 @@ Each tag serves a specific purpose to make your website more structured, readabl
 In the next lesson, we’ll explore [**Semantic Elements**](/en/categories/resources/semantic-elements-and-content-elements/) in HTML — the tags that give meaning and structure to your content.
 
 **To learn more**
+
 - [W3Schools](https://www.w3schools.com/tags/tag_meta.asp)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta)

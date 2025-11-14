@@ -2,13 +2,14 @@
 title: "How to Use and Link CSS in HTML (Simple Guide with Examples)"
 description: "Learn how to use and link CSS to your HTML pages in three different ways — inline, internal, and external. A step-by-step Arabic guide for beginners to master web styling easily."
 draft: false
-categories: ['resources']
-tags: ['css']
+categories: ["resources"]
+tags: ["css"]
 authors:
   - mahmoudadel
-series: ['css-tutorial']
+series: ["css-tutorial"]
 series_order: 1
-weight: -6
+slug: "css-usage-and-linking-methods-in-html"
+weight: -11
 ---
 
 The **CSS** is the **styling language** used to design and format **HTML** code,
@@ -28,7 +29,6 @@ Now, let’s start with a simple definition of **CSS**,
 and then learn **how to use it with HTML**,
 and the different **ways to link a CSS file to an HTML file**.
 
-
 ## What is CSS and Why Do We Use It?
 
 **CSS** stands for **Cascading Style Sheets**,
@@ -41,8 +41,8 @@ such as colors, font sizes, element positioning, and spacing.
 
 You can think of it like this:
 
-* **HTML** = the structure of the page
-* **CSS** = the visual appearance and design
+- **HTML** = the structure of the page
+- **CSS** = the visual appearance and design
 
 **In simple terms:**
 HTML alone only displays plain text,
@@ -65,22 +65,22 @@ It’s fine for quick experiments or temporary edits — but not suitable for re
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Inline Example</title>
-</head>
-<body>
-  <h1>Method 1: Using style inside the tag</h1>
-  <p style="color: blue;">This paragraph is blue.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Inline Example</title>
+  </head>
+  <body>
+    <h1>Method 1: Using style inside the tag</h1>
+    <p style="color: blue;">This paragraph is blue.</p>
+  </body>
 </html>
 ```
 
 **Why is this method not recommended?**
 
-* If you have many elements that share the same style, you’ll have to repeat the code — which makes maintenance hard.
-* If you want to change a color or font site-wide, you’d have to update every `style` attribute manually.
-* It makes your HTML messy and harder to read.
+- If you have many elements that share the same style, you’ll have to repeat the code — which makes maintenance hard.
+- If you want to change a color or font site-wide, you’d have to update every `style` attribute manually.
+- It makes your HTML messy and harder to read.
 
 ### 2. Internal CSS — Writing CSS Inside the Same HTML File (Within `<style>`)
 
@@ -92,26 +92,32 @@ It’s useful for single-page projects or quick prototypes.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Internal Example</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    h1 { color: #2c3e50; }
-    p { color: blue; }
-  </style>
-</head>
-<body>
-  <h1>Method 2: Internal CSS</h1>
-  <p>This paragraph is styled from the &lt;style&gt; tag inside the head.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Internal Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Method 2: Internal CSS</h1>
+    <p>This paragraph is styled from the &lt;style&gt; tag inside the head.</p>
+  </body>
 </html>
 ```
 
 **Pros and Cons:**
 
-* Easier to organize styles for a single HTML page.
-* But if you have multiple pages, you’ll have to repeat the same code — which isn’t practical.
+- Easier to organize styles for a single HTML page.
+- But if you have multiple pages, you’ll have to repeat the same code — which isn’t practical.
 
 ### 3. External CSS — Linking a Separate CSS File (The Best Practice)
 
@@ -123,9 +129,15 @@ This approach makes your project more organized, reusable, and faster (thanks to
 
 ```css
 /* styles.css */
-body { font-family: Arial, sans-serif; }
-h1 { color: #2c3e50; }
-p { color: blue; }
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #2c3e50;
+}
+p {
+  color: blue;
+}
 ```
 
 **Linking it in HTML:**
@@ -133,23 +145,23 @@ p { color: blue; }
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>External Example</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Method 3: External CSS</h1>
-  <p>This paragraph gets its color from an external CSS file.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>External Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Method 3: External CSS</h1>
+    <p>This paragraph gets its color from an external CSS file.</p>
+  </body>
 </html>
 ```
 
 **Why External CSS is the Best Choice:**
 
-* You can update the design for all pages from one place.
-* Better performance since the file can be cached by browsers.
-* Keeps your code clean, organized, and easy to maintain.
+- You can update the design for all pages from one place.
+- Better performance since the file can be cached by browsers.
+- Keeps your code clean, organized, and easy to maintain.
 
 **In short:**
 Always use **External CSS**, even for small projects.

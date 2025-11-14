@@ -2,13 +2,14 @@
 title: "Semantic vs Non-Semantic HTML: Difference & Examples"
 description: "Learn the differences between semantic and non-semantic HTML tags, why they matter for SEO & accessibility, and practical examples you can use today."
 draft: false
-categories: ['resources']
-tags: ['html']
+categories: ["resources"]
+tags: ["html"]
 authors:
-    - mahmoudadel
-series: ['html-tutorial']
+  - mahmoudadel
+series: ["html-tutorial"]
 series_order: 3
-weight: -4
+slug: "semantic-elements-and-content-elements"
+weight: -3
 ---
 
 Here’s the English translation of your text, keeping the same structure, tone, and Markdown formatting:
@@ -17,8 +18,8 @@ After we saw in the previous part [how to use Metadata in HTML](/en/categories/r
 
 HTML tags are divided into two main types:
 
-* **Semantic Elements**
-* **Non-Semantic Elements**
+- **Semantic Elements**
+- **Non-Semantic Elements**
 
 ## The Difference Between Semantic and Non-Semantic Tags
 
@@ -32,12 +33,12 @@ For example, when you see a tag like `<header>` or `<footer>`, you immediately u
 
 **Examples of semantic elements:**
 
-* `<article>`: Represents an independent article or post.
-* `<nav>`: Contains the website’s navigation links.
-* `<section>`: A specific part of the page that groups related content.
-* `<header>` and `<footer>`: Represent the page or section header and footer.
-* `<figure>` and `<figcaption>`: Used to display images or illustrations with their captions.
-* `<main>`: Represents the main content area of the page.
+- `<article>`: Represents an independent article or post.
+- `<nav>`: Contains the website’s navigation links.
+- `<section>`: A specific part of the page that groups related content.
+- `<header>` and `<footer>`: Represent the page or section header and footer.
+- `<figure>` and `<figcaption>`: Used to display images or illustrations with their captions.
+- `<main>`: Represents the main content area of the page.
 
 Using these elements makes your code **cleaner and easier to read**, and it also helps search engines and assistive technologies (like screen readers) understand the content more accurately.
 
@@ -78,8 +79,8 @@ The `<span>` tag is used to **style a small portion of text** or a specific inli
 
 **Main Difference:**
 
-* `<div>` → Used to group large sections or elements.
-* `<span>` → Used to style small portions of text.
+- `<div>` → Used to group large sections or elements.
+- `<span>` → Used to style small portions of text.
 
 When you start building web pages, you’ll rely heavily on these tags, since most modern web layouts are based on using `<div>` to divide the page into sections — such as the header, main content, sidebar, and footer.
 Then, you use CSS to control the **positioning, colors, and size** of each part.
@@ -92,7 +93,7 @@ Then, you use CSS to control the **positioning, colors, and size** of each part.
 <div class="footer">Footer</div>
 ```
 
-*In short:*
+_In short:_
 `<div>` and `<span>` are **the foundation of any HTML layout**, and what brings them to life is **CSS**, which turns them into a complete, well-designed web page.
 
 ## Uses of Semantic Elements
@@ -107,17 +108,17 @@ The `<header>` tag is used to create **the top section or introduction of a page
 
 Inside a `<header>`, you can include elements such as:
 
-* **The main heading** of the page or website (like `<h1>` or `<h2>`).
-* **The logo** or site icon.
-* **Navigation links** that help users move to different parts of the site.
-* Or even information about the author or the content.
+- **The main heading** of the page or website (like `<h1>` or `<h2>`).
+- **The logo** or site icon.
+- **Navigation links** that help users move to different parts of the site.
+- Or even information about the author or the content.
 
 **Example:**
 
 ```html
 <header>
   <h1>CodeZelo Title</h1>
-  <img src="CodeZelo-logo.png" alt="CodeZelo Logo">
+  <img src="CodeZelo-logo.png" alt="CodeZelo Logo" />
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -180,8 +181,8 @@ The content inside `<main>` should be **unique and specific** to that page, and 
 
 **Important Notes:**
 
-* There should only be **one `<main>`** element per page.
-* You should **not** place `<main>` inside elements like `<header>`, `<footer>`, `<nav>`, or `<article>`.
+- There should only be **one `<main>`** element per page.
+- You should **not** place `<main>` inside elements like `<header>`, `<footer>`, `<nav>`, or `<article>`.
 
 In short, `<main>` is the **heart of the page** — it holds the core content that users are there for, and it helps search engines and screen readers quickly identify where the important information is.
 
@@ -198,7 +199,10 @@ Each `<section>` usually contains a **heading** (like `<h2>` or `<h3>`) and some
 ```html
 <section>
   <h2>About the Website</h2>
-  <p>This website is designed to help beginners learn HTML in a simple and easy way.</p>
+  <p>
+    This website is designed to help beginners learn HTML in a simple and easy
+    way.
+  </p>
 </section>
 
 <section>
@@ -209,8 +213,8 @@ Each `<section>` usually contains a **heading** (like `<h2>` or `<h3>`) and some
 
 **Important Notes:**
 
-* The `<section>` tag is a **semantic element**, meaning it tells the browser and search engines the purpose of that part of the page.
-* It helps organize the content logically, making the code easier to read and maintain.
+- The `<section>` tag is a **semantic element**, meaning it tells the browser and search engines the purpose of that part of the page.
+- It helps organize the content logically, making the code easier to read and maintain.
 
 In short, `<section>` is a **tag used to divide a webpage into related parts**, each with a clear topic or idea.
 
@@ -220,17 +224,20 @@ The `<article>` tag is used to define **self-contained content**, meaning a sect
 
 Content placed inside an `<article>` is usually something like:
 
-* A blog post
-* A news report or article
-* A forum post
-* Or even a comment or standalone social media post
+- A blog post
+- A news report or article
+- A forum post
+- Or even a comment or standalone social media post
 
 **Simple Example:**
 
 ```html
 <article>
   <h2>The Importance of Learning HTML</h2>
-  <p>HTML is the first step for anyone who wants to enter the world of web development. Without it, no website can function properly.</p>
+  <p>
+    HTML is the first step for anyone who wants to enter the world of web
+    development. Without it, no website can function properly.
+  </p>
 </article>
 ```
 
@@ -263,8 +270,8 @@ A common use of `<aside>` is as a **sidebar** on a webpage — just like what yo
 
 **Important Notes:**
 
-* The content inside `<aside>` is **indirectly related** to the main content.
-* It doesn’t have a special appearance in the browser by default, but you can **style it using CSS** to make it look like a sidebar or a separate box.
+- The content inside `<aside>` is **indirectly related** to the main content.
+- It doesn’t have a special appearance in the browser by default, but you can **style it using CSS** to make it look like a sidebar or a separate box.
 
 In short, `<aside>` is the perfect place for any **extra information or side notes** that support the main content without being part of it directly.
 
@@ -274,10 +281,10 @@ The `<footer>` tag is used to define the **footer of a page or section** — the
 
 Content inside a `<footer>` might include:
 
-* Author information or copyright details
-* Contact links or social media links
-* Quick links (like “Back to Top” or “Privacy Policy”)
-* A site map or related document links
+- Author information or copyright details
+- Contact links or social media links
+- Quick links (like “Back to Top” or “Privacy Policy”)
+- A site map or related document links
 
 You can even use **multiple `<footer>` elements** on the same page —
 for example, one at the **bottom of the entire page**, and another **inside a specific article or section**.
@@ -310,5 +317,6 @@ With practice and by following proper HTML coding standards, you’ll learn **wh
 In the next lesson, we’ll talk about **Content & Text Elements** — and how to control the appearance of text using HTML tags.
 
 **To learn more**
+
 - [W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)

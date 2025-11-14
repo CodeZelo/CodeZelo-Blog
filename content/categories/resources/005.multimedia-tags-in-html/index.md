@@ -2,13 +2,14 @@
 title: "شرح وسوم المالتيميديا في HTML — تعلم استخدام img, video, وaudio بطريقة بسيطة"
 description: "في المقال ده هتتعلم إزاي تضيف صور، فيديوهات، وملفات صوت لصفحة الويب بتاعتك باستخدام وسوم HTML الخاصة بالمالتيميديا. هنشرح خطوة بخطوة وسوم img, video, وaudio مع الأمثلة العملية وأهم الخصائص اللي هتخلي موقعك شكله احترافي وأداءه أسرع."
 draft: false
-categories: ['resources']
-tags: ['html']
+categories: ["resources"]
+tags: ["html"]
 authors:
   - mahmoudadel
-series: ['html-tutorial']
+series: ["html-tutorial"]
 series_order: 5
-weight: -7
+slug: "multimedia-tags-in-html"
+weight: -5
 ---
 
 تقدّم لغة **HTML** العديد من الوسوم، ومن أهمها **وسوم الوسائط المتعددة (Multimedia)**، والتي تتلخص في ثلاثة وسوم أساسية:  
@@ -18,7 +19,7 @@ weight: -7
 
 ## وسم الصورة `<img>` في HTML
 
-!['وسم الصورة image في HTML'](images/image-tag-in-html.webp 'وسم الصورة image في HTML')
+!['وسم الصورة image في HTML'](images/image-tag-in-html.webp "وسم الصورة image في HTML")
 
 لإضافة صورة داخل صفحة ويب باستخدام لغة **HTML**، نستخدم الوسم `<img>`.
 
@@ -36,19 +37,19 @@ weight: -7
 يمكن أن يكون المسار **نسبيًا** أو **مطلقًا**:
 
 - **المسار النسبي:**  
-    عندما تكون الصورة موجودة داخل ملفات المشروع نفسه.
-    
+   عندما تكون الصورة موجودة داخل ملفات المشروع نفسه.
+
 ```html
-<img src="images/logo.png" alt="شعار الموقع">
+<img src="images/logo.png" alt="شعار الموقع" />
 ```
-    
+
 في المثال السابق، الصورة موجودة داخل مجلد اسمه `images` داخل المشروع.
-    
+
 - **المسار المطلق:**  
-    عندما تكون الصورة موجودة على الإنترنت.
-    
+   عندما تكون الصورة موجودة على الإنترنت.
+
 ```html
-<img src="https://example.com/logo.png" alt="شعار الموقع من الإنترنت">
+<img src="https://example.com/logo.png" alt="شعار الموقع من الإنترنت" />
 ```
 
 #### 2. خاصية `alt`
@@ -61,12 +62,11 @@ weight: -7
 مثال:
 
 ```html
-<img src="profile.jpg" alt="صورة الملف الشخصي">
+<img src="profile.jpg" alt="صورة الملف الشخصي" />
 ```
 
 > **خد بالك:**  
 > استخدم نصوصًا بديلة تصف محتوى الصورة بدقة، لأن ذلك يساعد في **تحسين محركات البحث (SEO)**.
-
 
 #### 3. خاصيتا `width` و `height`
 
@@ -75,15 +75,16 @@ weight: -7
 مثال:
 
 ```html
-<img src="banner.jpg" alt="صورة بانر" width="600" height="300">
+<img src="banner.jpg" alt="صورة بانر" width="600" height="300" />
 ```
 
 > **ملاحظة:**  
 > يُفضَّل ضبط الأبعاد باستخدام **CSS** بدلًا من تحديدها مباشرة في الوسم، حتى يسهل التحكم في التصميم لاحقًا:
 
- ```html
- <img src="banner.jpg" alt="صورة بانر" class="banner">
- ```
+```html
+<img src="banner.jpg" alt="صورة بانر" class="banner" />
+```
+
 ```css
 .banner {
   width: 600px;
@@ -102,7 +103,7 @@ weight: -7
 مثال:
 
 ```html
-<img src="gallery/photo1.jpg" alt="صورة من المعرض" loading="lazy">
+<img src="gallery/photo1.jpg" alt="صورة من المعرض" loading="lazy" />
 ```
 
 > **نصيحة:**  
@@ -111,18 +112,18 @@ weight: -7
 ### مثال كامل:
 
 ```html
-<img 
-  src="images/nature.jpg" 
+<img
+  src="images/nature.jpg"
   alt="منظر طبيعي جميل"
-  width="500" 
-  height="300" 
+  width="500"
+  height="300"
   loading="lazy"
->
+/>
 ```
 
 ## وسم الفيديو `<video>` في HTML
 
-!['وسم الفيديو video في HTML'](images/video-tag-in-html.webp 'وسم الفيديو video في HTML')
+!['وسم الفيديو video في HTML'](images/video-tag-in-html.webp "وسم الفيديو video في HTML")
 
 لو حابب تضيف **فيديو** في صفحة الويب بتاعتك،  
 يبقى الوسم اللي هنستخدمه هو `<video>`.
@@ -144,8 +145,8 @@ weight: -7
 وده الشكل الصحيح والأكتر استخدامًا
 
 ```html
-<video controls>   
-	<source src="video.mp4" type="video/mp4"> 
+<video controls>
+  <source src="video.mp4" type="video/mp4" />
 </video>
 ```
 
@@ -154,16 +155,15 @@ weight: -7
 #### 1. خاصية `src`
 
 زي الصورة بالظبط، بتحدد **مسار الفيديو**:
-- ممكن يكون **نسبي** لو الفيديو جوه المشروع.  
+
+- ممكن يكون **نسبي** لو الفيديو جوه المشروع.
 - أو **مطلق** لو الفيديو موجود على الإنترنت.
-    
 
 مثال:
 
 ```html
 <video src="videos/intro.mp4" controls></video>
 ```
-
 
 #### 2. خاصية `controls`
 
@@ -202,7 +202,7 @@ weight: -7
 
 #### 5. خاصية `poster`
 
-الخاصية دي جميلة جدًا 
+الخاصية دي جميلة جدًا
 بتخليك تختار **صورة تظهر مكان الفيديو قبل التشغيل** (زي الغلاف).
 
 ```html
@@ -212,28 +212,28 @@ weight: -7
 ### مثال كامل على وسم `<video>`
 
 ```html
-<video 
-  width="640" 
-  height="360" 
-  controls 
-  autoplay 
-  muted 
-  loop 
+<video
+  width="640"
+  height="360"
+  controls
+  autoplay
+  muted
+  loop
   poster="images/video-cover.jpg"
 >
-  <source src="videos/promo.mp4" type="video/mp4">
-  <source src="videos/promo.webm" type="video/webm">
+  <source src="videos/promo.mp4" type="video/mp4" />
+  <source src="videos/promo.webm" type="video/webm" />
   متصفحك لا يدعم تشغيل الفيديو
 </video>
 ```
 
->**نصيحة:**  
+> **نصيحة:**  
 > من الأفضل تضيف أكتر من صيغة للفيديو (زي `.mp4` و `.webm`)  
 > عشان تتأكد إنه هيشتغل على كل المتصفحات.
 
 ## وسم الصوت `<audio>` في HTML
 
-!['وسم الصوت audio في HTML'](images/audio-tag-in-html.webp 'وسم الصوت audio في HTML')
+!['وسم الصوت audio في HTML'](images/audio-tag-in-html.webp "وسم الصوت audio في HTML")
 
 لو حابب تضيف **ملف صوت** (زي موسيقى، مؤثرات صوتية، أو تسجيل) في صفحة الويب،  
 فالوسم اللي هنستخدمه هو `<audio>`.
@@ -254,7 +254,7 @@ weight: -7
 
 ```html
 <audio controls>
-  <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.mp3" type="audio/mpeg" />
 </audio>
 ```
 
@@ -322,19 +322,12 @@ weight: -7
 <audio src="song.mp3" controls preload="metadata"></audio>
 ```
 
-
 ### مثال كامل على وسم `<audio>`
 
 ```html
-<audio 
-  controls 
-  autoplay 
-  muted 
-  loop 
-  preload="metadata"
->
-  <source src="sounds/music.mp3" type="audio/mpeg">
-  <source src="sounds/music.ogg" type="audio/ogg">
+<audio controls autoplay muted loop preload="metadata">
+  <source src="sounds/music.mp3" type="audio/mpeg" />
+  <source src="sounds/music.ogg" type="audio/ogg" />
   متصفحك لا يدعم تشغيل الصوت
 </audio>
 ```
@@ -347,8 +340,8 @@ weight: -7
 
 بعد ما خلصنا وسوم الوسائط. وشرحنا كمان [الوسوم الخاصة بالنصوص في HTML وازاي ننسقها](/categories/resources/html-text-tags-simple-guide/) في المقال اللي فات دلوقتي جه الوقت إننا ننظم العناصر جوه الصفحة بإستخدام القوائم والجداول في HTML. وده اللي هنشرحه في الدرس الجاي إن شاء الله. إستنوني.
 
-
 **للمزيد من المعلومات**
+
 - [W3Schools](https://www.w3schools.com/html/html_media.asp)
 - MDN Web Docs
   - [وسم Img](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img)

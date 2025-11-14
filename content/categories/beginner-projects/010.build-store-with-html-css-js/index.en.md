@@ -1,12 +1,13 @@
 ---
 title: "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript"
 description: "Discover how I started my journey creating my first online store from scratch using only HTML, CSS, and JavaScript. Learn step by step how to build a simple yet professional store without any complex tools — in an easy, beginner-friendly way."
-categories: ['beginner-projects']
-tags: ['html', 'css', 'js']
+categories: ["beginner-projects"]
+tags: ["html", "css", "js"]
 draft: false
 authors:
   - mahmoudadel
-weight: -1
+slug: "build-store-with-html-css-js"
+weight: -10
 ---
 
 In this course, we’ll learn together how to design and build a simple yet professional online store using only HTML, CSS, and JavaScript—relying on the basic tools every beginner web developer needs to get started in web development.
@@ -25,7 +26,7 @@ To begin, let’s talk about the **main components of an online store** before w
 
 The core idea behind designing an online store is **simplicity, organization, and clean design**.
 
-__What Is an Online Store?__
+**What Is an Online Store?**
 
 An online store is a website designed to **sell products**, whether they’re your own or those of other sellers.
 
@@ -33,7 +34,7 @@ The store we’ll build in this course will be simple, because the main goal is 
 
 We’ll do this **without relying on any databases or back-end languages** such as **PHP** or **Node.js**.
 
-__The Main Pages of a Simple Online Store__
+**The Main Pages of a Simple Online Store**
 
 Our online store will consist of **five main pages**:
 
@@ -52,8 +53,7 @@ Our online store will consist of **five main pages**:
 5. **Checkout Page (`checkout.html`):**
    Includes a simple form for entering purchase details and completing the order, followed by a success message.
 
-
-__Project Structure__
+**Project Structure**
 
 It’s best to **organize your project files from the very beginning**, so it’s easier to manage later — especially if you decide to **expand the project** or add more pages and features.
 
@@ -84,20 +84,20 @@ store/
 │ 	     ....
 ```
 
-__Tools You’ll Need to Build the Online Store__
+**Tools You’ll Need to Build the Online Store**
 
 You don’t need any complicated software for this project — everything we’ll use is simple and beginner-friendly:
 
-* **A lightweight code editor** such as *VS Code* or *Sublime Text*
-* **A web browser** like *Google Chrome* or *Microsoft Edge*
-* **And, of course, a bit of enthusiasm 😄**
+- **A lightweight code editor** such as _VS Code_ or _Sublime Text_
+- **A web browser** like _Google Chrome_ or _Microsoft Edge_
+- **And, of course, a bit of enthusiasm 😄**
 
 We’ll rely on just a few core technologies:
 
-* **HTML** – The structure of our website. It defines the layout and content of each page.
-* **CSS** – The styling language that gives our store its colors, spacing, and overall visual appeal.
-* **JavaScript (JS)** – The scripting language that makes the website interactive and dynamic.
-* **JSON** – A lightweight data format we’ll use as a simple “database” to store product information.
+- **HTML** – The structure of our website. It defines the layout and content of each page.
+- **CSS** – The styling language that gives our store its colors, spacing, and overall visual appeal.
+- **JavaScript (JS)** – The scripting language that makes the website interactive and dynamic.
+- **JSON** – A lightweight data format we’ll use as a simple “database” to store product information.
   It will look something like this:
 
 ```json
@@ -162,7 +162,7 @@ We’ll divide the page into **four main sections** to keep it clear and easy to
 3. **Brands Section** — If you have brand partnerships, this is where you can display their logos.
 4. **Extra Section (Contact or Testimonials)** — A space where users can get in touch or see customer reviews to help build trust.
 
-__Basic Structure of the Page (HTML)__
+**Basic Structure of the Page (HTML)**
 
 Now, open your `index.html` file and write the following code 👇
 
@@ -231,7 +231,8 @@ Now, open your `index.html` file and write the following code 👇
     <!-- ====== Footer ====== -->
     <footer>
       <p>
-        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and JS
+        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and
+        JS
       </p>
     </footer>
 
@@ -240,7 +241,7 @@ Now, open your `index.html` file and write the following code 👇
 </html>
 ```
 
-__Step-by-Step Code Explanation (Simple & Clear)__
+**Step-by-Step Code Explanation (Simple & Clear)**
 
 1. **Header:**
    This is the top part of the page — it contains the store name and the main navigation links.
@@ -266,7 +267,7 @@ __Step-by-Step Code Explanation (Simple & Clear)__
    The bottom part of the page — contains copyright text and a short site description or message.
    It’s good practice to include the footer on every page to make the site feel complete and consistent.
 
-__Styling the Page (CSS)__
+**Styling the Page (CSS)**
 
 After we finish the basic structure, we need to style the page so it looks attractive and readable.
 
@@ -430,7 +431,6 @@ footer {
   margin-top: 30px;
 }
 
-
 /* ====== Responsive====== */
 @media (max-width: 768px) {
   nav {
@@ -456,7 +456,7 @@ footer {
 }
 ```
 
-__JavaScript Code for the Navigation Bar__
+**JavaScript Code for the Navigation Bar**
 
 After finishing the page structure and styling it nicely,
 it’s time to add a bit of **JavaScript** to make the website **interactive and dynamic**.
@@ -507,16 +507,17 @@ document.addEventListener("DOMContentLoaded", function () {
         featuredContainer.innerHTML = html;
       })
       .catch(() => {
-        featuredContainer.innerHTML = "<p>An error occurred while loading products.</p>";
+        featuredContainer.innerHTML =
+          "<p>An error occurred while loading products.</p>";
       });
   }
 });
 ```
 
-* This JavaScript code handles **opening and closing the navigation menu** when the website is viewed on **mobile devices or small screens**.
+- This JavaScript code handles **opening and closing the navigation menu** when the website is viewed on **mobile devices or small screens**.
   In other words, when a visitor taps the menu icon, the navigation links will appear or disappear.
 
-* It also **fetches three random products** from the `products.json` file
+- It also **fetches three random products** from the `products.json` file
   and displays them inside the **Featured Products** section — making the home page look fresh and engaging each time it’s loaded.
 
 ## Designing the Products Page
@@ -531,12 +532,12 @@ view their prices and images, and open the product details with just one click.
 
 This page will include:
 
-* A clear title at the top
-* A grid of product **cards** for displaying items
-* A button to view each product’s details
-* A **responsive design** that works smoothly on all devices (desktop, mobile, and tablet)
+- A clear title at the top
+- A grid of product **cards** for displaying items
+- A button to view each product’s details
+- A **responsive design** that works smoothly on all devices (desktop, mobile, and tablet)
 
-__Products Page Code (HTML)__
+**Products Page Code (HTML)**
 
 Open the `products.html` file inside your project folder,
 and write the following code 👇
@@ -577,7 +578,8 @@ and write the following code 👇
 
     <footer>
       <p>
-        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and JS
+        © 2025 All Rights Reserved - Online Store designed using HTML, CSS, and
+        JS
       </p>
     </footer>
 
@@ -586,7 +588,7 @@ and write the following code 👇
 </html>
 ```
 
-__Step-by-step Explanation of the Code__
+**Step-by-step Explanation of the Code**
 
 1. **Header:**
    The same header we used on the home page, to keep a consistent look across all pages.
@@ -611,7 +613,7 @@ __Step-by-step Explanation of the Code__
    `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));`
    the layout adapts automatically to any screen — desktop, tablet, or mobile.
 
-__Styling the Products Page (CSS)__
+**Styling the Products Page (CSS)**
 
 Now open the file:
 `css/style.css`
@@ -663,7 +665,7 @@ and add the new CSS rules at the end of the file to style the products page and 
 }
 ```
 
-__JavaScript Code__
+**JavaScript Code**
 
 Finally, open the file:
 `js/main.js`
@@ -701,7 +703,8 @@ document.addEventListener("DOMContentLoaded", function () {
         productsContainer.innerHTML = html;
       })
       .catch(() => {
-        productsContainer.innerHTML = "<p>An error occurred while loading products.</p>";
+        productsContainer.innerHTML =
+          "<p>An error occurred while loading products.</p>";
       });
   }
 });
@@ -713,15 +716,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 On this page, we’ll display all the important information about a single product, such as:
 
-* Product image
-* Product name
-* Price
-* A short description
-* A button labeled **“Add to Cart”**
+- Product image
+- Product name
+- Price
+- A short description
+- A button labeled **“Add to Cart”**
 
 This page helps users learn more about a product before deciding to buy it.
 
-__Page Structure (HTML)__
+**Page Structure (HTML)**
 
 Let’s start by creating a new file called:
 `product.html`
@@ -795,7 +798,7 @@ These styles will make the page look organized, with the product clear and well-
 .product-image img {
   width: 350px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-details {
@@ -906,7 +909,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
       .catch(() => {
-        productContainer.innerHTML = "<p>An error occurred while loading the data.</p>";
+        productContainer.innerHTML =
+          "<p>An error occurred while loading the data.</p>";
       });
   }
 });
@@ -933,10 +937,10 @@ Open a file called:
 `cart.html`
 Inside it, add the code for the cart page, which includes the main elements:
 
-* Page title
-* A table or product cards for the added items
-* Total price
-* Control buttons (like delete product or continue to checkout)
+- Page title
+- A table or product cards for the added items
+- Total price
+- Control buttons (like delete product or continue to checkout)
 
 ```html
 <!DOCTYPE html>
@@ -1022,7 +1026,7 @@ so the visitor can easily see the prices, quantities, and total amount.
   padding: 15px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cart-item img {
@@ -1136,17 +1140,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 
-* When the user clicks **“Add to Cart”** on the product page,
+- When the user clicks **“Add to Cart”** on the product page,
   the product is saved in `localStorage`.
 
-* On the cart page (`cart.html`), we read this data from `localStorage`
+- On the cart page (`cart.html`), we read this data from `localStorage`
   and display the products the user selected.
 
-* If the cart is empty, a friendly message appears saying **“Your cart is empty.”**
+- If the cart is empty, a friendly message appears saying **“Your cart is empty.”**
 
-* The code also automatically calculates the **total price**.
+- The code also automatically calculates the **total price**.
 
-* And if the user clicks the “Delete” button, the product is immediately removed from the cart, and the page updates automatically.
+- And if the user clicks the “Delete” button, the product is immediately removed from the cart, and the page updates automatically.
 
 🧩 **Next Step:**
 After setting up the cart page, the final step is to create the **Checkout Page**
@@ -1159,10 +1163,10 @@ so we can complete the full online store from start to finish.
 The **Checkout Page** is where the user completes the purchase process.
 Here, they’ll enter their information, such as:
 
-* Name
-* Address
-* Phone number
-* And select a payment method
+- Name
+- Address
+- Phone number
+- And select a payment method
 
 Even if our project is simple and not connected to a real database,
 this step is very important to learn how to create a complete **form** from start to finish.
@@ -1174,8 +1178,8 @@ Create a new file in your project folder called:
 Inside it, write the code that builds the page structure,
 which includes:
 
-* A form with input fields (name, address, phone number, payment method)
-* And a “Confirm Order” button
+- A form with input fields (name, address, phone number, payment method)
+- And a “Confirm Order” button
 
 ```html
 <!DOCTYPE html>
@@ -1385,9 +1389,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Clear the cart after checkout
       localStorage.removeItem("cart");
       cartItemsContainer.innerHTML = "<p>Your cart is currently empty.</p>";
-      document.getElementById(
-        "total-price"
-      ).textContent = `Total: 0 USD`;
+      document.getElementById("total-price").textContent = `Total: 0 USD`;
 
       // Show confirmation message
       const messageBox = document.getElementById("confirmation-message");
@@ -1410,14 +1412,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 **Its Function:**
 
-* When the user clicks the **“Confirm Order”** button,
+- When the user clicks the **“Confirm Order”** button,
   the code prevents the page from refreshing (`event.preventDefault()`).
 
-* Then, it reads the data the user entered.
+- Then, it reads the data the user entered.
 
-* It clears the products from `localStorage` because the order has been confirmed.
+- It clears the products from `localStorage` because the order has been confirmed.
 
-* Finally, it shows a friendly message such as:
+- Finally, it shows a friendly message such as:
   **“Your order has been confirmed 🎉 Thank you for shopping with us!”**
 
 And that’s it — you’ve completed all the pages of your online store successfully —

@@ -2,13 +2,14 @@
 title: "HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting"
 description: "Learn HTML text tags in an easy, beginner-friendly way in Arabic. A practical guide to headings, paragraphs, and text formatting — including bold, italic, and underlined styles."
 draft: false
-categories: ['resources']
-tags: ['html']
+categories: ["resources"]
+tags: ["html"]
 authors:
   - mahmoudadel
-series: ['html-tutorial']
+series: ["html-tutorial"]
 series_order: 4
-weight: -5
+slug: "html-text-tags-simple-guide"
+weight: -4
 ---
 
 In the previous article, we talked about [semantic elements](/en/categories/resources/semantic-elements-and-content-elements).
@@ -20,7 +21,6 @@ we’ll rely on the **HTML text formatting tags**.
 In HTML, there are tags used for writing **headings** or **paragraphs**.
 To understand how to use them correctly,
 we’ll start by explaining **heading tags** first, and then move on to **paragraph tags**.
-
 
 ## Headings in HTML
 
@@ -42,7 +42,6 @@ When using the `<h1>` tag, keep it for the **main title** of the page only —
 and don’t repeat it more than once.
 This helps search engines (like Google) understand and organize your content properly.
 
-
 ## Paragraphs in HTML
 
 To write a paragraph in HTML, you simply use the `<p>` tag like this:
@@ -62,14 +61,13 @@ and there’s usually **some spacing before and after it** to keep the layout cl
 HTML provides several tags that help you **format text**.
 Let’s go through each one step by step with examples.
 
-
 ### 1. Making Text Bold in HTML
 
 To make text appear **bold** in HTML,
 you can use two different tags:
 
-* `<strong>`
-* `<b>`
+- `<strong>`
+- `<b>`
 
 Both make the text look bold,
 but there’s an important difference:
@@ -90,8 +88,8 @@ especially when you want to highlight key information or an important message.
 To make text appear **italic**,
 you can use one of these two tags:
 
-* `<em>`
-* `<i>`
+- `<em>`
+- `<i>`
 
 Both display the text in italics,
 but `<em>` carries **semantic meaning**,
@@ -163,15 +161,15 @@ like copyrights or disclaimers.
 In HTML, there are two similar-looking tags,
 but each one has a different purpose:
 
-* `<sup>`
-* `<sub>`
+- `<sup>`
+- `<sub>`
 
 Both are used to format text **either above or below the baseline**.
 
 Here’s the simple difference:
 
-* `<sup>` (think of the heavy “p” 😄) makes the text appear **above the line**.
-* `<sub>` (the light “b”) makes the text appear **below the line**.
+- `<sup>` (think of the heavy “p” 😄) makes the text appear **above the line**.
+- `<sub>` (the light “b”) makes the text appear **below the line**.
 
 **Examples:**
 
@@ -192,8 +190,8 @@ like this:
 In HTML, there are two important tags that help you show **text changes** —
 for example, when a sentence or word has been removed or replaced.
 
-* `<del>` — represents **deleted text**
-* `<ins>` — represents **inserted text**
+- `<del>` — represents **deleted text**
+- `<ins>` — represents **inserted text**
 
 **Basic Example:**
 
@@ -227,7 +225,7 @@ and **where** it came from.
 
 **In short:**
 
-* `<del>` → deleted text
-* `<ins>` → inserted text
-* `cite` → source of the change
-* `datetime` → date of the change
+- `<del>` → deleted text
+- `<ins>` → inserted text
+- `cite` → source of the change
+- `datetime` → date of the change
