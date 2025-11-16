@@ -2,7 +2,7 @@
 title: "Best Guide to HTML Lists and Tables | Learn HTML From Scratch"
 description: "Learn how to create and use HTML lists and tables to organize content and display data professionally. A complete beginner-friendly explanation with examples as part of an HTML-from-scratch tutorial."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

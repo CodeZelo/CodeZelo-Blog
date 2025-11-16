@@ -28,8 +28,8 @@ Choose the programming project that matches your current level:
 
 | Section | Description |
 |:--------|:-------------|
-| ✍️ [Articles & Tips](/en/categories/articles-and-tips/) | Practical insights, productivity tips, and developer mindset guides. |
-| 📚 [Resources & References](/en/categories/resources/) | Tools, libraries, and sources to support your journey as a developer. |
+| ✍️ [Articles](/en/categories/articles/) | Practical insights, productivity tips, and developer mindset guides. |
+| 📚 [Tools](/en/categories/tools/) | Tools, libraries, and sources to support your journey as a developer. |
 
 ## 🏷️ Browse by Tags
 

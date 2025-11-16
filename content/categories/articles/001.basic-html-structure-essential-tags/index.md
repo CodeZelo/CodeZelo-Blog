@@ -2,7 +2,7 @@
 title: "شرح الهيكل الأساسي لصفحة الويب – أهم وسوم HTML لا غنى عنه"
 description: "تعرف على الهيكل الأساسي لصفحة الويب وتعلم أهم وسوم HTML التي لا غنى عنها لبناء موقع احترافي من الصفر، مع شرح مبسط وأمثلة توضيحية للمبتدئين."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

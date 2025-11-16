@@ -2,7 +2,7 @@
 title: "How to Use and Link CSS in HTML (Simple Guide with Examples)"
 description: "Learn how to use and link CSS to your HTML pages in three different ways — inline, internal, and external. A step-by-step Arabic guide for beginners to master web styling easily."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["css"]
 authors:
   - mahmoudadel

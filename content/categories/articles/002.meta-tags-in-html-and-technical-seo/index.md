@@ -1,7 +1,7 @@
 ---
 title: "وسوم الميتا (Meta Tags) وأهميتها في السيو التقني"
 description: "اكتشف أهمية وسوم الميتا (Meta Tags) في HTML وكيف تساعد محركات البحث على فهم صفحات موقعك وتحسين ظهورها في نتائج البحث. دليل مبسط لفهم السيو التقني وأهم وسوم الميتا بالأمثلة."
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 series: ["html-tutorial"]
 series_order: 2

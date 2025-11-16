@@ -2,7 +2,7 @@
 title: "الوسوم الدلالية ووسوم الـ HTML غير الدلالية"
 description: "تعرّف على الفروقات بين الوسوم الدلالية والغير دلالية في HTML، لماذا تهمّ SEO وإمكانية الوصول، وأمثلة عمليّة لترتيب أفضل في البحث."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

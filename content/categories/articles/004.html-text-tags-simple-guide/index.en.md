@@ -2,7 +2,7 @@
 title: "HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting"
 description: "Learn HTML text tags in an easy, beginner-friendly way in Arabic. A practical guide to headings, paragraphs, and text formatting — including bold, italic, and underlined styles."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

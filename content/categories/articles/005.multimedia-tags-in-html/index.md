@@ -2,7 +2,7 @@
 title: "شرح وسوم المالتيميديا في HTML — تعلم استخدام img, video, وaudio بطريقة بسيطة"
 description: "في المقال ده هتتعلم إزاي تضيف صور، فيديوهات، وملفات صوت لصفحة الويب بتاعتك باستخدام وسوم HTML الخاصة بالمالتيميديا. هنشرح خطوة بخطوة وسوم img, video, وaudio مع الأمثلة العملية وأهم الخصائص اللي هتخلي موقعك شكله احترافي وأداءه أسرع."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

@@ -2,7 +2,7 @@
 title: "HTML Text Tags ببساطة: العناوين، الفقرات، والتنسيق الكامل"
 description: "اتعلّم وسوم النصوص في HTML بطريقة سهلة وبالعربي. شرح عملي للعناوين، الفقرات، وخطوات تنسيق النصوص زي العريض، المائل، والمتسطّر."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

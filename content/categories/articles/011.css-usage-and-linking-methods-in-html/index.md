@@ -2,7 +2,7 @@
 title: "طرق استخدام وربط CSS بصفحات HTML (شرح مبسط بالأمثلة)"
 description: "اتعلّم إزاي تستخدم وتربط CSS بصفحات HTML بثلاث طرق مختلفة — داخل الوسوم، داخل الصفحة، أو من ملف خارجي. شرح عملي خطوة بخطوة وبالعربي للمبتدئين في تنسيق الويب."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["css"]
 authors:
   - mahmoudadel

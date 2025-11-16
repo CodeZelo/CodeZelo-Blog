@@ -1,7 +1,7 @@
 ---
 title: "Meta Tags and Their Importance in Technical SEO"
 description: "Discover the importance of Meta Tags in HTML and how they help search engines understand your web pages and improve their visibility in search results. A simple guide to understanding Technical SEO and the most important Meta Tags with examples."
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 series: ["html-tutorial"]
 series_order: 2

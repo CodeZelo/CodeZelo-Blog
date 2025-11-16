@@ -2,7 +2,7 @@
 title: "Understanding the Basic Structure of a Web Page – Essential HTML Tags You Can’t Do Without"
 description: "Learn the fundamental structure of a web page and discover the most essential HTML tags you need to build a professional website from scratch — explained simply with beginner-friendly examples."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

@@ -2,7 +2,7 @@
 title: "Semantic vs Non-Semantic HTML: Difference & Examples"
 description: "Learn the differences between semantic and non-semantic HTML tags, why they matter for SEO & accessibility, and practical examples you can use today."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

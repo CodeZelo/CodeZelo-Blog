@@ -2,7 +2,7 @@
 title: "أفضل شرح للقوائم والجداول في HTML | تعلم HTML من الصفر للمبتدئين"
 description: "تعرف على كيفية استخدام القوائم والجداول في HTML لتنظيم المحتوى وعرض البيانات باحتراف. شرح شامل لأنواع القوائم ووسوم الجداول مع أمثلة عملية للمبتدئين ضمن دورة HTML من الصفر."
 draft: false
-categories: ["resources"]
+categories: ["articles"]
 tags: ["html"]
 authors:
   - mahmoudadel

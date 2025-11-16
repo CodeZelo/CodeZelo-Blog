@@ -22,13 +22,13 @@
   weight = 20
 
 [[main]]
-  name = "Articles & Tips"
-  pageRef = "articles-and-tips"
+  name = "Articles"
+  pageRef = "articles"
   weight = 30
 
 [[main]]
-  name = "Resources"
-  pageRef = "resources"
+  name = "Tools"
+  pageRef = "tools"
   weight = 40
 
 # -- Footer Menu --
