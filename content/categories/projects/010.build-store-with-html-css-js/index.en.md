@@ -14,7 +14,7 @@ In this course, we’ll learn together how to design and build a simple yet prof
 
 We’ll build the store step by step so that by the end, you’ll have a fully functional project you can run and customize. You’ll learn how to connect different pages together and style each one beautifully using CSS.
 
-By the end of this article, you’ll know [how to use HTML](/en/categories/resources/basic-html-structure-essential-tags/), CSS, and JavaScript in a practical way through a real project—not just theoretical lessons. After writing the code yourself, you’ll be able to build a simple online store that includes essential features such as displaying products, adding them to a shopping cart, and moving to a checkout page.
+By the end of this article, you’ll know [how to use HTML](/en/categories/articles/basic-html-structure-essential-tags/), CSS, and JavaScript in a practical way through a real project—not just theoretical lessons. After writing the code yourself, you’ll be able to build a simple online store that includes essential features such as displaying products, adding them to a shopping cart, and moving to a checkout page.
 
 Whether you’ve already started learning programming or you’re just taking your first steps into web development, this course will be your first milestone toward understanding the fundamentals that will prepare you to build professional websites in the future.
 

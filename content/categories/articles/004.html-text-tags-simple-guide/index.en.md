@@ -12,7 +12,7 @@ slug: "html-text-tags-simple-guide"
 weight: -4
 ---
 
-In the previous article, we talked about [semantic elements](/en/categories/resources/semantic-elements-and-content-elements).
+In the previous article, we talked about [semantic elements](/en/categories/articles/semantic-elements-and-content-elements).
 But to use **text tags in HTML** and learn how to format them properly,
 we’ll rely on the **HTML text formatting tags**.
 

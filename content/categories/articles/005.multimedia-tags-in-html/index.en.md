@@ -339,7 +339,7 @@ Example:
 The `<audio>` tag, along with `<video>` and `<img>`, forms the foundation of **HTML multimedia**.
 By using these tags properly, you can make your web pages **more dynamic, engaging, and user-friendly**.
 
-After finishing the multimedia tags — and after we already covered [HTML text tags and how to format them](/en/categories/resources/html-text-tags-simple-guide/) in the previous article —
+After finishing the multimedia tags — and after we already covered [HTML text tags and how to format them](/en/categories/articles/html-text-tags-simple-guide/) in the previous article —
 it’s now time to learn how to organize page elements using **lists** and **tables** in HTML.
 
 That’s exactly what we’ll be exploring in the **next lesson**, God willing.

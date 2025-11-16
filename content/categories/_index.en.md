@@ -29,13 +29,14 @@ Read articles that help you improve your developer mindset:
 
 ---
 
-## 📚 Resources & References
-A curated collection of tools and materials to support your learning:
-- Links to popular libraries and frameworks  
-- Useful tools for design and development  
-- Cheat sheets and ready-to-use templates  
 
-[Explore Resources →](/en/categories/resources/)
+### 🧩 Interactive Tools
+- Flexbox Playground — Experiment with Flexbox properties in real-time  
+- Grid Playground — Learn CSS Grid with a visual and interactive approach  
+- Animation Lab — Create and test CSS animations step by step  
+- SEO Tools — Analyze and improve your website performance  
+
+[Explore Tools →](/en/categories/tools/)
 
 > 🧭 This page serves as your map to quickly reach the content that matches your level and interests.
 

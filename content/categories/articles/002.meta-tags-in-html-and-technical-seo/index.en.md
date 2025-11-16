@@ -189,7 +189,7 @@ Example: redirecting after login or download completion.
 Meta tags aren’t decorative — they’re **essential tools** for building professional web pages that are easy for both users and search engines to understand.
 Each tag serves a specific purpose to make your website more structured, readable, and SEO-friendly.
 
-In the next lesson, we’ll explore [**Semantic Elements**](/en/categories/resources/semantic-elements-and-content-elements/) in HTML — the tags that give meaning and structure to your content.
+In the next lesson, we’ll explore [**Semantic Elements**](/en/categories/articles/semantic-elements-and-content-elements/) in HTML — the tags that give meaning and structure to your content.
 
 **To learn more**
 

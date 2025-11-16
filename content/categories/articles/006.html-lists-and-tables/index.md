@@ -235,7 +235,7 @@ weight: -6
 ## في النهاية
 
 نصل بهذا إلى نهاية درس **القوائم والجداول في HTML**، وهما من أهم الأدوات المستخدمة لتنظيم المحتوى وترتيب البيانات داخل صفحات الويب.  
-ومع هذا الدرس نكون قد أكملنا جزءًا مهمًا من أساسيات **تنسيق المحتوى في HTML**، بعد أن انتهينا في الدرس السابق من شرح جميع [وسوم تنسيق النصوص](/categories/resources/html-text-tags-simple-guide) والطريقة الصحيحة لاستخدامها.
+ومع هذا الدرس نكون قد أكملنا جزءًا مهمًا من أساسيات **تنسيق المحتوى في HTML**، بعد أن انتهينا في الدرس السابق من شرح جميع [وسوم تنسيق النصوص](/categories/articles/html-text-tags-simple-guide) والطريقة الصحيحة لاستخدامها.
 
 هذه المفاهيم تُعدّ خطوة أساسية لأي مبتدئ في [تعلم HTML](/series/html-tutorial/)، لأنها تشكل الهيكل الذي يُبنى عليه أي موقع أو نظام ويب متكامل.  
 في الدروس القادمة سننتقل إلى مفاهيم جديدة تساعدك على تطوير صفحات أكثر احترافية وقابلة للتطوير.
@@ -249,4 +249,4 @@ weight: -6
 - MDN Web Docs
   - [القوائم في HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Lists)
 
-  - [[الجداول في HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table)
+  - [الجداول في HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table)

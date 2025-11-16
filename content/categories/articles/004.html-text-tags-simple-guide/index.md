@@ -12,7 +12,7 @@ slug: "html-text-tags-simple-guide"
 weight: -4
 ---
 
-في المقال اللي فات إتكلمنا عن [الوسوم الدلالية](/categories/resources/semantic-elements-and-content-elements) بس عشان نستخدم وسوم النصوص في HTML ونتعلم تنسيقها بطريقة صحيحة،  
+في المقال اللي فات إتكلمنا عن [الوسوم الدلالية](/categories/articles/semantic-elements-and-content-elements) بس عشان نستخدم وسوم النصوص في HTML ونتعلم تنسيقها بطريقة صحيحة،  
 هنعتمد على وسوم التنسيق الخاصة بالنصوص.
 
 ![HTML Text Tags ببساطة: العناوين، الفقرات، والتنسيق الكامل](featured.png "HTML Text Tags ببساطة: العناوين، الفقرات، والتنسيق الكامل")

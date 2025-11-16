@@ -14,7 +14,7 @@ weight: -3
 
 Here’s the English translation of your text, keeping the same structure, tone, and Markdown formatting:
 
-After we saw in the previous part [how to use Metadata in HTML](/en/categories/resources/meta-tags-in-html-and-technical-seo), now it’s time to talk about **semantic tags** and the difference between them and **non-semantic tags**.
+After we saw in the previous part [how to use Metadata in HTML](/en/categories/articles/meta-tags-in-html-and-technical-seo), now it’s time to talk about **semantic tags** and the difference between them and **non-semantic tags**.
 
 HTML tags are divided into two main types:
 

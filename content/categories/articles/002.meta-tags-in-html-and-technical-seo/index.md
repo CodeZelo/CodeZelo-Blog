@@ -191,7 +191,7 @@ weight: -2
 كل وسم له دور في جعل موقعك أكثر فهمًا، تنظيمًا، واحترافية.
 
 في الدرس القادم:
-هنتعرف على [**الوسوم الدلالية (Semantic Elements)**](/categories/resources/semantic-elements-and-content-elements/) ودورها في تحسين هيكلة صفحات الويب.
+هنتعرف على [**الوسوم الدلالية (Semantic Elements)**](/categories/articles/semantic-elements-and-content-elements/) ودورها في تحسين هيكلة صفحات الويب.
 
 **لمزيد من المعلومات**
 

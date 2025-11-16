@@ -238,7 +238,7 @@ Using CSS provides a professional look and separates design from structure, whic
 ## Conclusion
 
 We have now completed the lesson on **HTML lists and tables**, two essential tools for organizing content and data on web pages.
-With this lesson, we have covered a crucial part of **HTML content formatting**, following the previous lesson on [text formatting tags](/en/categories/resources/html-text-tags-simple-guide) and their proper usage.
+With this lesson, we have covered a crucial part of **HTML content formatting**, following the previous lesson on [text formatting tags](/en/categories/articles/html-text-tags-simple-guide) and their proper usage.
 
 These concepts are a foundational step for any beginner [learning HTML](/en/series/html-tutorial/), as they form the structure on which any website or web system is built.
 In upcoming lessons, we will move on to new concepts that help create more professional and scalable web pages.

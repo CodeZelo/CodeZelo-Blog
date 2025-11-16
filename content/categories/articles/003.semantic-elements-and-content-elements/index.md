@@ -12,7 +12,7 @@ slug: "semantic-elements-and-content-elements"
 weight: -3
 ---
 
-بعد أن رأينا في الجزء السابق [كيف يمكن إستخدام الميتا (Metadata) في HTML](/categories/resources/meta-tags-in-html-and-technical-seo). دلوقتي جه الوقت عشان نتكلم عن الوسوم الدلالية والفرق بينها وبين الوسوم غير الدلالية.
+بعد أن رأينا في الجزء السابق [كيف يمكن إستخدام الميتا (Metadata) في HTML](/categories/articles/meta-tags-in-html-and-technical-seo). دلوقتي جه الوقت عشان نتكلم عن الوسوم الدلالية والفرق بينها وبين الوسوم غير الدلالية.
 
 الوسوم في HTML تنقسم الي نوعين أساسيتين:
 
