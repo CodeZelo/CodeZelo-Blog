@@ -1,7 +1,7 @@
 ---
 title: "مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط"
 description: "اكتشف كيف بدأت رحلتي في إنشاء أول متجر إلكتروني من الصفر باستخدام HTML وCSS وJavaScript فقط. تعلم خطوة بخطوة كيفية بناء متجر بسيط واحترافي بدون أي أدوات معقدة وبأسلوب سهل يناسب المبتدئين."
-categories: ["beginner-projects"]
+categories: ["projects"]
 tags: ["html", "css", "js"]
 draft: false
 authors:

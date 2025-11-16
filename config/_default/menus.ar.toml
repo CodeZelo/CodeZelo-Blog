@@ -13,29 +13,8 @@
 # القسم الرئيسي
 [[main]]
   name = "مشاريع برمجية"
-  identifier = "projects"
+  pageRef = "projects"
   weight = 10
-
-# المشاريع المبتدئين
-[[main]]
-  name = "مشاريع المبتدئين"
-  pageRef = "beginner-projects"
-  parent = "projects"
-  weight = 11
-
-# المشاريع المتوسطة
-[[main]]
-  name = "مشاريع متوسطة"
-  pageRef = "intermediate-projects"
-  parent = "projects"
-  weight = 12
-
-# المشاريع المتقدمة
-[[main]]
-  name = "مشاريع متقدمة"
-  pageRef = "advanced-projects"
-  parent = "projects"
-  weight = 13
 
 [[main]]
   name = "دورات"

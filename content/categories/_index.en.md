@@ -12,10 +12,8 @@ Choose the category that matches your level and start your journey step by step.
 
 ## 💻 Programming Projects
 Learn by doing — build real-world projects at every level.  
-Start from:
-- 🧱 [Beginner Projects](/en/beginner-projects/)  
-- ⚙️ [Intermediate Projects](/en/intermediate-projects/)  
-- 🧩 [Advanced Projects](/en/advanced-projects/)  
+
+[Browse Projects →](/en/categories/projects/)
 
 > Each project is a step-by-step article series that takes you from idea to execution.
 
@@ -27,7 +25,7 @@ Read articles that help you improve your developer mindset:
 - Best coding practices  
 - Light reads and insights from real developers  
 
-[Browse Articles →](/en/articles-and-tips/)
+[Browse Articles →](/en/categories/articles-and-tips/)
 
 ---
 
@@ -37,7 +35,7 @@ A curated collection of tools and materials to support your learning:
 - Useful tools for design and development  
 - Cheat sheets and ready-to-use templates  
 
-[Explore Resources →](/en/resources/)
+[Explore Resources →](/en/categories/resources/)
 
 > 🧭 This page serves as your map to quickly reach the content that matches your level and interests.
 

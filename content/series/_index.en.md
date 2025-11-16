@@ -1,16 +1,16 @@
 ---
-title: "Series"
-description: "Learn step by step through practical and structured coding series designed to take you from beginner to professional."
+title: "Tutorials"
+description: "Learn step by step through practical and structured coding tutorials designed to take you from beginner to professional."
 ---
 
 {{< lead >}}
-Explore hands-on coding series in **CodeZelo** that help you build real skills, not just theory.  
+Explore hands-on coding tutorials in **CodeZelo** that help you build real skills, not just theory.  
 Start from the basics and grow into a confident developer. 🚀
 {{< /lead >}}
 
 ---
 
-## 🧱 Beginner series
+## 🧱 Beginner Tutorials
 Start your journey with simple, clear lessons that build strong fundamentals.  
 - [HTML Basics](/en/series/html-tutorial/)  
 - [CSS Basics](/en/series/css-tutorial/)  
@@ -18,7 +18,7 @@ Start your journey with simple, clear lessons that build strong fundamentals.
 
 ---
 
-## ⚙️ Intermediate series
+## ⚙️ Intermediate Tutorials
 Level up with more complex topics and interactive projects.  
 - PHP Fundamentals
 <!-- (/en/series/php/)   -->

@@ -8,19 +8,19 @@ A platform dedicated to learning programming through **hands-on projects** 💻
 Here, you’ll learn how to write code, build apps, and publish your own projects — with a practical and clear approach.
 {{< /lead >}}
 
-[Start with Projects →](/en/categories) 🚀
+[Start with Projects →](/en/categories/projects) 🚀
 
 ## 💡 Why CodeZelo?
 In an age of fast information, theory alone isn’t enough.  
 At **CodeZelo**, we believe the best way to learn programming is **by doing**.  
 Every project and article is designed to bring you one step closer to mastery — from your first line of code to launching your own app online.
 
-## 🚀 Practical Projects
-Choose the section that matches your current level:
+## 🚀 [Practical Projects](/en/categories/projects/)
+Choose the programming project that matches your current level:
 
-- 🧱 [Beginner Projects](/en/categories/beginner-projects/) — Practice the basics with simple, guided examples.  
-- ⚙️ [Intermediate Projects](/en/categories/intermediate-projects/) — Connect front-end and back-end logic.  
-- 🧩 [Advanced Projects](/en/categories/advanced-projects/) — Build complete, production-ready applications.
+- Practice the basics with simple, guided examples.  
+- Connect front-end and back-end logic.  
+- Build complete, production-ready applications.
 
 > Because learning by doing is the real path to becoming a professional developer. 💪
 
