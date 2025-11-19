@@ -116,7 +116,7 @@ _باختصار:_
 ```html
 <header>
   <h1>CodeZelo عنوان</h1>
-  <img src="CodeZelo-logo.png" alt="CodeZelo شعار" />
+  <img src="CodeZelo-logo.webp" alt="CodeZelo شعار" />
   <nav>
     <a href="#about">عنّي</a>
     <a href="#projects">المشاريع</a>

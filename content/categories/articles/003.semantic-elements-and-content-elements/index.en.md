@@ -118,7 +118,7 @@ Inside a `<header>`, you can include elements such as:
 ```html
 <header>
   <h1>CodeZelo Title</h1>
-  <img src="CodeZelo-logo.png" alt="CodeZelo Logo" />
+  <img src="CodeZelo-logo.webp" alt="CodeZelo Logo" />
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>

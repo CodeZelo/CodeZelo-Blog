@@ -8,13 +8,13 @@ title = "CodeZelo"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/CodeZelo.png"
+  logo = "img/CodeZelo.webp"
   description = "Discover the world of coding with CodeZelo — smart, simple articles and tutorials to help you start and grow your skills."
 
 #[params.author]
 #  name = ""
 #  email = "nuno@n9o.xyz"
-#  image = "img/CodeZelo.png"
+#  image = "img/CodeZelo.webp"
 #  headline = "Where creativity meets code."
 # bio = "A powerful, lightweight theme for Hugo."
 #  links = [

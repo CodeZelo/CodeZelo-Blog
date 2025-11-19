@@ -96,7 +96,7 @@ After the head, the `<body>` tag holds all the visible content your users will i
 <body>
   <h1>Welcome to the HTML5 Structure Guide</h1>
   <p>This article explains why certain HTML tags are essential for every web page.</p>
-  <img src="example.png" alt="Illustration of HTML structure">
+  <img src="example.webp" alt="Illustration of HTML structure">
   <!-- More content here -->
 </body>
 ```

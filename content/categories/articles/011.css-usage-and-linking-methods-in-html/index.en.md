@@ -50,7 +50,7 @@ but when you add CSS, you can change colors, backgrounds, and make the page look
 
 ## Ways to Use and Link CSS in an HTML Page
 
-![Ways to Use and Link CSS in an HTML Page](featured.png "Ways to Use and Link CSS in an HTML Page")
+![Ways to Use and Link CSS in an HTML Page](featured.webp "Ways to Use and Link CSS in an HTML Page")
 
 To use **CSS** for styling your **HTML** code, there are three main methods: **Inline**, **Internal**, and **External**.
 Each method has its own use cases, advantages, and disadvantages. Let’s go through them one by one.

@@ -18,7 +18,7 @@ weight: -10
 
 سواء أكنت قد بدأت بالفعل في مجال البرمجة أم ما زلت في بداية طريقك نحو تعلّم تطوير الويب، فهذه الدورة ستكون خطوتك الأولى لفهم الأساسيات التي ستمهّد لك الطريق نحو تطوير مواقع احترافية في المستقبل.
 
-![مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط](featured.png "مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط")
+![مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط](featured.webp "مشروع برمجي عملي: بناء متجر إلكتروني باستخدام HTML وCSS وJavaScript فقط")
 
 ## التعرف على أساسيات بناء المتجر الإلكتروني
 
@@ -80,7 +80,7 @@ store/
 │ 	     └── product-1.webp
 │ 	     ....
 │   └── brands
-│ 	     └── brand-1.png
+│ 	     └── brand-1.webp
 │ 	     ....
 ```
 
@@ -148,7 +148,7 @@ store/
 
 ## تصميم الصفحة الرئيسية (Home Page)
 
-![تصميم الصفحة الرئيسية](ar/homepage.png "تصميم الصفحة الرئيسية")
+![تصميم الصفحة الرئيسية](ar/homepage.webp "تصميم الصفحة الرئيسية")
 
 الصفحة الرئيسية هي **أول حاجة** الزائر هيشوفها لما يدخل المتجر، علشان كده لازم تكون **بسيطة، منظمة، وشكلها حلو**.
 
@@ -182,7 +182,7 @@ store/
     <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <img width="80px" src="/images/logo.webp" alt="شعار الموقع" />
         <h1>المتجر الإلكتروني</h1>
       </div>
 
@@ -213,10 +213,10 @@ store/
     <section class="brands">
       <h2>البراندات</h2>
       <div class="brand-list">
-        <img width="80px" src="images/brands/brand-1.png" alt="براند 1" />
-        <img width="80px" src="images/brands/brand-2.png" alt="براند 2" />
-        <img width="80px" src="images/brands/brand-3.png" alt="براند 3" />
-        <img width="80px" src="images/brands/brand-4.png" alt="براند 4" />
+        <img width="80px" src="images/brands/brand-1.webp" alt="براند 1" />
+        <img width="80px" src="images/brands/brand-2.webp" alt="براند 2" />
+        <img width="80px" src="images/brands/brand-3.webp" alt="براند 3" />
+        <img width="80px" src="images/brands/brand-4.webp" alt="براند 4" />
       </div>
     </section>
 
@@ -510,7 +510,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## تصميم صفحة المنتجات (Products Page)
 
-![تصميم صفحة المنتجات](ar/products-page.png "تصميم صفحة المنتجات")
+![تصميم صفحة المنتجات](ar/products-page.webp "تصميم صفحة المنتجات")
 
 في الجزء ده هنتعلم **إزاي نصمّم صفحة المنتجات باستخدام HTML وCSS وJavaScript**،  
 بطريقة سهلة وبسيطة علشان تناسب أي حد لسه بيتعلم.
@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <img width="80px" src="/images/logo.webp" alt="شعار الموقع" />
         <h1>المتجر الإلكتروني</h1>
       </div>
 
@@ -693,7 +693,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## صفحة تفاصيل المنتج (Product Page)
 
-![صفحة تفاصيل المنتج](ar/product-page.png "صفحة تفاصيل المنتج")
+![صفحة تفاصيل المنتج](ar/product-page.webp "صفحة تفاصيل المنتج")
 
 في الصفحة دي، هنعرِض كل المعلومات المهمة عن المنتج، زي:
 
@@ -726,7 +726,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <img width="80px" src="/images/logo.webp" alt="شعار الموقع" />
         <h1>المتجر الإلكتروني</h1>
       </div>
 
@@ -900,7 +900,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## صفحة السلة (Cart Page)
 
-![صفحة السلة](ar/cart-page.png "صفحة السلة")
+![صفحة السلة](ar/cart-page.webp "صفحة السلة")
 
 صفحة **السلة** هي المكان اللي المستخدم بيشوف فيه كل المنتجات اللي أضافها علشان يشتريها،  
 وبيظهر فيها تفاصيل زي **السعر**، **الكمية**، وزر لحذف أي منتج أو متابعة عملية الشراء.
@@ -932,7 +932,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <img width="80px" src="/images/logo.webp" alt="شعار الموقع" />
         <h1>المتجر الإلكتروني</h1>
       </div>
 
@@ -1131,7 +1131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## صفحة الدفع (Checkout Page)
 
-![صفحة الدفع](ar/checkout-page.png "صفحة الدفع")
+![صفحة الدفع](ar/checkout-page.webp "صفحة الدفع")
 
 صفحة **الدفع** هي الصفحة اللي المستخدم بيكمّل فيها عملية الشراء.  
 هنا هيكتب بياناته زي:
@@ -1167,7 +1167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ====== الهيدر ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="شعار الموقع" />
+        <img width="80px" src="/images/logo.webp" alt="شعار الموقع" />
         <h1>المتجر الإلكتروني</h1>
       </div>
 

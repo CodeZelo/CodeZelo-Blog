@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // ===== الشعار =====
     try {
-      const logoUrl = "/img/CodeZelo.png";
+      const logoUrl = "/img/CodeZelo.webp";
       const circularLogo = await makeCircularImage(logoUrl, 100);
       const logo = await loadImage(circularLogo);
       doc.addImage(logo, "JPEG", w - 180, h - 200, 100, 100);

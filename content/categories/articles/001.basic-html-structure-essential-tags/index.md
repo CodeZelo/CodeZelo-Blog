@@ -16,7 +16,7 @@ weight: -1
 
 خلينا نشوف مثال بسيط لأبسط صفحة HTML ممكن تكتبها:
 
-![أبسط صفحة HTML](/basic-html-structure-essential-tags.png "أبسط صفحة HTML")
+![أبسط صفحة HTML](/basic-html-structure-essential-tags.webp "أبسط صفحة HTML")
 
 من المثال ده نلاحظ إن في 5 وسوم أساسية لازم تتواجد في أي صفحة ويب:
 

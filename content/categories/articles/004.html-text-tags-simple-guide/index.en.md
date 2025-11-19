@@ -16,7 +16,7 @@ In the previous article, we talked about [semantic elements](/en/categories/arti
 But to use **text tags in HTML** and learn how to format them properly,
 we’ll rely on the **HTML text formatting tags**.
 
-![HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting](featured.png "HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting")
+![HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting](featured.webp "HTML Text Tags Made Simple: Headings, Paragraphs, and Full Formatting")
 
 In HTML, there are tags used for writing **headings** or **paragraphs**.
 To understand how to use them correctly,

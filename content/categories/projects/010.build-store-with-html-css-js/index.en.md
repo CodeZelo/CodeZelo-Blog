@@ -18,7 +18,7 @@ By the end of this article, you’ll know [how to use HTML](/en/categories/artic
 
 Whether you’ve already started learning programming or you’re just taking your first steps into web development, this course will be your first milestone toward understanding the fundamentals that will prepare you to build professional websites in the future.
 
-![Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript](featured.png "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript")
+![Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript](featured.webp "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript")
 
 ## Understanding the Basics of Building an Online Store
 
@@ -80,7 +80,7 @@ store/
 │ 	     └── product-1.webp
 │ 	     ....
 │   └── brands
-│ 	     └── brand-1.png
+│ 	     └── brand-1.webp
 │ 	     ....
 ```
 
@@ -149,7 +149,7 @@ We’ll rely on just a few core technologies:
 
 ## Designing the Home Page
 
-![Designing the Home Page](en/homepage.png "Designing the Home Page")
+![Designing the Home Page](en/homepage.webp "Designing the Home Page")
 
 The **home page** is the **first thing visitors see** when they enter your online store, so it needs to be **simple, well-organized, and visually appealing**.
 
@@ -183,7 +183,7 @@ Now, open your `index.html` file and write the following code 👇
     <!-- ====== Header ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
+        <img width="80px" src="/images/logo.webp" alt="Website Logo" />
         <h1>Online Store</h1>
       </div>
 
@@ -214,10 +214,10 @@ Now, open your `index.html` file and write the following code 👇
     <section class="brands">
       <h2>Brands</h2>
       <div class="brand-list">
-        <img width="80px" src="images/brands/brand-1.png" alt="Brand 1" />
-        <img width="80px" src="images/brands/brand-2.png" alt="Brand 2" />
-        <img width="80px" src="images/brands/brand-3.png" alt="Brand 3" />
-        <img width="80px" src="images/brands/brand-4.png" alt="Brand 4" />
+        <img width="80px" src="images/brands/brand-1.webp" alt="Brand 1" />
+        <img width="80px" src="images/brands/brand-2.webp" alt="Brand 2" />
+        <img width="80px" src="images/brands/brand-3.webp" alt="Brand 3" />
+        <img width="80px" src="images/brands/brand-4.webp" alt="Brand 4" />
       </div>
     </section>
 
@@ -522,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## Designing the Products Page
 
-![Designing the Products Page](en/products-page.png "Designing the Products Page")
+![Designing the Products Page](en/products-page.webp "Designing the Products Page")
 
 In this section, we’ll learn **how to design the products page using HTML, CSS, and JavaScript** —
 in a simple, beginner-friendly way.
@@ -555,7 +555,7 @@ and write the following code 👇
     <!-- ====== Header ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
+        <img width="80px" src="/images/logo.webp" alt="Website Logo" />
         <h1>Online Store</h1>
       </div>
 
@@ -712,7 +712,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ## Product Details Page
 
-![Product Details Page](en/product-page.png "Product Details Page")
+![Product Details Page](en/product-page.webp "Product Details Page")
 
 On this page, we’ll display all the important information about a single product, such as:
 
@@ -746,7 +746,7 @@ The code will include sections for the product image, name, price, description, 
     <!-- ====== Header ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
+        <img width="80px" src="/images/logo.webp" alt="Website Logo" />
         <h1>Online Store</h1>
       </div>
 
@@ -923,7 +923,7 @@ so the product will really appear inside the shopping cart.
 
 ## Cart Page
 
-![Cart Page](en/cart-page.png "Cart Page")
+![Cart Page](en/cart-page.webp "Cart Page")
 
 The **Cart Page** is where the user can see all the products they’ve added to buy.
 It shows details like the **price**, **quantity**, and buttons to delete a product or continue to checkout.
@@ -955,7 +955,7 @@ Inside it, add the code for the cart page, which includes the main elements:
     <!-- ====== Header ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
+        <img width="80px" src="/images/logo.webp" alt="Website Logo" />
         <h1>Online Store</h1>
       </div>
 
@@ -1158,7 +1158,7 @@ so we can complete the full online store from start to finish.
 
 ## Checkout Page
 
-![Checkout Page](en/checkout-page.png "Checkout Page")
+![Checkout Page](en/checkout-page.webp "Checkout Page")
 
 The **Checkout Page** is where the user completes the purchase process.
 Here, they’ll enter their information, such as:
@@ -1194,7 +1194,7 @@ which includes:
     <!-- ====== Header ====== -->
     <header>
       <div class="logo">
-        <img width="80px" src="/images/logo.png" alt="Website Logo" />
+        <img width="80px" src="/images/logo.webp" alt="Website Logo" />
         <h1>Online Store</h1>
       </div>
 
