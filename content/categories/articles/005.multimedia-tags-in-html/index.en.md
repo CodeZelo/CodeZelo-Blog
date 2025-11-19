@@ -1,6 +1,6 @@
 ---
-title: "HTML Multimedia Tags Explained — Learn How to Use img, video, and audio Easily"
-description: "In this article, you'll learn how to add images, videos, and audio files to your web page using HTML multimedia tags. We'll explain step by step how to use img, video, and audio with practical examples and key attributes to make your website look professional and load faster."
+title: "Master 3 Essential HTML Multimedia Tags img, video, audio) to Improve Website Performance"
+description: "Stop breaking your layout! Learn how to properly implement <img>, <video>, and <audio> tags. Practical guide covers key attributes like loading, controls, and alt text for fast loading and accessibility. Code examples included!"
 draft: false
 categories: ["articles"]
 tags: ["html"]

@@ -1,6 +1,6 @@
 ---
-title: "Practical Coding Project: Building an Online Store Using Only HTML, CSS, and JavaScript"
-description: "Discover how I started my journey creating my first online store from scratch using only HTML, CSS, and JavaScript. Learn step by step how to build a simple yet professional store without any complex tools — in an easy, beginner-friendly way."
+title: "Full Project: Build a Modern E-commerce Store with HTML, CSS, & Vanilla JS Only (Step-by-Step Guide)"
+description: "Tired of theory? Learn how to code a complete, professional e-commerce site from scratch using nothing but HTML, CSS, and plain JavaScript. Full code and step-by-step video guide to complete your first real-world project!"
 categories: ["projects"]
 tags: ["html", "css", "js"]
 draft: false

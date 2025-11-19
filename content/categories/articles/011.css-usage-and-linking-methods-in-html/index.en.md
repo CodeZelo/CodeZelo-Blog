@@ -1,6 +1,6 @@
 ---
-title: "How to Use and Link CSS in HTML (Simple Guide with Examples)"
-description: "Learn how to use and link CSS to your HTML pages in three different ways — inline, internal, and external. A step-by-step Arabic guide for beginners to master web styling easily."
+title: "CSS Basics: Master the 3 Ways to Link CSS to HTML (Internal, External, Inline)"
+description: "Ready to add style? Learn the 3 essential methods for connecting CSS to your HTML (Internal, External, Inline). Practical, step-by-step tutorial with clear code examples. Discover the best practice for clean code!"
 draft: false
 categories: ["articles"]
 tags: ["css"]

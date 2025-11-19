@@ -1,9 +1,9 @@
 ---
-title: "Understanding the Basic Structure of a Web Page – Essential HTML Tags You Can’t Do Without"
-description: "Learn the fundamental structure of a web page and discover the most essential HTML tags you need to build a professional website from scratch — explained simply with beginner-friendly examples."
+title: "Web Page Structure: The 5 Essential HTML Tags to Master Web Development"
+description: "Beginner? Unlock the core structure of ANY website! Learn the 5 must-know HTML tags (<head>}$, <body>, etc.) with simple, practical examples. Start building professional sites today!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["html", "html-basics"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]
