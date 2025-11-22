@@ -1,6 +1,10 @@
 ---
 title: "Programming Projects"
 description: "A collection of hands-on projects to learn programming from beginner to professional levels through structured stages: Beginner, Intermediate, and Advanced."
+aliases:
+  - /en/categories/advanced-projects/
+  - /en/categories/intermediate-projects/
+  - /en/categories/beginner-projects/
 ---
 
 {{< lead >}}

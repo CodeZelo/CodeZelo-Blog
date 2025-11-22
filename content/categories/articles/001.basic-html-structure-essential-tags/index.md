@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 1
 slug: "basic-html-structure-essential-tags"
 weight: -1
+aliases:
+  - /categories/resources/basic-html-structure-essential-tags/
 ---
 
 أي **صفحة ويب** هي في الأساس صفحة مكتوبة بلغة **HTML**، لذلك لازم تعرف الوسوم الأساسية اللي لازم تكون موجودة في كل صفحة.

@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 1
 slug: "basic-html-structure-essential-tags"
 weight: -1
+aliases:
+  - /en/categories/resources/basic-html-structure-essential-tags/
 ---
 
 Creating a well-structured web page begins with mastering the **core HTML elements**. Whether you're a beginner web developer or refining your practice for SEO and performance, understanding the **fundamental HTML structure** is non-negotiable. These core tags not only shape your page’s content, but also influence how search engines crawl, interpret, and index your site.

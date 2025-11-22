@@ -1,6 +1,8 @@
 ---
 title: "Articles"
 description: "Practical articles and professional resources that help you improve your skills and enhance the quality of your projects step by step."
+aliases:
+  - /en/categories/articles-and-tips/
 ---
 
 {{< lead >}}

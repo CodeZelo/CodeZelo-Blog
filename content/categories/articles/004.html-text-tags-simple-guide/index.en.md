@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 4
 slug: "html-text-tags-simple-guide"
 weight: -4
+aliases:
+  - /en/categories/resources/html-text-tags-simple-guide/
 ---
 
 In the previous article, we talked about [semantic elements](/en/categories/articles/semantic-elements-and-content-elements).

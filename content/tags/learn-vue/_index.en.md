@@ -1,6 +1,8 @@
 ---
 title: "Learn Vue.js"
 description: "Beginner-friendly tutorials to learn Vue.js — from core concepts to building interactive components and full applications."
+aliases:
+  - /en/tags/vue/
 ---
 
 {{< lead >}}

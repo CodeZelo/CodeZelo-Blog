@@ -1,7 +1,8 @@
 ---
 title: "تعلم CSS"
 description: "مقالات ودروس حول CSS: التنسيق، التخطيط، والتصميم المتجاوب، وأطر العمل الحديثة مثل Tailwind وBootstrap."
-
+aliases:
+  - /tags/css/
 ---
 
 {{< lead >}}

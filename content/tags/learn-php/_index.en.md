@@ -1,6 +1,8 @@
 ---
 title: "Learn PHP"
 description: "Step-by-step tutorials to learn PHP from scratch — variables, functions, server-side logic, and database interaction."
+aliases:
+  - /en/tags/php/
 ---
 
 {{< lead >}}

@@ -1,6 +1,8 @@
 ---
 title: "Learn Laravel"
 description: "A complete guide to learning Laravel — from MVC basics to building full-featured web applications using routing, controllers, Blade, and databases."
+aliases:
+  - /en/tags/laravel/
 ---
 
 {{< lead >}}

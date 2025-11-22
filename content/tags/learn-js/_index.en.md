@@ -1,7 +1,8 @@
 ---
 title: "Learn JavaScript"
 description: "Learn JavaScript in depth — the foundation of interactive frontends and modern web applications."
-
+aliases:
+  - /en/tags/js/
 ---
 
 {{< lead >}}

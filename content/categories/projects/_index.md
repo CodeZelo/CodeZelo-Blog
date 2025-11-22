@@ -1,6 +1,10 @@
 ---
 title: "مشاريع برمجية"
 description: "مجموعة من المشاريع العملية لتعلّم البرمجة من البداية وحتى الاحتراف عبر مراحل متدرجة: مبتدئ، متوسط، ومتقدم."
+aliases:
+  - /categories/advanced-projects/
+  - /categories/intermediate-projects/
+  - /categories/beginner-projects/
 ---
 
 {{< lead >}}

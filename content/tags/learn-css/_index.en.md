@@ -1,7 +1,8 @@
 ---
 title: "Learn CSS"
 description: "Articles and tutorials about CSS: styling, layout, responsive design, and modern tools like Tailwind and Bootstrap."
-
+aliases:
+  - /en/tags/css/
 ---
 
 {{< lead >}}

@@ -1,6 +1,8 @@
 ---
 title: "Learn HTML"
 description: "Articles and tutorials focused on HTML basics, document structure, and best practices."
+aliases:
+  - /en/tags/html/
 ---
 
 {{< lead >}}

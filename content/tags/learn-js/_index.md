@@ -1,7 +1,8 @@
 ---
 title: "تعلم JavaScript"
 description: "تعلّم لغة JavaScript بعمق — الأساس في تطوير الواجهات التفاعلية والتطبيقات الحديثة."
-
+aliases:
+  - /tags/js/
 ---
 
 {{< lead >}}

@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 4
 slug: "html-text-tags-simple-guide"
 weight: -4
+aliases:
+  - /categories/resources/html-text-tags-simple-guide/
 ---
 
 في المقال اللي فات إتكلمنا عن [الوسوم الدلالية](/categories/articles/semantic-elements-and-content-elements) بس عشان نستخدم وسوم النصوص في HTML ونتعلم تنسيقها بطريقة صحيحة،  
