@@ -2,7 +2,7 @@
 title: "احتراف HTML: شرح 9 وسوم ميتا متقدمة (Robots, Viewport) وكيفية إضافتها لموقعك"
 description: "توقف عن تجاهل الـ Meta Tags! تعلّم الـ 9 وسوم المتقدمة في HTML وكيفية كتابتها بشكل صحيح (مثل Viewport و Open Graph). دليل عملي خطوة بخطوة لكل مبرمج!"
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 series: ["html-tutorial"]
 series_order: 2
 draft: false

@@ -3,7 +3,7 @@ title: "تنسيق المحتوى: شرح 12 من أهم وسوم نصوص HTML 
 description: "ابدأ كتابة محتواك اليوم! دليل شامل باللغة العربية لـ 12 وسماً نصياً في HTML (H1-H6، <p>, <b>، <i>). تعلّم كيف تنسق نصوصك باحتراف!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

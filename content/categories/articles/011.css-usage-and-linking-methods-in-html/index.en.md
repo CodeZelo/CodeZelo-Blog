@@ -3,7 +3,7 @@ title: "CSS Basics: Master the 3 Ways to Link CSS to HTML (Internal, External, I
 description: "Ready to add style? Learn the 3 essential methods for connecting CSS to your HTML (Internal, External, Inline). Practical, step-by-step tutorial with clear code examples. Discover the best practice for clean code!"
 draft: false
 categories: ["articles"]
-tags: ["css"]
+tags: ["learn-css"]
 authors:
   - mahmoudadel
 series: ["css-tutorial"]

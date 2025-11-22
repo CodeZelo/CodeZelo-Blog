@@ -3,7 +3,7 @@ title: "Master 3 Essential HTML Multimedia Tags img, video, audio) to Improve We
 description: "Stop breaking your layout! Learn how to properly implement <img>, <video>, and <audio> tags. Practical guide covers key attributes like loading, controls, and alt text for fast loading and accessibility. Code examples included!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

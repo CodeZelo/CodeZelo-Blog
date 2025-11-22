@@ -3,7 +3,7 @@ title: "HTML Text Formatting: 12 Essential Tags for Headings, Paragraphs, and St
 description: "Master the basics of content styling! Learn how to use the 12 core HTML text tags (<h1>-<h6>, <p>, <strong>, <em>) for better readability. Step-by-step examples included!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

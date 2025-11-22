@@ -3,7 +3,7 @@ title: "HTML Structure: Master Lists and Tables with Practical Examples (Beginne
 description: "Struggling to organize data? Get the definitive guide to creating powerful HTML Lists and Tables. Learn the proper use of <th>, <tbody>, <td> and more. Start structuring your data professionally today!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

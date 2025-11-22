@@ -3,7 +3,7 @@ title: "Clean Code: Semantic vs. Non-Semantic HTML Tags Explained with Practical
 description: "? Learn the fundamental difference between Semantic (<nav>, <article>) and Non-Semantic tags. Master proper web structure with easy-to-follow code examples."
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

@@ -12,24 +12,174 @@
 
 # القسم الرئيسي
 [[main]]
-  name = "Projects"
-  pageRef = "projects"
+  name = "Courses"
+  pageRef = "series"
   weight = 10
 
 [[main]]
-  name = "Tutorials"
-  pageRef = "series"
+  name = "Programming Projects"
+  identifier = "projects"
   weight = 20
 
 [[main]]
-  name = "Articles"
-  pageRef = "articles"
+  name = "All Projects"
+  parent = "projects"
+  pageRef = "projects"
+  weight = 21
+
+[[main]]
+  name = "Frontend Projects"
+  parent = "projects"
+  pageRef = "tags/frontend-projects"
+  weight = 22
+
+[[main]]
+  name = "Backend Projects"
+  parent = "projects"
+  pageRef = "tags/backend-projects"
+  weight = 23
+
+[[main]]
+  name = "Fullstack Projects"
+  parent = "projects"
+  pageRef = "tags/fullstack-projects"
+  weight = 24
+
+[[main]]
+  name = "HTML & CSS Practical Apps"
+  parent = "projects"
+  pageRef = "tags/html-css-practical"
+  weight = 25
+
+[[main]]
+  name = "JavaScript Practical Apps"
+  parent = "projects"
+  pageRef = "tags/js-practical"
+  weight = 26
+
+[[main]]
+  name = "Vue Practical Apps"
+  parent = "projects"
+  pageRef = "tags/vue-practical"
+  weight = 27
+
+[[main]]
+  name = "PHP Practical Apps"
+  parent = "projects"
+  pageRef = "tags/php-practical"
+  weight = 28
+
+[[main]]
+  name = "Laravel Practical Apps"
+  parent = "projects"
+  pageRef = "tags/laravel-practical"
+  weight = 29
+
+[[main]]
+  name = "Packages"
+  identifier = "packages"
   weight = 30
 
 [[main]]
-  name = "Tools"
-  pageRef = "tools"
+  name = "JavaScript Libraries"
+  parent = "packages"
+  pageRef = "js-libraries"
+  weight = 31
+
+[[main]]
+  name = "PHP Packages"
+  parent = "packages"
+  pageRef = "tags/php-packages"
+  weight = 32
+
+[[main]]
+  name = "Laravel Packages"
+  parent = "packages"
+  pageRef = "tags/laravel-packages"
+  weight = 33
+
+[[main]]
+  name = "Articles"
+  identifier = "articles"
   weight = 40
+
+[[main]]
+  name = "All Educational Articles"
+  parent = "articles"
+  pageRef = "articles"
+  weight = 41
+
+[[main]]
+  name = "Learn HTML"
+  parent = "articles"
+  pageRef = "tags/learn-html"
+  weight = 42
+
+[[main]]
+  name = "Learn CSS"
+  parent = "articles"
+  pageRef = "tags/learn-css"
+  weight = 43
+
+[[main]]
+  name = "Learn JavaScript"
+  parent = "articles"
+  pageRef = "tags/learn-js"
+  weight = 44
+
+[[main]]
+  name = "Learn Vue"
+  parent = "articles"
+  pageRef = "tags/learn-vue"
+  weight = 45
+
+[[main]]
+  name = "Learn PHP"
+  parent = "articles"
+  pageRef = "tags/learn-php"
+  weight = 46
+
+[[main]]
+  name = "Learn MySQL"
+  parent = "articles"
+  pageRef = "tags/mysql"
+  weight = 47
+
+[[main]]
+  name = "Learn Laravel"
+  parent = "articles"
+  pageRef = "tags/learn-laravel"
+  weight = 48
+
+[[main]]
+  name = "Tools"
+  identifier = "tools"
+  pageRef = "tools"
+  weight = 50
+
+[[main]]
+  name = "All Tools"
+  parent = "tools"
+  pageRef = "tools"
+  weight = 51
+
+[[main]]
+  name = "CSS Tools"
+  parent = "tools"
+  pageRef = "tags/css-tools"
+  weight = 52
+
+[[main]]
+  name = "JavaScript Tools"
+  parent = "tools"
+  pageRef = "tags/js-tools"
+  weight = 53
+
+[[main]]
+  name = "Technical SEO Tools"
+  parent = "tools"
+  pageRef = "tags/seo-tools"
+  weight = 54
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

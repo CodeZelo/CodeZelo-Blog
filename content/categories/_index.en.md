@@ -25,7 +25,7 @@ Read articles that help you improve your developer mindset:
 - Best coding practices  
 - Light reads and insights from real developers  
 
-[Browse Articles →](/en/categories/articles-and-tips/)
+[Browse Articles →](/en/categories/articles)
 
 ---
 

@@ -3,7 +3,7 @@ title: "تنظيم احترافي: شرح القوائم والجداول في H
 description: "توقّف عن استخدام <div> للعرض! تعلّم الهيكلة الصحيحة باستخدام وسوم القوائم (<ul>, <ol>) والجداول (<table>, <tr>, <th>). شرح شامل ومبسط خطوة بخطوة."
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

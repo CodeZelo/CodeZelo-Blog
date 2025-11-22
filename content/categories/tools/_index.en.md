@@ -13,5 +13,6 @@ Here you’ll find interactive tools that allow you to test web properties and t
 - Grid Playground — Learn CSS Grid with a visual and interactive approach  
 - Animation Lab — Create and test CSS animations step by step  
 - SEO Tools — Analyze and improve your website performance  
+- JavaScript Tools — Tools that help you in web development
 
 > Because real learning happens when you experiment ✨

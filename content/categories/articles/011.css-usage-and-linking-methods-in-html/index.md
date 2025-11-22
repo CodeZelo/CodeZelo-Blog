@@ -3,7 +3,7 @@ title: "أتقن التنسيق: 3 طرق لربط CSS بـ HTML للمبتدئ�
 description: "حوّل صفحتك من هيكل باهت إلى تصميم جذاب! تعلّم الـ 3 طرق لربط CSS بصفحة HTML (Inline، Internal، External). دليل مبسط وشامل بالخطوات والأمثلة العملية. ابدأ الآن!"
 draft: false
 categories: ["articles"]
-tags: ["css"]
+tags: ["learn-css"]
 authors:
   - mahmoudadel
 series: ["css-tutorial"]

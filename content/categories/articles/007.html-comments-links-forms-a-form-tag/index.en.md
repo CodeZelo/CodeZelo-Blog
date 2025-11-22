@@ -3,7 +3,7 @@ title: "Core HTML: Master Links, Forms, and Comments with Practical Examples"
 description: "Ready to build interactive pages? Learn how to properly use <a> (Links) and <form> (Data Collection) in HTML. Full guide covers Comments and essential form attributes for beginners. Start collecting user input today!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]

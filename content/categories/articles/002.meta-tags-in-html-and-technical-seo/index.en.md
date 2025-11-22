@@ -2,7 +2,7 @@
 title: "Advanced HTML: The 9 Critical Meta Tags Every Developer MUST Learn (Practical Guide)"
 description: "Go beyond the basics! Learn how to implement the 9 critical HTML Meta Tags (Viewport, Open Graph, etc.) used for modern web standards. Step-by-step practical guide."
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 series: ["html-tutorial"]
 series_order: 2
 draft: false

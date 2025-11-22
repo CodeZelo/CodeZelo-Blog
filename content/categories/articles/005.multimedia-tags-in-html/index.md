@@ -3,7 +3,7 @@ title: "أتقن 3 وسوم مالتيميديا HTML (img, video, audio) لتس
 description: "تعلّم بالخطوات كيف تستخدم وسوم img، video، وaudio في HTML لدمج المالتيميديا. دليل عملي يشرح أهم الخصائص مثل autoplay و preload وكيف تحافظ على أداء صفحتك سريعاً. ابدأ التطبيق الآن!"
 draft: false
 categories: ["articles"]
-tags: ["html"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]
