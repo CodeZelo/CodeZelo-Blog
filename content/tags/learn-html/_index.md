@@ -2,7 +2,7 @@
 title: "تعلم HTML"
 description: "مقالات ودروس متخصصة في شرح وسوم HTML، بنية المستند، وكيفية كتابة صفحات ويب سليمة من الأساس."
 aliases:
-  - /tags/html/
+  - /tags/learn-html/
 ---
 
 {{< lead >}}

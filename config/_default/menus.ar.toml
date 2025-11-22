@@ -165,22 +165,28 @@
   weight = 51
 
 [[main]]
+  name = "أدوات المطورين"
+  parent = "tools"
+  pageRef = "tags/developer-tools"
+  weight = 52
+
+[[main]]
   name = "أدوات CSS"
   parent = "tools"
   pageRef = "tags/css-tools"
-  weight = 52
+  weight = 53
 
 [[main]]
   name = "أدوات Javascript"
   parent = "tools"
   pageRef = "tags/js-tools"
-  weight = 53
+  weight = 54
 
 [[main]]
   name = "أدوات السيو التقني"
   parent = "tools"
   pageRef = "tags/seo-tools"
-  weight = 54
+  weight = 55
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
