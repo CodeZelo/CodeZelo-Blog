@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 6
 slug: "html-lists-and-tables"
 weight: -6
+aliases:
+  - /categories/resources/html-lists-and-tables/
 ---
 
 القوائم والجدول في HTML هي من الوسوم المهمة في ترتيب العناصر والبيانات داخل صفحة الـ HTML. وتعتبر تلك الوسوم مهمة جداً خصوصاً أثناء تصميم لوحات التحكم في أنظمة إدارة الشركات والمؤسسات الكبيرة.

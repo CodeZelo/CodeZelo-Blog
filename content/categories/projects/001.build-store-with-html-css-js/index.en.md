@@ -8,6 +8,8 @@ authors:
   - mahmoudadel
 slug: "build-store-with-html-css-js"
 weight: -10
+aliases: 
+  - /en/categories/beginner-projects/build-store-with-html-css-js
 ---
 
 In this course, we’ll learn together how to design and build a simple yet professional online store using only HTML, CSS, and JavaScript—relying on the basic tools every beginner web developer needs to get started in web development.

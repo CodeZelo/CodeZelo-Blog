@@ -8,6 +8,8 @@ authors:
   - mahmoudadel
 slug: "build-store-with-html-css-js"
 weight: -10
+aliases: 
+  - /categories/beginner-projects/build-store-with-html-css-js
 ---
 
 سنتعلّم معًا في هذه الدورة كيف تصمّم وتبني متجرًا إلكترونيًا بسيطًا واحترافيًا باستخدام **HTML وCSS وJavaScript** فقط، وبالاعتماد على الأدوات البسيطة التي يحتاجها أي مطوّر ويب مبتدئ في مجال برمجة الويب.

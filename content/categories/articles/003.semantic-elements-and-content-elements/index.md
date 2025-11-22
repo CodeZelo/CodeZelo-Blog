@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 3
 slug: "semantic-elements-and-content-elements"
 weight: -3
+aliases:
+  - /categories/resources/semantic-elements-and-content-elements/
 ---
 
 بعد أن رأينا في الجزء السابق [كيف يمكن إستخدام الميتا (Metadata) في HTML](/categories/articles/meta-tags-in-html-and-technical-seo). دلوقتي جه الوقت عشان نتكلم عن الوسوم الدلالية والفرق بينها وبين الوسوم غير الدلالية.

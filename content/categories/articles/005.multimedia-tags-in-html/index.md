@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 5
 slug: "multimedia-tags-in-html"
 weight: -5
+aliases:
+  - /categories/resources/multimedia-tags-in-html/
 ---
 
 تقدّم لغة **HTML** العديد من الوسوم، ومن أهمها **وسوم الوسائط المتعددة (Multimedia)**، والتي تتلخص في ثلاثة وسوم أساسية:  

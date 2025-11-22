@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 3
 slug: "semantic-elements-and-content-elements"
 weight: -3
+aliases:
+  - /en/categories/resources/semantic-elements-and-content-elements/
 ---
 
 Here’s the English translation of your text, keeping the same structure, tone, and Markdown formatting:

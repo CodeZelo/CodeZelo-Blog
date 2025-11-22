@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 7
 slug: "html-comments-links-forms-guide"
 weight: -7
+aliases:
+  - /categories/resources/html-comments-links-forms-guide/
 ---
 
 في المقالات السابقة قمنا بشرح [الوسوم الدلالية](/categories/articles/semantic-elements-and-content-elements/) و[الجداول (Tables)](/categories/articles/html-lists-and-tables/) و[الوسوم الخاصة بتنسيق النصوص](/categories/articles/html-text-tags-simple-guide/) في HTML بشكل مفصّل كلٌ على حدة. أما في هذا المقال، سنتناول بعض الوسوم المتبقية معًا في مكان واحد حتى نُكمل [أساسيات لغة HTML](/series/html-tutorial/) بشكل كامل ونُصبح مستعدين للانتقال إلى المرحلة التالية من تعلم تطوير واجهات الويب.

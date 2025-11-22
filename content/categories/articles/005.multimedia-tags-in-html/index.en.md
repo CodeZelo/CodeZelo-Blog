@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 5
 slug: "multimedia-tags-in-html"
 weight: -5
+aliases:
+  - /en/categories/resources/multimedia-tags-in-html/
 ---
 
 HTML provides many tags, and among the most important are the **multimedia tags**, which include three main elements:

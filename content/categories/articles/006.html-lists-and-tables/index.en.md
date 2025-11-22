@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 6
 slug: "html-lists-and-tables"
 weight: -6
+aliases:
+  - /en/categories/resources/html-lists-and-tables/
 ---
 
 HTML lists and tables are among the most important tags for organizing elements and data within an HTML page. These tags are especially crucial when designing dashboards for enterprise-level systems and company management platforms.

@@ -10,6 +10,8 @@ authors:
   - mahmoudadel
 slug: "meta-tags-in-html-and-technical-seo"
 weight: -2
+aliases:
+  - /categories/resources/meta-tags-in-html-and-technical-seo/
 ---
 
 بعد أن تعرّفنا على الوسوم الأساسية في HTML، حان الوقت للانتقال إلى جزء لا يقل أهمية — لكنه غالبًا ما يتم تجاهله — وهو **وسوم الميتا (Metadata)**.

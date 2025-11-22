@@ -10,6 +10,8 @@ authors:
   - mahmoudadel
 slug: "meta-tags-in-html-and-technical-seo"
 weight: -2
+aliases:
+  - /en/categories/resources/meta-tags-in-html-and-technical-seo/
 ---
 
 Now that you understand the core HTML elements every webpage needs, it’s time to look at something just as important — yet often ignored by beginners: **Meta Tags**, also known as **Metadata**.

@@ -10,6 +10,8 @@ series: ["css-tutorial"]
 series_order: 1
 slug: "css-usage-and-linking-methods-in-html"
 weight: -11
+aliases:
+  - /categories/resources/css-usage-and-linking-methods-in-html/
 ---
 
 الـ **CSS** هي لغة التنسيق الخاصة بأكواد **HTML**،  

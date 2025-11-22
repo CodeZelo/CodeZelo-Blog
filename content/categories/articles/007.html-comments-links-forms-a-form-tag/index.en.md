@@ -10,6 +10,8 @@ series: ["html-tutorial"]
 series_order: 7
 slug: "html-comments-links-forms-guide"
 weight: -7
+aliases:
+  - /en/categories/resources/html-comments-links-forms-guide/
 ---
 
 In previous articles, we explained [Semantic Elements](/en/categories/articles/semantic-elements-and-content-elements/), [Tables](/en/categories/articles/html-lists-and-tables/), and [HTML Text Formatting Tags](/en/categories/articles/html-text-tags-simple-guide/) in detail, each on its own. In this article, we will cover some remaining tags together in one place to complete the [HTML Basics](/en/series/html-tutorial/) and prepare ourselves to move on to the next stage of learning web development.
