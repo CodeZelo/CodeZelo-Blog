@@ -5,7 +5,7 @@ layout: simple
 sharingLinks: false
 ---
 
-{{< contactEn >}}
+{{< contact/en >}}
 
 {{< lead >}}
 We’d love to hear from you 💬  

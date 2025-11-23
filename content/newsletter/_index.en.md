@@ -10,6 +10,6 @@ sharingLinks: false
 Subscribe to get the latest posts on programming and AI delivered straight to your inbox.
 {{< /lead >}}
 
-{{< newsletterEn >}}
+{{< newsletter/en >}}
 
 > ✨ Subscribe for free — no spam, just valuable content.

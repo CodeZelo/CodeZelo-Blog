@@ -5,7 +5,7 @@ layout: simple
 sharingLinks: false
 ---
 
-{{< contactAr >}}
+{{< contact/ar >}}
 
 {{< lead >}}
 يسعدنا تواصلك معنا 💬  
