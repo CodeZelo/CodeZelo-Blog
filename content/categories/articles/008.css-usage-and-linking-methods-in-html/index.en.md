@@ -9,7 +9,7 @@ authors:
 series: ["css-tutorial"]
 series_order: 1
 slug: "css-usage-and-linking-methods-in-html"
-weight: -11
+weight: -8
 aliases:
   - /en/categories/resources/css-usage-and-linking-methods-in-html/
 ---
