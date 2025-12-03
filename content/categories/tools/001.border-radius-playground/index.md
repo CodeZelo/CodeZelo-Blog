@@ -6,7 +6,7 @@ categories: ["tools"]
 tags: ["css-tools"]
 slug: "border-radius-playground"
 aliases:
-  - /001.border-radius-playground
+  - /categories/tools/001.border-radius-playground
 ---
 
 {{< border-radius/ar >}}
