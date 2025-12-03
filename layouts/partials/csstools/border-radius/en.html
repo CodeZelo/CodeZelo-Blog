@@ -1,0 +1,208 @@
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #0b1220;
+    --text: #e6eef8;
+    --muted: #94a3b8;
+    --accent: #22c55e;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .app header {
+    grid-column: 1/-1;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .app header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .app .panel {
+    background: var(--panel);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .app label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .app input[type="range"],
+  .app input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent;
+    color: var(--text);
+  }
+  .app .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .app button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .app .playground {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+  .app .stage {
+    flex: 1;
+    min-height: 420px;
+    background: linear-gradient(180deg, #021024, #031d34);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app .box {
+    width: 250px;
+    height: 250px;
+    background: #1e293b;
+    border-radius: 20px;
+    transition: border-radius 0.2s;
+  }
+  .app textarea {
+    width: 100%;
+    height: 100px;
+    background: #0b1220;
+    color: var(--text);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    resize: none;
+    font-family: monospace;
+    font-size: 13px;
+  }
+  .app footer {
+    grid-column: 1/-1;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="app">
+  <header>
+    <h1>Border Radius Playground</h1>
+    <div class="sub">
+      Control the box corners and preview the code instantly
+    </div>
+  </header>
+
+  <aside class="panel">
+    <div class="controls">
+      <div class="grid2">
+        <div>
+          <label>Top Left</label>
+          <input id="tl" type="range" min="0" max="200" value="20" />
+        </div>
+        <div>
+          <label>Top Right</label>
+          <input id="tr" type="range" min="0" max="200" value="20" />
+        </div>
+        <div>
+          <label>Bottom Right</label>
+          <input id="br" type="range" min="0" max="200" value="20" />
+        </div>
+        <div>
+          <label>Bottom Left</label>
+          <input id="bl" type="range" min="0" max="200" value="20" />
+        </div>
+      </div>
+      <div>
+        <label>Custom (CSS syntax)</label>
+        <input
+          id="custom"
+          type="text"
+          placeholder="Example: 50% 20% / 30% 70%"
+        />
+      </div>
+      <button id="copyCSS">Copy CSS</button>
+    </div>
+  </aside>
+
+  <main class="playground">
+    <div class="stage">
+      <div id="box" class="box"></div>
+    </div>
+    <div class="panel">
+      <label>CSS Output</label>
+      <textarea id="cssOutput" readonly></textarea>
+    </div>
+  </main>
+
+  <footer>
+    Border Radius playground — adjust the values to get different shapes.
+  </footer>
+</div>
+
+<script>
+  const box = document.getElementById("box");
+  const tl = document.getElementById("tl");
+  const tr = document.getElementById("tr");
+  const br = document.getElementById("br");
+  const bl = document.getElementById("bl");
+  const custom = document.getElementById("custom");
+  const cssOutput = document.getElementById("cssOutput");
+  const copyCSS = document.getElementById("copyCSS");
+
+  function update() {
+    let val = "";
+    if (custom.value.trim() != "") {
+      val = custom.value.trim();
+    } else {
+      val = `${tl.value}px ${tr.value}px ${br.value}px ${bl.value}px`;
+    }
+    box.style.borderRadius = val;
+    cssOutput.value = `border-radius: ${val};`;
+  }
+
+  [tl, tr, br, bl, custom].forEach((el) =>
+    el.addEventListener("input", update)
+  );
+  copyCSS.addEventListener("click", () => {
+    cssOutput.select();
+    document.execCommand("copy");
+    alert("CSS copied!");
+  });
+
+  update();
+</script>

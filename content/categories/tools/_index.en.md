@@ -1,5 +1,5 @@
 ---
-title: "Developer Tools"
+title: "Tools Help you"
 description: "A collection of practical interactive tools that help you test concepts, create designs, and experiment with technologies faster and more efficiently."
 aliases:
   - /en/categories/resources/
