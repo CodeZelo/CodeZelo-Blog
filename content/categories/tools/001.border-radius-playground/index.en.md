@@ -4,6 +4,7 @@ description: "Explore and test Border Radius values with an interactive tool tha
 layout: simple
 categories: ["tools"]
 tags: ["css-tools"]
+slug: "border-radius-playground"
 ---
 
 {{< border-radius/en >}}

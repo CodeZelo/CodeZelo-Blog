@@ -4,6 +4,9 @@ description: "جرّب قيم الـ Border Radius بسهولة داخل أدا�
 layout: simple
 categories: ["tools"]
 tags: ["css-tools"]
+slug: "border-radius-playground"
+aliases:
+  - /001.border-radius-playground
 ---
 
 {{< border-radius/ar >}}
