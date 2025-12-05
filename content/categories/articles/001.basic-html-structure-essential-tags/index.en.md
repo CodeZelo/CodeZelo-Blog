@@ -3,7 +3,7 @@ title: "Web Page Structure: The 5 Essential HTML Tags to Master Web Development"
 description: "Beginner? Unlock the core structure of ANY website! Learn the 5 must-know HTML tags (<head>}$, <body>, etc.) with simple, practical examples. Start building professional sites today!"
 draft: false
 categories: ["articles"]
-tags: ["html", "html-basics"]
+tags: ["learn-html"]
 authors:
   - mahmoudadel
 series: ["html-tutorial"]
