@@ -1,0 +1,485 @@
+<style>
+  :root {
+    --gap: 12px;
+    --ui-bg: #0f172a;
+    --panel-bg: #0b1220;
+    --accent: #059669;
+    --muted: #94a3b8;
+    --card: #0b1220;
+    --text: #e6eef8;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .app header {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.01)
+    );
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .app header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .app .panel {
+    background: var(--panel-bg);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+    overflow: auto;
+  }
+  .app .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .app label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .app select,
+  .app input[type="range"],
+  .app input[type="text"],
+  .app input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: transparent;
+    color: var(--text);
+  }
+  .app .row {
+    display: flex;
+    gap: 8px;
+  }
+  .app .row .half {
+    flex: 1;
+  }
+  .app button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .app .muted-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+  }
+
+  .app .playground {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+  .app .stage-container {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.01)
+    );
+    border-radius: 12px;
+    padding: 18px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+  .app .stage-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .app .stage {
+    flex: 1;
+    background: linear-gradient(180deg, #052235, #021024);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app .grid-container {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 12px;
+    display: grid;
+    gap: var(--gap);
+    min-height: 160px;
+    position: relative;
+  }
+
+  .app .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.01)
+    );
+    box-shadow: 0 6px 16px rgba(2, 6, 23, 0.6);
+    font-weight: 600;
+    color: var(--text);
+    user-select: none;
+  }
+  .app .item.selected {
+    outline: 3px solid rgba(5, 150, 105, 0.4);
+  }
+
+  .app footer {
+    grid-column: 1/-1;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+    .app header {
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<div class="app">
+  <header>
+    <div>
+      <h1>CSS Grid Playground</h1>
+      <div class="sub">
+        Try grid properties in real time — modify the container or items and see
+        the result instantly.
+      </div>
+    </div>
+    <div class="small">Made by ChatGPT</div>
+  </header>
+
+  <aside class="panel">
+    <div class="controls">
+      <div>
+        <label>grid-template-columns</label>
+        <input id="columns" type="text" value="repeat(3, 1fr)" />
+      </div>
+
+      <div>
+        <label>grid-template-rows</label>
+        <input id="rows" type="text" value="auto" />
+      </div>
+
+      <div>
+        <label>justify-items</label>
+        <select id="justifyItems">
+          <option value="stretch">stretch</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+        </select>
+      </div>
+
+      <div>
+        <label>align-items</label>
+        <select id="alignItems">
+          <option value="stretch">stretch</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+        </select>
+      </div>
+
+      <div>
+        <label>justify-content</label>
+        <select id="justifyContent">
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </div>
+
+      <div>
+        <label>align-content</label>
+        <select id="alignContent">
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+          <option value="stretch">stretch</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </div>
+
+      <div>
+        <label>gap (px)</label>
+        <input id="gap" type="range" min="0" max="60" value="12" />
+      </div>
+
+      <div class="row">
+        <div class="half">
+          <label>items</label>
+          <input id="count" type="number" min="1" max="30" value="6" />
+        </div>
+        <div style="display: flex; align-items: flex-end; gap: 8px">
+          <button id="applyCount">Set</button>
+          <button id="addItem" class="muted-btn">+ Item</button>
+          <button id="removeItem" class="muted-btn">- Item</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="exportCSS" class="muted-btn">Export CSS</button>
+        <button id="reset" style="margin-left: 8px">Reset</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="playground">
+    <div class="panel stage-container">
+      <div class="stage-toolbar">
+        <div class="small">Click an item to edit it</div>
+      </div>
+
+      <div class="stage">
+        <div id="gridContainer" class="grid-container"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div id="itemControls" style="display: none">
+        <label>Selected item: <span id="selectedIndex">-</span></label>
+        <div class="row">
+          <div class="half">
+            <label>grid-column</label>
+            <input id="gridColumn" type="text" value="auto" />
+          </div>
+          <div class="half">
+            <label>grid-row</label>
+            <input id="gridRow" type="text" value="auto" />
+          </div>
+        </div>
+        <div>
+          <label>justify-self</label>
+          <select id="justifySelf">
+            <option value="auto">auto</option>
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center">center</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </div>
+        <div>
+          <label>align-self</label>
+          <select id="alignSelf">
+            <option value="auto">auto</option>
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center">center</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </div>
+        <div style="margin-top: 8px; display: flex; gap: 8px">
+          <button id="applyItem">Apply</button>
+          <button id="resetItem" class="muted-btn">Reset Item</button>
+        </div>
+      </div>
+
+      <div id="noSelection" class="small">No item selected</div>
+    </div>
+  </main>
+
+  <footer>
+    CSS Grid playground — adjust values and see the effect instantly.
+  </footer>
+</div>
+
+<script>
+  const container = document.getElementById("gridContainer");
+  const columns = document.getElementById("columns");
+  const rows = document.getElementById("rows");
+  const justifyItems = document.getElementById("justifyItems");
+  const alignItems = document.getElementById("alignItems");
+  const justifyContent = document.getElementById("justifyContent");
+  const alignContent = document.getElementById("alignContent");
+  const gap = document.getElementById("gap");
+  const count = document.getElementById("count");
+  const applyCount = document.getElementById("applyCount");
+  const addItem = document.getElementById("addItem");
+  const removeItem = document.getElementById("removeItem");
+  const exportCSS = document.getElementById("exportCSS");
+  const reset = document.getElementById("reset");
+
+  const itemControls = document.getElementById("itemControls");
+  const noSelection = document.getElementById("noSelection");
+  const selectedIndex = document.getElementById("selectedIndex");
+  const gridColumn = document.getElementById("gridColumn");
+  const gridRow = document.getElementById("gridRow");
+  const justifySelf = document.getElementById("justifySelf");
+  const alignSelf = document.getElementById("alignSelf");
+  const applyItem = document.getElementById("applyItem");
+  const resetItem = document.getElementById("resetItem");
+
+  let items = [];
+  let selected = null;
+
+  function createItem(idx) {
+    const el = document.createElement("div");
+    el.className = "item";
+    el.textContent = idx + 1;
+    el.dataset.index = idx;
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      selectItem(el);
+    });
+    return el;
+  }
+
+  function renderItems() {
+    container.innerHTML = "";
+    items.forEach((it, i) => {
+      it.dataset.index = i;
+      it.textContent = i + 1;
+      container.appendChild(it);
+    });
+    updateContainer();
+    clearSelection();
+  }
+
+  function populate(n) {
+    items = [];
+    for (let i = 0; i < n; i++) items.push(createItem(i));
+    renderItems();
+  }
+
+  function updateContainer() {
+    container.style.gridTemplateColumns = columns.value;
+    container.style.gridTemplateRows = rows.value;
+    container.style.justifyItems = justifyItems.value;
+    container.style.alignItems = alignItems.value;
+    container.style.justifyContent = justifyContent.value;
+    container.style.alignContent = alignContent.value;
+    document.documentElement.style.setProperty("--gap", gap.value + "px");
+  }
+
+  function selectItem(el) {
+    if (selected) selected.classList.remove("selected");
+    selected = el;
+    selected.classList.add("selected");
+    itemControls.style.display = "block";
+    noSelection.style.display = "none";
+    selectedIndex.textContent = parseInt(el.dataset.index) + 1;
+
+    gridColumn.value = el.style.gridColumn || "auto";
+    gridRow.value = el.style.gridRow || "auto";
+    justifySelf.value = el.style.justifySelf || "auto";
+    alignSelf.value = el.style.alignSelf || "auto";
+  }
+
+  function clearSelection() {
+    if (selected) selected.classList.remove("selected");
+    selected = null;
+    itemControls.style.display = "none";
+    noSelection.style.display = "block";
+    selectedIndex.textContent = "-";
+  }
+
+  applyItem.addEventListener("click", () => {
+    if (!selected) return;
+    selected.style.gridColumn = gridColumn.value;
+    selected.style.gridRow = gridRow.value;
+    selected.style.justifySelf = justifySelf.value;
+    selected.style.alignSelf = alignSelf.value;
+  });
+
+  resetItem.addEventListener("click", () => {
+    if (!selected) return;
+    selected.style.gridColumn = "auto";
+    selected.style.gridRow = "auto";
+    selected.style.justifySelf = "auto";
+    selected.style.alignSelf = "auto";
+    selectItem(selected);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!container.contains(e.target)) clearSelection();
+  });
+
+  [
+    columns,
+    rows,
+    justifyItems,
+    alignItems,
+    justifyContent,
+    alignContent,
+    gap,
+  ].forEach((el) => el.addEventListener("input", updateContainer));
+  applyCount.addEventListener("click", () => {
+    let v = parseInt(count.value) || 1;
+    v = Math.min(30, Math.max(1, v));
+    count.value = v;
+    populate(v);
+  });
+  addItem.addEventListener("click", () => {
+    items.push(createItem(items.length));
+    renderItems();
+    count.value = items.length;
+  });
+  removeItem.addEventListener("click", () => {
+    if (items.length > 1) {
+      items.pop();
+      renderItems();
+      count.value = items.length;
+    }
+  });
+
+  reset.addEventListener("click", () => {
+    columns.value = "repeat(3, 1fr)";
+    rows.value = "auto";
+    justifyItems.value = "stretch";
+    alignItems.value = "stretch";
+    justifyContent.value = "start";
+    alignContent.value = "start";
+    gap.value = 12;
+    count.value = 6;
+    populate(6);
+  });
+
+  exportCSS.addEventListener("click", () => {
+    const css = `.container { display:grid; grid-template-columns: ${columns.value}; grid-template-rows: ${rows.value}; justify-items: ${justifyItems.value}; align-items: ${alignItems.value}; justify-content: ${justifyContent.value}; align-content: ${alignContent.value}; gap: ${gap.value}px; }`;
+    prompt("Copy the container CSS:", css);
+  });
+
+  populate(parseInt(count.value));
+  updateContainer();
+</script>

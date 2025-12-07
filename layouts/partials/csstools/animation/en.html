@@ -1,0 +1,994 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #0b1220;
+    --text: #e6eef8;
+    --muted: #94a3b8;
+    --accent: #06b6d4;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 300px 380px 1fr;
+    gap: 16px;
+    padding: 18px;
+  }
+  .container header {
+    grid-column: 1/-1;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container header h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .container .panel {
+    background: var(--panel);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.5);
+    overflow: auto;
+  }
+  .container label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .container input,
+  .container select,
+  .container textarea,
+  .container button {
+    font-family: inherit;
+  }
+  .container input,
+  .container select,
+  .container textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: transparent;
+    color: var(--text);
+  }
+  .container .row {
+    display: flex;
+    gap: 8px;
+  }
+  .container .row .half {
+    flex: 1;
+  }
+  .container button {
+    background: var(--accent);
+    border: none;
+    color: #022;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .container .muted {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+  }
+  .container .stage {
+    background: linear-gradient(180deg, #021024, #031d34);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+  }
+  .container .demo {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  .container .tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .container .tabs button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid transparent;
+  }
+  .container .tabs button.active {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.04);
+  }
+  .container .preset-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .container .card {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.01)
+    );
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .container .mini {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 6px auto;
+    background: #0b1220;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-size: 11px;
+  }
+  .container textarea#cssOutput {
+    height: 160px;
+    white-space: pre;
+    font-family: monospace;
+  }
+  .container .kf-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .container .kf-row input[type="text"] {
+    flex: 1;
+  }
+  @media (max-width: 1100px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="container">
+  <header>
+    <div>
+      <h1>Animation Playground</h1>
+      <div style="color: var(--muted); font-size: 13px">
+        Presets (Animate.css) — Editable & Exportable
+      </div>
+    </div>
+    <div style="display: none">
+      <button id="exportZIPAll" class="muted">Export ZIP (HTML+CSS)</button>
+    </div>
+  </header>
+
+  <!-- Left: Editor -->
+  <aside class="panel">
+    <div>
+      <label>Animation Name (CSS)</label>
+      <input id="animName" value="myAnim" />
+      <label>Animation Type</label>
+      <select id="animType">
+        <option value="translateX">Translate X</option>
+        <option value="translateY">Translate Y</option>
+        <option value="scale">Scale</option>
+        <option value="rotate">Rotate</option>
+        <option value="opacity">Opacity</option>
+      </select>
+
+      <div class="row">
+        <div class="half">
+          <label>Duration (s)</label>
+          <input id="duration" type="number" min="0" step="0.1" value="1" />
+        </div>
+        <div class="half">
+          <label>Delay (s)</label>
+          <input id="delay" type="number" min="0" step="0.1" value="0" />
+        </div>
+      </div>
+      <label>Timing Function</label>
+      <select id="timing">
+        <option>ease</option>
+        <option>linear</option>
+        <option>ease-in</option>
+        <option>ease-out</option>
+        <option>ease-in-out</option>
+      </select>
+      <div class="row" style="margin-top: 8px">
+        <div class="half">
+          <label>Iteration Count</label><input id="count" value="infinite" />
+        </div>
+        <div class="half">
+          <label>Direction</label
+          ><select id="direction">
+            <option>normal</option>
+            <option>reverse</option>
+            <option>alternate</option>
+            <option>alternate-reverse</option>
+          </select>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 8px">
+        <div class="half">
+          <label>Fill Mode</label
+          ><select id="fillMode">
+            <option>none</option>
+            <option>forwards</option>
+            <option>backwards</option>
+            <option>both</option>
+          </select>
+        </div>
+        <div class="half">
+          <label>Play State</label
+          ><select id="state">
+            <option>running</option>
+            <option>paused</option>
+          </select>
+        </div>
+      </div>
+
+      <label style="margin-top: 10px">Keyframes</label>
+      <div id="keyframes"></div>
+      <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap">
+        <button id="addKF" class="muted">+ Add Keyframe</button>
+        <button id="resetKF" class="muted">Reset</button>
+        <button id="saveJSON" class="muted">Save JSON</button>
+        <button id="loadJSON" class="muted">Load JSON</button>
+        <input type="file" id="fileInput" style="display: none" />
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 10px">
+        <button id="apply">Apply</button>
+        <button id="copyCSS" class="muted">Copy CSS</button>
+        <button id="exportCSSFile" class="muted">Export CSS</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Middle: Presets -->
+  <aside class="panel">
+    <div class="tabs">
+      <button class="active" data-tab="attention">Attention</button>
+      <button data-tab="fading">Fading</button>
+      <button data-tab="sliding">Sliding</button>
+      <button data-tab="zooming">Zooming</button>
+      <button data-tab="rotating">Rotating</button>
+      <button data-tab="specials">Specials</button>
+    </div>
+
+    <div id="presetArea">
+      <!-- grid populated by JS -->
+    </div>
+  </aside>
+
+  <!-- Right: Preview & Output -->
+  <main class="panel">
+    <div class="stage">
+      <div id="demo" class="demo">Box</div>
+    </div>
+    <div style="margin-top: 12px">
+      <label>CSS Output</label>
+      <textarea id="cssOutput" readonly></textarea>
+    </div>
+  </main>
+</div>
+
+<script>
+  // ---------- presets definitions (approximate keyframes taken/approximated) ----------
+  const PRESETS = {
+    attention: [
+      {
+        name: "bounce",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0% { transform: translateY(0); } 20% { transform: translateY(-30px); } 40% { transform: translateY(0); } 60% { transform: translateY(-15px); } 100% { transform: translateY(0); }`,
+      },
+      {
+        name: "flash",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{opacity:1}50%{opacity:0}100%{opacity:1}`,
+      },
+      {
+        name: "pulse",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}`,
+      },
+      {
+        name: "rubberBand",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{transform:scaleX(1)}30%{transform:scaleX(1.25) scaleY(0.75)}40%{transform:scaleX(0.75) scaleY(1.25)}50%{transform:scaleX(1.15) scaleY(0.85)}65%{transform:scaleX(0.95) scaleY(1.05)}100%{transform:scaleX(1) scaleY(1)}`,
+      },
+      {
+        name: "shakeX",
+        duration: "0.82s",
+        iteration: "infinite",
+        kf: `0%{transform:translateX(0)}10%{transform:translateX(-10px)}30%{transform:translateX(10px)}50%{transform:translateX(-6px)}70%{transform:translateX(6px)}100%{transform:translateX(0)}`,
+      },
+      {
+        name: "shakeY",
+        duration: "0.82s",
+        iteration: "infinite",
+        kf: `0%{transform:translateY(0)}10%{transform:translateY(-10px)}30%{transform:translateY(10px)}50%{transform:translateY(-6px)}70%{transform:translateY(6px)}100%{transform:translateY(0)}`,
+      },
+      {
+        name: "swing",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `20%{transform:rotate(15deg)}40%{transform:rotate(-10deg)}60%{transform:rotate(5deg)}80%{transform:rotate(-5deg)}100%{transform:rotate(0)}`,
+      },
+      {
+        name: "tada",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{transform:scale(1)}10%{transform:scale(.9) rotate(-3deg)}30%{transform:scale(1.1) rotate(3deg)}100%{transform:scale(1) rotate(0)}`,
+      },
+      {
+        name: "wobble",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{transform:none}15%{transform:translateX(-25%) rotate(-5deg)}30%{transform:translateX(20%) rotate(3deg)}45%{transform:translateX(-15%) rotate(-3deg)}60%{transform:translateX(10%) rotate(2deg)}100%{transform:none}`,
+      },
+      {
+        name: "jello",
+        duration: "1s",
+        iteration: "infinite",
+        kf: `0%{transform:none}30%{transform:skewX(-12deg) skewY(-12deg)}40%{transform:skewX(12deg) skewY(12deg)}50%{transform:skewX(-8deg) skewY(-8deg)}70%{transform:skewX(4deg) skewY(4deg)}100%{transform:none}`,
+      },
+      {
+        name: "heartBeat",
+        duration: "1.3s",
+        iteration: "infinite",
+        kf: `0%{transform:scale(1)}14%{transform:scale(1.3)}28%{transform:scale(1)}42%{transform:scale(1.3)}70%{transform:scale(1)}`,
+      },
+    ],
+    fading: [
+      {
+        name: "fadeIn",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0}100%{opacity:1}`,
+      },
+      {
+        name: "fadeInDown",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "fadeInUp",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "fadeInLeft",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:translateX(-20px)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "fadeInRight",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:translateX(20px)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "fadeOut",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:1}100%{opacity:0}`,
+      },
+      {
+        name: "fadeOutUp",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-20px)}`,
+      },
+    ],
+    sliding: [
+      {
+        name: "slideInUp",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{transform:translateY(100%);opacity:0}100%{transform:none;opacity:1}`,
+      },
+      {
+        name: "slideInDown",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{transform:translateY(-100%);opacity:0}100%{transform:none;opacity:1}`,
+      },
+      {
+        name: "slideInLeft",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{transform:translateX(-100%);opacity:0}100%{transform:none;opacity:1}`,
+      },
+      {
+        name: "slideInRight",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{transform:translateX(100%);opacity:0}100%{transform:none;opacity:1}`,
+      },
+    ],
+    zooming: [
+      {
+        name: "zoomIn",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:scale(.3)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "zoomOut",
+        duration: "0.8s",
+        iteration: "1",
+        kf: `0%{opacity:1;transform:none}100%{opacity:0;transform:scale(.3)}`,
+      },
+    ],
+    rotating: [
+      {
+        name: "rotateIn",
+        duration: "0.9s",
+        iteration: "1",
+        kf: `0%{transform:rotate(-200deg);opacity:0}100%{transform:none;opacity:1}`,
+      },
+      {
+        name: "rotateOut",
+        duration: "0.9s",
+        iteration: "1",
+        kf: `0%{transform:none;opacity:1}100%{transform:rotate(200deg);opacity:0}`,
+      },
+    ],
+    specials: [
+      {
+        name: "hinge",
+        duration: "2s",
+        iteration: "1",
+        kf: `0%{transform-origin:top left;animation-timing-function:ease-in-out}20%{transform:rotate(80deg)}60%{transform:rotate(60deg)}100%{opacity:0;transform:translateY(700px)}`,
+      },
+      {
+        name: "jackInTheBox",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:scale(.1) rotate(30deg)}50%{transform:rotate(-10deg)}100%{opacity:1;transform:none}`,
+      },
+      {
+        name: "rollIn",
+        duration: "1s",
+        iteration: "1",
+        kf: `0%{opacity:0;transform:translateX(-100%) rotate(-120deg)}100%{opacity:1;transform:none}`,
+      },
+    ],
+  };
+
+  // ---------- UI helpers ----------
+  const presetArea = document.getElementById("presetArea");
+  const tabs = document.querySelectorAll(".tabs button");
+  let currentCategory = "attention";
+
+  function renderCategory(cat) {
+    currentCategory = cat;
+    presetArea.innerHTML = "";
+    const grid = document.createElement("div");
+    grid.className = "preset-grid";
+    PRESETS[cat].forEach((p) => {
+      const card = document.createElement("div");
+      card.className = "card";
+      const mini = document.createElement("div");
+      mini.className = "mini animate__animated animate__" + p.name;
+      mini.style.animationDuration = p.duration;
+      mini.style.animationIterationCount = p.iteration;
+      mini.textContent = p.name;
+      const title = document.createElement("div");
+      title.textContent = p.name;
+      title.style.marginTop = "6px";
+      const btns = document.createElement("div");
+      btns.style.display = "flex";
+      btns.style.gap = "6px";
+      btns.style.justifyContent = "center";
+      btns.style.marginTop = "6px";
+      const loadBtn = document.createElement("button");
+      loadBtn.textContent = "Load";
+      loadBtn.addEventListener("click", () => loadPreset(cat, p.name));
+      const previewBtn = document.createElement("button");
+      previewBtn.textContent = "Preview";
+      previewBtn.className = "muted";
+      previewBtn.addEventListener("click", () => previewPreset(p));
+
+      btns.appendChild(loadBtn);
+      btns.appendChild(previewBtn);
+      card.appendChild(mini);
+      card.appendChild(title);
+      card.appendChild(btns);
+      grid.appendChild(card);
+    });
+    presetArea.appendChild(grid);
+  }
+
+  tabs.forEach((t) =>
+    t.addEventListener("click", () => {
+      tabs.forEach((x) => x.classList.remove("active"));
+      t.classList.add("active");
+      renderCategory(t.dataset.tab);
+    })
+  );
+  // init first
+  renderCategory("attention");
+
+  // ---------- Editor logic ----------
+  const keyframesEl = document.getElementById("keyframes");
+  const demo = document.getElementById("demo");
+  const animName = document.getElementById("animName");
+  const duration = document.getElementById("duration");
+  const delay = document.getElementById("delay");
+  const timing = document.getElementById("timing");
+  const count = document.getElementById("count");
+  const direction = document.getElementById("direction");
+  const fillMode = document.getElementById("fillMode");
+  const state = document.getElementById("state");
+  const addKF = document.getElementById("addKF");
+  const resetKF = document.getElementById("resetKF");
+  const apply = document.getElementById("apply");
+  const cssOutput = document.getElementById("cssOutput");
+  const copyCSS = document.getElementById("copyCSS");
+  const saveJSON = document.getElementById("saveJSON");
+  const loadJSON = document.getElementById("loadJSON");
+  const fileInput = document.getElementById("fileInput");
+  const exportCSSFile = document.getElementById("exportCSSFile");
+  const exportZIPAll = document.getElementById("exportZIPAll");
+
+  let kfs = [];
+  // ---- helper: normalize / read offset ----
+  function getOffsetValue(k) {
+    // k: { sel, customInput, props, row }
+    let off =
+      k.sel.value === "custom"
+        ? (k.customInput.value || "").trim()
+        : (k.sel.value || "").trim();
+    if (!off) off = "0%";
+    // لو دخل المستخدم رقم فقط، نضيف '%' تلقائياً
+    if (!/%$/.test(off) && /^\d+$/.test(off)) off = off + "%";
+    return off;
+  }
+
+  // ---- createKF (استبدال كامل) ----
+  function createKF(offset = "0%") {
+    const row = document.createElement("div");
+    row.className = "kf-row";
+
+    // select للنسب المعروفة
+    const sel = document.createElement("select");
+    const choices = ["0%", "25%", "50%", "75%", "100%", "custom"];
+    choices.forEach((v) => {
+      const o = document.createElement("option");
+      o.value = v;
+      o.textContent = v;
+      sel.appendChild(o);
+    });
+
+    // input لو اختار custom
+    const customInput = document.createElement("input");
+    customInput.type = "text";
+    customInput.placeholder = "مثال: 30%";
+    customInput.style.display = "none";
+    customInput.style.width = "72px";
+
+    // حقل الخصائص
+    const props = document.createElement("input");
+    props.type = "text";
+    props.placeholder = "مثال: transform: translateX(100px); opacity:0.5;";
+    props.style.flex = "1";
+
+    // زرار حذف
+    const del = document.createElement("button");
+    del.textContent = "✕";
+    del.className = "muted";
+    del.style.width = "36px";
+
+    // append (ترتيب منطقي)
+    row.appendChild(sel);
+    row.appendChild(customInput);
+    row.appendChild(props);
+    row.appendChild(del);
+    keyframesEl.appendChild(row);
+
+    const obj = { sel, customInput, props, row };
+    kfs.push(obj);
+
+    // إذا offset المعطى هو قيمة مخصصة أو غير مندرجة، اضبط الواجهة
+    if (offset === "custom") {
+      sel.value = "custom";
+      customInput.style.display = "inline-block";
+      customInput.focus();
+    } else if (!choices.includes(offset)) {
+      // قيمة غير معيارية، نحطها في custom field
+      sel.value = "custom";
+      customInput.style.display = "inline-block";
+      customInput.value = offset;
+    } else {
+      sel.value = offset;
+    }
+
+    // toggle بين select و input
+    sel.addEventListener("change", () => {
+      if (sel.value === "custom") {
+        customInput.style.display = "inline-block";
+        // لو مفيش قيمة سابقة، نعطي مثال سريع
+        if (!customInput.value) customInput.value = "";
+        customInput.focus();
+      } else {
+        customInput.style.display = "none";
+      }
+      update();
+    });
+
+    del.addEventListener("click", () => {
+      row.remove();
+      kfs = kfs.filter((x) => x !== obj);
+      update();
+    });
+
+    // تحديث عند أي تغيير
+    [sel, customInput, props].forEach((el) =>
+      el.addEventListener("input", update)
+    );
+
+    return obj;
+  }
+
+  // ---- reset (استبدال كامل) ----
+  function reset() {
+    keyframesEl.innerHTML = "";
+    kfs = [];
+    const type = document.getElementById("animType")
+      ? document.getElementById("animType").value
+      : null;
+
+    const k0 = createKF("0%");
+    const k50 = createKF("50%");
+    const k100 = createKF("100%");
+
+    if (type === "opacity") {
+      k0.props.value = "opacity:0;";
+      k50.props.value = "opacity:0.6;";
+      k100.props.value = "opacity:1;";
+    } else if (type === "scale") {
+      k0.props.value = "transform: scale(0.7);";
+      k50.props.value = "transform: scale(1.2);";
+      k100.props.value = "transform: scale(1);";
+    } else if (type === "translateY") {
+      k0.props.value = "transform: translateY(-40px); opacity:0;";
+      k50.props.value = "transform: translateY(20px);";
+      k100.props.value = "transform: translateY(0); opacity:1;";
+    } else if (type === "rotate") {
+      k0.props.value = "transform: rotate(0deg);";
+      k50.props.value = "transform: rotate(180deg);";
+      k100.props.value = "transform: rotate(360deg);";
+    } else {
+      // default translateX
+      k0.props.value = "transform: translateX(0); opacity:1;";
+      k50.props.value = "transform: translateX(80px); opacity:0.6;";
+      k100.props.value = "transform: translateX(0); opacity:1;";
+    }
+
+    update();
+  }
+
+  // ---- buildKeyframes (استبدال صغير) ----
+  function buildKeyframes() {
+    const lines = kfs
+      .map((k) => {
+        const offset = getOffsetValue(k);
+        const propsText = (k.props.value || "").trim();
+        // تجنب إدخال off فارغ في حالة عدم التحديد
+        if (!offset) return null;
+        return `${offset} { ${propsText} }`;
+      })
+      .filter(Boolean)
+      .join("\n");
+    return `@keyframes ${animName.value} {\n${lines}\n}`;
+  }
+
+  // ---- addKF listener (استبدال) ----
+  addKF.addEventListener("click", (e) => {
+    e.preventDefault();
+    // اختر نسبة متاحة من المرشحين وإلا اجعلها custom
+    const used = kfs.map((k) => getOffsetValue(k));
+    const candidates = ["0%", "25%", "50%", "75%", "100%"];
+    let next = "custom";
+    for (let c of candidates) {
+      if (!used.includes(c)) {
+        next = c;
+        break;
+      }
+    }
+    const newKF = createKF(next);
+
+    // ملأ	props افتراضى حسب animType (لو مش موجود)
+    const type = document.getElementById("animType")
+      ? document.getElementById("animType").value
+      : null;
+    if (!newKF.props.value) {
+      if (type === "opacity") newKF.props.value = "opacity:0;";
+      else if (type === "scale") newKF.props.value = "transform: scale(1.2);";
+      else if (type === "translateY")
+        newKF.props.value = "transform: translateY(40px);";
+      else if (type === "rotate")
+        newKF.props.value = "transform: rotate(30deg);";
+      else newKF.props.value = "transform: translateX(50px);";
+    }
+
+    // لو أنشأنا custom أظهر input وامِلِه بنسبة مقترحة (مثلاً منتصف جديد)
+    if (next === "custom") {
+      newKF.sel.value = "custom";
+      newKF.customInput.style.display = "inline-block";
+      if (!newKF.customInput.value) {
+        // حاول نختار نسبة منطقية (المتوسط بين  existing)
+        let suggested = "50%";
+        // لو فيه used, اختَر نسبة منتصف بين النسب المجاورة — بسيط هنا: خليه 75% لو 50% مستخدم
+        if (used.includes("50%") && !used.includes("75%")) suggested = "75%";
+        newKF.customInput.value = suggested;
+      }
+    }
+
+    update();
+  });
+
+  function applyAnimation() {
+    const existing = document.getElementById("anim-style");
+    if (existing) existing.remove();
+    const style = document.createElement("style");
+    style.id = "anim-style";
+    style.textContent = buildKeyframes();
+    document.head.appendChild(style);
+    demo.style.animation = `${animName.value} ${
+      parseFloat(duration.value) || 0
+    }s ${timing.value} ${count.value} ${direction.value} ${fillMode.value} ${
+      delay.value
+    }s`;
+    demo.style.animationPlayState = state.value;
+    cssOutput.value =
+      style.textContent +
+      "\n\n.demo { animation: " +
+      animName.value +
+      " " +
+      duration.value +
+      "s " +
+      timing.value +
+      " " +
+      count.value +
+      " " +
+      direction.value +
+      " " +
+      fillMode.value +
+      " " +
+      delay.value +
+      "s; animation-play-state: " +
+      state.value +
+      "; }";
+  }
+
+  function update() {
+    const kf = buildKeyframes();
+    cssOutput.value =
+      kf +
+      "\n\n/* animation shorthand */\n.demo { animation: " +
+      animName.value +
+      " " +
+      (duration.value || 0) +
+      "s " +
+      timing.value +
+      " " +
+      count.value +
+      " " +
+      direction.value +
+      " " +
+      fillMode.value +
+      " " +
+      (delay.value || 0) +
+      "s; animation-play-state: " +
+      state.value +
+      "; }";
+  }
+
+  // JSON save/load
+  saveJSON.addEventListener("click", () => {
+    const data = {
+      name: animName.value,
+      duration: duration.value,
+      delay: delay.value,
+      timing: timing.value,
+      count: count.value,
+      direction: direction.value,
+      fillMode: fillMode.value,
+      state: state.value,
+      keyframes: kfs.map((k) => ({
+        offset: k.sel.value,
+        props: k.props.value,
+      })),
+    };
+    const blob = new Blob([JSON.stringify(data, null, 2)], {
+      type: "application/json",
+    });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = animName.value + ".json";
+    a.click();
+  });
+  loadJSON.addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const obj = JSON.parse(ev.target.result);
+        loadFromJSON(obj);
+      } catch (err) {
+        alert("Invalid JSON");
+      }
+    };
+    reader.readAsText(file);
+  });
+  function loadFromJSON(obj) {
+    animName.value = obj.name || "myAnim";
+    duration.value = obj.duration || 1;
+    delay.value = obj.delay || 0;
+    timing.value = obj.timing || "ease";
+    count.value = obj.count || "infinite";
+    direction.value = obj.direction || "normal";
+    fillMode.value = obj.fillMode || "none";
+    state.value = obj.state || "running";
+    keyframesEl.innerHTML = "";
+    kfs = [];
+    if (obj.keyframes) {
+      obj.keyframes.forEach((k) => {
+        const n = createKF(k.offset);
+        n.props.value = k.props;
+      });
+    }
+    update();
+  }
+
+  // export css / zip
+  exportCSSFile.addEventListener("click", () => {
+    const full =
+      buildKeyframes() +
+      "\\n\\n.demo { animation: " +
+      animName.value +
+      " " +
+      duration.value +
+      "s " +
+      timing.value +
+      " " +
+      count.value +
+      " " +
+      direction.value +
+      " " +
+      fillMode.value +
+      " " +
+      delay.value +
+      "s; animation-play-state: " +
+      state.value +
+      "; }";
+    const blob = new Blob([full], { type: "text/css" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = animName.value + ".css";
+    a.click();
+  });
+  exportZIPAll.addEventListener("click", () => {
+    const css =
+      buildKeyframes() +
+      "\\n\\n.demo { animation: " +
+      animName.value +
+      " " +
+      duration.value +
+      "s " +
+      timing.value +
+      " " +
+      count.value +
+      " " +
+      direction.value +
+      " " +
+      fillMode.value +
+      " " +
+      delay.value +
+      "s; animation-play-state: " +
+      state.value +
+      "; }";
+    const html = `<!doctype html><html><head><meta charset='utf-8'><title>Preview</title><style>body{display:flex;align-items:center;justify-content:center;height:100vh;background:#071024} .demo{width:200px;height:200px;background:#111827;color:#fff;display:flex;align-items:center;justify-content:center;border-radius:8px}</style></head><body><div class='demo'>Box</div></body></html>`;
+    const files = { "index.html": html, "style.css": css };
+    const zipParts = [];
+    for (const [name, content] of Object.entries(files)) {
+      zipParts.push(`-----${name}-----\n${content}\n`);
+    }
+    const blob = new Blob(zipParts, { type: "application/zip" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = (animName.value || "animation") + ".zip";
+    a.click();
+  });
+
+  // presets actions: preview & load into editor
+  function previewPreset(p) {
+    demo.className = "demo"; // reset
+    void demo.offsetWidth; // force reflow لإعادة تشغيل الأنيميشن
+    demo.className = "demo animate__animated animate__" + p.name;
+    demo.style.animationDuration = p.duration;
+    demo.style.animationIterationCount = p.iteration;
+  }
+
+  function loadPreset(cat, name) {
+    const list = PRESETS[cat];
+    const p = list.find((x) => x.name === name);
+    if (!p) return;
+    animName.value = p.name;
+    duration.value = parseFloat(p.duration) || 1;
+    count.value = p.iteration || 1;
+    timing.value = "ease";
+    delay.value = 0;
+    direction.value = "normal";
+    fillMode.value = "both";
+    state.value = "running"; // inject keyframes
+    keyframesEl.innerHTML = "";
+    kfs = []; // parse simple kf string: split by number% tokens
+    const parts = p.kf
+      .split(/(\d+%)/)
+      .map((x) => x.trim())
+      .filter(Boolean);
+    for (let i = 0; i < parts.length; i += 2) {
+      const off = parts[i];
+      const body = (parts[i + 1] || "").replace(/[{}]/g, "").trim();
+      const n = createKF(off);
+      n.props.value = body;
+    }
+    update();
+    previewPreset(p);
+    // applyAnimation();
+  }
+
+  // wire small buttons
+  resetKF.addEventListener("click", (e) => {
+    e.preventDefault();
+    reset();
+  });
+
+  document.getElementById("animType").addEventListener("change", () => {
+    reset(); // يعيد بناء الكي فريمز بالنوع الجديد
+  });
+
+  document.querySelectorAll(".tabs button").forEach((b) =>
+    b.addEventListener("click", () => {
+      document
+        .querySelectorAll(".tabs button")
+        .forEach((x) => x.classList.remove("active"));
+      b.classList.add("active");
+      renderCategory(b.dataset.tab);
+    })
+  );
+  apply.addEventListener("click", applyAnimation);
+  copyCSS.addEventListener("click", () => {
+    cssOutput.select();
+    document.execCommand("copy");
+    alert("CSS copied!");
+  });
+  reset();
+  update();
+</script>

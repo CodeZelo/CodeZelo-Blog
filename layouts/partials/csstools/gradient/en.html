@@ -1,0 +1,229 @@
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #0b1220;
+    --text: #e6eef8;
+    --muted: #94a3b8;
+    --accent: #06b6d4;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .app header {
+    grid-column: 1/-1;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .app header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .app .panel {
+    background: var(--panel);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .app label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .app input[type="color"],
+  .app input[type="range"],
+  .app select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent;
+    color: var(--text);
+  }
+  .app .color-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .app .color-row input[type="color"] {
+    flex: 0 0 40px;
+    height: 32px;
+    padding: 0;
+    border: none;
+  }
+  .app .color-row input[type="range"] {
+    flex: 1;
+  }
+  .app button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .app .muted-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--muted);
+  }
+  .app .playground {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+  .app .stage {
+    flex: 1;
+    min-height: 420px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1e293b;
+  }
+  .app .preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .app textarea {
+    width: 100%;
+    height: 120px;
+    background: #0b1220;
+    color: var(--text);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    resize: none;
+    font-family: monospace;
+    font-size: 13px;
+  }
+  .app footer {
+    grid-column: 1/-1;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="app">
+  <header>
+    <h1>Gradient Builder</h1>
+    <div class="sub">
+      Create color gradients (linear / radial) and get ready-to-use CSS code.
+    </div>
+  </header>
+
+  <aside class="panel">
+    <div class="controls">
+      <div>
+        <label>Type</label>
+        <select id="type">
+          <option value="linear">Linear</option>
+          <option value="radial">Radial</option>
+        </select>
+      </div>
+      <div>
+        <label>Angle (linear)</label>
+        <input id="angle" type="range" min="0" max="360" value="90" />
+      </div>
+      <div id="colors"></div>
+      <button id="addColor">+ Add Color</button>
+      <button id="copyCSS">Copy CSS</button>
+    </div>
+  </aside>
+
+  <main class="playground">
+    <div class="stage">
+      <div id="preview" class="preview"></div>
+    </div>
+    <div class="panel">
+      <label>CSS Output</label>
+      <textarea id="cssOutput" readonly></textarea>
+    </div>
+  </main>
+
+  <footer>Gradient Builder — Choose your colors and gradient style.</footer>
+</div>
+
+<script>
+  const type = document.getElementById("type");
+  const angle = document.getElementById("angle");
+  const colors = document.getElementById("colors");
+  const preview = document.getElementById("preview");
+  const cssOutput = document.getElementById("cssOutput");
+  const copyCSS = document.getElementById("copyCSS");
+  const addColor = document.getElementById("addColor");
+
+  let colorStops = [];
+
+  function addColorStop(c = "#ff0000", pos = 0) {
+    const row = document.createElement("div");
+    row.className = "color-row";
+    const colorInput = document.createElement("input");
+    colorInput.type = "color";
+    colorInput.value = c;
+    const range = document.createElement("input");
+    range.type = "range";
+    range.min = 0;
+    range.max = 100;
+    range.value = pos;
+    row.appendChild(colorInput);
+    row.appendChild(range);
+    colors.appendChild(row);
+    colorStops.push({ colorInput, range });
+    colorInput.addEventListener("input", update);
+    range.addEventListener("input", update);
+    update();
+  }
+
+  function update() {
+    const stops = colorStops
+      .map((s) => `${s.colorInput.value} ${s.range.value}%`)
+      .join(", ");
+    let gradient = "";
+    if (type.value === "linear") {
+      gradient = `linear-gradient(${angle.value}deg, ${stops})`;
+    } else {
+      gradient = `radial-gradient(circle, ${stops})`;
+    }
+    preview.style.background = gradient;
+    cssOutput.value = `background: ${gradient};`;
+  }
+
+  addColor.addEventListener("click", () => addColorStop("#00ff00", 50));
+  type.addEventListener("input", update);
+  angle.addEventListener("input", update);
+  copyCSS.addEventListener("click", () => {
+    cssOutput.select();
+    document.execCommand("copy");
+    alert("CSS copied!");
+  });
+
+  // init with two colors
+  addColorStop("#ff0000", 0);
+  addColorStop("#0000ff", 100);
+</script>

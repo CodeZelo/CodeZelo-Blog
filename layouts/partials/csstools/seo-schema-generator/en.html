@@ -1,0 +1,1512 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Prism.js -->
+<link
+  href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+<!-- SortableJS -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+<div>
+  <h2 class="text-2xl font-bold text-center text-indigo-600 mb-6">
+    🎯 Advanced Schema Generator
+  </h2>
+
+  <!-- اختيار النوع -->
+  <div class="mb-6">
+    <label class="block text-gray-700 mb-2">Choose Schema Type:</label>
+    <select
+      id="schemaType"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+    >
+      <option value="Article">Article</option>
+      <option value="FAQPage">FAQ</option>
+      <option value="HowTo">HowTo</option>
+      <option value="Product">Product</option>
+      <option value="VideoObject">Video</option>
+      <option value="Review">Review</option>
+    </select>
+  </div>
+
+  <!-- Article -->
+  <form id="articleForm" class="schemaForm space-y-2">
+    <input
+      type="text"
+      name="title"
+      placeholder="Title"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="headline"
+    />
+    <textarea
+      name="description"
+      placeholder="Description"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="description"
+    ></textarea>
+    <input
+      type="text"
+      name="author"
+      placeholder="Author"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="author"
+    />
+    <input
+      type="date"
+      name="datePublished"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="datePublished"
+    />
+    <input
+      type="url"
+      name="url"
+      placeholder="Article URL"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="url"
+    />
+    <div id="articleImages"></div>
+    <button
+      type="button"
+      onclick="addImage('articleImages')"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+    >
+      ➕ Add Image
+    </button>
+    <button
+      type="button"
+      onclick="resetForm('articleForm')"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- FAQ -->
+  <form id="faqForm" class="schemaForm hidden">
+    <div id="faqItems"></div>
+    <button
+      type="button"
+      onclick="addFAQ()"
+      class="mt-2 bg-indigo-600 text-white px-4 py-1 rounded"
+    >
+      ➕ Add Question
+    </button>
+    <button
+      type="button"
+      onclick="resetForm('faqForm')"
+      class="mt-2 bg-gray-500 text-white px-4 py-1 rounded"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- HowTo -->
+  <form id="howtoForm" class="schemaForm hidden">
+    <input
+      type="text"
+      name="name"
+      placeholder="HowTo Name"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="name"
+    />
+    <textarea
+      name="description"
+      placeholder="Description"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="description"
+    ></textarea>
+    <div id="howtoSteps"></div>
+    <button
+      type="button"
+      onclick="addStep()"
+      class="mt-2 bg-indigo-600 text-white px-4 py-1 rounded"
+    >
+      ➕ Add Step
+    </button>
+    <button
+      type="button"
+      onclick="resetForm('howtoForm')"
+      class="mt-2 bg-gray-500 text-white px-4 py-1 rounded"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- Product -->
+  <form id="productForm" class="schemaForm hidden space-y-2">
+    <input
+      type="text"
+      name="name"
+      placeholder="Product Name"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="name"
+    />
+    <textarea
+      name="description"
+      placeholder="Description"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="description"
+    ></textarea>
+    <input
+      type="text"
+      name="brand"
+      placeholder="Brand"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="brand"
+    />
+    <input
+      type="text"
+      name="sku"
+      placeholder="SKU"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="sku"
+    />
+    <input
+      type="number"
+      name="price"
+      placeholder="Price"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="price"
+    />
+    <input
+      type="text"
+      name="currency"
+      placeholder="Currency (USD, SAR...)"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="currency"
+    />
+    <div id="productImages" class="flex flex-wrap gap-2"></div>
+    <button
+      type="button"
+      onclick="addImage('productImages')"
+      class="bg-indigo-600 text-white px-4 py-1 rounded"
+    >
+      ➕ Add Image
+    </button>
+    <button
+      type="button"
+      onclick="resetForm('productForm')"
+      class="bg-gray-500 text-white px-4 py-1 rounded"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- Video -->
+  <form id="videoForm" class="schemaForm hidden space-y-2">
+    <input
+      type="text"
+      name="name"
+      placeholder="Video Name"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="name"
+    />
+    <textarea
+      name="description"
+      placeholder="Description"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="description"
+    ></textarea>
+    <input
+      type="url"
+      name="contentUrl"
+      placeholder="Video URL"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="contentUrl"
+    />
+    <input
+      type="url"
+      name="embedUrl"
+      placeholder="Embed URL"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="embedUrl"
+    />
+    <input
+      type="date"
+      name="uploadDate"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="uploadDate"
+    />
+    <div id="videoThumbs" class="flex flex-wrap gap-2"></div>
+    <button
+      type="button"
+      onclick="addImage('videoThumbs')"
+      class="bg-indigo-600 text-white px-4 py-1 rounded"
+    >
+      ➕ Add Thumbnail
+    </button>
+    <button
+      type="button"
+      onclick="resetForm('videoForm')"
+      class="bg-gray-500 text-white px-4 py-1 rounded"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- Review -->
+  <form id="reviewForm" class="schemaForm hidden space-y-2">
+    <input
+      type="text"
+      name="author"
+      placeholder="Reviewer Name"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="author"
+    />
+    <textarea
+      name="reviewBody"
+      placeholder="Review Text"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="reviewBody"
+    ></textarea>
+    <input
+      type="number"
+      name="ratingValue"
+      placeholder="Rating (1-5)"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="ratingValue"
+    />
+    <input
+      type="number"
+      name="bestRating"
+      placeholder="Best Rating (usually 5)"
+      class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"
+      data-field="bestRating"
+    />
+    <button
+      type="button"
+      onclick="resetForm('reviewForm')"
+      class="bg-gray-500 text-white px-4 py-1 rounded"
+    >
+      ♻ Reset
+    </button>
+  </form>
+
+  <!-- الأزرار -->
+  <div class="flex flex-wrap justify-between mt-6 gap-2">
+    <button
+      onclick="generateSchema()
+"
+      class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700"
+    >
+      Generate Code
+    </button>
+    <button
+      onclick="copySchema()"
+      class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
+    >
+      Copy
+    </button>
+    <button
+      onclick="downloadSchema()"
+      class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+    >
+      ⬇ Download JSON-LD
+    </button>
+    <button
+      onclick="validateSchema()"
+      class="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700"
+    >
+      ✅ Validate
+    </button>
+  </div>
+
+  <!-- Output -->
+  <div class="mt-6">
+    <label class="block text-gray-700 mb-1">Generated Code:</label>
+    <pre
+      class="rounded-lg overflow-x-auto bg-gray-900 text-green-400 p-3 text-left"
+      dir="ltr"
+    >
+          <code id="output" class="language-markup"></code>
+        </pre>
+    <textarea id="hiddenOutput" hidden></textarea>
+  </div>
+
+  <!-- Preview -->
+  <div class="mt-6">
+    <h3 class="text-lg font-semibold mb-2">👀 Preview:</h3>
+    <div id="preview" class="border rounded-lg p-4 bg-gray-50"></div>
+  </div>
+</div>
+
+<script>
+  const schemaMap = {
+    Article: "articleForm",
+    FAQPage: "faqForm",
+    HowTo: "howtoForm",
+    Product: "productForm",
+    VideoObject: "videoForm",
+    Review: "reviewForm",
+  };
+
+  $("#schemaType").on("change", function () {
+    $(".schemaForm").addClass("hidden");
+    const formId = schemaMap[this.value];
+    $("#" + formId).removeClass("hidden");
+    generateSchema(); // Live update
+    if (this.value === "FAQPage" && $("#faqItems .faq-item").length === 0)
+      addFAQ();
+    if (this.value === "VideoObject" && $("#videoThumbs input").length === 0)
+      addImage("videoThumbs");
+  });
+
+  // إضافة صورة مع معاينة
+  function addImage(containerId) {
+    const container = $("#" + containerId);
+    const imageWrapper = $(`
+    <div class="flex flex-col items-start mb-2 border p-2 rounded relative">
+      <input type="url" name="image" placeholder="رابط الصورة" class="w-full border p-2 rounded mb-1 live-update"/>
+      <img src="" class="w-24 h-16 object-cover mb-1 hidden preview-img"/>
+      <button type="button" class="bg-red-600 text-white px-3 py-1 rounded absolute top-2 left-2">❌</button>
+    </div>
+  `);
+
+    // زر الحذف
+    imageWrapper.find("button").on("click", function () {
+      imageWrapper.remove();
+      generateSchema();
+    });
+
+    // Live Preview
+    imageWrapper.find("input").on("input", function () {
+      const val = $(this).val();
+      const img = $(this).siblings(".preview-img")[0];
+      if (val) {
+        img.src = val;
+        img.classList.remove("hidden");
+      } else img.classList.add("hidden");
+      generateSchema();
+    });
+
+    container.append(imageWrapper);
+  }
+
+  // Live preview للصور
+  $(document).on("input", "input[name=image]", function () {
+    const val = $(this).val();
+    const img = $(this).siblings(".preview-img");
+    if (val) {
+      img.src = val;
+      img.classList.remove("hidden");
+    } else img.classList.add("hidden");
+    generateSchema();
+  });
+
+  // FAQ
+  function addFAQ() {
+    const container = $("#faqItems");
+    container.append(`
+    <div class="faq-item border p-3 rounded mb-2 cursor-move">
+      <input type="text" name="question" placeholder="السؤال" class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"/>
+      <textarea name="answer" placeholder="الإجابة" class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"></textarea>
+      <button type="button" onclick="$(this).parent().remove(); generateSchema()" class="bg-red-600 text-white px-3 py-1 rounded">❌ حذف</button>
+    </div>
+  `);
+    new Sortable(container[0], { animation: 150 });
+  }
+
+  // HowTo Steps
+  function addStep() {
+    const container = $("#howtoSteps");
+    container.append(`
+    <div class="step-item border p-3 rounded mb-2 cursor-move">
+      <input type="text" name="stepName" placeholder="اسم الخطوة" class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"/>
+      <textarea name="stepText" placeholder="الوصف" class="w-full p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent live-update"></textarea>
+      <button type="button" onclick="$(this).parent().remove(); generateSchema()" class="bg-red-600 text-white px-3 py-1 rounded">❌ حذف</button>
+    </div>
+  `);
+    new Sortable(container[0], { animation: 150 });
+  }
+
+  // Reset form
+  function resetForm(formId) {
+    $("#" + formId)[0].reset();
+    $("#" + formId + " .preview-img").remove();
+    if (formId === "faqForm") $("#faqItems").empty();
+    if (formId === "howtoForm") $("#howtoSteps").empty();
+    if (formId === "productForm") $("#productImages").empty();
+    if (formId === "videoForm") $("#videoThumbs").empty();
+    generateSchema();
+  }
+
+  // ===== نظام إدارة الأخطاء الجذري =====
+  class ValidationManager {
+    constructor() {
+      this.errors = new Map(); // تخزين الأخطاء لكل حقل
+    }
+
+    // إضافة خطأ لحقل محدد
+    addError(fieldSelector, message) {
+      const $field = $(fieldSelector);
+      const fieldKey = this.getFieldKey($field);
+
+      // تخزين الخطأ
+      this.errors.set(fieldKey, {
+        field: $field,
+        message: message,
+        selector: fieldSelector,
+      });
+
+      // عرض الخطأ فوراً
+      this.displayError($field, message);
+    }
+
+    // إزالة خطأ من حقل محدد
+    removeError(fieldSelector) {
+      const $field = $(fieldSelector);
+      const fieldKey = this.getFieldKey($field);
+
+      // إزالة من التخزين
+      this.errors.delete(fieldKey);
+
+      // إزالة من العرض
+      this.clearFieldDisplay($field);
+    }
+
+    // مسح جميع الأخطاء
+    clearAll() {
+      this.errors.forEach((error) => {
+        this.clearFieldDisplay(error.field);
+      });
+      this.errors.clear();
+    }
+
+    // عرض جميع الأخطاء المخزنة
+    displayAll() {
+      this.errors.forEach((error) => {
+        this.displayError(error.field, error.message);
+      });
+    }
+
+    // التحقق من وجود أخطاء
+    hasErrors() {
+      return this.errors.size > 0;
+    }
+
+    // الحصول على مفتاح فريد للحقل
+    getFieldKey($field) {
+      const name = $field.attr("name") || "";
+      const id = $field.attr("id") || "";
+      const tagName = $field.prop("tagName") || "";
+      const index = $field.index();
+      return `${tagName}-${name}-${id}-${index}`;
+    }
+
+    // عرض خطأ واحد
+    displayError($field, message) {
+      const fieldKey = this.getFieldKey($field);
+      const errorClass = `error-${fieldKey}`;
+
+      // إزالة خطأ سابق لنفس الحقل
+      $(`.${errorClass}`).remove();
+      $field.removeClass("border-red-500 border-2");
+
+      // إضافة الخطأ الجديد
+      const $error = $(
+        `<div class="${errorClass} field-error text-red-600 text-sm mt-1 mb-2 p-2 bg-red-50 border border-red-200 rounded">${message}</div>`
+      );
+      $field.after($error);
+      $field.addClass("border-red-500 border-2");
+    }
+
+    // إزالة عرض خطأ حقل واحد
+    clearFieldDisplay($field) {
+      const fieldKey = this.getFieldKey($field);
+      const errorClass = `error-${fieldKey}`;
+      $(`.${errorClass}`).remove();
+      $field.removeClass("border-red-500 border-2");
+    }
+  }
+
+  // إنشاء مدير الأخطاء العام
+  const validator = new ValidationManager();
+
+  // ===== دوال التحقق المحسنة =====
+  function validateTextField($field, min, max, fieldName) {
+    const value = $field.val()?.trim() || "";
+    const fieldSelector = validator.getFieldKey($field);
+
+    if (value.length === 0) {
+      validator.addError($field, `${fieldName} مطلوب`);
+      return false;
+    }
+
+    if (value.length < min || value.length > max) {
+      validator.addError(
+        $field,
+        `${fieldName} يجب أن يكون بين ${min} و ${max} حرف`
+      );
+      return false;
+    }
+
+    validator.removeError($field);
+    return true;
+  }
+
+  function validateNumberField($field, min, max, fieldName) {
+    const value = $field.val()?.trim();
+
+    if (!value) {
+      validator.addError($field, `${fieldName} مطلوب`);
+      return false;
+    }
+
+    const num = parseFloat(value);
+    if (isNaN(num)) {
+      validator.addError($field, `${fieldName} يجب أن يكون رقم صحيح`);
+      return false;
+    }
+
+    if (num < min || num > max) {
+      validator.addError(
+        $field,
+        `${fieldName} يجب أن يكون بين ${min} و ${max}`
+      );
+      return false;
+    }
+
+    validator.removeError($field);
+    return true;
+  }
+
+  function validateURLField($field, fieldName) {
+    const value = $field.val()?.trim() || "";
+
+    if (!value) {
+      validator.addError($field, `${fieldName} مطلوب`);
+      return false;
+    }
+
+    // التحقق من بداية الرابط
+    if (!value.startsWith("http://") && !value.startsWith("https://")) {
+      validator.addError(
+        $field,
+        `${fieldName} يجب أن يبدأ بـ http:// أو https://`
+      );
+      return false;
+    }
+
+    try {
+      new URL(value);
+      validator.removeError($field);
+      return true;
+    } catch {
+      validator.addError(
+        $field,
+        `${fieldName} يجب أن يكون رابط صحيح (مثال: https://example.com)`
+      );
+      return false;
+    }
+  }
+
+  function validateDateField($field, fieldName) {
+    const value = $field.val()?.trim();
+
+    if (!value) {
+      validator.addError($field, `${fieldName} مطلوب`);
+      return false;
+    }
+
+    // تحقق من صيغة التاريخ YYYY-MM-DD
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    if (!dateRegex.test(value)) {
+      validator.addError(
+        $field,
+        `${fieldName} يجب أن يكون بصيغة YYYY-MM-DD (مثال: 2024-01-15)`
+      );
+      return false;
+    }
+
+    // تحقق من صحة التاريخ
+    const date = new Date(value);
+    if (isNaN(date.getTime())) {
+      validator.addError($field, `${fieldName} تاريخ غير صحيح`);
+      return false;
+    }
+
+    // تحقق من أن التاريخ ليس في المستقبل البعيد
+    const now = new Date();
+    const futureLimit = new Date();
+    futureLimit.setFullYear(now.getFullYear() + 10);
+
+    if (date > futureLimit) {
+      validator.addError(
+        $field,
+        `${fieldName} لا يمكن أن يكون في المستقبل البعيد`
+      );
+      return false;
+    }
+
+    validator.removeError($field);
+    return true;
+  }
+
+  function validateSelectField($field, fieldName) {
+    const value = $field.val()?.trim();
+
+    if (!value) {
+      validator.addError($field, `${fieldName} مطلوب`);
+      return false;
+    }
+
+    validator.removeError($field);
+    return true;
+  }
+
+  // ===== توليد السكيما المحسن =====
+  function generateSchema() {
+    const type = $("#schemaType").val();
+    let schema = { "@context": "https://schema.org", "@type": type };
+    let previewHTML = "";
+
+    // مسح جميع الأخطاء السابقة
+    validator.clearAll();
+
+    console.log(`بدء التحقق من نوع: ${type}`);
+
+    // ===== Article =====
+    if (type === "Article") {
+      console.log("التحقق من حقول المقال...");
+
+      // التحقق من جميع الحقول
+      const titleValid = validateTextField(
+        $("#articleForm input[name=title]"),
+        5,
+        110,
+        "العنوان"
+      );
+      const descValid = validateTextField(
+        $("#articleForm textarea[name=description]"),
+        20,
+        300,
+        "الوصف"
+      );
+      const authorValid = validateTextField(
+        $("#articleForm input[name=author]"),
+        3,
+        50,
+        "المؤلف"
+      );
+      const dateValid = validateDateField(
+        $("#articleForm input[name=datePublished]"),
+        "تاريخ النشر"
+      );
+      const urlValid = validateURLField(
+        $("#articleForm input[name=url]"),
+        "رابط المقال"
+      );
+
+      // التحقق من الصور (اختيارية)
+      schema.image = [];
+      $("#articleImages input[name=image]").each(function () {
+        const $img = $(this);
+        const val = $img.val().trim();
+        if (val) {
+          if (validateURLField($img, "رابط الصورة")) {
+            schema.image.push(val);
+          }
+        }
+      });
+
+      // إذا كانت هناك أخطاء، عرض رسالة وتوقف
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج. يرجى مراجعة الحقول المميزة باللون الأحمر أعلاه.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+
+      // بناء السكيما
+      schema.headline = $("#articleForm input[name=title]").val();
+      schema.description = $("#articleForm textarea[name=description]").val();
+      schema.author = {
+        "@type": "Person",
+        name: $("#articleForm input[name=author]").val(),
+      };
+      schema.datePublished = $("#articleForm input[name=datePublished]").val();
+      schema.url = $("#articleForm input[name=url]").val();
+
+      // بناء المعاينة
+      previewHTML = `
+      <div class="border rounded-lg p-4 shadow-sm bg-white">
+        <h2 class="font-bold text-xl mb-2">${schema.headline}</h2>
+        <p class="text-gray-700 mb-3">${schema.description}</p>
+        <div class="text-sm text-gray-500 mb-2">
+          <span class="font-semibold">المؤلف:</span> ${schema.author.name} | 
+          <span class="font-semibold">تاريخ النشر:</span> ${schema.datePublished}
+        </div>`;
+
+      if (schema.image.length > 0) {
+        previewHTML += `<img src="${schema.image[0]}" class="w-full h-48 object-cover mt-2 rounded border" onerror="this.src='https://via.placeholder.com/400x200?text=صورة+غير+متاحة'"/>`;
+        if (schema.image.length > 1) {
+          previewHTML += '<div class="flex gap-2 mt-2">';
+          schema.image.slice(1, 4).forEach((imgUrl) => {
+            previewHTML += `<img src="${imgUrl}" class="w-20 h-12 object-cover rounded border" onerror="this.src='https://via.placeholder.com/80x48?text=خطأ'"/>`;
+          });
+          if (schema.image.length > 4) {
+            previewHTML += `<div class="w-20 h-12 bg-gray-200 rounded border flex items-center justify-center text-xs text-gray-600">+${
+              schema.image.length - 4
+            }</div>`;
+          }
+          previewHTML += "</div>";
+        }
+      }
+      previewHTML += `</div>`;
+    }
+
+    // ===== FAQPage =====
+    if (type === "FAQPage") {
+      console.log("التحقق من حقول FAQ...");
+
+      schema.mainEntity = [];
+      previewHTML = '<div class="space-y-2">';
+      let hasValidQuestions = false;
+
+      $("#faqItems .faq-item").each(function (index) {
+        let $q = $(this).find("input[name=question]");
+        let $a = $(this).find("textarea[name=answer]");
+
+        const qValid = validateTextField($q, 5, 100, `السؤال ${index + 1}`);
+        const aValid = validateTextField($a, 10, 500, `الإجابة ${index + 1}`);
+
+        const q = $q.val().trim();
+        const a = $a.val().trim();
+
+        if (qValid && aValid && q && a) {
+          hasValidQuestions = true;
+          schema.mainEntity.push({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          });
+
+          previewHTML += `
+          <div class="border rounded-lg p-3 bg-white">
+            <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full text-right font-semibold flex justify-between items-center hover:text-blue-600">
+              <span>${q}</span> <span class="text-blue-600">➕</span>
+            </button>
+            <div class="hidden text-gray-700 mt-2 pt-2 border-t">${a}</div>
+          </div>`;
+        }
+      });
+
+      previewHTML += "</div>";
+
+      if (!hasValidQuestions && !validator.hasErrors()) {
+        validator.addError(
+          $("#faqItems"),
+          "يجب إضافة سؤال وإجابة صحيحين على الأقل"
+        );
+      }
+
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+    }
+
+    // ===== HowTo =====
+    if (type === "HowTo") {
+      console.log("التحقق من حقول HowTo...");
+
+      const nameValid = validateTextField(
+        $("#howtoForm input[name=name]"),
+        5,
+        110,
+        "اسم الطريقة"
+      );
+      const descValid = validateTextField(
+        $("#howtoForm textarea[name=description]"),
+        20,
+        300,
+        "الوصف"
+      );
+
+      schema.name = $("#howtoForm input[name=name]").val()?.trim();
+      schema.description = $("#howtoForm textarea[name=description]")
+        .val()
+        ?.trim();
+      schema.step = [];
+      let hasValidSteps = false;
+
+      $("#howtoSteps .step-item").each(function (index) {
+        const $stepName = $(this).find("input[name=stepName]");
+        const $stepText = $(this).find("textarea[name=stepText]");
+
+        const stepNameValid = validateTextField(
+          $stepName,
+          3,
+          100,
+          `عنوان الخطوة ${index + 1}`
+        );
+        const stepTextValid = validateTextField(
+          $stepText,
+          5,
+          300,
+          `تفاصيل الخطوة ${index + 1}`
+        );
+
+        if (
+          stepNameValid &&
+          stepTextValid &&
+          $stepName.val() &&
+          $stepText.val()
+        ) {
+          hasValidSteps = true;
+          schema.step.push({
+            "@type": "HowToStep",
+            name: $stepName.val(),
+            itemListElement: {
+              "@type": "HowToDirection",
+              text: $stepText.val(),
+            },
+          });
+        }
+      });
+
+      if (!hasValidSteps && !validator.hasErrors()) {
+        validator.addError(
+          $("#howtoSteps"),
+          "يجب إضافة خطوة واحدة صحيحة على الأقل"
+        );
+      }
+
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+
+      previewHTML = `
+      <div class="border rounded-lg p-4 bg-white shadow-sm">
+        <h3 class="font-bold text-xl mb-2">${schema.name}</h3>
+        <p class="text-gray-600 mb-4">${schema.description}</p>
+        <ol class="list-decimal list-inside space-y-3">`;
+
+      schema.step.forEach((s, index) => {
+        previewHTML += `
+        <li class="mb-3 p-3 bg-gray-50 rounded">
+          <span class="font-semibold text-blue-600">الخطوة ${index + 1}: ${
+          s.name
+        }</span>
+          <p class="text-gray-700 mt-1">${s.itemListElement.text}</p>
+        </li>`;
+      });
+      previewHTML += `</ol></div>`;
+    }
+
+    // ===== Product =====
+    if (type === "Product") {
+      console.log("التحقق من حقول المنتج...");
+
+      const nameValid = validateTextField(
+        $("#productForm input[name=name]"),
+        3,
+        100,
+        "اسم المنتج"
+      );
+      const descValid = validateTextField(
+        $("#productForm textarea[name=description]"),
+        10,
+        300,
+        "الوصف"
+      );
+      const brandValid = validateTextField(
+        $("#productForm input[name=brand]"),
+        2,
+        50,
+        "الماركة"
+      );
+      const skuValid = validateTextField(
+        $("#productForm input[name=sku]"),
+        2,
+        50,
+        "SKU"
+      );
+      const priceValid = validateNumberField(
+        $("#productForm input[name=price]"),
+        0,
+        1000000,
+        "السعر"
+      );
+      const currencyValid = validateTextField(
+        $("#productForm input[name=currency]"),
+        3,
+        3,
+        "عملة السعر"
+      );
+
+      schema.name = $("#productForm input[name=name]").val();
+      schema.description = $("#productForm textarea[name=description]").val();
+      schema.brand = {
+        "@type": "Brand",
+        name: $("#productForm input[name=brand]").val(),
+      };
+      schema.sku = $("#productForm input[name=sku]").val();
+
+      // التحقق من الصور (اختيارية)
+      schema.image = [];
+      $("#productImages input[name=image]").each(function () {
+        const $img = $(this);
+        const val = $img.val().trim();
+        if (val) {
+          if (validateURLField($img, "رابط الصورة")) {
+            schema.image.push(val);
+          }
+        }
+      });
+
+      schema.offers = {
+        "@type": "Offer",
+        price: $("#productForm input[name=price]").val(),
+        priceCurrency: $("#productForm input[name=currency]").val(),
+        availability: "https://schema.org/InStock",
+      };
+
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+
+      previewHTML = `
+      <div class="border rounded-lg p-4 bg-white shadow-sm">
+        <h2 class="font-bold text-xl mb-2">${schema.name}</h2>
+        <div class="text-2xl font-bold text-green-600 mb-2">${schema.offers.price} ${schema.offers.priceCurrency}</div>
+        <p class="text-gray-700 mb-3">${schema.description}</p>
+        <div class="text-sm text-gray-500 mb-3">
+          <span class="font-semibold">العلامة التجارية:</span> ${schema.brand.name} | 
+          <span class="font-semibold">كود المنتج:</span> ${schema.sku}
+        </div>`;
+
+      if (schema.image.length > 0) {
+        previewHTML += `<img src="${schema.image[0]}" class="w-full h-48 object-cover mt-2 rounded border" onerror="this.src='https://via.placeholder.com/400x200?text=صورة+المنتج'"/>`;
+        if (schema.image.length > 1) {
+          previewHTML += '<div class="flex gap-2 mt-2">';
+          schema.image.slice(1, 4).forEach((imgUrl) => {
+            previewHTML += `<img src="${imgUrl}" class="w-20 h-12 object-cover rounded border" onerror="this.src='https://via.placeholder.com/80x48?text=خطأ'"/>`;
+          });
+          if (schema.image.length > 4) {
+            previewHTML += `<div class="w-20 h-12 bg-gray-200 rounded border flex items-center justify-center text-xs text-gray-600">+${
+              schema.image.length - 4
+            }</div>`;
+          }
+          previewHTML += "</div>";
+        }
+      }
+      previewHTML += `</div>`;
+    }
+
+    // ===== VideoObject =====
+    if (type === "VideoObject") {
+      console.log("التحقق من حقول الفيديو...");
+
+      const nameValid = validateTextField(
+        $("#videoForm input[name=name]"),
+        3,
+        100,
+        "اسم الفيديو"
+      );
+      const descValid = validateTextField(
+        $("#videoForm textarea[name=description]"),
+        10,
+        300,
+        "الوصف"
+      );
+      const contentUrlValid = validateURLField(
+        $("#videoForm input[name=contentUrl]"),
+        "رابط الفيديو"
+      );
+      const embedUrlValid = validateURLField(
+        $("#videoForm input[name=embedUrl]"),
+        "رابط التضمين"
+      );
+      const uploadDateValid = validateDateField(
+        $("#videoForm input[name=uploadDate]"),
+        "تاريخ التحميل"
+      );
+
+      schema.name = $("#videoForm input[name=name]").val();
+      schema.description = $("#videoForm textarea[name=description]").val();
+      schema.contentUrl = $("#videoForm input[name=contentUrl]").val();
+      schema.embedUrl = $("#videoForm input[name=embedUrl]").val();
+      schema.uploadDate = $("#videoForm input[name=uploadDate]").val();
+
+      // التحقق من الصور المصغرة (اختيارية)
+      schema.thumbnailUrl = [];
+      $("#videoThumbs input[name=image]").each(function () {
+        const $img = $(this);
+        const val = $img.val().trim();
+        if (val) {
+          if (validateURLField($img, "رابط الصورة المصغرة")) {
+            schema.thumbnailUrl.push(val);
+          }
+        }
+      });
+
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+
+      let thumb = schema.thumbnailUrl.length
+        ? schema.thumbnailUrl[0]
+        : "https://via.placeholder.com/400x200?text=صورة+مصغرة+للفيديو";
+
+      previewHTML = `
+      <div class="relative w-80 rounded-lg overflow-hidden shadow-lg bg-white">
+        <div class="relative">
+          <img src="${thumb}" class="w-full h-44 object-cover" onerror="this.src='https://via.placeholder.com/400x200?text=فيديو'"/>
+          <button class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-4xl hover:bg-opacity-70 transition-all">
+            ▶️
+          </button>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">${schema.name}</h3>
+          <p class="text-sm text-gray-600 mb-2">${schema.description}</p>
+          <p class="text-xs text-gray-500">تاريخ التحميل: ${schema.uploadDate}</p>
+        </div>
+      </div>`;
+    }
+
+    // ===== Review =====
+    if (type === "Review") {
+      console.log("التحقق من حقول التقييم...");
+
+      const authorValid = validateTextField(
+        $("#reviewForm input[name=author]"),
+        3,
+        50,
+        "اسم الكاتب"
+      );
+      const bodyValid = validateTextField(
+        $("#reviewForm textarea[name=reviewBody]"),
+        5,
+        300,
+        "محتوى التقييم"
+      );
+      const ratingValid = validateNumberField(
+        $("#reviewForm input[name=ratingValue]"),
+        1,
+        5,
+        "التقييم"
+      );
+      const bestValid = validateNumberField(
+        $("#reviewForm input[name=bestRating]"),
+        1,
+        5,
+        "أفضل تقييم"
+      );
+
+      if (validator.hasErrors()) {
+        $("#output").html(`
+        <div class="text-red-600 p-4 bg-red-50 rounded-lg border border-red-200">
+          <h3 class="font-bold mb-2">⚠️ يرجى تصحيح الأخطاء التالية:</h3>
+          <p class="text-sm">تم العثور على ${validator.errors.size} خطأ في النموذج.</p>
+        </div>
+      `);
+        $("#preview").html(
+          '<div class="text-red-600 text-center p-4 bg-red-50 rounded">❌ لا يمكن عرض المعاينة بسبب وجود أخطاء</div>'
+        );
+        return;
+      }
+
+      schema.author = {
+        "@type": "Person",
+        name: $("#reviewForm input[name=author]").val(),
+      };
+      schema.reviewBody = $("#reviewForm textarea[name=reviewBody]").val();
+      schema.reviewRating = {
+        "@type": "Rating",
+        ratingValue: $("#reviewForm input[name=ratingValue]").val(),
+        bestRating: $("#reviewForm input[name=bestRating]").val(),
+      };
+
+      const ratingValue = parseInt(
+        $("#reviewForm input[name=ratingValue]").val()
+      );
+      const stars = "⭐".repeat(ratingValue) + "☆".repeat(5 - ratingValue);
+
+      previewHTML = `
+      <div class="border rounded-lg p-4 bg-white shadow-sm max-w-md">
+        <div class="flex items-start gap-3 mb-3">
+          <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+            ${schema.author.name.charAt(0).toUpperCase()}
+          </div>
+          <div class="flex-1">
+            <h4 class="font-bold text-gray-800">${schema.author.name}</h4>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="text-xl">${stars}</span>
+              <span class="text-gray-600">${schema.reviewRating.ratingValue}/${
+        schema.reviewRating.bestRating
+      }</span>
+            </div>
+          </div>
+        </div>
+        <blockquote class="text-gray-700 italic border-l-4 border-blue-400 pl-3">
+          "${schema.reviewBody}"
+        </blockquote>
+      </div>`;
+    }
+
+    // إنشاء وعرض JSON-LD النهائي
+    if (!validator.hasErrors()) {
+      const jsonLDScript = `<script type="application/ld+json">\n${JSON.stringify(
+        schema,
+        null,
+        2
+      )}\n<\/script>`;
+
+      $("#output").html(`
+      <div class="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
+        <span class="text-green-600 font-semibold">✅ تم إنشاء السكيما بنجاح!</span>
+      </div>
+      <pre><code class="language-javascript">${Prism.highlight(
+        jsonLDScript,
+        Prism.languages.javascript,
+        "javascript"
+      )}</code></pre>
+    `);
+
+      $("#hiddenOutput").val(jsonLDScript);
+      $("#preview").html(previewHTML);
+
+      console.log(`تم إنشاء السكيما بنجاح لنوع: ${type}`);
+    }
+  }
+
+  // ===== دوال مساعدة إضافية =====
+
+  // دالة لإضافة التحقق التلقائي عند الكتابة
+  function addRealTimeValidation() {
+    // تطبيق التحقق الفوري على جميع الحقول
+    $(document).on("input blur", "input, textarea, select", function () {
+      const $field = $(this);
+      const name = $field.attr("name");
+
+      // تحديد نوع التحقق بناءً على اسم الحقل
+      if (name === "title" || name === "name") {
+        if (
+          $field.closest("#articleForm").length ||
+          $field.closest("#howtoForm").length ||
+          $field.closest("#productForm").length ||
+          $field.closest("#videoForm").length
+        ) {
+          validateTextField(
+            $field,
+            3,
+            110,
+            $field.prev("label").text() || "الحقل"
+          );
+        }
+      } else if (name === "description") {
+        validateTextField($field, 10, 300, "الوصف");
+      } else if (name === "author") {
+        validateTextField($field, 3, 50, "المؤلف");
+      } else if (name === "brand") {
+        validateTextField($field, 2, 50, "الماركة");
+      } else if (name === "sku") {
+        validateTextField($field, 2, 50, "SKU");
+      } else if (name === "currency") {
+        validateTextField($field, 3, 3, "عملة السعر");
+      } else if (
+        name === "price" ||
+        name === "ratingValue" ||
+        name === "bestRating"
+      ) {
+        const min = name === "price" ? 0 : 1;
+        const max = name === "price" ? 1000000 : 5;
+        validateNumberField(
+          $field,
+          min,
+          max,
+          $field.prev("label").text() || "الحقل"
+        );
+      } else if (
+        name === "url" ||
+        name === "contentUrl" ||
+        name === "embedUrl" ||
+        name === "image"
+      ) {
+        validateURLField($field, $field.prev("label").text() || "الرابط");
+      } else if (name === "datePublished" || name === "uploadDate") {
+        validateDateField($field, $field.prev("label").text() || "التاريخ");
+      } else if (name === "question") {
+        validateTextField($field, 5, 100, "السؤال");
+      } else if (name === "answer") {
+        validateTextField($field, 10, 500, "الإجابة");
+      } else if (name === "stepName") {
+        validateTextField($field, 3, 100, "عنوان الخطوة");
+      } else if (name === "stepText") {
+        validateTextField($field, 5, 300, "تفاصيل الخطوة");
+      } else if (name === "reviewBody") {
+        validateTextField($field, 5, 300, "محتوى التقييم");
+      }
+    });
+  }
+
+  // دالة لإعداد رسائل المساعدة
+  function addHelpMessages() {
+    // إضافة رسائل مساعدة تحت الحقول
+    const helpMessages = {
+      'input[name="url"], input[name="contentUrl"], input[name="embedUrl"], input[name="image"]':
+        "يجب أن يبدأ الرابط بـ https:// أو http://",
+      'input[name="datePublished"], input[name="uploadDate"]':
+        "استخدم صيغة YYYY-MM-DD (مثال: 2024-01-15)",
+      'input[name="currency"]': "استخدم كود العملة (مثال: USD, EUR, SAR)",
+      'input[name="ratingValue"], input[name="bestRating"]': "رقم بين 1 و 5",
+      'input[name="price"]': "السعر بالأرقام فقط (مثال: 99.99)",
+    };
+
+    Object.keys(helpMessages).forEach((selector) => {
+      $(selector).each(function () {
+        const $field = $(this);
+        if (!$field.next(".help-message").length) {
+          $field.after(
+            `<div class="help-message text-xs text-gray-500 mt-1">${helpMessages[selector]}</div>`
+          );
+        }
+      });
+    });
+  }
+
+  // دالة لعرض إحصائيات الحقول
+  function showFieldStats() {
+    $(document).on("input", 'input[type="text"], textarea', function () {
+      const $field = $(this);
+      const value = $field.val() || "";
+      const maxLength = $field.attr("maxlength") || "غير محدد";
+
+      let $counter = $field.siblings(".char-counter");
+      if ($counter.length === 0) {
+        $counter = $(
+          '<div class="char-counter text-xs text-gray-500 mt-1"></div>'
+        );
+        $field.after($counter);
+      }
+
+      $counter.text(`${value.length} حرف`);
+
+      // تلوين العداد حسب الطول
+      if (value.length > maxLength * 0.9 && maxLength !== "غير محدد") {
+        $counter
+          .addClass("text-orange-500")
+          .removeClass("text-gray-500 text-green-500");
+      } else if (value.length > maxLength * 0.7 && maxLength !== "غير محدد") {
+        $counter
+          .addClass("text-green-500")
+          .removeClass("text-gray-500 text-orange-500");
+      } else {
+        $counter
+          .addClass("text-gray-500")
+          .removeClass("text-orange-500 text-green-500");
+      }
+    });
+  }
+
+  // دالة للتحقق من صحة الروابط بصورة متقدمة
+  function validateAdvancedURL(url) {
+    try {
+      const urlObj = new URL(url);
+
+      // التحقق من البروتوكول
+      if (!["http:", "https:"].includes(urlObj.protocol)) {
+        return {
+          valid: false,
+          message: "يجب أن يكون البروتوكول http أو https",
+        };
+      }
+
+      // التحقق من وجود اسم النطاق
+      if (!urlObj.hostname || urlObj.hostname.length < 3) {
+        return { valid: false, message: "اسم النطاق غير صحيح" };
+      }
+
+      // التحقق من صيغة النطاق
+      const domainRegex =
+        /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9])*$/;
+      if (!domainRegex.test(urlObj.hostname)) {
+        return { valid: false, message: "صيغة اسم النطاق غير صحيحة" };
+      }
+
+      return { valid: true, message: "رابط صحيح" };
+    } catch {
+      return { valid: false, message: "رابط غير صحيح" };
+    }
+  }
+
+  // دالة لتطبيق التحسينات على النماذج
+  function enhanceForms() {
+    // إضافة خصائص HTML5
+    $(
+      'input[name="url"], input[name="contentUrl"], input[name="embedUrl"], input[name="image"]'
+    ).attr("type", "url");
+    $('input[name="datePublished"], input[name="uploadDate"]').attr(
+      "type",
+      "date"
+    );
+    $(
+      'input[name="price"], input[name="ratingValue"], input[name="bestRating"]'
+    ).attr("type", "number");
+
+    // إضافة placeholders مفيدة
+    $('input[name="url"]').attr("placeholder", "https://example.com/article");
+    $('input[name="contentUrl"]').attr(
+      "placeholder",
+      "https://youtube.com/watch?v=..."
+    );
+    $('input[name="embedUrl"]').attr(
+      "placeholder",
+      "https://youtube.com/embed/..."
+    );
+    $('input[name="image"]').attr(
+      "placeholder",
+      "https://example.com/image.jpg"
+    );
+    $('input[name="currency"]').attr("placeholder", "USD");
+    $('input[name="sku"]').attr("placeholder", "ABC-123");
+
+    // إضافة حدود للحقول
+    $('input[name="title"], input[name="name"]').attr("maxlength", "110");
+    $('textarea[name="description"]').attr("maxlength", "300");
+    $('input[name="author"]').attr("maxlength", "50");
+    $('input[name="brand"]').attr("maxlength", "50");
+    $('input[name="sku"]').attr("maxlength", "50");
+    $('input[name="currency"]').attr("maxlength", "3");
+    $('input[name="question"]').attr("maxlength", "100");
+    $('textarea[name="answer"]').attr("maxlength", "500");
+    $('input[name="stepName"]').attr("maxlength", "100");
+    $('textarea[name="stepText"]').attr("maxlength", "300");
+    $('textarea[name="reviewBody"]').attr("maxlength", "300");
+
+    // إضافة حدود للحقول الرقمية
+    $('input[name="price"]').attr({
+      min: "0",
+      max: "1000000",
+      step: "0.01",
+    });
+    $('input[name="ratingValue"], input[name="bestRating"]').attr({
+      min: "1",
+      max: "5",
+      step: "1",
+    });
+  }
+
+  // تطبيق التحسينات عند تحميل الصفحة
+  $(document).ready(function () {
+    addRealTimeValidation();
+    addHelpMessages();
+    showFieldStats();
+    enhanceForms();
+
+    console.log("تم تحميل نظام التحقق المحسن بنجاح");
+  });
+
+  // تصدير الكائنات للاستخدام الخارجي
+  window.validator = validator;
+  window.validateTextField = validateTextField;
+  window.validateNumberField = validateNumberField;
+  window.validateURLField = validateURLField;
+  window.validateDateField = validateDateField;
+
+  // ===== live validation أثناء الكتابة =====
+  $(document).on("input", "input, textarea", function () {
+    $(this).removeClass("border-red-500");
+    $(this).siblings(".field-error").remove();
+    generateSchema();
+  });
+
+  // النسخ
+  function copySchema() {
+    const code = $("#hiddenOutput").val();
+
+    if (!code) {
+      alert("⚠️ برجاء توليد الكود أولاً قبل النسخ");
+      return;
+    }
+
+    // استخدام Clipboard API
+    navigator.clipboard
+      .writeText(code)
+      .then(() => {
+        alert("✅ تم نسخ الكود بنجاح!");
+      })
+      .catch((err) => {
+        alert("❌ حدث خطأ أثناء النسخ: " + err);
+      });
+  }
+
+  // التحميل
+  function downloadSchema() {
+    const blob = new Blob([$("#hiddenOutput").val()], {
+      type: "application/ld+json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "schema.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  // التحقق
+  function validateSchema() {
+    const code = $("#hiddenOutput").val().trim();
+    if (!code) {
+      alert("⚠️ برجاء توليد الكود أولاً قبل التحقق");
+      return;
+    }
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = "https://search.google.com/test/rich-results";
+    form.target = "_blank";
+    const input = document.createElement("textarea");
+    input.name = "code_snippet";
+    input.value = code;
+    form.appendChild(input);
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
+  }
+
+  // Live Update عند الكتابة
+  $(".live-update").on("input", generateSchema);
+</script>

@@ -1,0 +1,119 @@
+<style>
+  .app h1 {
+    color: #333;
+  }
+  .app textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .app button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .app button:hover {
+    background: #0056b3;
+  }
+  .app .result {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .app ul {
+    padding-left: 20px;
+  }
+  .app li {
+    margin-bottom: 5px;
+  }
+  .app .warning {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+
+<div class="app">
+  <p>انسخ الكود HTML للصفحة التي تريد فحصها في الصندوق أدناه:</p>
+  <textarea
+    id="htmlInput"
+    placeholder="أدخل HTML هنا..."
+    class="p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 flex flex-auto mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+  ></textarea>
+  <button onclick="analyzeSEO()">فحص الصفحة</button>
+
+  <div id="output"></div>
+</div>
+
+<script>
+  function analyzeSEO() {
+    const html = document.getElementById("htmlInput").value;
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+    const output = document.getElementById("output");
+    output.innerHTML = "";
+
+    // فحص Title
+    const title = doc.querySelector("title")
+      ? doc.querySelector("title").innerText
+      : "";
+    const metaDescription = doc.querySelector('meta[name="description"]')
+      ? doc.querySelector('meta[name="description"]').getAttribute("content")
+      : "";
+
+    const titleHTML = `<div class="result"><h2>Title</h2><p>${
+      title || '<span class="warning">غير موجود</span>'
+    }</p></div>`;
+    const descHTML = `<div class="result"><h2>Meta Description</h2><p>${
+      metaDescription || '<span class="warning">غير موجود</span>'
+    }</p></div>`;
+    output.innerHTML += titleHTML + descHTML;
+
+    // فحص Headings
+    const headings = [];
+    for (let i = 1; i <= 6; i++) {
+      const hs = Array.from(doc.querySelectorAll("h" + i)).map(
+        (h) => h.innerText
+      );
+      headings.push({ level: "H" + i, texts: hs });
+    }
+
+    let headingsHTML = `<div class="result"><h2>Headings</h2>`;
+    headings.forEach((h) => {
+      headingsHTML += `<h3>${h.level}</h3>`;
+      if (h.texts.length > 0) {
+        headingsHTML += "<ul>";
+        h.texts.forEach((t) => {
+          headingsHTML += `<li>${t}</li>`;
+        });
+        headingsHTML += "</ul>";
+      } else {
+        headingsHTML += `<p><span class="warning">لا توجد ${h.level}</span></p>`;
+      }
+    });
+    headingsHTML += "</div>";
+    output.innerHTML += headingsHTML;
+
+    // فحص الصور Alt
+    const images = Array.from(doc.querySelectorAll("img"));
+    let imagesHTML = `<div class="result"><h2>الصور وAlt Text</h2>`;
+    if (images.length > 0) {
+      imagesHTML += "<ul>";
+      images.forEach((img, index) => {
+        const alt = img.getAttribute("alt");
+        imagesHTML += `<li>صورة ${index + 1}: ${
+          alt ? alt : '<span class="warning">لا يوجد Alt</span>'
+        }</li>`;
+      });
+      imagesHTML += "</ul>";
+    } else {
+      imagesHTML += `<p><span class="warning">لا توجد صور</span></p>`;
+    }
+    imagesHTML += "</div>";
+    output.innerHTML += imagesHTML;
+  }
+</script>

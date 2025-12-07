@@ -1,0 +1,519 @@
+<style>
+  :root {
+    --gap: 12px;
+    --item-size: 80px;
+    --ui-bg: #0f172a;
+    --panel-bg: #0b1220;
+    --accent: #7c3aed;
+    --muted: #94a3b8;
+    --card: #0b1220;
+    --text: #e6eef8;
+  }
+
+  /* Layout */
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .app header {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.01)
+    );
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .app header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .app .panel {
+    background: var(--panel-bg);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+    overflow: auto;
+  }
+  .app .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .app label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .app select,
+  .app input[type="range"],
+  .app input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: transparent;
+    color: var(--text);
+  }
+  .app .row {
+    display: flex;
+    gap: 8px;
+  }
+  .app .row .half {
+    flex: 1;
+  }
+  .app button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .app .muted-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+  }
+
+  /* playground */
+  .app .playground {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+  .app .stage-container {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.01)
+    );
+    border-radius: 12px;
+    padding: 18px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+  }
+  .app .stage-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .app .stage {
+    flex: 1;
+    background: linear-gradient(180deg, #052235, #021024);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app .flex-container {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    gap: var(--gap);
+    min-height: 160px;
+    position: relative;
+  }
+
+  .app .item {
+    width: var(--item-size);
+    height: var(--item-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.01)
+    );
+    box-shadow: 0 6px 16px rgba(2, 6, 23, 0.6);
+    font-weight: 600;
+    color: var(--text);
+    user-select: none;
+  }
+  .app .item.selected {
+    outline: 3px solid rgba(124, 58, 237, 0.16);
+  }
+
+  .app .controls-block {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .app .small {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .app footer {
+    grid-column: 1/-1;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  /* responsive */
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+    .app header {
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<div class="app">
+  <header>
+    <div>
+      <h1>Flexbox Playground</h1>
+      <div class="sub">
+        جرّب خصائص flexbox بالزمن الحقيقي — غيّر الحاوية أو العناصر وشاهد
+        النتيجة فورياً
+      </div>
+    </div>
+    <div class="small">صنع بواسطة ChatGPT — اطلب تعديل أو ميزة جديدة</div>
+  </header>
+
+  <aside class="panel">
+    <div class="controls">
+      <div class="controls-block">
+        <label>flex-direction</label>
+        <select id="direction">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+      </div>
+
+      <div class="controls-block">
+        <label>flex-wrap</label>
+        <select id="wrap">
+          <option value="nowrap">nowrap</option>
+          <option value="wrap">wrap</option>
+          <option value="wrap-reverse">wrap-reverse</option>
+        </select>
+      </div>
+
+      <div class="controls-block">
+        <label>justify-content</label>
+        <select id="justify">
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </div>
+
+      <div class="controls-block">
+        <label>align-items</label>
+        <select id="alignItems">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="baseline">baseline</option>
+        </select>
+      </div>
+
+      <div class="controls-block">
+        <label>align-content</label>
+        <select id="alignContent">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+        </select>
+      </div>
+
+      <div class="controls-block">
+        <label>gap (px)</label>
+        <input id="gap" type="range" min="0" max="60" value="12" />
+      </div>
+
+      <div class="controls-block row">
+        <div class="half">
+          <label>items</label>
+          <input id="count" type="number" min="1" max="20" value="5" />
+        </div>
+        <div style="display: flex; align-items: flex-end; gap: 8px">
+          <button id="applyCount">Set</button>
+          <button id="addItem" class="muted-btn">+ Item</button>
+          <button id="removeItem" class="muted-btn">- Item</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="playground">
+    <div class="panel stage-container">
+      <div class="stage-toolbar">
+        <div class="small">
+          انقر على عنصر لتعديله. اسحب لترتيب العناصر في DOM (اختياري)
+        </div>
+        <div>
+          <button id="exportCSS" class="muted-btn">Export CSS</button>
+          <button id="reset" style="margin-left: 8px">Reset</button>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div
+          id="flexContainer"
+          class="flex-container"
+          role="region"
+          aria-label="flex playground"
+        ></div>
+      </div>
+    </div>
+
+    <div class="panel controls-block">
+      <div id="itemControls" style="display: none">
+        <label>Selected item: <span id="selectedIndex">-</span></label>
+        <div class="row">
+          <div class="half">
+            <label>order</label>
+            <input id="order" type="number" value="0" />
+          </div>
+          <div class="half">
+            <label>flex-grow</label>
+            <input id="grow" type="number" min="0" value="0" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="half">
+            <label>flex-shrink</label>
+            <input id="shrink" type="number" min="0" value="1" />
+          </div>
+          <div class="half">
+            <label>flex-basis (px or auto)</label>
+            <input id="basis" type="text" value="auto" />
+          </div>
+        </div>
+        <div>
+          <label>align-self</label>
+          <select id="alignSelf">
+            <option value="auto">auto</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="stretch">stretch</option>
+            <option value="baseline">baseline</option>
+          </select>
+        </div>
+        <div style="margin-top: 8px; display: flex; gap: 8px">
+          <button id="applyItem">Apply</button>
+          <button id="resetItem" class="muted-btn">Reset Item</button>
+        </div>
+      </div>
+
+      <div id="noSelection" class="small">لم يتم اختيار أي عنصر</div>
+    </div>
+  </main>
+
+  <footer>Flexbox playground — حرّك القيم وشاهد تأثيرها مباشرة.</footer>
+</div>
+
+<script>
+  // ======== helper & initial state ========
+  const container = document.getElementById("flexContainer");
+  const direction = document.getElementById("direction");
+  const wrap = document.getElementById("wrap");
+  const justify = document.getElementById("justify");
+  const alignItems = document.getElementById("alignItems");
+  const alignContent = document.getElementById("alignContent");
+  const gap = document.getElementById("gap");
+  const count = document.getElementById("count");
+  const applyCount = document.getElementById("applyCount");
+  const addItem = document.getElementById("addItem");
+  const removeItem = document.getElementById("removeItem");
+  const exportCSS = document.getElementById("exportCSS");
+  const reset = document.getElementById("reset");
+
+  const itemControls = document.getElementById("itemControls");
+  const noSelection = document.getElementById("noSelection");
+  const selectedIndex = document.getElementById("selectedIndex");
+  const orderIn = document.getElementById("order");
+  const grow = document.getElementById("grow");
+  const shrink = document.getElementById("shrink");
+  const basis = document.getElementById("basis");
+  const alignSelf = document.getElementById("alignSelf");
+  const applyItem = document.getElementById("applyItem");
+  const resetItem = document.getElementById("resetItem");
+
+  let items = [];
+  let selected = null;
+
+  function createItem(idx) {
+    const el = document.createElement("div");
+    el.className = "item";
+    el.textContent = idx + 1;
+    el.dataset.index = idx;
+    el.style.order = 0;
+    el.style.flex = "0 1 auto";
+    el.style.alignSelf = "auto";
+
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      selectItem(el);
+    });
+
+    return el;
+  }
+
+  function renderItems() {
+    container.innerHTML = "";
+    items.forEach((it, i) => {
+      it.dataset.index = i;
+      it.textContent = i + 1;
+      container.appendChild(it);
+    });
+    updateContainer();
+    clearSelection();
+  }
+
+  function populate(n) {
+    items = [];
+    for (let i = 0; i < n; i++) items.push(createItem(i));
+    renderItems();
+  }
+
+  // ======== container updates ========
+  function updateContainer() {
+    container.style.flexDirection = direction.value;
+    container.style.flexWrap = wrap.value;
+    container.style.justifyContent = justify.value;
+    container.style.alignItems = alignItems.value;
+    container.style.alignContent = alignContent.value;
+    document.documentElement.style.setProperty("--gap", gap.value + "px");
+  }
+
+  // ======== selection & item controls ========
+  function selectItem(el) {
+    if (selected) selected.classList.remove("selected");
+    selected = el;
+    selected.classList.add("selected");
+    itemControls.style.display = "block";
+    noSelection.style.display = "none";
+    selectedIndex.textContent = parseInt(el.dataset.index) + 1;
+
+    // load values
+    orderIn.value = el.style.order ? parseInt(el.style.order) : 0;
+    const flexParts = (el.style.flex || "0 1 auto").split(" ");
+    grow.value = flexParts[0] || 0;
+    shrink.value = flexParts[1] || 1;
+    basis.value = flexParts[2] || "auto";
+    alignSelf.value = el.style.alignSelf || "auto";
+  }
+
+  function clearSelection() {
+    if (selected) selected.classList.remove("selected");
+    selected = null;
+    itemControls.style.display = "none";
+    noSelection.style.display = "block";
+    selectedIndex.textContent = "-";
+  }
+
+  applyItem.addEventListener("click", () => {
+    if (!selected) return;
+    selected.style.order = orderIn.value;
+    selected.style.flex = grow.value + " " + shrink.value + " " + basis.value;
+    selected.style.alignSelf = alignSelf.value;
+  });
+
+  resetItem.addEventListener("click", () => {
+    if (!selected) return;
+    selected.style.order = 0;
+    selected.style.flex = "0 1 auto";
+    selected.style.alignSelf = "auto";
+    selectItem(selected);
+  });
+
+  // deselect when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!container.contains(e.target)) clearSelection();
+  });
+
+  // ======== controls events ========
+  [direction, wrap, justify, alignItems, alignContent, gap].forEach((el) =>
+    el.addEventListener("input", updateContainer)
+  );
+  applyCount.addEventListener("click", () => {
+    let v = parseInt(count.value) || 1;
+    v = Math.min(20, Math.max(1, v));
+    count.value = v;
+    populate(v);
+  });
+  addItem.addEventListener("click", () => {
+    items.push(createItem(items.length));
+    renderItems();
+    count.value = items.length;
+  });
+  removeItem.addEventListener("click", () => {
+    if (items.length > 1) {
+      items.pop();
+      renderItems();
+      count.value = items.length;
+    }
+  });
+
+  reset.addEventListener("click", () => {
+    direction.value = "row";
+    wrap.value = "nowrap";
+    justify.value = "flex-start";
+    alignItems.value = "stretch";
+    alignContent.value = "stretch";
+    gap.value = 12;
+    count.value = 5;
+    populate(5);
+  });
+
+  exportCSS.addEventListener("click", () => {
+    const css = `.container { display:flex; flex-direction: ${direction.value}; flex-wrap: ${wrap.value}; justify-content: ${justify.value}; align-items: ${alignItems.value}; align-content: ${alignContent.value}; gap: ${gap.value}px; }`;
+    prompt("Copy the container CSS:", css);
+  });
+
+  // init
+  populate(parseInt(count.value));
+  updateContainer();
+
+  // keyboard shortcuts (nice-to-have)
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Delete" && selected) {
+      const idx = parseInt(selected.dataset.index);
+      items.splice(idx, 1);
+      renderItems();
+      count.value = items.length;
+    }
+  });
+</script>
