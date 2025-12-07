@@ -1,6 +1,6 @@
 ---
-title: "أتقن 30 محدد CSS (Selectors) أساسي ومتقدم لتصميمات احترافية"
-description: "علم جميع أنواع CSS Selectors من الأساسيات لحد أحدث محددات CSS4 مع أمثلة واضحة وتطبيقات عملية. هيخليك تتحكم في تصميماتك زي المحترفين بدون تعقيد."
+title: "Master 30 Essential & Advanced CSS Selectors for Professional Designs"
+description: "Learn all types of CSS Selectors, from basics to the latest CSS4 selectors, with clear examples and practical applications. Master your designs like a pro effortlessly."
 draft: false
 categories: ["articles"]
 tags: ["learn-css"]
