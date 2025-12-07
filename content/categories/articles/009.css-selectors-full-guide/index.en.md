@@ -59,7 +59,7 @@ By class?
 By ID?
 Or by using another type of selector?
 
-### **In Short:**
+**In Short:**
 
 The **DOM** is the browser’s internal, structured version of your HTML page,
 and it’s what allows **CSS** to locate and style any element it needs.
