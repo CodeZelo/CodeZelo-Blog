@@ -1,0 +1,247 @@
+<style>
+  :root {
+    --ui-bg: #0f172a;
+    --panel-bg: #0b1220;
+    --accent: #2563eb;
+    --muted: #94a3b8;
+    --text: #e6eef8;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .app header {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .app header .sub {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .app .panel {
+    background: var(--panel-bg);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  }
+  .app .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .app label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .app input[type="range"],
+  .app input[type="number"],
+  .app input[type="color"] {
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent;
+    color: var(--text);
+  }
+  .app .row {
+    display: flex;
+    gap: 8px;
+  }
+  .app .row .half {
+    flex: 1;
+  }
+  .app button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .app .muted-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+  }
+  .app .playground {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+  }
+  .app .stage {
+    flex: 1;
+    background: linear-gradient(180deg, #052235, #021024);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+  }
+  .app .box {
+    width: 200px;
+    height: 200px;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.2s;
+  }
+  .app textarea {
+    width: 100%;
+    height: 120px;
+    background: #0b1220;
+    color: var(--text);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    resize: none;
+    font-family: monospace;
+    font-size: 13px;
+  }
+  .app footer {
+    grid-column: 1/-1;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="app">
+  <header>
+    <div>
+      <h1>Box Shadow Generator</h1>
+      <div class="sub">تحكم في الظل مباشرة واحصل على كود CSS جاهز</div>
+    </div>
+  </header>
+
+  <aside class="panel">
+    <div class="controls">
+      <div class="row">
+        <div class="half">
+          <label>Offset X</label>
+          <input id="offsetX" type="range" min="-100" max="100" value="0" />
+        </div>
+        <div class="half">
+          <label>Offset Y</label>
+          <input id="offsetY" type="range" min="-100" max="100" value="10" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="half">
+          <label>Blur</label>
+          <input id="blur" type="range" min="0" max="200" value="20" />
+        </div>
+        <div class="half">
+          <label>Spread</label>
+          <input id="spread" type="range" min="-50" max="100" value="0" />
+        </div>
+      </div>
+      <div>
+        <label>Color</label>
+        <input id="color" type="color" value="#000000" />
+      </div>
+      <div>
+        <label>Opacity</label>
+        <input
+          id="opacity"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.5"
+        />
+      </div>
+      <div>
+        <label>Inset</label>
+        <select id="inset">
+          <option value="">No</option>
+          <option value="inset">Yes</option>
+        </select>
+      </div>
+      <button id="copyCSS">Copy CSS</button>
+    </div>
+  </aside>
+
+  <main class="playground">
+    <div class="stage">
+      <div id="box" class="box"></div>
+    </div>
+    <div class="panel">
+      <label>CSS Output</label>
+      <textarea id="cssOutput" readonly></textarea>
+    </div>
+  </main>
+
+  <footer>Box Shadow playground — غير القيم وشاهد التأثير مباشرة.</footer>
+</div>
+
+<script>
+  const box = document.getElementById("box");
+  const offsetX = document.getElementById("offsetX");
+  const offsetY = document.getElementById("offsetY");
+  const blur = document.getElementById("blur");
+  const spread = document.getElementById("spread");
+  const color = document.getElementById("color");
+  const opacity = document.getElementById("opacity");
+  const inset = document.getElementById("inset");
+  const cssOutput = document.getElementById("cssOutput");
+  const copyCSS = document.getElementById("copyCSS");
+
+  function update() {
+    const rgba = hexToRgba(color.value, opacity.value);
+    const val =
+      `${inset.value} ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${rgba}`.trim();
+    box.style.boxShadow = val;
+    cssOutput.value = `box-shadow: ${val};`;
+  }
+
+  function hexToRgba(hex, alpha) {
+    let r = 0,
+      g = 0,
+      b = 0;
+    if (hex.length == 4) {
+      r = "0x" + hex[1] + hex[1];
+      g = "0x" + hex[2] + hex[2];
+      b = "0x" + hex[3] + hex[3];
+    } else if (hex.length == 7) {
+      r = "0x" + hex[1] + hex[2];
+      g = "0x" + hex[3] + hex[4];
+      b = "0x" + hex[5] + hex[6];
+    }
+    return `rgba(${+r},${+g},${+b},${alpha})`;
+  }
+
+  [offsetX, offsetY, blur, spread, color, opacity, inset].forEach((el) =>
+    el.addEventListener("input", update)
+  );
+  copyCSS.addEventListener("click", () => {
+    cssOutput.select();
+    document.execCommand("copy");
+    alert("CSS copied!");
+  });
+
+  update();
+</script>
