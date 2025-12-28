@@ -16,7 +16,7 @@ description: "دليل شامل لأهم تراكات تطوير الويب — 
 
 ---
 
-# **🟦 التراك الأول: Frontend Development**
+## **🟦 التراك الأول: Frontend Development**
 مسؤول عن بناء واجهة المستخدم والتفاعل داخل المتصفح.
 
 ستتعلم في هذا المسار:
@@ -31,7 +31,7 @@ TailwindCSS — Bootstrap — React — Vue — Figma — Vite
 
 ---
 
-# **🟩 التراك الثاني: Backend Development**
+## **🟩 التراك الثاني: Backend Development**
 مسؤول عن إدارة السيرفر والمنطق وقواعد البيانات.
 
 ستتعلم:
@@ -46,7 +46,7 @@ Express — Laravel — Django — Spring Boot — MySQL — PostgreSQL — Mong
 
 ---
 
-# **🟪 التراك الثالث: Full-Stack Development**
+## **🟪 التراك الثالث: Full-Stack Development**
 دمج بين الفرونت إند والباك إند — بناء تطبيق كامل من الصفر.
 
 ستتعلم:
@@ -61,53 +61,53 @@ MERN — MEVN — PERN — Laravel + Vue — Django + React
 
 ---
 
-# **🔥 أشهر الـ Stacks الجاهزة**
+## **🔥 أشهر الـ Stacks الجاهزة**
 
-## **MERN Stack**  
+### **MERN Stack**  
 MongoDB — Express — React — Node.js  
 الأكثر استخدامًا لبناء SPAs وتطبيقات حديثة.
 
-## **MEVN Stack**  
+### **MEVN Stack**  
 MongoDB — Express — Vue — Node.js  
 مناسب لمن يفضلون بساطة Vue.
 
-## **MEAN Stack**  
+### **MEAN Stack**  
 MongoDB — Express — Angular — Node.js  
 اختيار قوي للمشاريع الكبيرة.
 
-## **JAMStack**  
+### **JAMStack**  
 JavaScript — APIs — Markup  
 يتميز بالسرعة والأمان للمواقع الساكنة.
 
-## **TALL Stack**  
+### **TALL Stack**  
 TailwindCSS — Alpine.js — Laravel — Livewire  
 Stack خفيف وسريع بدون JavaScript ثقيل.
 
-## **PERN Stack**  
+### **PERN Stack**  
 PostgreSQL — Express — React — Node.js  
 بديل SQL-Based قوي للـ MERN.
 
-## **LAMP Stack**  
+### **LAMP Stack**  
 Linux — Apache — MySQL — PHP  
 أقدم وأكثر Stack انتشارًا، أساس Wordpress.
 
-## **Ruby on Rails Stack**  
+### **Ruby on Rails Stack**  
 Ruby — Rails — PostgreSQL  
 سريع في تطوير منتجات MVP.
 
-## **Serverless Stack**  
+### **Serverless Stack**  
 AWS Lambda — Firebase — Cloud Functions  
 للتطبيقات التي لا تحتاج سيرفرات مخصصة.
 
 ---
 
-# **🔧 تراكات إضافية مهمة**
+## **🔧 تراكات إضافية مهمة**
 
-## **DevOps Track**
+### **DevOps Track**
 Docker — Kubernetes — CI/CD — AWS  
 لإدارة التطبيقات والبنية التحتية.
 
-## **Mobile Web & Hybrid Apps**
+### **Mobile Web & Hybrid Apps**
 React Native — Flutter — PWA — Ionic  
 لتطوير تطبيقات موبايل من خلال الويب.
 

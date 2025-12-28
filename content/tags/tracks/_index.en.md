@@ -16,7 +16,7 @@ In this section you will learn:
 
 ---
 
-# **🟦 Track 1: Frontend Development**
+## **🟦 Track 1: Frontend Development**
 Responsible for building the user interface and handling interactions in the browser.
 
 You will learn:
@@ -31,7 +31,7 @@ TailwindCSS — Bootstrap — React — Vue — Figma — Vite
 
 ---
 
-# **🟩 Track 2: Backend Development**
+## **🟩 Track 2: Backend Development**
 Responsible for server logic, databases, and overall application architecture.
 
 You will learn:
@@ -46,7 +46,7 @@ Express — Laravel — Django — Spring Boot — MySQL — PostgreSQL — Mong
 
 ---
 
-# **🟪 Track 3: Full-Stack Development**
+## **🟪 Track 3: Full-Stack Development**
 Combines both frontend and backend to build complete end-to-end applications.
 
 You will learn:
@@ -61,53 +61,53 @@ MERN — MEVN — PERN — Laravel + Vue — Django + React
 
 ---
 
-# **🔥 Popular Web Stacks**
+## **🔥 Popular Web Stacks**
 
-## **MERN Stack**  
+### **MERN Stack**  
 MongoDB — Express — React — Node.js  
 Ideal for modern, dynamic Single Page Applications.
 
-## **MEVN Stack**  
+### **MEVN Stack**  
 MongoDB — Express — Vue — Node.js  
 Great for developers who prefer Vue's simplicity.
 
-## **MEAN Stack**  
+### **MEAN Stack**  
 MongoDB — Express — Angular — Node.js  
 A strong choice for enterprise-level applications.
 
-## **JAMStack**  
+### **JAMStack**  
 JavaScript — APIs — Markup  
 Known for high performance and security in static sites.
 
-## **TALL Stack**  
+### **TALL Stack**  
 TailwindCSS — Alpine.js — Laravel — Livewire  
 A lightweight stack with minimal JavaScript overhead.
 
-## **PERN Stack**  
+### **PERN Stack**  
 PostgreSQL — Express — React — Node.js  
 A powerful SQL-based alternative to the MERN stack.
 
-## **LAMP Stack**  
+### **LAMP Stack**  
 Linux — Apache — MySQL — PHP  
 Classic and widely used — backbone of WordPress.
 
-## **Ruby on Rails Stack**  
+### **Ruby on Rails Stack**  
 Ruby — Rails — PostgreSQL/MySQL  
 Best for rapid MVP development.
 
-## **Serverless Stack**  
+### **Serverless Stack**  
 AWS Lambda — Firebase — Cloud Functions  
 Perfect for apps that don't require dedicated servers.
 
 ---
 
-# **🔧 Additional Important Tracks**
+## **🔧 Additional Important Tracks**
 
-## **DevOps Track**
+### **DevOps Track**
 Docker — Kubernetes — CI/CD — AWS — GCP  
 Focused on deployment, automation, and infrastructure.
 
-## **Mobile Web & Hybrid Apps Track**
+### **Mobile Web & Hybrid Apps Track**
 React Native — Flutter — PWA — Ionic  
 For building mobile apps using web technologies.
 
