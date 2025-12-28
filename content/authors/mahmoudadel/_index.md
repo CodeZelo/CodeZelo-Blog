@@ -17,4 +17,11 @@ title: "Mahmoud Adel"
 - {{< icon "instagram" >}} [Instagram](https://www.instagram.com/devmahmoudadel/)
 - {{< icon "x-twitter" >}} [X (تويتر)](https://x.com/DevMahmoudAdel)
 
+
+## شهادات egyFWD
+
+!["شهادتي من Udacity المقدمة من egfwd"](egfwd-completed-web-development-challenger-track.jpeg "شهادتي من Udacity المقدمة من egfwd")
+
+
+!["شهادتي من Udacity المقدمة من egfwd الخاص بكورس الفرونت إند"](Professional-Front-End-Web-Development.jpeg "شهادتي من Udacity المقدمة من egfwd الخاص بكورس الفرونت إند")
 ---
