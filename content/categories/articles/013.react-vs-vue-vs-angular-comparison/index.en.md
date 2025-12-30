@@ -57,6 +57,38 @@ This table summarizes the **differences between React, Angular, and Vue** direct
 | **File Size** | Small to Medium | Relatively Large | Very Small & Lightweight |
 | **Flexibility** | Extremely High | Opinionated / Rigid | Balanced & Comfortable |
 
+## Beyond the Big Three: Rising Frameworks You Should Know
+
+While the "Big Three" dominate the conversation, a new generation of tools is gaining massive traction by solving legacy complexities. If you want to stay ahead of the curve and make your work stand out, these are the frameworks you need on your radar:
+
+### 1. Svelte: The Quiet Revolution
+
+**Svelte** shifts the heavy lifting from the browser to the build step. Unlike React or Vue, it bypasses the "Virtual DOM" entirely, compiling your code into highly optimized, vanilla JavaScript.
+
+* **Why choose it?** For blazing-fast performance and a significantly smaller codebase.
+* **Get started here:** [Svelte Tutorial](https://svelte.dev/tutorial)
+
+### 2. SolidJS: Familiar Syntax, Elite Performance
+
+If you love the React mental model (JSX) but hate the overhead of heavy re-renders, **SolidJS** is a game-changer. It delivers performance that rivals C++ by using fine-grained reactivity to update only the specific parts of the page that change.
+
+* **Why choose it?** If you want the React experience with industry-leading speed.
+* **Get started here:** [SolidJS Documentation](https://www.solidjs.com/tutorial/introduction_basics)
+
+### 3. Astro: The King of SEO and Content
+
+**Astro** is built for the modern web's focus on speed. It minimizes the JavaScript sent to the browser using a "zero-JS by default" philosophy. Best of all, it’s framework-agnostic—you can bring your existing React or Vue components into an Astro project.
+
+* **Why choose it?** It’s the gold standard for blogs, news sites, and any content-heavy platform where SEO is a priority.
+* **Get started here:** [Astro Docs](https://docs.astro.build)
+
+### 4. Preact: The Lean Alternative
+
+Think of **Preact** as React’s high-performance younger sibling. At only 3kb, it offers the same powerful API but with a much smaller footprint.
+
+* **Why choose it?** For projects where every kilobyte counts, especially when targeting users on low-end devices or slow connections.
+* **Get started here:** [Preact Guide](https://preactjs.com/guide/v10/getting-started)
+
 ## Roadmap: Learning Vue.js from Zero to Hero
 
 If you decide to take the Vue.js path, here is the professional shortcut to reaching your goal:
@@ -121,6 +153,7 @@ Netflix primarily uses **React** for its UI on TVs and browsers because of React
 1. Choose **Vue.js** if you seek elegance, simplicity, and development speed. It’s the "smart choice" for developers who value their time and clean code.
 2. Choose **React** if you want the largest ecosystem and job market.
 3. Choose **Angular** if you are working on enterprise-level projects with large teams that require strict rules.
+4. Choose **Svelte** or **Astro** if you want to build modern personal projects that excel in performance and speed.
 
 > **Important Note:** Remember, the tool is just a means to an end. A professional developer understands the core of JavaScript first, then moves between tools with ease.
 

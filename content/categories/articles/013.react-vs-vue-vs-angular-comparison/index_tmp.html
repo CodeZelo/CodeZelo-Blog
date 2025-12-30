@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>أهلاً بك يا صديقي في عالم تطوير واجهات المستخدم (Frontend Development). إذا كنت تشعر بالحيرة بين الثلاثة الكبار في عالم الويب، فثق تماماً أنك لست وحدك. هذا المقال هو دليلك الشامل لفك الشفرات وفهم <strong>الفرق بين React و Vue و Angular</strong> بعمق، لمساعدتك في اختيار الأداة الأنسب لمشروعك القادم أو لمسارك المهني.</p>
+<p><img src="file:///featured.webp" alt="&quot;الفرق بين React و Vue و Angular&quot;" title="الفرق بين React و Vue و Angular"></p>
+<h2 id="%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B5%D9%81%D8%B1-%D9%85%D8%A7-%D9%87%D9%88-%22framework%22%D8%9F">مقدمة: البداية من الصفر.. ما هو &quot;Framework&quot;؟</h2>
+<p>قبل أن نغوص في مقارنة العمالقة، يجب أن نفهم الأساس. كثيراً ما تسمع مصطلحات مثل &quot;إطار عمل&quot; أو &quot;مكتبة&quot;، لكن <strong>ما هو معنى &quot;framework&quot;؟</strong> ببساطة، <strong>ما هو الـ framework في البرمجة؟</strong></p>
+<p>إطار العمل هو &quot;هيكل&quot; أو &quot;قالب&quot; يوفر لك مجموعة من الأدوات والقواعد الجاهزة لبناء تطبيقك. بدلاً من كتابة كل شيء من الصفر، يمنحك الإطار نظاماً تسير عليه.</p>
+<h2 id="%D8%A7%D9%84%D9%81%D8%B1%D9%82-%D8%A8%D9%8A%D9%86-framework-%D9%88-library%D8%9F">الفرق بين Framework و Library؟</h2>
+<p>هناك خلط دائم بينهما، لكن <strong>ما الفرق بين المكتبة والإطار البرمجي؟</strong></p>
+<ul>
+<li><strong>المكتبة (Library):</strong> هي أداة تختار أنت متى تستدعيها (مثل React). أنت المتحكم في تدفق البرنامج.</li>
+<li><strong>إطار العمل (Framework):</strong> هو من يحدد لك كيف تبني الكود، وهو من يقوم باستدعاء الكود الخاص بك في أوقات معينة (مثل Angular و Vue إلى حد ما).</li>
+</ul>
+<h2 id="%D8%A7%D9%84%D9%81%D8%B1%D9%82-%D8%A8%D9%8A%D9%86-react-%D9%88-vue-%D9%88-angular-%D9%86%D8%B8%D8%B1%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9">الفرق بين React و Vue و Angular: نظرة شاملة</h2>
+<p>عند البحث عن <strong>الفرق بين react و vue و angular</strong>، سنجد أن كل واحدة منها تمثل فلسفة مختلفة في تطوير الويب.</p>
+<h3 id="1-angular-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84">1. Angular: العملاق المتكامل</h3>
+<p>تطوره شركة Google، وهو إطار عمل متكامل (Full-blown Framework). يوفر لك كل شيء تحتاجه &quot;داخل الصندوق&quot; من نظام راوتر، وإدارة حالات، واتصال بالبيانات.</p>
+<h3 id="2-react-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D9%86%D8%A9-%D8%A7%D9%84%D9%81%D8%A7%D8%A6%D9%82%D8%A9">2. React: المرونة الفائقة</h3>
+<p>تطوره شركة Meta (فيسبوك سابقاً). تقنياً، React هي مكتبة وليست إطار عمل، تركز فقط على بناء واجهات المستخدم. تمنحك الحرية لاختيار الأدوات الجانبية التي تفضلها.</p>
+<h3 id="3-vuejs-%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B2%D9%86-%D8%A7%D9%84%D8%B0%D9%83%D9%8A-%D9%88%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D9%84">3. Vue.js: التوازن الذكي والجمال</h3>
+<p>وهو البطل الذي سنركز عليه اليوم. طوره &quot;إيفان يو&quot; (Evan You) ليكون مزيجاً مذهلاً يأخذ أفضل ما في Angular وأفضل ما في React ويقدمهما في قالب سهل وبسيط.</p>
+<h2 id="%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A9">جدول المقارنة الشامل: الفروقات التقنية والعملية</h2>
+<p>هذا الجدول يلخص لك <strong>ما هو الفرق بين React و Angular</strong> و Vue بشكل مباشر:</p>
+<table>
+<thead>
+<tr>
+<th>وجه المقارنة</th>
+<th>React</th>
+<th>Angular</th>
+<th>Vue.js</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>النوع</strong></td>
+<td>مكتبة (Library)</td>
+<td>إطار عمل (Framework)</td>
+<td>إطار عمل تقدمي (Framework)</td>
+</tr>
+<tr>
+<td><strong>الجهة المطورة</strong></td>
+<td>Meta (Facebook)</td>
+<td>Google</td>
+<td>مجتمع المصادر المفتوحة</td>
+</tr>
+<tr>
+<td><strong>لغة البرمجة</strong></td>
+<td>JavaScript / JSX</td>
+<td>TypeScript</td>
+<td>JavaScript / HTML / CSS</td>
+</tr>
+<tr>
+<td><strong>منحنى التعلم</strong></td>
+<td>متوسط</td>
+<td>صعب / مرتفع</td>
+<td>سهل جداً</td>
+</tr>
+<tr>
+<td><strong>الأداء</strong></td>
+<td>سريع (Virtual DOM)</td>
+<td>جيد (Real DOM/Incremental)</td>
+<td>سريع جداً (Virtual DOM)</td>
+</tr>
+<tr>
+<td><strong>حجم الملف</strong></td>
+<td>صغير إلى متوسط</td>
+<td>كبير نسبياً</td>
+<td>صغير جداً وخفيف</td>
+</tr>
+<tr>
+<td><strong>المرونة</strong></td>
+<td>عالية جداً</td>
+<td>مقيدة بقواعد معينة</td>
+<td>متوازنة ومريحة</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%D8%AE%D8%A7%D8%B1%D8%B7%D8%A9-%D8%B7%D8%B1%D9%8A%D9%82-roadmap-%D9%84%D8%AA%D8%B9%D9%84%D9%85-vuejs-%D9%85%D9%86-%D8%A7%D9%84%D8%B5%D9%81%D8%B1-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81">خارطة طريق (Roadmap) لتعلم Vue.js من الصفر إلى الاحتراف</h2>
+<p>إذا قررت أن تسلك طريق Vue.js، فإليك المسار المختصر والاحترافي للوصول إلى هدفك:</p>
+<h3 id="%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-the-fundamentals">المرحلة الأولى: الأساسيات (The Fundamentals)</h3>
+<p>قبل البدء بـ Vue، تأكد من إتقان:</p>
+<ul>
+<li><strong><a href="/series/html-tutorial/">HTML5</a> &amp; <a href="/series/css-tutorial/">CSS3</a>:</strong> الأساس الهيكلي والجمالي.</li>
+<li><strong>Modern JavaScript (ES6+):</strong> ركز على (Arrow Functions, Destructuring, Modules, Promises).</li>
+</ul>
+<h3 id="%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D8%AC%D9%88%D9%87%D8%B1-vuejs">المرحلة الثانية: جوهر Vue.js</h3>
+<p>ابدأ بتعلم المفاهيم الأساسية للإطار:</p>
+<ul>
+<li><strong>Vue Instance &amp; Lifecycle Hooks:</strong> فهم دورة حياة المكون.</li>
+<li><strong>Template Syntax:</strong> كيف تربط البيانات بالواجهة (Data Binding).</li>
+<li><strong>Directives:</strong> تعلم استخدام <code>v-if</code>, <code>v-for</code>, <code>v-model</code>, و <code>v-bind</code>.</li>
+<li><strong>Computed Properties &amp; Watchers:</strong> لمعالجة البيانات بذكاء.</li>
+</ul>
+<h3 id="%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D8%A8%D9%86%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%83%D9%88%D9%86%D8%A7%D8%AA-components">المرحلة الثالثة: بناء المكونات (Components)</h3>
+<ul>
+<li><strong>Props &amp; Events:</strong> كيفية تمرير البيانات بين المكونات الأب والابن.</li>
+<li><strong>Slots:</strong> لجعل المكونات قابلة لإعادة الاستخدام بشكل مرن.</li>
+<li><strong>Composition API:</strong> وهي الطريقة الحديثة والقوية لكتابة الكود في Vue 3.</li>
+</ul>
+<h3 id="%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A-ecosystem">المرحلة الرابعة: النظام البيئي (Ecosystem)</h3>
+<p>هنا تنتقل من بناء &quot;صفحة&quot; إلى بناء &quot;تطبيق&quot;:</p>
+<ul>
+<li><strong>Vue Router:</strong> للتنقل بين صفحات التطبيق بدون إعادة تحميل المتصفح.</li>
+<li><strong>Pinia:</strong> (بديل Vuex) لإدارة حالة التطبيق (State Management) بشكل مركزي.</li>
+<li><strong>Vite:</strong> الأداة الأسرع لبناء وتطوير المشاريع.</li>
+</ul>
+<h3 id="%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81-%D9%88%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D9%81%D8%B9%D9%84%D9%8A">المرحلة الخامسة: الاحتراف والعمل الفعلي</h3>
+<ul>
+<li><strong>Nuxt.js:</strong> إذا كنت تريد احتراف الـ SSR (Server Side Rendering) وتحسين السيو بشكل فائق.</li>
+<li><strong>Testing:</strong> تعلم كيفية اختبار الكود باستخدام Vitest أو Cypress.</li>
+<li><strong>Deployment:</strong> ارفع مشاريعك على منصات مثل Vercel أو Netlify.</li>
+</ul>
+<h2 id="%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%8A%D8%B9%D8%AA%D8%A8%D8%B1-vue-%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86-angular-%D9%88-react-%D9%81%D9%8A-%D9%83%D8%AB%D9%8A%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D8%AD%D9%8A%D8%A7%D9%86%D8%9F">لماذا يعتبر Vue أفضل من Angular و React في كثير من الأحيان؟</h2>
+<p>رغم قوة المنافسين، إلا أن Vue.js استطاع أن يحجز مكانة خاصة في قلوب المطورين. <strong>ما هو شرح Vue؟</strong> ولماذا يفضلها الكثيرون؟</p>
+<ol>
+<li><strong>سهولة التعلم:</strong> إذا كنت تعرف HTML و CSS و JavaScript، يمكنك البدء في Vue خلال ساعات. <strong>هل تعلم Vue.js سهل؟</strong> نعم، هو الأسهل بين الثلاثة بلا منازع.</li>
+<li><strong>التوثيق المذهل:</strong> يمتلك Vue أفضل &quot;Documentation&quot; في عالم البرمجة، فهو واضح، مرتب، ومترجم لعدة لغات.</li>
+<li><strong>الأداء والوزن:</strong> Vue خفيف جداً، مما يجعل تحميل المواقع أسرع بكثير.</li>
+<li><strong>نظام المكونات (SFC):</strong> في Vue، تكتب الـ HTML والـ CSS والـ JavaScript في ملف واحد منظم (.vue)، وهذا يجعل الكود نظيفاً جداً.</li>
+</ol>
+<blockquote>
+<p><strong>إضاءة تقنية:</strong> &quot;Vue صُمم ليكون تدريجياً، أي يمكنك استخدامه في جزء صغير من موقعك، أو بناء تطبيق كامل ضخم باستخدامه.&quot;</p>
+</blockquote>
+<h2 id="%D8%B1%D8%AD%D9%84%D8%A9-%D9%81%D9%8A-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-vue-%D9%85%D8%A7%D8%B0%D8%A7-%D9%8A%D8%B1%D9%85%D8%B2-%D8%A5%D9%84%D9%8A%D9%87-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B1-vue%D8%9F">رحلة في تاريخ Vue: ماذا يرمز إليه اختصار vue؟</h2>
+<p>قد تتساءل <strong>ماذا يرمز إليه اختصار vue؟</strong> في الواقع، الاسم ليس اختصاراً (Acronym)، بل هو كلمة فرنسية.
+<strong>لماذا يُطلق على Vue اسم Vue؟</strong> الكلمة تعني &quot;View&quot; أو &quot;الرؤية/المشهد&quot;، وذلك لأن الإطار يركز بشكل أساسي على طبقة العرض (View Layer) في التطبيقات.</p>
+<h2 id="%D8%A7%D9%84%D8%A5%D8%AC%D8%A7%D8%A8%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D8%B3%D8%A7%D8%A4%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A7%D8%A6%D8%B9%D8%A9-faq">الإجابة على التساؤلات الشائعة (FAQ)</h2>
+<h3 id="%D9%87%D9%84-%D8%AA%D8%B3%D8%AA%D8%AE%D8%AF%D9%85-%D9%86%D8%AA%D9%81%D9%84%D9%8A%D9%83%D8%B3-vue-%D8%A3%D9%85-react%D8%9F">هل تستخدم نتفليكس Vue أم React؟</h3>
+<p>نتفليكس تستخدم <strong>React</strong> بشكل أساسي في واجهة المستخدم الخاصة بها على أجهزة التلفاز والمتصفحات، وذلك بسبب قدرة React على التعامل مع كميات ضخمة من المكونات المتغيرة بسرعة. ومع ذلك، قد تجد Vue مستخدماً في بعض الأدوات الداخلية أو المشاريع الجانبية لشركات كبرى أخرى مثل Adobe و Nintendo.</p>
+<h3 id="%D9%87%D9%84-%D9%8A%D8%AC%D8%A8-%D8%A3%D9%86-%D8%A3%D8%AA%D8%B9%D9%84%D9%85-react-%D8%A3%D9%85-vue-%D8%A3%D9%88%D9%84%D8%A7%D9%8B%D8%9F">هل يجب أن أتعلم React أم Vue أولاً؟</h3>
+<p>هذا يعتمد على هدفك:</p>
+<ul>
+<li>إذا كنت تريد <strong>دخول سوق العمل بسرعة</strong> وتجد أكبر عدد من الوظائف (خاصة في الشركات الكبرى)، فتعلم <strong>React</strong>.</li>
+<li>إذا كنت تريد <strong>أداة قوية، سهلة، وتبني بها مشاريعك الخاصة</strong> أو تعمل في شركات ناشئة تفضل السرعة والجودة، فابدأ بـ <strong>Vue</strong>.</li>
+</ul>
+<h3 id="%D9%83%D9%85-%D9%8A%D8%B3%D8%AA%D8%BA%D8%B1%D9%82-%D8%AA%D8%B9%D9%84%D9%85-x%D8%9F">كم يستغرق تعلم X؟</h3>
+<ul>
+<li><strong>Vue:</strong> من أسبوع إلى أسبوعين للوصول لمستوى جيد.</li>
+<li><strong>React:</strong> من شهر إلى شهرين (بسبب حاجتك لتعلم مكتبات إضافية).</li>
+<li><strong>Angular:</strong> من 3 إلى 4 أشهر بسبب تعقيد مفاهيمه وضرورة تعلم TypeScript بعمق.</li>
+</ul>
+<h3 id="%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%81%D8%B1%D9%82-%D8%A8%D9%8A%D9%86-angular-%D9%88-react%D8%9F">ما هو الفرق بين Angular و React؟</h3>
+<p><strong>ما هو الفرق بين React و Angular؟</strong> الفرق الجوهري هو أن Angular يفرض عليك طريقة معينة في التفكير والكتابة (Opinionated)، بينما React يترك لك حرية الاختيار المطلقة في كيفية تنظيم مشروعك.</p>
+<h3 id="%D9%87%D9%84-vue-%D8%A3%D9%88-angular-%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86-react%D8%9F">هل Vue أو Angular أفضل من React؟</h3>
+<p>لا يوجد &quot;أفضل&quot; بشكل مطلق، بل يوجد &quot;أنسب&quot;.</p>
+<ul>
+<li><strong>Vue</strong> أفضل في تجربة المطور وسهولة الصيانة.</li>
+<li><strong>Angular</strong> أفضل للمشاريع الضخمة جداً في الشركات العملاقة (Enterprise).</li>
+<li><strong>React</strong> أفضل من حيث النظام البيئي (Ecosystem) وتوفر الحلول الجاهزة.</li>
+</ul>
+<h2 id="%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D8%B5%D8%A9-%D8%A3%D9%8A-%D8%B7%D8%B1%D9%8A%D9%82-%D8%AA%D8%AE%D8%AA%D8%A7%D8%B1%D8%9F">الخلاصة: أي طريق تختار؟</h2>
+<p>بعد أن استعرضنا <strong>الفرق بين react و vue و angular</strong>، يمكننا القول:</p>
+<ol>
+<li>اختر <strong>Vue.js</strong> إذا كنت تبحث عن الأناقة، البساطة، وسرعة التطوير دون التضحية بالقوة التقنية. هو الخيار الذكي للمطور الذي يقدر وقته ويريد كوداً نظيفاً.</li>
+<li>اختر <strong>React</strong> إذا كنت تبحث عن أكبر مجتمع دعم وأكبر سوق عمل متاح حالياً.</li>
+<li>اختر <strong>Angular</strong> إذا كنت تعمل على مشروع ضخم جداً مع فريق عمل كبير يتطلب قواعد صارمة ومنظمة.</li>
+</ol>
+<blockquote>
+<p><strong>ملاحظة هامة:</strong> تذكر أن الأداة هي مجرد وسيلة لتحقيق الهدف. المبرمج المحترف هو من يفهم أساسيات البرمجة و JavaScript، ثم ينتقل للأدوات بسهولة.</p>
+</blockquote>
+<h3 id="%D9%83%D9%8A%D9%81-%D8%A3%D8%A8%D8%AF%D8%A3-%D8%A7%D9%84%D8%A2%D9%86%D8%9F">كيف أبدأ الآن؟</h3>
+<p>إذا اتخذت قرارك ببدء رحلتك مع Vue.js (وهو ما ننصح به بشدة للمبتدئين والمحترفين الذين سئموا التعقيد)، فإليك الخطوات:</p>
+<ol>
+<li>تعلم أساسيات JavaScript (ES6+).</li>
+<li>قم بزيارة موقع <a href="https://vuejs.org">Vuejs.org</a> الرسمي.</li>
+<li>ابدأ بتطبيق صغير مثل &quot;Task Manager&quot;.</li>
+</ol>
+
+</body>
+</html>
