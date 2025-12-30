@@ -19,6 +19,8 @@ That’s why you hear people say:
 
 **“The code looks right… but the CSS isn’t working!”**
 
+!["how to use selectors in CSS"](/featured.en.webp "how to use selectors in CSS")
+
 Knowing how to use selectors correctly is the foundation of writing clean, reliable CSS.
 
 But before we can say:
