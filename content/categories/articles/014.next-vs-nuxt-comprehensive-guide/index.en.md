@@ -66,6 +66,43 @@ Let's dive into the technical details with this comparison table:
 | **Learning Curve** | Moderate (Requires React knowledge) | Very Easy (Matches Vue’s simplicity) |
 | **Market Popularity** | Extremely Wide (Highest job demand) | Very Good (Strong in Europe and Asia) |
 
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: [
+    'Learning Curve',
+    'Market Adoption',
+    'Routing System',
+    'Community & Support',
+    'Developer Experience'
+  ],
+  datasets: [
+    {
+      label: 'Next.js',
+      data: [7, 9, 9, 9, 8],
+      backgroundColor: [
+        '#0070f3',
+        '#0070f3',
+        '#0070f3',
+        '#0070f3',
+        '#0070f3'
+      ]
+    },
+    {
+      label: 'Nuxt.js',
+      data: [9, 7, 8, 8, 9],
+      backgroundColor: [
+        '#00dc82',
+        '#00dc82',
+        '#00dc82',
+        '#00dc82',
+        '#00dc82'
+      ]
+    }
+  ]
+}
+{{< /chart >}}
+
 ## Web Application Rendering Patterns
 
 To understand the real difference, you must understand how data travels from the server to the user's screen. Here is a simplified breakdown:

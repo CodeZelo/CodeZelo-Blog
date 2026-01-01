@@ -68,6 +68,55 @@ weight: -16
 | **سهولة الاستخدام** | سهلة جداً (Web API) | سهلة جداً (Web API) | معقدة نوعاً ما (تطلب Parse) |
 | **الأمان** | أقل (عرضة لـ XSS) | أقل (عرضة لـ XSS) | أكثر أماناً (HttpOnly flag) |
 
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: [
+    'سعة التخزين',
+    'مدة التخزين',
+    'الارتباط بالسيرفر',
+    'سهولة الاستخدام',
+    'الأمان'
+  ],
+  datasets: [
+    {
+      label: 'Local Storage',
+      data: [9, 9, 2, 9, 4],
+      backgroundColor: [
+        '#3498db',
+        '#3498db',
+        '#3498db',
+        '#3498db',
+        '#3498db'
+      ]
+    },
+    {
+      label: 'Session Storage',
+      data: [8, 6, 2, 9, 4],
+      backgroundColor: [
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71'
+      ]
+    },
+    {
+      label: 'Cookies',
+      data: [2, 7, 9, 5, 9],
+      backgroundColor: [
+        '#e67e22',
+        '#e67e22',
+        '#e67e22',
+        '#e67e22',
+        '#e67e22'
+      ]
+    }
+  ]
+}
+{{< /chart >}}
+
+
 ## متى نستخدم كل نوع؟ (أمثلة عملية)
 
 ### 1. حالات استخدام Local Storage

@@ -125,7 +125,57 @@ Before touching Vue, make sure you master:
 2. **Incredible Documentation:** Vue has some of the best documentation in the programming world—clear, organized, and beginner-friendly.
 3. **SFC (Single File Components):** In Vue, you write HTML, CSS, and JS in one organized `.vue` file, keeping the code incredibly clean.
 
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: [
+    'Ease of Learning',
+    'Documentation',
+    'Performance',
+    'Code Organization',
+    'Lightweight'
+  ],
+  datasets: [
+    {
+      label: 'Vue.js',
+      data: [9, 9, 8, 9, 9],
+      backgroundColor: [
+        '#42b883', // Ease of Learning
+        '#42b883', // Documentation
+        '#42b883', // Performance
+        '#42b883', // Code Organization
+        '#42b883'  // Lightweight
+      ]
+    },
+    {
+      label: 'React',
+      data: [7, 7, 8, 7, 7],
+      backgroundColor: [
+        '#4fa3d1',
+        '#4fa3d1',
+        '#4fa3d1',
+        '#4fa3d1',
+        '#4fa3d1'
+      ]
+    },
+    {
+      label: 'Angular',
+      data: [5, 6, 7, 6, 5],
+      backgroundColor: [
+        '#c0392b',
+        '#c0392b',
+        '#c0392b',
+        '#c0392b',
+        '#c0392b'
+      ]
+    }
+  ]
+}
+{{< /chart >}}
+
+
 > **Tech Insight:** "Vue was designed to be incremental. You can use it for a small part of your site or build a massive full-scale application with it."
+
 
 ## A Trip Down Memory Lane: What does "Vue" stand for?
 

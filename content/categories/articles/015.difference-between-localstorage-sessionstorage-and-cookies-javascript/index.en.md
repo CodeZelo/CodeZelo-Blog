@@ -68,6 +68,54 @@ This table summarizes the fundamental differences you need to know as a develope
 | **Ease of Use** | Very Easy (Web API) | Very Easy (Web API) | Somewhat complex (needs parsing) |
 | **Security** | Lower (Vulnerable to XSS) | Lower (Vulnerable to XSS) | More secure (HttpOnly flag) |
 
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: [
+    'Storage Capacity',
+    'Storage Duration',
+    'Server Communication',
+    'Ease of Use',
+    'Security'
+  ],
+  datasets: [
+    {
+      label: 'Local Storage',
+      data: [9, 9, 2, 9, 4],
+      backgroundColor: [
+        '#3498db',
+        '#3498db',
+        '#3498db',
+        '#3498db',
+        '#3498db'
+      ]
+    },
+    {
+      label: 'Session Storage',
+      data: [8, 6, 2, 9, 4],
+      backgroundColor: [
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71',
+        '#2ecc71'
+      ]
+    },
+    {
+      label: 'Cookies',
+      data: [2, 7, 9, 5, 9],
+      backgroundColor: [
+        '#e67e22',
+        '#e67e22',
+        '#e67e22',
+        '#e67e22',
+        '#e67e22'
+      ]
+    }
+  ]
+}
+{{< /chart >}}
+
 ## When to Use Each Type? (Practical Examples)
 
 ### 1. Local Storage Use Cases
