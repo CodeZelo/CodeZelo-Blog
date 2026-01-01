@@ -31,6 +31,8 @@ Now, let’s start with a simple definition of **CSS**,
 and then learn **how to use it with HTML**,
 and the different **ways to link a CSS file to an HTML file**.
 
+![link a CSS file to an HTML file](featured.webp "link a CSS file to an HTML file")
+
 ## What is CSS and Why Do We Use It?
 
 **CSS** stands for **Cascading Style Sheets**,
@@ -52,7 +54,7 @@ but when you add CSS, you can change colors, backgrounds, and make the page look
 
 ## Ways to Use and Link CSS in an HTML Page
 
-![Ways to Use and Link CSS in an HTML Page](featured.webp "Ways to Use and Link CSS in an HTML Page")
+![Ways to Use and Link CSS in an HTML Page](3-ways-to-style-your-website.webp "Ways to Use and Link CSS in an HTML Page")
 
 To use **CSS** for styling your **HTML** code, there are three main methods: **Inline**, **Internal**, and **External**.
 Each method has its own use cases, advantages, and disadvantages. Let’s go through them one by one.

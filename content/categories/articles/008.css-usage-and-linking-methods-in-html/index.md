@@ -32,6 +32,8 @@ aliases:
 وبعد كده هنعرف **إزاي نستخدمها مع HTML**،  
 وطرق **ربط ملف CSS بملف HTML**.
 
+![ربط ملف CSS بملف HTML](featured.webp "ربط ملف CSS بملف HTML")
+
 ## تعريف الـCSS وليه بنستخدمها؟
 
 الـ **CSS** هي اختصار لـ **Cascading Style Sheets**،  
@@ -53,7 +55,7 @@ aliases:
 
 ## طرق استخدام وربط CSS بصفحة HTML
 
-![طرق استخدام وربط CSS بصفحة HTML](featured.webp "طرق استخدام وربط CSS بصفحة HTML")
+![طرق استخدام وربط CSS بصفحة HTML](/3-ways-to-style-your-website.webp "طرق استخدام وربط CSS بصفحة HTML")
 
 علشان نستخدم الـ **CSS** في تنسيق أكواد الـ HTML عندنا 3 طرق أساسية: **Inline، Internal، External**. كل طريقة ليها استخداماتها ومميزات وعيوب. نبدأ واحدة واحدة.
 

@@ -77,6 +77,8 @@ If you want the quickest path to a paycheck and visible results, the answer is *
 
 Follow these phases to avoid the "tutorial hell" and start building real value:
 
+!["How to Start from Zero"](/roadmap-in-2026.webp "How to Start from Zero")
+
 ### Phase 1: The Foundation (Month 1)
 
 Understand how computers and the internet actually work. I highly recommend **Harvard’s CS50**. It is the gold standard for learning how to think like a computer scientist.
