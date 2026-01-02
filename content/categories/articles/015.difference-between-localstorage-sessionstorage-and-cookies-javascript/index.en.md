@@ -56,6 +56,8 @@ Cookies are the oldest and most famous of these technologies. They aren't just a
 
 The short answer is **No**. Cookies are primarily used for user identification and session tracking between the client and server. Local Storage, on the other hand, is a purely local data store that the server never sees unless you manually send the data.
 
+!["Full Comparison Local Storage vs. Session Storage vs. Cookies"](/LocalStorage-vs-CookieStorage-vs-SessionStorage.webp "Full Comparison: Local Storage vs. Session Storage vs. Cookies")
+
 ## Full Comparison: Local Storage vs. Session Storage vs. Cookies
 
 This table summarizes the fundamental differences you need to know as a developer to make the right choice:

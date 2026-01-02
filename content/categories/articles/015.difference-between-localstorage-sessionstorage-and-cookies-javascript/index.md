@@ -56,6 +56,8 @@ weight: -16
 
 الإجابة المختصرة هي **لا**. الكوكيز تُستخدم أساساً لتعريف المستخدم وتتبع الجلسات بين المتصفح والسيرفر، بينما الـ Local Storage هو مخزن بيانات محلي بحت لا يراه السيرفر إلا إذا قمت أنت بإرسال البيانات يدوياً.
 
+!["مقارنة شاملة Local Storage vs Session Storage vs Cookies"](/LocalStorage-vs-CookieStorage-vs-SessionStorage.webp "مقارنة شاملة: Local Storage vs Session Storage vs Cookies")
+
 ## مقارنة شاملة: Local Storage vs Session Storage vs Cookies
 
 هذا الجدول يلخص لك الفروقات الجوهرية التي تحتاجها كمطور لاتخاذ قرارك:
