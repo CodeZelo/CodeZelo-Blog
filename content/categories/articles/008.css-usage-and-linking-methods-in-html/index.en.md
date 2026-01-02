@@ -1,5 +1,5 @@
 ---
-title: "CSS Basics: Master the 3 Ways to Link CSS to HTML (Internal, External, Inline)"
+title: "🎧 CSS Basics: Master the 3 Ways to Link CSS to HTML (Internal, External, Inline)"
 description: "Ready to add style? Learn the 3 essential methods for connecting CSS to your HTML (Internal, External, Inline). Practical, step-by-step tutorial with clear code examples. Discover the best practice for clean code!"
 draft: false
 categories: ["articles"]
@@ -13,6 +13,9 @@ weight: -8
 aliases:
   - /en/categories/resources/css-usage-and-linking-methods-in-html/
 ---
+
+> 🎧 You can listen to this article instead of reading it
+{{< audio src="/audio/en/Inline_Internal_External_CSS_Explained.m4a" >}}
 
 The **CSS** is the **styling language** used to design and format **HTML** code,
 and it’s one of the most important languages you need to learn if you plan to continue in **Front-End Development**.
