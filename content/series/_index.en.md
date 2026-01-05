@@ -8,7 +8,6 @@ Explore hands-on coding tutorials in **CodeZelo** that help you build real skill
 Start from the basics and grow into a confident developer. 🚀
 {{< /lead >}}
 
----
 
 ## 🧱 Beginner Tutorials
 Start your journey with simple, clear lessons that build strong fundamentals.  
@@ -16,16 +15,12 @@ Start your journey with simple, clear lessons that build strong fundamentals.
 - [CSS Basics](/en/series/css-tutorial/)  
 <!-- - [JavaScript for Beginners](/en/series/javascript/)  -->
 
----
-
 ## ⚙️ Intermediate Tutorials
 Level up with more complex topics and interactive projects.  
 - PHP Fundamentals
 <!-- (/en/series/php/)   -->
 - Vue Basics
 <!-- (/en/series/vue/)   -->
-
----
 
 ## 🧩 Advanced Tracks
 Go beyond tutorials — build full applications, optimize performance, and master deployment.  

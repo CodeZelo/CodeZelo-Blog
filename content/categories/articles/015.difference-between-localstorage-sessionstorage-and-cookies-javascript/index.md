@@ -164,8 +164,7 @@ data: {
 #### مثال: حفظ إعدادات المستخدم (الوضع الليلي)
 
 ```javascript
-// حفظ بيانات
-localStorage.setItem('theme', 'dark');
+localStorage.setItem('theme', 'dark'); // حفظ بيانات
 
 // قراءة البيانات
 const currentTheme = localStorage.getItem('theme');
@@ -208,8 +207,7 @@ console.log(savedUser.name); // Mahmoud
 #### مثال: تخزين بيانات مؤقتة أثناء الجلسة
 
 ```javascript
-// حفظ بيانات الجلسة
-sessionStorage.setItem('temp_id', '12345');
+sessionStorage.setItem('temp_id', '12345'); // حفظ بيانات الجلسة
 
 // قراءة البيانات
 const tempId = sessionStorage.getItem('temp_id');

@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-html"]
 authors:
   - mahmoudadel
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 4
 slug: "html-text-tags-simple-guide"
 weight: -4

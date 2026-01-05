@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-html"]
 authors:
   - mahmoudadel
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 6
 slug: "html-lists-and-tables"
 weight: -6

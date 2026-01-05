@@ -3,7 +3,7 @@ title: "احتراف HTML: شرح 9 وسوم ميتا متقدمة (Robots, View
 description: "توقف عن تجاهل الـ Meta Tags! تعلّم الـ 9 وسوم المتقدمة في HTML وكيفية كتابتها بشكل صحيح (مثل Viewport و Open Graph). دليل عملي خطوة بخطوة لكل مبرمج!"
 categories: ["articles"]
 tags: ["learn-html"]
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 2
 draft: false
 authors:

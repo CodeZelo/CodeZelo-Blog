@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-html"]
 authors:
   - mahmoudadel
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 3
 slug: "semantic-elements-and-content-elements"
 weight: -3

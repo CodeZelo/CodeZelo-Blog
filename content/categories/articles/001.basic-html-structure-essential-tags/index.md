@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-html"]
 authors:
   - mahmoudadel
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 1
 slug: "basic-html-structure-essential-tags"
 weight: -1

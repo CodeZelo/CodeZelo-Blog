@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-html"]
 authors:
   - mahmoudadel
-series: ["html-tutorial"]
+series: ["HTML Tutorial"]
 series_order: 7
 slug: "html-comments-links-forms-guide"
 weight: -7

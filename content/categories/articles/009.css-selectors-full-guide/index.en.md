@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-css"]
 authors:
   - mahmoudadel
-series: ["css-tutorial"]
+series: ["CSS Tutorial"]
 series_order: 2
 slug: "css-selectors-full-guide"
 weight: -9

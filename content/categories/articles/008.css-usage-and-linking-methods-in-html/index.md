@@ -6,7 +6,7 @@ categories: ["articles"]
 tags: ["learn-css"]
 authors:
   - mahmoudadel
-series: ["css-tutorial"]
+series: ["CSS Tutorial"]
 series_order: 1
 slug: "css-usage-and-linking-methods-in-html"
 weight: -8
