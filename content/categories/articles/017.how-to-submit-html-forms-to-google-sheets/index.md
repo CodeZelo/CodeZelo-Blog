@@ -7,5 +7,5 @@ tags: ["frontend-projects"]
 authors:
   - mahmoudadel
 slug: "how-to-submit-html-forms-to-google-sheets"
-weight: -29
+weight: -18
 ---
