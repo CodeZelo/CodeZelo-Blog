@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 slug: "build-store-with-html-css-js"
 weight: -10
-aliases: 
+aliases:
   - /en/categories/beginner-projects/build-store-with-html-css-js
 ---
 
@@ -501,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>${p.price} USD</p>
           <a href="product.html?id=${p.id}" class="btn">View Details</a>
         </div>
-      `
+      `,
           )
           .join("");
 
@@ -644,7 +644,9 @@ and add the new CSS rules at the end of the file to style the products page and 
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .product-grid .product:hover {
@@ -697,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>${p.price} USD</p>
           <a href="product.html?id=${p.id}" class="btn">View Details</a>
         </div>
-      `
+      `,
           )
           .join("");
 
@@ -1123,9 +1125,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Update total price
-      document.getElementById(
-        "total-price"
-      ).textContent = `Total: ${total} USD`;
+      document.getElementById("total-price").textContent =
+        `Total: ${total} USD`;
 
       // Remove item from cart functionality
       const removeButtons = document.querySelectorAll(".remove-btn");
@@ -1429,4 +1430,4 @@ from the home page all the way to the checkout page.
 A simple, organized, and easy-to-upgrade project.
 
 **The code on GitHub:**
-{{< github repo="mahmoud-000/Store-En" showThumbnail=true >}}
+{{< github repo="CodeZelo/Store-En" showThumbnail=true >}}

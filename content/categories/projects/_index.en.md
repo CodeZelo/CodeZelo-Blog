@@ -18,6 +18,7 @@ Every strong start begins with clear, small steps 👣
 Here, you'll learn how to turn theoretical lessons into real projects that grow your skills gradually.
 
 You will find:
+
 - Simple projects to apply the basics of **HTML, CSS, and JavaScript**
 - Small apps like a **Word Counter**, **Simple Calculator**, or **Number Guessing Game**
 - Clean and beginner-friendly explanations without complexity
@@ -25,13 +26,13 @@ You will find:
 
 > Because the right beginning is the path to mastery. 🚀
 
-
 ## ⚙️ Intermediate Projects
 
 This is where you start building real applications and learn how technologies work together. ⚙️  
 You’ll connect concepts and turn them into fully functional projects.
 
 You will find:
+
 - Projects combining **Frontend** and **Backend**
 - Practical apps using **React, Node.js, and Express**
 - Guidance on **working with APIs** and fetching external data
@@ -40,13 +41,13 @@ You will find:
 
 > Because at this stage, you shift from a learner to a real developer. 🚀
 
-
 ## 🚀 Advanced Projects
 
 Start building production-ready projects similar to real-world products used in companies. 🧩  
 Take your skills from experimentation to professional-level development.
 
 You will find:
+
 - Fullstack applications with **React, Next.js, and Node.js**
 - **Authentication** and **Authorization** implementations (Users & Roles)
 - Databases such as **MongoDB** and **PostgreSQL**

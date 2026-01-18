@@ -8,7 +8,7 @@ authors:
   - mahmoudadel
 slug: "build-store-with-html-css-js"
 weight: -10
-aliases: 
+aliases:
   - /categories/beginner-projects/build-store-with-html-css-js
 ---
 
@@ -491,7 +491,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>${p.price} جنيه مصري</p>
           <a href="product.html?id=${p.id}" class="btn">عرض التفاصيل</a>
         </div>
-      `
+      `,
           )
           .join("");
 
@@ -628,7 +628,9 @@ document.addEventListener("DOMContentLoaded", function () {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .product-grid .product:hover {
@@ -679,7 +681,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>${p.price} جنيه مصري</p>
           <a href="product.html?id=${p.id}" class="btn">عرض التفاصيل</a>
         </div>
-      `
+      `,
           )
           .join("");
 
@@ -1100,9 +1102,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // تحديث الإجمالي
-      document.getElementById(
-        "total-price"
-      ).textContent = `الإجمالي: ${total} جنيه مصري`;
+      document.getElementById("total-price").textContent =
+        `الإجمالي: ${total} جنيه مصري`;
 
       // وظيفة حذف منتج من السلة
       const removeButtons = document.querySelectorAll(".remove-btn");
@@ -1364,9 +1365,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // مسح السلة بعد الإتمام
       localStorage.removeItem("cart");
       cartItemsContainer.innerHTML = "<p>السلة فارغة حاليًا.</p>";
-      document.getElementById(
-        "total-price"
-      ).textContent = `الإجمالي: 0 جنيه مصري`;
+      document.getElementById("total-price").textContent =
+        `الإجمالي: 0 جنيه مصري`;
       // عرض رسالة تأكيد
       const messageBox = document.getElementById("confirmation-message");
       messageBox.style.display = "block";
@@ -1400,4 +1400,4 @@ document.addEventListener("DOMContentLoaded", function () {
 مشروع بسيط، منظم، وقابل للتطوير في أي وقت.
 
 **الأكواد علي Github:**
-{{< github repo="mahmoud-000/Store-Ar" showThumbnail=true >}}
+{{< github repo="CodeZelo/Store-Ar" showThumbnail=true >}}
