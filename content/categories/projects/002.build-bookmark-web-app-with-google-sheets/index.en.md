@@ -12,6 +12,8 @@ weight: -18
 
 Have you ever dreamed of building a fully functional web app to manage your favorite links without the headache of paid database subscriptions or complex setups? In this guide, we’ll dive deep into **how to submit an HTML form to Google Sheets without Google Forms**. You’ll learn exactly how to transform a simple spreadsheet into a high-performance engine capable of handling full CRUD operations (Create, Read, Update, and Delete).
 
+{{< youtubeLite id="ba3z9k2QBkc" label="Bookmark Web App" >}}
+
 Whether you're searching for a seamless way to **send data to Google Sheets** or looking to build a professional-grade **Bookmark web app**, you’ve come to the right place.
 
 ![Building a Full-Stack Bookmark Web App Using Google Sheets as a Database](/featured.en.webp "Building a Full-Stack Bookmark Web App")
