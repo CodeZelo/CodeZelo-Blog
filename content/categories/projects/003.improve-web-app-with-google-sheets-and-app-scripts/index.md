@@ -31,7 +31,7 @@ weight: -19
 - HTML - CSS - JS.
 - Google Sheets API.
 - Apps Script.
-- Using API.
+- إستخدام API.
 
 ## ماذا ستتعلم من هذا المشروع
 
