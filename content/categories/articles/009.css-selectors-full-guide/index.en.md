@@ -12,7 +12,7 @@ slug: "css-selectors-full-guide"
 weight: -9
 ---
 
-**CSS Selectors** are the tools that tell your stylesheet exactly *which* HTML element you want to style.
+**CSS Selectors** are the tools that tell your stylesheet exactly _which_ HTML element you want to style.
 And if you don’t pick the right element? One of two things happens:
 your style won’t show up at all… or it ends up affecting something you never intended.
 That’s why you hear people say:
@@ -45,10 +45,10 @@ What’s the structure of the entire page?
 
 For example:
 
-* The first element in every page is `<html>` — the **root**.
-* Inside it, you’ll find `<head>` — the part users don’t see.
-* Then comes `<body>` — everything your visitors interact with.
-* Inside the body you might have a `<div>`, and inside that a `<p>`, and so on.
+- The first element in every page is `<html>` — the **root**.
+- Inside it, you’ll find `<head>` — the part users don’t see.
+- Then comes `<body>` — everything your visitors interact with.
+- Inside the body you might have a `<div>`, and inside that a `<p>`, and so on.
 
 The browser turns all of this into connected **nodes**, forming a tree-like structure.
 
@@ -66,6 +66,8 @@ Or by using another type of selector?
 The **DOM** is the browser’s internal, structured version of your HTML page,
 and it’s what allows **CSS** to locate and style any element it needs.
 
+{{< youtubeLite id="UpR465JqCAs" label="44 CSS Selectors" >}}
+
 ## CSS Selectors — How Do We Target Elements?
 
 Now we reach the fun part:
@@ -73,7 +75,7 @@ Now we reach the fun part:
 
 A **selector** is simply the instruction we give CSS to say:
 
-> “Apply this style… to *this specific* element.”
+> “Apply this style… to _this specific_ element.”
 
 Next, we’ll walk through the different types of selectors with clear, practical examples so everything makes sense.
 
@@ -127,9 +129,9 @@ CSS:
 Here, the style applies **only** to the element with the `note` class.
 That’s the beauty of classes—you can:
 
-* Group different elements under the same styling
-* Reuse the same class multiple times
-* Control specific parts of the page without affecting everything else
+- Group different elements under the same styling
+- Reuse the same class multiple times
+- Control specific parts of the page without affecting everything else
 
 > **Why Class Names Matter**
 
@@ -137,9 +139,9 @@ Choosing your class names correctly is extremely important.
 
 A few simple rules:
 
-* Use **clear, meaningful names**
-* Avoid generic or visual names like `red`, `big`, or `x`
-* When using multiple words, stick to **kebab-case**
+- Use **clear, meaningful names**
+- Avoid generic or visual names like `red`, `big`, or `x`
+- When using multiple words, stick to **kebab-case**
 
 Examples:
 
@@ -158,9 +160,12 @@ Examples:
 **Bad examples (and why):**
 
 ```html
-<div class="red"></div>          <!-- Color-based name, not functional -->
-<div class="big-div"></div>      <!-- Describes appearance, not purpose -->
-<div class="x"></div>            <!-- Meaningless name -->
+<div class="red"></div>
+<!-- Color-based name, not functional -->
+<div class="big-div"></div>
+<!-- Describes appearance, not purpose -->
+<div class="x"></div>
+<!-- Meaningless name -->
 ```
 
 ### 3. Selecting an Element by Its ID – **ID Selector**
@@ -191,7 +196,7 @@ the header, the logo, the main slider, the footer, etc.
 > ⚠️ A Very Important Note
 
 An **ID must not be repeated** within the same page.
-So this is *incorrect*:
+So this is _incorrect_:
 
 ```html
 <h1 id="main-title">Main Title</h1>
@@ -200,9 +205,9 @@ So this is *incorrect*:
 
 Repeated IDs cause issues with:
 
-* CSS
-* JavaScript
-* SEO as well
+- CSS
+- JavaScript
+- SEO as well
 
 Browsers expect each ID to be **unique**.
 
@@ -210,34 +215,37 @@ Browsers expect each ID to be **unique**.
 
 Just like classes, IDs have some naming rules you should follow:
 
-* Must start with a **letter**, not a number
-* Prefer **kebab-case** or **camelCase**
-* Keep it short but meaningful
-* And most importantly: **never reuse it**
+- Must start with a **letter**, not a number
+- Prefer **kebab-case** or **camelCase**
+- Keep it short but meaningful
+- And most importantly: **never reuse it**
 
 **Valid ID examples:**
 
 ```html
 <div id="main-header"></div>
-<input id="userEmail">
+<input id="userEmail" />
 <section id="heroSection"></section>
 ```
 
 **Invalid ID examples:**
 
 ```html
-<div id="1header"></div>          <!-- Starts with a number -->
-<div id="header header2"></div>   <!-- Contains a space -->
+<div id="1header"></div>
+<!-- Starts with a number -->
+<div id="header header2"></div>
+<!-- Contains a space -->
 <div id="test"></div>
-<div id="test"></div>             <!-- Duplicate ID -->
+<div id="test"></div>
+<!-- Duplicate ID -->
 ```
 
 > Should You Use a Class or an ID?
 
 Great question — here’s the golden rule:
 
-* **For CSS styling → use a class**
-* **For JavaScript targeting or unique page elements → use an ID**
+- **For CSS styling → use a class**
+- **For JavaScript targeting or unique page elements → use an ID**
 
 Classes are flexible, reusable, and ideal for styling.
 IDs are best reserved for unique elements or JavaScript hooks.
@@ -251,13 +259,14 @@ They let you target elements based on how they relate to other elements in the p
 
 #### 4.1 The “Element Inside Element” Selector — **Descendant Selector**
 
-This selector targets any element *inside* another element, even if it’s **not a direct child**.
+This selector targets any element _inside_ another element, even if it’s **not a direct child**.
 
 **HTML:**
 
 ```html
 <div>
-  <p>This paragraph is inside the div.</p> <!-- This will be styled -->
+  <p>This paragraph is inside the div.</p>
+  <!-- This will be styled -->
 </div>
 
 <p>This paragraph is outside the div.</p>
@@ -280,7 +289,8 @@ If elements are nested deeper:
 <div>
   <p>Direct child paragraph.</p>
   <main>
-    <p>Indirect child paragraph.</p> <!-- This also gets styled -->
+    <p>Indirect child paragraph.</p>
+    <!-- This also gets styled -->
   </main>
 </div>
 
@@ -369,10 +379,10 @@ Every paragraph that appears after the `<h2>`—at the same level—gets the new
 
 At this point, you can target almost any element on the page using:
 
-* Element selectors
-* Class selectors
-* ID selectors
-* Relationship selectors
+- Element selectors
+- Class selectors
+- ID selectors
+- Relationship selectors
 
 These fundamentals are essential, because **every style you write depends on choosing the right element in the first place**.
 
@@ -452,11 +462,11 @@ in this case, anything ending with `ail`, like `email`.
 
 **Quick Attribute Selector Cheat Sheet**
 
-* `[attr]` → Selects elements **that have the attribute**, regardless of value
-* `[attr="value"]` → Matches a **specific attribute value**
-* `[attr*="text"]` → Attribute **contains** the given text
-* `[attr^="text"]` → Attribute **starts with** the given text
-* `[attr$="text"]` → Attribute **ends with** the given text
+- `[attr]` → Selects elements **that have the attribute**, regardless of value
+- `[attr="value"]` → Matches a **specific attribute value**
+- `[attr*="text"]` → Attribute **contains** the given text
+- `[attr^="text"]` → Attribute **starts with** the given text
+- `[attr$="text"]` → Attribute **ends with** the given text
 
 ### 6. Child-Based Selectors
 
@@ -470,7 +480,7 @@ This selector targets the **X-th child** inside a parent.
 **Syntax:**
 
 ```css
-element:nth-child(n)
+element: nth-child(n);
 ```
 
 **Example 1: Select the second child inside a parent**
@@ -483,8 +493,8 @@ div p:nth-child(2) {
 
 **How it works:**
 
-* It selects the **second child inside the `<div>`**.
-* If the second child isn’t a `<p>`, nothing happens — because it needs both **type match + position match**.
+- It selects the **second child inside the `<div>`**.
+- If the second child isn’t a `<p>`, nothing happens — because it needs both **type match + position match**.
 
 **Example 2: Select all even children**
 
@@ -496,8 +506,8 @@ li:nth-child(even) {
 
 **What happens:**
 
-* Styles apply to even items: 2, 4, 6, 8…
-* Using `odd` targets 1, 3, 5, 7…
+- Styles apply to even items: 2, 4, 6, 8…
+- Using `odd` targets 1, 3, 5, 7…
 
 **Example 3: Use a pattern with a formula**
 
@@ -509,9 +519,9 @@ li:nth-child(3n + 1) {
 
 **Explanation:**
 
-* This selects children numbered:
+- This selects children numbered:
   **1, 4, 7, 10, ...**
-* `3n` means “every 3 elements,” and `+1` sets the starting point.
+- `3n` means “every 3 elements,” and `+1` sets the starting point.
 
 #### 6.2 The `:nth-last-child()` Selector
 
@@ -527,8 +537,8 @@ p:nth-last-child(1) {
 
 **What happens:**
 
-* `1` from the end = **the last child**.
-* Style applies only if the last child is a `<p>`.
+- `1` from the end = **the last child**.
+- Style applies only if the last child is a `<p>`.
 
 #### 6.3 The `:first-child` Selector
 
@@ -542,8 +552,8 @@ div p:first-child {
 
 **How it works:**
 
-* Applies only if the *first child* inside the `<div>` is a `<p>`.
-* If the first element is something else (like a `<span>`), nothing applies.
+- Applies only if the _first child_ inside the `<div>` is a `<p>`.
+- If the first element is something else (like a `<span>`), nothing applies.
 
 #### 6.4 The `:last-child` Selector
 
@@ -557,8 +567,8 @@ ul li:last-child {
 
 **What happens:**
 
-* Selects the last `<li>` in a `<ul>`.
-* Very useful for removing spacing at the end of lists.
+- Selects the last `<li>` in a `<ul>`.
+- Very useful for removing spacing at the end of lists.
 
 #### 6.5 The `:only-child` Selector
 
@@ -573,8 +583,8 @@ div p:only-child {
 
 **Behavior:**
 
-* Works only when the `<div>` contains **exactly one element**, and that element is a `<p>`.
-* If there’s a `<p>` plus any other element (like `<span>`), the selector won’t match.
+- Works only when the `<div>` contains **exactly one element**, and that element is a `<p>`.
+- If there’s a `<p>` plus any other element (like `<span>`), the selector won’t match.
 
 **Quick Summary**
 
@@ -598,7 +608,7 @@ This selector targets the **X-th element of its type** inside a parent.
 **Syntax:**
 
 ```css
-element:nth-of-type(n)
+element: nth-of-type(n);
 ```
 
 **Example 1: Select the second `<p>` inside a parent**
@@ -611,9 +621,9 @@ div p:nth-of-type(2) {
 
 **How it works:**
 
-* It doesn’t care about the element’s position among *all* siblings.
-* It only cares about which `<p>` number it is.
-* Even if there are several `<div>` or `<span>` elements before it, that doesn’t matter.
+- It doesn’t care about the element’s position among _all_ siblings.
+- It only cares about which `<p>` number it is.
+- Even if there are several `<div>` or `<span>` elements before it, that doesn’t matter.
 
 **Example 2: Select all even `<li>` elements**
 
@@ -625,8 +635,8 @@ li:nth-of-type(even) {
 
 **What happens:**
 
-* It counts only the `<li>` elements.
-* Styles apply to the even ones: 2, 4, 6, and so on.
+- It counts only the `<li>` elements.
+- Styles apply to the even ones: 2, 4, 6, and so on.
 
 **Example 3: Use a formula**
 
@@ -638,8 +648,8 @@ p:nth-of-type(3n + 1) {
 
 **Explanation:**
 
-* Selects paragraphs number: **1, 4, 7, 10…**
-* The formula applies only to `<p>` elements.
+- Selects paragraphs number: **1, 4, 7, 10…**
+- The formula applies only to `<p>` elements.
 
 #### 7.2 The `:nth-last-of-type()` Selector
 
@@ -655,8 +665,8 @@ p:nth-last-of-type(1) {
 
 **What happens:**
 
-* Selects the **last `<p>` element** inside the parent.
-* Other element types before or after it don’t matter.
+- Selects the **last `<p>` element** inside the parent.
+- Other element types before or after it don’t matter.
 
 #### 7.3 The `:first-of-type` Selector
 
@@ -672,8 +682,8 @@ section h2:first-of-type {
 
 **Explanation:**
 
-* Selects the first `<h2>` inside the `<section>`.
-* It doesn’t matter if the section starts with an `<h3>` or `<p>` — the rule applies only to the first `<h2>`.
+- Selects the first `<h2>` inside the `<section>`.
+- It doesn’t matter if the section starts with an `<h3>` or `<p>` — the rule applies only to the first `<h2>`.
 
 #### 7.4 The `:last-of-type` Selector
 
@@ -689,8 +699,8 @@ article p:last-of-type {
 
 **Explanation:**
 
-* Selects the *last* `<p>` inside the `<article>`.
-* Even if there are other elements after it, that doesn't change the selection.
+- Selects the _last_ `<p>` inside the `<article>`.
+- Even if there are other elements after it, that doesn't change the selection.
 
 #### 7.5 The `:only-of-type` Selector
 
@@ -707,17 +717,16 @@ div span:only-of-type {
 
 **How it works:**
 
-* Applies only if the parent `<div>` contains **exactly one `<span>`**.
-* Works even if there are other element types (like `<p>`).
-* If there are two `<span>` elements, it won’t match.
+- Applies only if the parent `<div>` contains **exactly one `<span>`**.
+- Works even if there are other element types (like `<p>`).
+- If there are two `<span>` elements, it won’t match.
 
 #### Quick Comparison: Child-Based vs. Type-Based Selectors
 
 | Selector Group  | What It Cares About                                 |
 | --------------- | --------------------------------------------------- |
-| **Child-based** | Position among *all* siblings (type doesn’t matter) |
-| **Type-based**  | Position among siblings of the *same type*          |
-
+| **Child-based** | Position among _all_ siblings (type doesn’t matter) |
+| **Type-based**  | Position among siblings of the _same type_          |
 
 ### 8. The Universal Selector
 
@@ -772,9 +781,9 @@ Saves you from writing long lists of individual element rules.
 
 #### Advanced Uses & Benefits
 
-* **Lightweight Reset / Normalize:** Apply universal rules like `box-sizing`, `margin`, and `padding` across the project.
-* **Scoped general rules:** For example, `.card * { color: inherit; }` ensures all elements inside a card inherit colors.
-* **Style children without knowing their types:** Useful when a parent contains various elements and you want consistent spacing or styling.
+- **Lightweight Reset / Normalize:** Apply universal rules like `box-sizing`, `margin`, and `padding` across the project.
+- **Scoped general rules:** For example, `.card * { color: inherit; }` ensures all elements inside a card inherit colors.
+- **Style children without knowing their types:** Useful when a parent contains various elements and you want consistent spacing or styling.
 
 #### Combining the Universal Selector with Other Selectors
 
@@ -786,7 +795,7 @@ Saves you from writing long lists of individual element rules.
 }
 ```
 
-* Limits effect to all elements inside `#sidebar`.
+- Limits effect to all elements inside `#sidebar`.
 
 ##### 2. With attributes
 
@@ -796,7 +805,7 @@ form[data-form="signup"] * {
 }
 ```
 
-* Ensures consistent styling inside a specific form.
+- Ensures consistent styling inside a specific form.
 
 ##### 3. With pseudo-classes or child selectors
 
@@ -806,32 +815,34 @@ ul li:first-child > * {
 }
 ```
 
-* All elements inside the first `<li>` of the `<ul>` will be blue.
+- All elements inside the first `<li>` of the `<ul>` will be blue.
 
 #### Universal Selector & Specificity
 
-* The `*` has **almost zero specificity** — like general rules.
-* When combined with a class or ID (e.g., `.main *`), specificity comes from the other components.
-* General rule: **more specific selectors override universal ones**.
+- The `*` has **almost zero specificity** — like general rules.
+- When combined with a class or ID (e.g., `.main *`), specificity comes from the other components.
+- General rule: **more specific selectors override universal ones**.
 
 #### Performance Tips
 
-* Using `*` globally and extensively can affect rendering because the browser must check every element.
-* Best practice: **limit the scope** (`.component *`) instead of targeting the entire document.
-* Avoid complex combinators or pseudo-classes with `*` on large pages—it increases DOM computations.
+- Using `*` globally and extensively can affect rendering because the browser must check every element.
+- Best practice: **limit the scope** (`.component *`) instead of targeting the entire document.
+- Avoid complex combinators or pseudo-classes with `*` on large pages—it increases DOM computations.
 
 #### Common Pitfalls
 
-* `*` does **not** match pseudo-elements (`::before`, `::after`) unless specified.
-* Applying heavy properties like `transform` or `filter` to `*` can hurt performance.
-* Avoid relying on `*` with `!important`; organize rules from general → specific.
+- `*` does **not** match pseudo-elements (`::before`, `::after`) unless specified.
+- Applying heavy properties like `transform` or `filter` to `*` can hurt performance.
+- Avoid relying on `*` with `!important`; organize rules from general → specific.
 
 #### Practical Tips / Best Practices
 
 1. Use `*` for simple resets:
 
 ```css
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 ```
@@ -839,13 +850,17 @@ ul li:first-child > * {
 2. Limit the scope whenever possible:
 
 ```css
-.article * { color: inherit; }
+.article * {
+  color: inherit;
+}
 ```
 
 3. Combine with child combinators for spacing:
 
 ```css
-.list > * + * { margin-top: 8px; }
+.list > * + * {
+  margin-top: 8px;
+}
 ```
 
 4. Organize CSS from general → specific to avoid specificity issues.
@@ -857,7 +872,7 @@ ul li:first-child > * {
 <div class="card">
   <h2>Title</h2>
   <p>Paragraph one.</p>
-  <img src="#" alt="img">
+  <img src="#" alt="img" />
   <button>Click</button>
 </div>
 ```
@@ -865,7 +880,9 @@ ul li:first-child > * {
 ```css
 /* CSS */
 /* Reset box model globally */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -889,10 +906,9 @@ ul li:first-child > * {
 
 **What happens here:**
 
-* The first rule makes box-sizing calculations easier globally.
-* The second rule applies font and color to **all elements inside `.card` only**, not the whole page.
-* The third rule adds consistent spacing between `.card`’s children without listing their types.
-
+- The first rule makes box-sizing calculations easier globally.
+- The second rule applies font and color to **all elements inside `.card` only**, not the whole page.
+- The third rule adds consistent spacing between `.card`’s children without listing their types.
 
 ### 9. User-Action Pseudo-Classes
 
@@ -938,7 +954,7 @@ Triggers when an element, like an input or textarea, **receives focus**, either 
 **HTML:**
 
 ```html
-<input type="text" placeholder="Enter your name">
+<input type="text" placeholder="Enter your name" />
 ```
 
 **CSS:**
@@ -1044,9 +1060,9 @@ This helps users navigate, especially in long menus or blog posts.
 
 **What happens here:**
 
-* **Hover:** Background and text color change when the mouse is over the button.
-* **Active:** Button slightly shrinks when clicked, adding a subtle press effect.
-* **Focus:** Blue outline appears if the button is reached via keyboard (Tab), improving accessibility.
+- **Hover:** Background and text color change when the mouse is over the button.
+- **Active:** Button slightly shrinks when clicked, adding a subtle press effect.
+- **Focus:** Blue outline appears if the button is reached via keyboard (Tab), improving accessibility.
 
 This combination makes the button feel interactive, polished, and user-friendly.
 
@@ -1061,7 +1077,7 @@ button:hover:active {
 ```
 
 **Meaning:**
-When the user is **hovering over the button** *and* **clicking it at the same time**, apply a special color.
+When the user is **hovering over the button** _and_ **clicking it at the same time**, apply a special color.
 This creates a more dynamic, interactive effect.
 
 ##### 2. Using with Other Selectors
@@ -1072,8 +1088,8 @@ This creates a more dynamic, interactive effect.
 }
 ```
 
-* Targets inputs **inside `.form-group`** only when they are focused.
-* Useful for forms with multiple sections or grouped fields.
+- Targets inputs **inside `.form-group`** only when they are focused.
+- Useful for forms with multiple sections or grouped fields.
 
 ##### 3. Animations on `:hover`
 
@@ -1083,13 +1099,13 @@ This creates a more dynamic, interactive effect.
 }
 ```
 
-* Adds subtle motion when hovering over elements.
-* Great for cards, buttons, or interactive components to give a sense of depth.
+- Adds subtle motion when hovering over elements.
+- Great for cards, buttons, or interactive components to give a sense of depth.
 
 ##### 4. Consider Mobile Devices
 
-* Mobile devices **don’t support hover**, but some browsers may interpret a tap as hover.
-* Best practice: keep hover effects **light and non-critical**, so the experience works well on touch screens.
+- Mobile devices **don’t support hover**, but some browsers may interpret a tap as hover.
+- Best practice: keep hover effects **light and non-critical**, so the experience works well on touch screens.
 
 ### 10. State / Selecting Pseudo-Classes
 
@@ -1104,9 +1120,9 @@ Here’s a step-by-step guide with real examples.
 
 Applies to elements that can be **checked**, such as:
 
-* Checkboxes
-* Radio buttons
-* `<option>` elements inside `<select>`
+- Checkboxes
+- Radio buttons
+- `<option>` elements inside `<select>`
 
 **Example:**
 
@@ -1128,8 +1144,8 @@ input:checked {
 When the user checks the box, the element enters the `checked` state.
 You can change its color with `accent-color` or style the label that follows.
 
-* Before: empty checkbox
-* After: checkbox turns green
+- Before: empty checkbox
+- After: checkbox turns green
 
 #### 10.2 `:disabled`
 
@@ -1138,7 +1154,7 @@ Targets elements that are **disabled** and not interactive.
 **Example:**
 
 ```html
-<input type="text" placeholder="Not available" disabled>
+<input type="text" placeholder="Not available" disabled />
 ```
 
 ```css
@@ -1151,9 +1167,9 @@ input:disabled {
 
 **What happens:**
 
-* The input cannot be typed into or clicked.
-* The faded style shows the user it’s inactive.
-* Cursor changes to indicate it’s not allowed.
+- The input cannot be typed into or clicked.
+- The faded style shows the user it’s inactive.
+- Cursor changes to indicate it’s not allowed.
 
 > Useful for UI flows where certain actions must happen before a step is unlocked.
 
@@ -1164,7 +1180,7 @@ Applies when the input value is **valid** according to its type or constraints.
 **Example:**
 
 ```html
-<input type="email" placeholder="Enter your email">
+<input type="email" placeholder="Enter your email" />
 ```
 
 ```css
@@ -1175,8 +1191,8 @@ input:valid {
 
 **What happens:**
 
-* When the user enters a **correct email** (with `@` and `.`), the border turns green.
-* Invalid input will not trigger this style.
+- When the user enters a **correct email** (with `@` and `.`), the border turns green.
+- Invalid input will not trigger this style.
 
 > Ideal for real-time validation feedback.
 
@@ -1187,7 +1203,7 @@ The opposite of `:valid`; applies when the input value is **invalid**.
 **Example:**
 
 ```html
-<input type="email" placeholder="Enter your email" required>
+<input type="email" placeholder="Enter your email" required />
 ```
 
 ```css
@@ -1198,18 +1214,18 @@ input:invalid {
 
 **What happens:**
 
-* The border turns red as soon as the user types an incorrect value.
-* An empty required field is also considered invalid.
+- The border turns red as soon as the user types an incorrect value.
+- An empty required field is also considered invalid.
 
 #### Full Example — Interactive Form
 
 ```html
 <form>
   <label>Email</label>
-  <input type="email" required>
+  <input type="email" required />
 
   <label>
-    <input type="checkbox" id="terms">
+    <input type="checkbox" id="terms" />
     I agree to the terms
   </label>
 
@@ -1242,16 +1258,15 @@ button:disabled {
 
 **What happens here:**
 
-* **Email input**
+- **Email input**
+  - Green border if valid
+  - Red border if invalid
 
-  * Green border if valid
-  * Red border if invalid
-* **Checkbox**
+- **Checkbox**
+  - Changes color when checked
 
-  * Changes color when checked
-* **Submit button**
-
-  * Disabled until the user enters a valid email **and** checks the checkbox
+- **Submit button**
+  - Disabled until the user enters a valid email **and** checks the checkbox
 
 All of this works **without a single line of JavaScript**.
 
@@ -1281,7 +1296,7 @@ Perfect for forms when you want the entire `<div>` to highlight once the user cl
 ```html
 <div class="form-group">
   <label>Email</label>
-  <input type="email" required>
+  <input type="email" required />
 </div>
 ```
 
@@ -1299,8 +1314,8 @@ Perfect for forms when you want the entire `<div>` to highlight once the user cl
 
 **What happens:**
 
-* When the user clicks the input, the **whole `.form-group`** gains focus styles.
-* The border and background color change, signaling the “active typing area.”
+- When the user clicks the input, the **whole `.form-group`** gains focus styles.
+- The border and background color change, signaling the “active typing area.”
 
 > Seen in interfaces like Google Forms or Stripe Checkout.
 
@@ -1324,9 +1339,9 @@ Essential for accessibility (keyboard users, screen readers).
 
 **Behavior:**
 
-* No outline when clicked with a mouse.
-* Outline appears when focused with `Tab` key.
-* Improves accessibility and keyboard navigation.
+- No outline when clicked with a mouse.
+- Outline appears when focused with `Tab` key.
+- Improves accessibility and keyboard navigation.
 
 #### 11.3 `:enabled`
 
@@ -1337,7 +1352,7 @@ Useful for distinguishing active inputs or buttons from disabled ones.
 **Example:**
 
 ```html
-<input type="text" placeholder="Type here">
+<input type="text" placeholder="Type here" />
 ```
 
 ```css
@@ -1349,8 +1364,8 @@ input:enabled {
 
 **Behavior:**
 
-* Styling applies only to inputs that are enabled.
-* Helps create clear UI states for toggling between enabled/disabled.
+- Styling applies only to inputs that are enabled.
+- Helps create clear UI states for toggling between enabled/disabled.
 
 #### 11.4 `:required`
 
@@ -1359,7 +1374,7 @@ Targets inputs with the `required` attribute.
 **Example:**
 
 ```html
-<input type="text" required placeholder="Full Name">
+<input type="text" required placeholder="Full Name" />
 ```
 
 ```css
@@ -1370,8 +1385,8 @@ input:required {
 
 **Behavior:**
 
-* Highlights mandatory fields with an orange border.
-* Clearly signals the user which fields are required.
+- Highlights mandatory fields with an orange border.
+- Clearly signals the user which fields are required.
 
 #### 11.5 `:optional`
 
@@ -1380,7 +1395,7 @@ Targets inputs that **are not required**.
 **Example:**
 
 ```html
-<input type="text" placeholder="Notes (optional)">
+<input type="text" placeholder="Notes (optional)" />
 ```
 
 ```css
@@ -1391,26 +1406,24 @@ input:optional {
 
 **Behavior:**
 
-* Optional fields are visually distinct.
-* Helps differentiate between required and optional inputs.
+- Optional fields are visually distinct.
+- Helps differentiate between required and optional inputs.
 
 #### Full Example – Interactive Form
 
 ```html
 <form class="my-form">
-
   <div class="form-group">
     <label>Email</label>
-    <input type="email" required>
+    <input type="email" required />
   </div>
 
   <div class="form-group">
     <label>Name (optional)</label>
-    <input type="text">
+    <input type="text" />
   </div>
 
   <button class="btn" disabled>Continue</button>
-
 </form>
 ```
 
@@ -1452,10 +1465,10 @@ button:enabled {
 
 **Result:**
 
-* Mandatory fields are clearly marked.
-* Form responds immediately as the user types.
-* Submit button visually shows enabled/disabled state.
-* Fully accessible and professional experience **without JavaScript**.
+- Mandatory fields are clearly marked.
+- Form responds immediately as the user types.
+- Submit button visually shows enabled/disabled state.
+- Fully accessible and professional experience **without JavaScript**.
 
 ### 12. New CSS4 Logical Selectors
 
@@ -1478,7 +1491,7 @@ div:has(button.active) {
 }
 ```
 
-* Targets the `div`, not the button, **based on the child’s state**.
+- Targets the `div`, not the button, **based on the child’s state**.
 
 **Example 2 – Highlight `form` with invalid input:**
 
@@ -1488,7 +1501,7 @@ form:has(input:invalid) {
 }
 ```
 
-* Styles the form if it contains an input that is invalid, without JS.
+- Styles the form if it contains an input that is invalid, without JS.
 
 **Example 3 – Highlight product cards with discounted prices:**
 
@@ -1498,7 +1511,7 @@ form:has(input:invalid) {
 }
 ```
 
-* Detects conditions inside elements smartly.
+- Detects conditions inside elements smartly.
 
 #### 12.2 `:is()`
 
@@ -1512,7 +1525,7 @@ A **shortcut selector** that simplifies long, repetitive selectors.
 }
 ```
 
-* Instead of writing:
+- Instead of writing:
 
 ```css
 .card h2,
@@ -1520,7 +1533,7 @@ A **shortcut selector** that simplifies long, repetitive selectors.
 .card p { ... }
 ```
 
-* You write it once using `:is()`.
+- You write it once using `:is()`.
 
 #### 12.3 `:where()`
 
@@ -1537,7 +1550,7 @@ section :where(h1, h2, h3, p, ul, li) {
 }
 ```
 
-* Because `:where()` has zero specificity, it **does not override existing styles**.
+- Because `:where()` has zero specificity, it **does not override existing styles**.
 
 #### 12.4 `:not()`
 
@@ -1560,7 +1573,7 @@ ul li:not(:first-child) {
 }
 ```
 
-* Applies styles to all except the specified elements.
+- Applies styles to all except the specified elements.
 
 #### Full Practical Example – Product Cards
 
@@ -1616,7 +1629,6 @@ ul li:not(:first-child) {
 | `:where()` | Like `:is()`, but with zero specificity |
 | `:not()`   | Excludes elements from selection        |
 
-
 This demonstrates how **modern CSS logical selectors** let you write cleaner, more dynamic, and interactive styles **without relying on JavaScript**.
 
 ### 13. CSS Pseudo-elements
@@ -1639,8 +1651,8 @@ h2::before {
 }
 ```
 
-* `::before` inserts content before the original element.
-* You can also use an image:
+- `::before` inserts content before the original element.
+- You can also use an image:
 
 ```css
 content: url(icon.png);
@@ -1676,8 +1688,8 @@ h3::after {
 }
 ```
 
-* Must always include `content: ""` even if empty.
-* `display: block` ensures it appears on a new line.
+- Must always include `content: ""` even if empty.
+- `display: block` ensures it appears on a new line.
 
 #### 13.3 `::first-letter`
 
@@ -1695,9 +1707,9 @@ p::first-letter {
 }
 ```
 
-* Enlarges the first letter to create a magazine-like effect.
-* Works best on block or inline-block elements.
-* The letter may include punctuation depending on language.
+- Enlarges the first letter to create a magazine-like effect.
+- Works best on block or inline-block elements.
+- The letter may include punctuation depending on language.
 
 #### 13.4 `::selection`
 
@@ -1712,8 +1724,8 @@ Styles **text selected by the user**.
 }
 ```
 
-* Overrides the default blue highlight.
-* Optional cross-browser support for Firefox:
+- Overrides the default blue highlight.
+- Optional cross-browser support for Firefox:
 
 ```css
 ::-moz-selection {
@@ -1730,7 +1742,8 @@ Styles **text selected by the user**.
 <h2 class="title">Welcome to CSS Guide</h2>
 
 <p class="intro">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in magna sed lorem varius tincidunt.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in magna sed
+  lorem varius tincidunt.
 </p>
 
 <button class="cta">Subscribe</button>
@@ -1776,7 +1789,6 @@ Styles **text selected by the user**.
 | `::first-letter` | Styles the **first letter** of a block   |
 | `::selection`    | Customizes **text selection appearance** |
 
-
 ### 14. Grouping Selectors
 
 **Grouping selectors** allow you to apply **the same CSS rules to multiple elements** without repeating the code.
@@ -1784,29 +1796,33 @@ Styles **text selected by the user**.
 **Syntax:**
 
 ```css
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #333;
 }
 ```
 
-* The comma `,` works as **“or”**, meaning:
+- The comma `,` works as **“or”**, meaning:
   Apply the same style to **h1, h2, and h3**.
 
 **Example – Apply the same padding to multiple elements:**
 
 ```css
-button, input, select {
+button,
+input,
+select {
   padding: 10px;
 }
 ```
 
-* This is useful for **forms, buttons, or repeated layouts** where multiple elements share the same styling.
-* Keeps your CSS **cleaner and easier to maintain**.
+- This is useful for **forms, buttons, or repeated layouts** where multiple elements share the same styling.
+- Keeps your CSS **cleaner and easier to maintain**.
 
 ### 15. Complex Selectors
 
 **Complex selectors** are combinations of multiple selectors to create **precise targeting conditions**.
-Each part of the line represents a *layer* of conditions.
+Each part of the line represents a _layer_ of conditions.
 
 In short, we **combine multiple selectors** in a single rule to style exactly what we want.
 
@@ -1836,20 +1852,20 @@ div:has(input[required]) {
 }
 ```
 
-* `:has()` allows CSS to **look inside the element**.
-* If the `<div>` contains a required input, it gets a red border.
+- `:has()` allows CSS to **look inside the element**.
+- If the `<div>` contains a required input, it gets a red border.
 
 **Practical example:**
 
 ```html
 <div class="field">
   <label>Name</label>
-  <input type="text" required>
+  <input type="text" required />
 </div>
 
 <div class="field">
   <label>Message</label>
-  <input type="text">
+  <input type="text" />
 </div>
 ```
 
@@ -1861,16 +1877,16 @@ div:has(input[required]) {
 
 **Result:**
 
-* The first div has a light red background because it contains a required input.
-* The second div remains normal.
+- The first div has a light red background because it contains a required input.
+- The second div remains normal.
 
 **Conclusion:**
 
 If there’s one thing in CSS worth mastering from the start, it’s **CSS selectors**.
 
-* Every style rule you write **depends heavily on selecting the right element**.
-* You might not use every selector type in a single project, and that’s fine.
-* What matters is **knowing your tools**, so when you need to target an element by type, order, relationship, state, or content, you **already know the solution**.
+- Every style rule you write **depends heavily on selecting the right element**.
+- You might not use every selector type in a single project, and that’s fine.
+- What matters is **knowing your tools**, so when you need to target an element by type, order, relationship, state, or content, you **already know the solution**.
 
 With practice, your use of selectors becomes professional, helping you build **cleaner, faster, and easier-to-maintain pages**.
 
