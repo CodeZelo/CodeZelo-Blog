@@ -1,5 +1,5 @@
 ---
-title: "دليل بناء نظام تسجيل دخول (Login System) احترافي بـ  و MySQL من الصفر"
+title: "دليل بناء نظام تسجيل دخول (Login System) احترافي بـ PHP و MySQL من الصفر"
 description: "تعلم بناء نظام تسجيل دخول PHP آمن واحترافي. شرح مفصل لكيفية تنفيذ Validation قوي، حماية CSRF، وإدارة Session لمنع الاختراق. دليل شامل لتأمين بيانات المستخدمين من الصفر."
 categories: ["projects"]
 tags: ["php-practical", "html-css-practical"]
