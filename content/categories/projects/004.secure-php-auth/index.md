@@ -14,7 +14,7 @@ weight: -20
 
 سنتعلم حماية النماذج ضد ثغرات **CSRF**، وتشفير كلمات المرور، والتحقق من البيانات (Validation)، وإدارة الجلسات (Sessions).
 
-{{< youtubeLite id="R-Hs_qfc8Zw" label="Secure PHP Auth System: Validation, CSRF Protection, and Session Management" >}}
+{{< youtubeLite id="C4kSj1jS85k" label="دليل بناء نظام تسجيل دخول (Login System) احترافي بـ PHP و MySQL من الصفر" >}}
 
 ## 1. إعداد هيكل المشروع وقاعدة البيانات
 
