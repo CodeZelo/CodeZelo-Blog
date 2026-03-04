@@ -245,21 +245,108 @@ Open your browser at:
 http://localhost:8080
 ```
 
-You should see the Nginx welcome page 🎉
+You should see the Nginx welcome page.
 
-## Best Practices for Web Developers
+## The Best Way to Work as a Web Developer Using WSL
 
-✔ Store your projects inside the Linux filesystem—not inside `C:`
+If you're using **Windows + WSL (Ubuntu)**, organizing your development environment properly will save you a lot of time and help you avoid performance issues.
 
-Example:
+### 1. Store Your Projects Inside Linux, Not in C Drive
+
+One of the most common mistakes is storing your projects inside a Windows path like:
 
 ```
-/home/mahmoud/projects
+C:\Users\...
 ```
 
-✔ Use Visual Studio Code with the **WSL extension**
+It’s much better to keep all your projects inside the Linux environment itself. This ensures better performance and avoids permission-related issues.
 
-This allows you to open your project directly inside the Linux environment while coding from Windows.
+Navigate to your user directory inside Ubuntu:
+
+```bash
+cd /home/mahmoud
+```
+
+Then create a folder to hold all your projects:
+
+```bash
+mkdir apps
+```
+
+Your path will now look like this:
+
+```
+/home/mahmoud/apps
+```
+
+From now on, create every new project inside this folder.
+
+### 2. Use VS Code with the WSL Extension
+
+The best development experience with WSL is achieved by using:
+
+**Visual Studio Code**
+
+With the following extension installed:
+
+**WSL Extension**
+
+After installing the extension, you can open any project inside Linux directly from VS Code without dealing with path or permission issues.
+
+### 3. Automatically Launch Ubuntu Using Cmder
+
+Instead of manually opening WSL every time, you can simplify the process using:
+
+**Cmder**
+
+#### Steps:
+
+1.[Download Cmder](https://cmder.app/). 2. Go to **Settings → Startup → Tasks**. 3. Create a new task named: `Ubuntu` 4. Add the following command inside it:
+
+```bash
+wsl -d Ubuntu
+```
+
+5. From **General → Choose your startup task**, select the task you just created.
+
+Now, whenever you open Cmder, it will automatically launch Ubuntu.
+
+### 4. Automatically Navigate to Your Projects Folder
+
+Instead of typing this command every time:
+
+```bash
+cd /home/mahmoud/apps
+```
+
+You can configure it once inside your shell configuration file.
+
+Open the file:
+
+```bash
+nano ~/.bashrc
+```
+
+Add the following lines at the end of the file:
+
+```
+PS1='\u@\h [\W] ➜ '
+cd /home/mahmoud/apps
+```
+
+Then apply the changes:
+
+```bash
+source ~/.bashrc
+```
+
+Now, when you reopen Cmder, you’ll automatically start inside your projects folder like this:
+
+```bash
+mahmoud@SherifAdel [apps] ➜
+```
+
+Your development environment is now clean, fast, and free from repetitive setup steps.
 
 ## Do You Need Docker Desktop?
 
